@@ -30,6 +30,14 @@ body {background-color: #121217;}
 header {background:rgba(0,0,0,0.8); z-index:3; 
 	top:0em; position:relative; padding:0em; height:48px;}
 
+footer {padding:2em;}
+#skipnav {position:relative; margin:0px; padding:0px;}
+#jump {display:block; line-height:48px; position:absolute; 
+	z-index:9999; background-color:rgba(255,255,255,0.8); 
+	font-weight:900; color:black; top:-48px; width:100%;}
+
+#jump:focus {top:0px; outline:#03B 3px dashed;}
+
 
 #notice {box-sizing:border-box; line-height:48px;
 	color:white; z-index:9999; top:0px; position:sticky;
@@ -217,6 +225,7 @@ h3 {text-align:left; color:white; font-size:24px; font-weight:500;
 /*iPad*/
 	@media screen and (min-width:760px) and (max-width:999px) {
 	section,li,footer,div,p,h3 {box-sizing:border-box; padding:0 4%;}
+	#skipnav {position:relative; margin:0px; padding:0px;}
 	#memoticon {width:80%;}
 	#MacBookPro {width:40em;}
 	#MacS {top:-14.5em; left:-5.4em; width:55em; 
@@ -239,6 +248,7 @@ h3 {text-align:left; color:white; font-size:24px; font-weight:500;
 /*SmartPhone*/
 	@media screen and (min-width:321px) and (max-width:759px) {
 	section,li,footer,div {box-sizing:border-box; padding:0 4%;}
+	#skipnav {position:relative; margin:0px; padding:0px;}
 	#MacBookPro {width:20em;}
 	#MacS {display:none;}
 	h2 {font-size:40px; font-weight:700;}
@@ -281,6 +291,7 @@ h3 {text-align:left; color:white; font-size:24px; font-weight:500;
 	padding:0 4%; background-clip:border-clip; 
 	letter-spacing: 0.011em;
     color: #8c8c8c;}
+    #skipnav {position:relative; margin:0px; padding:0px;}
 	#notice {background-color: rgba(255,255,255,0.7);
 	/* -webkit-transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
 	-webkit-transition: -webkit-transform var(--inline-compare-transition-duration);
@@ -313,13 +324,6 @@ h3 {text-align:left; color:white; font-size:24px; font-weight:500;
 	#CP {font-size:0.8em;}
 	.kr {color:#029d50;}}
 
-footer {padding:2em;}
-#skipnav {position:relative; margin:0px; padding:0px;}
-#jump {display:block; line-height:48px; position:absolute; 
-	z-index:9999; background-color:rgba(255,255,255,0.8); 
-	font-weight:900; color:black; top:-48px; width:100%;}
-
-#jump:focus {top:0px; outline:#03B 3px dashed;}
 
 
 
