@@ -14,8 +14,11 @@
 
 
 
-.hidden {display:block; z-index:-100; position:relative; 
-	overflow:hidden; width:1px; height:1px; color:transparent;}
+.hidden {z-index:-1; position:absolute; top:50%; 
+	overflow:hidden; width:1px; height:1px; 
+	color:transparent; border:0; box-sizing:content-box;
+	clip: rect(1px, 1px, 1px, 1px); 
+	clip-path: inset(0px 0px 99.9% 99.9%);}
 
 div,section {background-clip:text; 
 	-webkit-background-clip:text;
@@ -27,16 +30,27 @@ body {background-color: #121217;}
 	font-family:SF Pro KR,SF Pro Display,SF Pro Icons,Apple Gothic,HY Gulim,MalgunGothic,HY Dotum,Lexi Gulim,Helvetica Neue,Helvetica,Arial,sans-serif;}
 /* background-color: #121217; */
 
-header {background:rgba(0,0,0,0.8); z-index:3; 
+header {background:rgba(0,0,0,0.8); z-index:9999	; 
+	backdrop-filter: saturate(180%) blur(20px);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
 	top:0em; position:relative; padding:0em; height:48px;}
 
+#LOGO {outline-offset:-7px; padding:0 10px; height:44px; 
+	display:inline-block; direction: ltr;
+	background-position:center center; 
+	background-size:16px 44px; position:relative;
+	webkit-tap-highlight-color: transparent;}
+
+#LOGO path {opacity:0.8;}
+#LOGO:focus path,#LOGO:hover path {opacity:1;}
 #skipnav {display:block; position:relative; margin:0px; padding:0px;}
 #jump {line-height:48px; position:absolute; left:0px;
-	z-index:-1; background:rgba(255,255,255,0.8);
+	z-index:-1; background-color:transparent;
 	font-weight:900; color:transparent; top:0px; width:100%;
 	padding:0px; margin:0px;}
 
-#jump:focus {z-index:9999; outline:#03B 3px dashed; color:black;}
+#jump:focus {z-index:99999; outline:#03B 3px dashed; color:black;
+			background:rgba(255,255,255,0.8);}
 
 
 #notice {box-sizing:border-box; line-height:48px;
@@ -65,7 +79,10 @@ header {background:rgba(0,0,0,0.8); z-index:3;
 		padding:4px 11px; box-sizing:border-box; right:0;}
 
 a {vertical-align:middle; background-position:center; 
-text-decoration:none; display:inline-block;}
+text-decoration:none; display:inline-block;
+transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+-webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+	}
 #hello {color:#6D7A71; text-align:center;}
 
 
@@ -99,6 +116,7 @@ h3 {text-align:left; color:white; font-size:24px; font-weight:500;
 	letter-spacing: .015em; vertical-align:middle; 
 	line-height: 1.2084933333;}
 
+#helpbox {padding:0px; background-color:#17171d; background-clip:unset;}
 #help {margin:2em auto;}
 #help * {color:#EBEBE3; text-align:left; margin:5px;}
 
@@ -154,6 +172,10 @@ h3 {text-align:left; color:white; font-size:24px; font-weight:500;
 #inPC2 {display:none;}
 #apple12 {width:100%; margin:3em 0em;}
 
+ul,#lalist {margin-bottom:0px; padding-bottom:1em;}
+/*main {background-color:#17171d;}*/
+main section {background-color:#121217;}
+
 /*PC*/
 	@media screen and (min-width:1200px) {
 	#MacBookPro {width:1000px;}
@@ -171,7 +193,7 @@ h3 {text-align:left; color:white; font-size:24px; font-weight:500;
 	#start {font-size:64px;}
 	#notice {border:none;}
 	#AT {border-bottom:rgba(66,66,69,0.95) solid 1px;}
-	.w980,.wrap {width:52%;}
+	.w980,.wrap,#help,#hello {width:52%;}
 	#CP {font-size:0.5em;}
 	
 	#inP0 {display:none; margin:0px auto;}
@@ -185,6 +207,7 @@ h3 {text-align:left; color:white; font-size:24px; font-weight:500;
 	.fullT {color:white; margin:auto;}
 	#airfull {z-index:3; margin-top:-10em; top:0px; display:table;}
 	#fullhi {margin-bottom:2em;}
+	#help {padding:2em;}
 
 	/*.walert {padding:1em; width:39%; font-size:28px;
 	margin:1em auto; border-radius:1em;
@@ -197,11 +220,14 @@ h3 {text-align:left; color:white; font-size:24px; font-weight:500;
 
 .wrap {margin:0 auto; box-sizing:border-box;}
 
+footer {padding:2em !important; background-color:#17171d;}
+
 /*iPad Pro*/
 	@media screen and (min-width:1000px) and (max-width:1199px) {
 	#MacBookPro {width:90%;}
 	#MacS {top:-330px; left:-120px; width:1260px; display:block; overflow:hidden;}
-	.wrap,.w980 {width:90%;}
+	.wrap,.w980,#hello {width:90%;}
+	#help {padding:2em;}
 	#MBP {margin-bottom:-500px;}
 	#AUC,#ApplePro {font-weight:600;}
 	#ApplePro {font-size:64px; line-height: 1.14286;}
@@ -242,12 +268,14 @@ h3 {text-align:left; color:white; font-size:24px; font-weight:500;
 	#a11ymark {font-size:2em;}
 	.w980 {width:80%;}
 	h2 {line-height:1.5em; letter-spacing: 0em;
-	font-size:48px;}}
+	font-size:48px;}
+	#help {padding:2em;}}
 
 
 /*SmartPhone*/
 	@media screen and (min-width:321px) and (max-width:759px) {
 	section,li,footer,div {box-sizing:border-box; padding:0 4%;}
+	#help {padding:2em;}
 	#skipnav {position:relative; margin:0px; padding:0px;}
 	#MacBookPro {width:20em;}
 	#MacS {display:none;}
@@ -314,7 +342,7 @@ h3 {text-align:left; color:white; font-size:24px; font-weight:500;
 	h1 span,h2 span,#start,#i11 {color:#1d1d1f; 
 	font-weight:900; line-height:1.2em; font-size: 40px;}
 	#help p{color: #8c8c8c;}
-	#help {background-color:#f2f2f2; background-clip:unset; 
+	#help,footer {background-color:#f2f2f2; background-clip:unset; 
 	font-size:17px; padding:70px 0px;}
 	#help img {width:95%;}
 	#help h3 {32px; color:#1d1d1f; font-weight:900;}
@@ -324,7 +352,7 @@ h3 {text-align:left; color:white; font-size:24px; font-weight:500;
 	#CP {font-size:0.8em;}
 	.kr {color:#029d50;}}
 
-footer {padding:2em;}
+
 
 
 
@@ -340,7 +368,8 @@ footer {padding:2em;}
 	<header>
 		<div id="apple" class="w980">
 			<a id="LOGO" aria-label="Apple Official Home Page" href="https://www.apple.com/kr/" target="_blank">
-				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="48" viewBox="0 0 18 48"><path d="M13.03 16.03C11.29 15.91 9.82 17 9 17c-.83 0-2.12-.94-3.48-.92-1.79.03-3.44 1.04-4.36 2.64C-.7 21.95.69 26.73 2.5 29.35c.89 1.28 1.94 2.72 3.33 2.67 1.34-.05 1.84-.86 3.46-.86 1.61 0 2.07.86 3.48.84 1.44-.03 2.35-1.31 3.23-2.59 1.02-1.48 1.44-2.92 1.46-3-.03-.01-2.8-1.07-2.83-4.27-.03-2.67 2.18-3.95 2.28-4.01-1.27-1.84-3.2-2.05-3.88-2.1m-1.07-1.72c.74-.89 1.23-2.13 1.1-3.37-1.06.04-2.34.71-3.11 1.6-.68.79-1.28 2.05-1.12 3.26 1.19.09 2.39-.6 3.13-1.49" fill="#fffffe"/>
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="48" viewBox="0 0 18 48">
+					<path d="M13.03 16.03C11.29 15.91 9.82 17 9 17c-.83 0-2.12-.94-3.48-.92-1.79.03-3.44 1.04-4.36 2.64C-.7 21.95.69 26.73 2.5 29.35c.89 1.28 1.94 2.72 3.33 2.67 1.34-.05 1.84-.86 3.46-.86 1.61 0 2.07.86 3.48.84 1.44-.03 2.35-1.31 3.23-2.59 1.02-1.48 1.44-2.92 1.46-3-.03-.01-2.8-1.07-2.83-4.27-.03-2.67 2.18-3.95 2.28-4.01-1.27-1.84-3.2-2.05-3.88-2.1m-1.07-1.72c.74-.89 1.23-2.13 1.1-3.37-1.06.04-2.34.71-3.11 1.6-.68.79-1.28 2.05-1.12 3.26 1.19.09 2.39-.6 3.13-1.49" fill="#ffffff"/>
 				</svg>
 			</a>
 		</div>
@@ -391,7 +420,7 @@ footer {padding:2em;}
 
 <!-- 본문 -->
 
-<main class="wrap">
+
 	<div id="hello" role="region" aria-label="인삿말">
 		<h2 id="start">환영합니다.</h2>
 	<p>애플유저 커뮤니티입니다. :&#41;
@@ -402,14 +431,13 @@ footer {padding:2em;}
 	<a href="#FPC" class="fullgo" id="fugp">"약관 전문"</a>을 참고하시기 바랍니다.)</p>
 	</div>
 
-
+<main class="wrap">
 <section style="background-image:url(https://www.apple.com/v/iphone-xs/d/images/overview/copy_texture_2_large.jpg);">
 	<h2>
 		<span>1. 일반</span>
 		<!-- <img src="https://www.apple.com/v/airpods-pro/a/images/overview/static_hero_airpodspro__cgozkyv8zgc2_small_2x.jpg" alt="" width="50%" height="50%"> -->
 	</h2>
 
-	<p>
 		<ul>
 			<li class="fullist">&#40;1&#41;. 입장 후, 30분간 질문이 금지되며, 미준수시 무통보 강제퇴장 처분됩니다. 오픈톡 악용을 방지하기 위함이니 양해 바랍니다.</li>
 			<li class="fullist">&#40;2&#41;. 상시 유동적인 중고가,최저가 및 법에 저촉되는 불법지원금과 관련된 질문은 금지됩니다.
@@ -422,7 +450,6 @@ footer {padding:2em;}
 				</ul>
 			</li>
 		</ul>
-	</p>
 </section>
 
 <section style="background-image:url(https://www.apple.com/v/iphone-xs/d/images/overview/copy_texture_3_large.jpg);">
@@ -430,7 +457,6 @@ footer {padding:2em;}
 		<span>2.  규정</span>
 	</h2>
 	
-	<p>
 		<ul>
 			<li class="fullist">&#40;0&#41;. 다양한 사람이 함께하는 커뮤니티이니만큼 경어를 사용하여 즐겁게 활동합시다.</li>
 			<li class="fullist">&#40;1&#41;. 욕설, 반말, 비방은 당연히 해선 안되겠죠? :&#41;</li>
@@ -455,7 +481,7 @@ footer {padding:2em;}
 			호출이 필요한 상황외의 호출은 자제해 주시기 바랍니다.</li>
 			<li class="fullist">&#40;8&#41;. 관리자가 권한을 남용하여 부당한 처벌을 하거나,
 			부도덕적 행위를 할 경우, 즉각적인 보고를 부탁드립니다.</li>
-			<li class="fullist">&#40;9&#41;. 약관을 위반하실 경우 경고가 부여됩니다. 
+			<li class="fullist" id="lalist">&#40;9&#41;. 약관을 위반하실 경우 경고가 부여됩니다. 
 				경고를 두 번 받으시면 강제퇴장 처분됩니다.
 			<ul>
 				<li>&#40;9-1&#41;. 방에 문제가 발생한 경우, ‘<span class="master">@관리자</span>'를 전송해주시면 즉시 뛰어갑니다.</li>
@@ -466,16 +492,17 @@ footer {padding:2em;}
 				</ul>
 			</li>
 		</ul>
-	</p>
 </section>
+</main>
 
+<section id="helpbox">
 	<div id="help">
 		<img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/repair/contentlink-communities_2x.png" alt="" width="100%" style="margin-bottom:20px;">
 		<h3>질문이 있으십니까?
 		<br>질문에 대한 답변을 받으실 수 있습니다.</h3>
 		<p>Apple 유저 커뮤니티의 회원이 질문에 답변해 드릴 수도 있으나, 공지사항을 읽고 규정을 준수하신 이후에 가능합니다.</p>
 	</div>
-</main>
+</section>
 <!-- <img alt="" src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/ios/iphoto/ios13-macos-catalina-find-organize-photos-hero.jpg" width="100%"> -->
 
 <section>
