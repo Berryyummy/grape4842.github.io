@@ -12,7 +12,13 @@
 :lang(ko) {word-break: keep-all;}
 ::selection {background:#75f; color:white;}
 
+#MPC,#hello,main {animation-duration:2s;
+animation-name:load;}
 
+@keyframes load {
+	from {opacity:0; margin:3em auto;}
+	to {opacity:1; margin:0% auto;}
+}
 
 .hidden {z-index:-1; position:absolute; top:50%; 
 	overflow:hidden; width:1px; height:1px; 
@@ -22,9 +28,11 @@
 
 div,section {background-clip:text; 
 	-webkit-background-clip:text;
-	color: transparent; background-size:cover;}
+	color: transparent; background-size:cover;
+}
 
-body {background-color: #121217;}
+body {background-color: #121217;
+}
 * {margin:auto auto; text-align:center;
 	-webkit-font-smoothing:antialiased;
 	font-family:SF Pro KR,SF Pro Display,SF Pro Icons,Apple Gothic,HY Gulim,MalgunGothic,HY Dotum,Lexi Gulim,Helvetica Neue,Helvetica,Arial,sans-serif;}
@@ -35,13 +43,20 @@ header {background:rgba(0,0,0,0.8); z-index:9999	;
 	-webkit-backdrop-filter: saturate(180%) blur(20px);
 	top:0em; position:relative; padding:0em; height:48px;}
 
+a {vertical-align:middle; background-position:center; 
+text-decoration:none; display:inline-block;}
+#hello {color:#6D7A71; text-align:center;}
+
+
 #LOGO {outline-offset:-7px; padding:0 10px; height:44px; 
 	display:inline-block; direction: ltr;
 	background-position:center center; 
 	background-size:16px 44px; position:relative;
 	webkit-tap-highlight-color: transparent;}
 
-#LOGO path {opacity:0.8;}
+#LOGO path {opacity:0.8; 
+transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+-webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);}
 #LOGO:focus path,#LOGO:hover path {opacity:1;}
 #skipnav {display:block; position:relative; margin:0px; padding:0px;}
 #jump {line-height:48px; position:absolute; left:0px;
@@ -78,12 +93,6 @@ header {background:rgba(0,0,0,0.8); z-index:9999	;
 		white-space:nowrap; letter-spacing: -0.1em; display:inline-block;
 		padding:4px 11px; box-sizing:border-box; right:0;}
 
-a {vertical-align:middle; background-position:center; 
-text-decoration:none; display:inline-block;
-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
--webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-	}
-#hello {color:#6D7A71; text-align:center;}
 
 
 
