@@ -117,7 +117,9 @@ ul,li,ol {padding:0px; margin:1em 0px;
 	text-align:left; font-size:21px; font-weight:600; 
 	list-style:none;}
 .fullist ul {margin:0px; padding:0px;}
-.fullist li{margin:0.3em 0px; padding:0px; list-style-position:outside; word-break: keep-all;}
+.fullist li{margin:0.3em 0px; padding:0px; 
+	list-style-position:outside; 
+	word-break: keep-all; font-size:19px;}
 #hello {color:#6D7A71; text-align:center; 
 	font-weight:600; font-size:21px;}
 
@@ -287,14 +289,18 @@ footer {padding:2em !important; background-color:#17171d;}
 
 /*SmartPhone*/
 	@media screen and (min-width:321px) and (max-width:760px) {
-	section,li,footer,div {box-sizing:border-box; padding:0 4%;}
+	/*section,li,footer,div {box-sizing:border-box; padding:0 4%;}
+	#inP {top:-24em; width:82%;}
+	*/
+	#MBP,.wrap,.w980,#inP0 {box-sizing:border-box; padding:0 4%;}
+	#inP {top:-24em; width:75%;}
+	
 	#help {padding:2em;}
 	#skipnav {position:relative; margin:0px; padding:0px;}
 	#MacBookPro {width:20em;}
 	#MacS {display:none;}
 	h2 {font-size:40px; font-weight:700;}
 	#full {font-size:21px;}
-	#inP {top:-24em; width:82%;}
 	#notch {width:90%;}
 	#memoticon {width:80%;}
 	.walert {border-radius:0.8em; padding:0.4em 0.5em; 
