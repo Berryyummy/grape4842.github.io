@@ -228,6 +228,8 @@ main section {background-color:#121217;}
 	#airfull {z-index:3; margin-top:-10em; top:0px; display:table;}
 	#fullhi {margin-bottom:2em;}
 	#help {padding:2em;}
+		.nosmp {display:block !important;}
+	.msmp {display:none;}
 	
 	/*.walert {padding:1em; width:39%; font-size:28px;
 	margin:1em auto; border-radius:1em;
@@ -248,7 +250,7 @@ footer {padding:2em !important; background-color:#222;}
  	
 	#MacBookPro {width:90%;}
 	#MacS {top:-330px; left:-120px; width:1260px; display:block; overflow:hidden;}
-	.wrap,.w980,#hello,#help,li {width:90%;}
+	.wrap,.w980,#hello,#help {width:90%;}
 	#help {padding:2em;}
 	#MBP {margin-bottom:-22em !important;}
 	#AUC,#ApplePro {font-weight:600;}
@@ -268,11 +270,13 @@ footer {padding:2em !important; background-color:#222;}
 	#AT {border-bottom:rgba(66,66,69,0.95) solid 1px;}
 	main {margin-top:-400px;}
 	#CP {font-size:0.5em;}
+	.nosmp {display:block !important;}
+	.msmp {display:none;}}
 
 /*iPad*/
 	@media screen and (min-width:761px) and (max-width:999px) {
-	#MBP,.wrap,.w980,#inP0,#hello,li {box-sizing:border-box; padding:0 5%;}
-	#inP {top:-54em; width:32em;}
+	.wrap,.w980,#inP0,#hello {box-sizing:border-box; width:80%;}
+	#inP {top:-49em; width:28em;}
 	
 	#MBP {margin-bottom:-12em !important;}
 	/* #inP {top:-52em; width:34em;}
@@ -281,7 +285,7 @@ footer {padding:2em !important; background-color:#222;}
 	#skipnav {position:relative; margin:0px; padding:0px;}
 	#memoticon {width:80%;}
 	#MacBookPro {width:40em;}
-	#MacS {top:-14.5em; left:-6em; width:55em; 
+	#MacS {top:-14.5em; left:-3.5em; width:55em; 
 	display:block; overflow:hidden;}
 	#notch {width:90%;}
 	.walert {padding:1em; border-radius:0.8em; font-size:28px;}
@@ -295,7 +299,8 @@ footer {padding:2em !important; background-color:#222;}
 	h2 {line-height:1.5em; letter-spacing: 0em;
 	font-size:48px;}
 	#help {padding:2em;}
-	.nosmp {display:none;}}
+	.nosmp {display:block !important;}
+	.msmp {display:none;}}
 
 
 /*SmartPhone*/
@@ -304,10 +309,10 @@ footer {padding:2em !important; background-color:#222;}
 	#inP {top:-24em; width:82%;}
 	*/
 	.wrap,#inP0,#hello,.w980 {
-	box-sizing:border-box; width:90%; font-size:19px;}
+	box-sizing:border-box; width:85%; font-size:19px;}
 	#inP {top:-22em; width:75%;}
 	li {font-size:19px;}
-	
+	#MBP {width:100%;}
 	#help {padding:2em;}
 	#skipnav {position:relative; margin:0px; padding:0px;}
 	#MacBookPro {width:20em;}
@@ -468,8 +473,7 @@ footer {padding:2em !important; background-color:#222;}
 	<div id="hello" role="region" aria-label="인삿말">
 		<h2 id="start" class="no320">환영합니다.</h2>
 	<p><h2 id="SEST">환영합니다.</h2>애플유저 커뮤니티입니다. :&#41;
-		<br>활동을 시작하시기 전, 아래의 내용을 주의깊게 읽어주시기 바랍니다.<br>
-
+		활동을 시작하시기 전, 아래의 내용을 주의깊게 읽어주시기 바랍니다.<br>
 	(본 내용은 회원의 편의를 위해 공지사항(애플 유저 커뮤니티 사용권 계약)을 요약한 것으로, 추가적인 상세 설명이 필요하신 경우 아래의 
 	<a href="#full" class="fullgo" id="fug">"약관 전문"</a>
 	<a href="#FPC" class="fullgo" id="fugp">"약관 전문"</a>을 참고하시기 바랍니다.)</p>
@@ -541,7 +545,7 @@ footer {padding:2em !important; background-color:#222;}
 
 
 
-<section id="helpbox" class="no320 nosmp">
+<section id="helpbox" class="nosmp">
 	<div id="help">
 		<img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/repair/contentlink-communities_2x.png" alt="" width="100%" style="margin-bottom:20px;">
 	<a href="https://open.kakao.com/o/gfyAlXI">
@@ -555,7 +559,7 @@ footer {padding:2em !important; background-color:#222;}
 </section>
 
 
-<section id="helpbox" class="m320 msmp">
+<section id="helpbox" class="msmp">
 <div id="help">
 <a href="https://open.kakao.com/o/gfyAlXI">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="74px" height="74px" viewBox="0 0 74 74" style="enable-background:new 0 0 74 74;" xml:space="preserve" alt="">
