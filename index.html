@@ -11,6 +11,11 @@
 <style>
 :lang(ko) {word-break: keep-all;}
 ::selection {background:#75f; color:white;}
+
+img,video {width:100%;}
+.wrap,#inP0,#hello,.w980 {box-sizing:border-box; width:90%;}
+
+
 #ApplePro,#hello,main {opacity:0; position:relative;}
 #ApplePro,#hello,main {animation-duration:2s;
 animation-name:load; animation-delay:1s;
@@ -18,8 +23,8 @@ animation-fill-mode:forwards;}
 
 @keyframes load {
 	from {opacity:0; top:1em;}
-	to {opacity:1; top:0em;} 
-}
+	to {opacity:1; top:0em;}}
+
 .hidden {z-index:-1; position:absolute; top:50%; 
 	overflow:hidden; width:1px; height:1px; 
 	color:transparent; border:0; box-sizing:content-box;
@@ -31,14 +36,14 @@ div,section {background-clip:text;
 	color: transparent; background-size:cover;
 }
 
-body {background-color: #121217;
-}
+body {background-color: #121217;}
+
 * {margin:auto auto; text-align:center;
 	-webkit-font-smoothing:antialiased;
-	font-family:SF Pro KR,SF Pro Display,SF Pro Icons,Apple Gothic,HY Gulim,MalgunGothic,HY Dotum,Lexi Gulim,Helvetica Neue,Helvetica,Arial,sans-serif;}
+	font-family:SF Pro KR,SF Pro Display,SF Pro Icons,Apple Gothic,HY 굴림,맑은 고딕,HY 돋움,Lexi Gulim,Helvetica Neue,Helvetica,Arial,sans-serif;}
 /* background-color: #121217; */
 
-header {background:rgba(0,0,0,0.8); z-index:9999	; 
+header {background:rgba(0,0,0,0.8); z-index:9999; 
 	backdrop-filter: saturate(180%) blur(20px);
 	-webkit-backdrop-filter: saturate(180%) blur(20px);
 	top:0em; position:relative; padding:0em; height:48px;}
@@ -47,16 +52,17 @@ a {vertical-align:middle; background-position:center;
 text-decoration:none; display:inline-block;}
 
 
-#LOGO {outline-offset:-7px; padding:0 10px; height:44px; 
-	display:inline-block; direction: ltr;
-	background-position:center center; 
+#LOGO {outline-offset:-7px; padding:0 10px; 
+	height:44px; display:inline-block; 
+	direction: ltr; background-position:center center; 
 	background-size:16px 44px; position:relative;
-	webkit-tap-highlight-color: transparent;}
+	-webkit-tap-highlight-color: transparent;}
 
 #LOGO path {opacity:0.8; 
 transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 -webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);}
 #LOGO:focus path,#LOGO:hover path {opacity:1;}
+
 #skipnav {display:block; position:relative; margin:0px; padding:0px;}
 #jump {line-height:48px; position:absolute; left:0px;
 	z-index:-1; background-color:transparent;
@@ -80,8 +86,7 @@ transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 	.w980 {vertical-align:middle; position:relative;}
 
 #start {display:block; text-align:center; 
-	color:#EBEBE3; position:relative;
-	z-index:3;}
+	color:#EBEBE3; position:relative; z-index:3;}
 
 
 
@@ -98,27 +103,29 @@ transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 p {word-break:keep-all; margin:29px 0px; font-size:21px; 
 	font-weight:600; letter-spacing:0.011em;
 	display: block;
-   margin-block-start: 1em;
-   margin-block-end: 1em;
-   margin-inline-start: 0px;
-   margin-inline-end: 0px;}
+   margin-block-start:1em;
+   margin-block-end:1em;
+   margin-inline-start:0px;
+   margin-inline-end:0px;}
 
 .fullgo {line-height:33px; color:#6D7A71; text-align:center; font-weight:600;}
 
 /*h2 {margin-top:10%;}*/
 
-h2,h2>span {display:inline-block; color:#FBD7BD; text-align:left; vertical-align:middle;}
+h2,h2>span {display:inline-block; color:#FBD7BD; 
+	text-align:left; vertical-align:middle;}
 
 h1 {font-size:1em; text-align:left;}
 
 ul,li,ol {padding:0px; margin:1em auto; 
-	word-break:keep-all; 
-	text-align:left; font-size:21px; font-weight:600; 
+	word-break:keep-all; text-align:left; 
+	font-size:21px; font-weight:600; 
 	list-style:none;}
 .fullist ul {margin:0px; padding:0px;}
 .fullist li{margin:0.3em auto; padding:0px; 
 	list-style-position:outside; 
 	word-break: keep-all; font-size:19px;}
+
 #hello {color:#6D7A71; text-align:center; 
 	font-weight:600; font-size:21px;}
 
@@ -127,18 +134,21 @@ h3 {color:white; font-size:19px; font-weight:600;
 	letter-spacing: 0.012em; vertical-align:middle; 
     line-height: 1.31579;}
 
-#help a {width:12em;}
-#help p{color:#EBEBE3; font-size:14px; 
+#help a,#helpM a {width:12em;}
+#help p,#helpM p{color:#EBEBE3; font-size:14px; 
 text-align:left; font-weight:400;
 margin-top:0.4em}
-#helpbox {padding:0px; 
+
+#helpbox,#helpboxM {padding:0px; 
 background-color:#222; 
 background-clip:unset; width:100%;}
+
 #help {margin:2em auto;}
 .goask { font-size:14px; color:#2997ff;}
 
 
-.master {background-color:white; color:black; font-weight:900;}
+.master {background-color:white; 
+	color:black; font-weight:900;}
 .made {color:#6e6e73; font-size:1em;}
 
 #ApplePro {color:white; text-align:center;  
@@ -160,7 +170,8 @@ background-clip:unset; width:100%;}
 
 .walert {color:black; background-color:#ffffffaa; 
 	box-sizing:border-box; position:relative; display:block;
-	backdrop-filter:saturate(180%) blur(20px);}
+	backdrop-filter:saturate(180%) blur(20px);
+	-webkit-backdrop-filter:saturate(180%) blur(20px);}
 
 #inP {color:black; position:relative; height:0em;}
 
@@ -179,7 +190,7 @@ background-clip:unset; width:100%;}
 
 
 #a11ymark {color:white; font-weight:900;}
-#a11ymark img {background-color:white; border-radius:100%;}
+#a11ymark img {background-color:white; border-radius:100%; width:7em;}
 #a11ymark span {color:#77aaff;}
 
 #appleseries {width:100%;}
@@ -188,9 +199,9 @@ background-clip:unset; width:100%;}
 #MPC {padding:0px; margin:0px;}
 	#inPC2 {display:none;}
 	#FPC {text-align:center;}
-	#inPC2 {position:sticky; width:100%; top:0px;}
-	#inPC {position:block; top:-33em; position:relative;}
-	#inPC p {line-height: 1.52947; font-size:1.1em; }
+	#inPC2 {position:relative; width:100%; top:0px;}
+	#inPC {top:-33em; position:relative;}
+	#inPC p {line-height: 1.52947; font-size:1.1em;}
 	.fullT {color:white; margin:auto;}
 	#fullhi {margin-bottom:2em;}
 
@@ -202,12 +213,15 @@ main section {background-color:#121217;}
 #SEST {display:none;}
 #fugp {display:none;}
 
-/*PC*/
+/*PC 16:9 화면*/
 	@media screen and (min-width:1100px) {
-	#MacBookPro {width:1000px;}
+	/*#MacBookPro {width:1000px;}
 	#MacS {top:-350px; left:0px; width:1330px; 
-	display:block; overflow:hidden;}
+	display:block; overflow:hidden;}*/
 	#MBP {margin-bottom:-22em;}
+	#MacBookPro {width:70em;}
+	#MacS {top:-25em; width:97em;}
+
 	#AUC,#ApplePro {font-weight:600;}
 	#ApplePro {font-size:64px; line-height: 1.14286;}
 	#AUC {margin-bottom:0.15em; font-size:28px;}
@@ -219,15 +233,15 @@ main section {background-color:#121217;}
 	#start {font-size:64px;}
 	#notice {border:none;}
 	#AT {border-bottom:rgba(66,66,69,0.95) solid 1px;}
-	.w980,.wrap,#help,#hello {width:52%;}
+	.w980,.wrap,#help,#hello{width:52%;}
 	#CP {font-size:0.5em;}
-		#airfull {z-index:3; margin-top:-12em; top:0px; display:table;}
+	#airfull {z-index:3; margin-top:-12em; top:0px; display:table;}
 
 	#inP0 {display:none; margin:0px auto;}
 	#inPC2 {display:block;}
 	
 	#fugp {display:inline-block;}
-	#fug {display:none; font-size:17px;}
+	#fug {display:none;}
 
 	#help {padding:2em;}
 		.nosmp {display:block !important;}
@@ -246,6 +260,20 @@ main section {background-color:#121217;}
 
 footer {padding:2em !important; background-color:#222;}
 
+/*iPad Pro 11 landscape 가로*/
+	@media screen and (min-width:1190px) and (max-width:1200px) {
+	#MacS {top:-21.5em; left:-4em; width:83em;}
+	#MacBookPro {width:60em;}
+	#MBP {margin-bottom:-22em;}
+	#inPC2 {display:block; top:12em;}
+	#inP0 {display:none;}}
+
+/*iPad Pro 12.9 landscape 가로*/
+	@media screen and (min-width:1360px) and (max-width:1370px) {
+	#MacS {top:-21.5em; left:0em; width:83em;}
+	#MacBookPro {width:60em;}
+	#MBP {margin-bottom:-22em;}}
+
 /*iPad Pro*/
 	@media screen and (min-width:1000px) and (max-width:1099px) {
 	#inP {margin:0px auto; padding:0px; top:-66em;}
@@ -258,10 +286,8 @@ footer {padding:2em !important; background-color:#222;}
 	#AUC,#ApplePro {font-weight:600;}
 	#ApplePro {font-size:64px; line-height: 1.14286;}
 	#AUC {margin-bottom:0.15em; font-size:28px;}
-	.walert {padding:1em; width:62%; font-size:28px;
-	margin:1em auto; border-radius:1em;
-	top:-10em; line-height:1.5em; box-sizing:unset;}	
-	#notch {margin:15% auto; width:80%;}
+	#inP0 {display:none;}
+	#inPC2 {display:block; top:12em;}
 	#a11ymark{font-size:24px;}
 	.made {font-size:2em;}
 	#a11ymark {font-size:2em;}
@@ -275,11 +301,11 @@ footer {padding:2em !important; background-color:#222;}
 	.nosmp {display:block !important;}
 	.msmp {display:none;}}
 
+
 /*iPad*/
 	@media screen and (min-width:731px) and (max-width:999px) {
 	.wrap,.w980,#inP0,#hello {box-sizing:border-box; width:80%;}
 	#inP {top:-49em; width:28em;}
-	
 	#MBP {margin-bottom:-15em;}
 	/* #inP {top:-52em; width:34em;}
 	section,li,footer,div,p,h3 {box-sizing:border-box; padding:0 4%;}
@@ -304,22 +330,32 @@ footer {padding:2em !important; background-color:#222;}
 	.nosmp {display:block !important;}
 	.msmp {display:none;}}
 
+/*iPad Pro 10.5*/
+	@media screen and (min-width:830px) and (max-width:840px) {
+	#MacS {top:-14.3em; left:-1.4em; width:55em;}
+	#MBP {margin-bottom:-15em;}
+	#inPC2 {display:block; top:12em;}
+	#inP0 {display:none;}}
+
+
+
 
 /*SmartPhone*/
 	@media screen and (min-width:321px) and (max-width:730px) {
 	/*section,li,footer,div {box-sizing:border-box; padding:0 4%;}
 	#inP {top:-24em; width:82%;}
 	*/
-	.wrap,#inP0,#hello,.w980 {
-	box-sizing:border-box; width:85%; font-size:19px;}
-	#inP {top:-22em; width:75%;}
+	.wrap,#inP0,#hello,.w980 {box-sizing:border-box; 
+		width:85%; font-size:19px;}
+	#inP {top:-20em; width:75%;}
 	li {font-size:19px;}
-	#MBP {width:100%;}
-	#help {padding:2em;}
+	#MBP {width:100%; margin-bottom:-7em;}
+	#helpM {padding:2em;}
 	#skipnav {position:relative; margin:0px; padding:0px;}
 	#MacBookPro {width:20em;}
-	#MacS {display:none;}
+	#MacS {width:27em; top:-7.5em; left:-2.3em;}
 	h2 {font-size:40px; font-weight:700;}
+	#helpboxM {margin-bottom:2em;}
 	#full {font-size:21px;}
 	#notch {width:90%;}
 	#memoticon {width:80%;}
@@ -327,27 +363,50 @@ footer {padding:2em !important; background-color:#222;}
 	line-height:1.3em; font-size:0.9em;}
 	.made {display:block;}
 	#LOGO {width:18px; background-size:18px 48px;
-	background-position:center center;}
+	background-position:center center;
 	line-height: 2.82353em; height:48px;}
-	.nosmp {display:none;}
+	.nosmp {display:none;}}
 
 /* iPhone X */
 	@media screen and (min-width:370px) and (max-width:380px) {
-	#MacS {top:-117px; left:-31px; width:440px;
+	#MacS {top:-7.3em; left:-2em; width:27.5em;
 	display:block; overflow:hidden;}
 	#MBP {margin-bottom:-7em;}
 	#inP {top:-21em;}
 	.walert {font-size:0.8em;}}
 
-	@media screen and (min-width:810px) and (max-width:820px) and (orientation:landscape) {
+/*iPhone X landscape*/
+	@media screen and (min-width:810px) and (max-width:820px) {
 	#MacS {top:-14.5em; left:-2.4em; width:55.5em;}
 	#MBP {margin-bottom:-15em;}
 	#inP {top:-58em; width:34em;}
 	.wrap,#inP0,#hello,.w980 {
 	box-sizing:border-box; width:90%;}}
 
-/*Pixel 2XL*/
-	@media screen and (min-width:820px) and (max-width:830px) and (orientation:landscape) {
+/*iPhone 11,11PRO MAX landscape*/
+	@media screen and (min-width:890px) and (max-width:900px) {
+	#MacS {top:-14.5em; left:0em; width:55.5em;}
+	#MBP {margin-bottom:-15em;}
+	#inPC2 {display:block; top:12em;}
+	#inP0 {display:none;}}
+
+/*Note 10+ landscape*/
+	@media screen and (min-width:840px) and (max-width:850px) {
+	#MacS {top:-14.3em; left:-1em; width:55em;}
+	#MBP {margin-bottom:-15em;}
+	#inPC2 {display:block; top:12em;}
+	#inP0 {display:none;}}
+
+
+/*Note 8 landscape*/
+	@media screen and (min-width:860px) and (max-width:870px) {
+	#MacS {top:-14.3em; left:-0.5em; width:55em;}
+	#MBP {margin-bottom:-15em;}
+	#inPC2 {display:block; top:12em;}
+	#inP0 {display:none;}}
+
+/*Pixel 2XL landscape*/
+	@media screen and (min-width:820px) and (max-width:830px) {
 	#MacS {top:-14.4em; left:-2em; width:55.5em;}
 	#MBP {margin-bottom:-15em;}
 	#inP {top:-58em; width:34em;}
@@ -359,14 +418,23 @@ footer {padding:2em !important; background-color:#222;}
 	#MacS {top:-117px; left:-14px; width:440px;
 	display:block; overflow:hidden;}
 	#MBP {margin-bottom:-7em;}
-	#inP{top:-23.5em !important;}}
+	#inP{top:-23.5em;}}
 
-	@media screen and (min-width:730px) and (max-width:740px) and (orientation:landscape) {
+/*iPhone 678+ landscape*/
+	@media screen and (min-width:730px) and (max-width:740px) {
 	#MacS{left:-4.5em; top:-14.5em;}
 	#inP {top:-52em; width:31em;}
 	.walert {border-radius:0.8em; padding:0.4em 0.5em;}
 	.wrap,#inP0,#hello,.w980 {
 	box-sizing:border-box; width:90%;}}
+
+/* iPhone 678 landscape */
+	@media screen and (min-width:660px) and (max-width:670px) {
+	#MacS{left:-0em; top:-11em; width:41em;}
+	#MacBookPro {width:30em;}
+	#MBP {margin-bottom:-12em;}
+	#inP {top:-38em; width:22em;}
+	.walert {border-radius:0.8em; padding:1em;}}
 
 
 
@@ -380,7 +448,7 @@ footer {padding:2em !important; background-color:#222;}
 	background-clip:border-clip; font-size:17px;
 	letter-spacing: 0.011em; color: #8c8c8c;}
 
-	.wrap,#inP0,#hello,.w980,#help,.fullist {box-sizing:border-box; width:90%; font-size:17px;}
+	.wrap,#inP0,#hello,.w980,#helpM,.fullist {box-sizing:border-box; width:90%; font-size:17px;}
 	li,.fullist li {font-size:17px;}
 	
 	#SE11 {padding:0px;
@@ -409,11 +477,11 @@ footer {padding:2em !important; background-color:#222;}
 	.by {display:block;}
 	h1 span,h2 span,#i11 {color:#1d1d1f; 
 	font-weight:900; line-height:1.2em; font-size: 40px;}
-	#help p{color:#1d1d1f;}
-	#help,footer {background-clip:unset; 
+	#helpM p{color:#1d1d1f;}
+	#helpM,footer {background-clip:unset; 
 	font-size:17px;}
-	#helpbox {margin-bottom:2em;}
-	#helpbox,footer {background-color:#f2f2f2; padding:70px 0px;}
+	#helpboxM {margin-bottom:2em;}
+	#helpboxM,footer {background-color:#f2f2f2; padding:70px 0px;}
 	#help img {width:95%;}
 	#help h3 {color:#1d1d1f; font-weight:900;}
 	.goask {color:#06c;}
@@ -462,11 +530,11 @@ footer {padding:2em !important; background-color:#222;}
 	.by {display:block;}
 	h1 span,h2 span,#i11 {color:#1d1d1f; 
 	font-weight:900; line-height:1.2em; font-size: 40px;}
-	#help p{color:#1d1d1f;}
-	#help,footer {background-clip:unset; font-size:17px;}
-	#helpbox {margin-bottom:2em;}
-	#helpbox,footer {background-color:#f2f2f2; padding:1em 0px;}
-	#help h3 {color:#1d1d1f; font-weight:900;}
+	#helpM p{color:#1d1d1f;}
+	#helpM,footer {background-clip:unset; font-size:17px;}
+	#helpboxM {margin-bottom:2em;}
+	#helpboxM,footer {background-color:#f2f2f2; padding:1em 0px;}
+	#helpM h3 {color:#1d1d1f; font-weight:900;}
 	.goask {color:#06c;}
 	footer {background-color:#f2f2f2;}
 	#a11ymark {font-size:0.9em; color:#dd006d;}
@@ -543,12 +611,15 @@ footer {padding:2em !important; background-color:#222;}
 
 
 	<div id="hello" role="region" aria-label="인삿말">
-		<h2 id="start" class="no320">환영합니다.</h2>
-	<p><h2 id="SEST">환영합니다.</h2>애플유저 커뮤니티입니다. :&#41;
+	<h2 id="start" class="no320">환영합니다.</h2>
+	<p>
+		<h2 id="SEST">환영합니다.</h2>애플유저 커뮤니티입니다. :&#41;
 		활동을 시작하시기 전, 아래의 내용을 주의깊게 읽어주시기 바랍니다.<br>
-	(본 내용은 회원의 편의를 위해 공지사항(애플 유저 커뮤니티 사용권 계약)을 요약한 것으로, 추가적인 상세 설명이 필요하신 경우 아래의 
-	<a href="#full" class="fullgo" id="fug">"약관 전문"</a>
-	<a href="#FPC" class="fullgo" id="fugp">"약관 전문"</a>을 참고하시기 바랍니다.)</p>
+		(본 내용은 회원의 편의를 위해 공지사항(애플 유저 커뮤니티 사용권 계약)을 요약한 것으로,
+		추가적인 상세 설명이 필요하신 경우 아래의 
+		<a href="#full" class="fullgo" id="fug">"약관 전문"</a>
+		<a href="#FPC" class="fullgo" id="fugp">"약관 전문"</a>을 참고하시기 바랍니다.)
+	</p>
 	</div>
 
 <main class="wrap">
@@ -590,12 +661,18 @@ footer {padding:2em !important; background-color:#222;}
 			<li class="fullist">&#40;5&#41;. 어떠한 형태로든 혐오 발언은 절대 안됩니다. 적발시 강제퇴장 처분됩니다.</li>
 			<li class="fullist">&#40;6&#41;. 거래 게시는 1일 1회만 허용됩니다.
 			판매자 연락처 제공 요청 메시지 이외의 거래 관련 대화도 금지입니다.
-			<ul>
-				<li>&#40;6-1&#41;. 필수 항목이 없는 거래의 경우, 무통보 삭제 처리됩니다.</li>
-				<ul><li>&#40;6-1-1&#41;. 게시물 작성시 기재가 필요한 필수항목은 사진,품명,금액,구성품,연락처,사용기간이며, 해당 항목 중, 빠진것이 있다면 삭제됩니다.</li></ul>
-			</li>
-				<li>&#40;6-2&#41;. 중고거래 피해에 대한 책임은 거래자간에 있으며, 당 커뮤니티에서는 일절 책임을 지지 않습니다.</li>
-			</ul>
+				<ul>
+					<li>&#40;6-1&#41;. 필수 항목이 없는 거래의 경우, 무통보 삭제 처리됩니다.</li>
+						<ul>
+							<li>&#40;6-1-1&#41;. 게시물 작성시 기재가 필요한 필수항목은 사진,품명,금액,구성품,연락처,사용기간이며, 
+							해당 항목 중, 빠진것이 있다면 삭제됩니다.
+							</li>
+						</ul>
+					</li>
+					<li>&#40;6-2&#41;. 중고거래 피해에 대한 책임은 거래자간에 있으며, 
+					당 커뮤니티에서는 일절 책임을 지지 않습니다.
+					</li>
+				</ul>
 			</li>
 			<li class="fullist">&#40;7&#41;. <span class="master">‘@관리자’</span> 라는 단어를 발송하시면, 관리자들에게 알림이 갑니다.
 			호출이 필요한 상황외의 호출은 자제해 주시기 바랍니다.</li>
@@ -603,12 +680,18 @@ footer {padding:2em !important; background-color:#222;}
 			부도덕적 행위를 할 경우, 즉각적인 보고를 부탁드립니다.</li>
 			<li class="fullist lalist">&#40;9&#41;. 약관을 위반하실 경우 경고가 부여됩니다. 
 				경고를 두 번 받으시면 강제퇴장 처분됩니다.
-			<ul>
-				<li>&#40;9-1&#41;. 방에 문제가 발생한 경우, ‘<span class="master">@관리자</span>'를 전송해주시면 즉시 뛰어갑니다.</li>
-				<li class="kr">※애플의 정책으로 인하여 iOS13을 사용하시는 관리자분들은
-				키워드 호출이 불가능하여 즉각적인 대처가 어려울 수 있습니다.</li>
-				<li>&#40;9-2&#41;. 공지사항을 숙지하지 않고 활동하실 경우, 회원 본인에게 불이익이 있을 수 있습니다.
-				만약 지금까지 대충 넘기셨다면, 비밀로 해드릴테니 한번만 다시 읽어주시면 감사하겠습니다. :&#41;</li>
+				<ul>
+					<li>&#40;9-1&#41;. 방에 문제가 발생한 경우, 
+						‘<span class="master">@관리자</span>'를 전송해주시면 즉시 뛰어갑니다.
+					</li>
+					<li class="kr">※애플의 정책으로 인하여 iOS13을 사용하시는 관리자분들은
+					키워드 호출이 불가능하여 즉각적인 대처가 어려울 수 있습니다.
+					</li>
+					<li>&#40;9-2&#41;. 공지사항을 숙지하지 않고 활동하실 경우, 
+					회원 본인에게 불이익이 있을 수 있습니다.
+					만약 지금까지 대충 넘기셨다면, 비밀로 해드릴테니
+					한번만 다시 읽어주시면 감사하겠습니다. :&#41;
+					</li>
 				</ul>
 			</li>
 		</ul>
@@ -631,8 +714,8 @@ footer {padding:2em !important; background-color:#222;}
 </section>
 
 
-<section id="helpbox" class="msmp">
-<div id="help">
+<section id="helpboxM" class="msmp">
+<div id="helpM">
 <a href="https://open.kakao.com/o/gfyAlXI">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="74px" height="74px" viewBox="0 0 74 74" style="enable-background:new 0 0 74 74;" xml:space="preserve" alt="">
 	<path style="fill:#6E6E73;" d="M57.94,55.76c-2.37,0-5.64-0.65-8.72-3.45c-0.74,0.06-2.22,0.17-3.31,0.17c-7.31,0-13.66-3.81-15.34-8.77c-1.58-0.08-3.15-0.31-4.67-0.71c-5.56,5.75-11.59,3.54-12.27,3.27L12,45.61l1.39-1.06c3.39-2.59,4.29-4.34,4.75-5.56c-2.55-2.3-3.94-5.2-3.94-8.25c0-7.16,7.85-12.99,17.51-12.99c9.34,0,17.01,5.43,17.53,12.25c7.06,1.11,12.37,5.67,12.37,11.11c0,2.72-1.56,5.43-4.41,7.69c0.46,1.01,1.42,2.46,4.41,4.75l1.49,1.14l-1.78,0.6C61.2,55.33,59.87,55.76,57.94,55.76z M49.95,50.23l0.33,0.32c3.02,2.93,6.33,3.31,8.39,3.18c-2.45-2.16-3.14-3.62-3.63-4.93l-0.26-0.71l0.62-0.44c2.67-1.93,4.2-4.31,4.2-6.54c0-5.07-6.27-9.36-13.7-9.36c-7.47,0-13.78,4.29-13.78,9.36c0,5.08,6.31,9.37,13.78,9.37c1.4,0,3.56-0.2,3.58-0.2L49.95,50.23z M16.15,44.87c2.04,0.28,5.41-0.02,8.68-3.66l0.42-0.47l0.6,0.17c1.39,0.4,2.83,0.66,4.29,0.76c-0.01-0.19-0.02-0.38-0.02-0.58c0-6.16,7.23-11.36,15.78-11.36c0.44,0,0.87,0.01,1.29,0.04c-0.69-5.61-7.38-10.03-15.5-10.03c-8.55,0-15.51,4.93-15.51,10.99c0,2.64,1.33,5.19,3.75,7.16l0.55,0.45l-0.31,0.86C19.77,40.39,19.11,42.26,16.15,44.87z"/>
