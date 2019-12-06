@@ -183,10 +183,17 @@ background-clip:unset; width:100%;}
 #a11ymark span {color:#77aaff;}
 
 #appleseries {width:100%;}
-#memoticon {box-shadow: 0px 0px 1em 2em rgb(33,33,33); margin:5em 0px;}
+#memoticon {box-shadow: 0px 0px 1em 2em rgb(33,33,33); margin:7em 0px;}
 
 #MPC {padding:0px; margin:0px;}
-#inPC2 {display:none;}
+	#inPC2 {display:none;}
+	#FPC {text-align:center;}
+	#inPC2 {position:sticky; width:100%; top:0px;}
+	#inPC {position:block; top:-33em; position:relative;}
+	#inPC p {line-height: 1.52947; font-size:1.1em; }
+	.fullT {color:white; margin:auto;}
+	#fullhi {margin-bottom:2em;}
+
 #apple12 {width:100%; margin:3em 0em;}
 
 ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
@@ -214,20 +221,14 @@ main section {background-color:#121217;}
 	#AT {border-bottom:rgba(66,66,69,0.95) solid 1px;}
 	.w980,.wrap,#help,#hello {width:52%;}
 	#CP {font-size:0.5em;}
-	
+		#airfull {z-index:3; margin-top:-12em; top:0px; display:table;}
+
 	#inP0 {display:none; margin:0px auto;}
 	#inPC2 {display:block;}
 	
 	#fugp {display:inline-block;}
 	#fug {display:none; font-size:17px;}
 
-	#FPC {text-align:center;}
-	#inPC2 {position:sticky; width:100%; top:0px;}
-	#inPC {position:block; top:-33em; position:relative;}
-	#inPC p {line-height: 1.52947; font-size:1.1em; }
-	.fullT {color:white; margin:auto;}
-	#airfull {z-index:3; margin-top:-10em; top:0px; display:table;}
-	#fullhi {margin-bottom:2em;}
 	#help {padding:2em;}
 		.nosmp {display:block !important;}
 	.msmp {display:none;}
@@ -341,10 +342,11 @@ footer {padding:2em !important; background-color:#222;}
 	@media screen and (min-width:810px) and (max-width:820px) and (orientation:landscape) {
 	#MacS {top:-14.5em; left:-2.4em; width:55.5em;}
 	#MBP {margin-bottom:-15em;}
-	#inP {top:-52em; width:30em;}
+	#inP {top:-58em; width:34em;}
 	.wrap,#inP0,#hello,.w980 {
 	box-sizing:border-box; width:90%;}}
 
+/*Pixel 2XL*/
 	@media screen and (min-width:820px) and (max-width:830px) and (orientation:landscape) {
 	#MacS {top:-14.4em; left:-2em; width:55.5em;}
 	#MBP {margin-bottom:-15em;}
@@ -361,7 +363,7 @@ footer {padding:2em !important; background-color:#222;}
 
 	@media screen and (min-width:730px) and (max-width:740px) and (orientation:landscape) {
 	#MacS{left:-4.5em; top:-14.5em;}
-	#inP {top:-47em;}
+	#inP {top:-52em; width:31em;}
 	.walert {border-radius:0.8em; padding:0.4em 0.5em;}
 	.wrap,#inP0,#hello,.w980 {
 	box-sizing:border-box; width:90%;}}
