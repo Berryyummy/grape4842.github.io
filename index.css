@@ -257,7 +257,7 @@ background-clip:unset; width:100%;}
 .kr {font-size:20px; color:#fab;}
 
 .walert {
-	color:black; \
+	color:black; 
 	background-color:#ffffffaa; 
 	box-sizing:border-box; 
 	position:relative; 
@@ -313,7 +313,18 @@ main section {background-color:#121217;}
 #SEST {display:none;}
 #fugp {display:none;}
 
-/*PC 16:9 ?”ë©´*/
+
+
+
+
+
+
+/*MacBook Pro 15 2018*/
+	@media screen and (min-width:1440px) and (max-width:1450px) {
+	#MacS {left:-3.8em;}}
+
+
+/*PC 16:9 landscape display*/
 	@media screen and (min-width:1100px) {
 	/*#MacBookPro {width:1000px;}
 	#MacS {top:-350px; left:0px; width:1330px; 
@@ -363,6 +374,7 @@ main section {background-color:#121217;}
 
 footer {padding:2em !important; background-color:#222;}
 
+
 /*iPad Pro 11 landscape*/
 	@media screen and (min-width:1190px) and (max-width:1200px) {
 	#MacS {top:-21.5em; left:-4em; width:83em;}
@@ -383,7 +395,7 @@ footer {padding:2em !important; background-color:#222;}
  	
 	#MacBookPro {width:90%;}
 	#MacS {
-	top:-330px; \
+	top:-330px; 
 	left:-120px; 
 	width:1260px; 
 	display:block; 
@@ -517,14 +529,14 @@ footer {padding:2em !important; background-color:#222;}
 
 
 /*Note 8 landscape*/
-	@media screen and (min-width:860px) and (max-width:870px) {
+	@media screen and (min-width:850px) and (max-width:870px) {
 	#MacS {top:-14.3em; left:-0.5em; width:55em;}
 	#MBP {margin-bottom:-15em;}
 	#inPC2 {display:block; top:12em;}
 	#inP0 {display:none;}}
 
 /*Note 8 landscape*/
-	@media screen and (min-width:800px) and (max-width:810px) {
+	@media screen and (min-width:800px) and (max-width:820px) {
 	#MacS {top:-14.3em; left:-2.1em; width:55em;}
 	#MBP {margin-bottom:-15em;}
 	#inPC2 {display:block; top:12em;}
