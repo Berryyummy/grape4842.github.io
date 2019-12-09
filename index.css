@@ -32,6 +32,16 @@ animation-fill-mode:forwards;}
 	from {opacity:0;}
 	to {opacity:1;}}
 
+/*#MacBookPro {
+animation-delay:5s;
+animation-duration:2s;
+animation-name:macbook;
+animation-fill-mode:forwards;}
+
+@keyframes macbook {
+	from {opacity:1;}
+	to {opacity:0;}}
+*/
 
 .hidden {
 	z-index:-1; 
