@@ -200,19 +200,20 @@ h1 {font-size:1em; text-align:left;}
 
 ul,li,ol {
 	padding:0px; 
-	margin:1em auto; 
 	word-break:keep-all; 
 	text-align:left; 
 	font-size:21px; 
 	font-weight:600; 
 	list-style:none;}
-.fullist ul {margin:0px; padding:0px;}
-.fullist li{
+.fullist {margin:1em auto;}
+.fullist ul {margin:0.1em auto; padding:0px;}
+.fullist li,.fullist dl{
 	margin:0.3em auto; 
 	padding:0px; 
 	list-style-position:outside; 
 	word-break: keep-all; 
 	font-size:19px;}
+dl * {text-align:left;}
 
 #hello {color:#6D7A71; text-align:center; 
 	font-weight:600; font-size:21px;}
@@ -345,7 +346,9 @@ main section {background-color:#121217;}
 	#notice {border:none;}
 	#AT {border-bottom:rgba(66,66,69,0.95) solid 1px;}
 	.w980,.wrap,#help,#hello{width:52%;}
-	#CP {font-size:0.5em;}
+	#CP {
+	font-size:0.5em;
+	border-top:#424245 1px solid;}
 	#airfull {
 	z-index:3; 
 	margin-top:-12em; 
@@ -417,7 +420,7 @@ footer {padding:2em !important; background-color:#222;}
 	#notice {border:none;}
 	#AT {border-bottom:rgba(66,66,69,0.95) solid 1px;}
 	main {margin-top:-400px;}
-	#CP {font-size:0.5em;}
+	#CP {font-size:0.5em; border-top:#424245 1px solid;}
 	.nosmp {display:block !important;}
 	.msmp {display:none;}}
 
@@ -630,7 +633,7 @@ footer {padding:2em !important; background-color:#222;}
 	footer {background-color:#f2f2f2;}
 	#a11ymark {font-size:0.9em; color:#dd006d;}
 	#a11ymark span {color:#073ca5;}
-	#CP {font-size:0.8em;}
+	#CP {font-size:0.8em; border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}
 	#hello {text-align:left;}
 	#SEST {font-size:17px; color:#6D7A71; position:relative;
