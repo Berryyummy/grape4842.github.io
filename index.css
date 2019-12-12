@@ -2,6 +2,8 @@
 :lang(ko) {word-break: keep-all;}
 ::selection {background:#75f; color:white;}
 
+.cicon {width:1em; height:1em;}
+
 img,video 
 {width:100%;}
 
