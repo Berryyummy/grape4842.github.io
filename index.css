@@ -56,14 +56,16 @@ animation-fill-mode:forwards;}
 	clip: rect(1px, 1px, 1px, 1px); 
 	clip-path: inset(0px 0px 99.9% 99.9%);}
 
-div,section {background-clip:text; 
+div,section {
+	background-clip:text; 
 	-webkit-background-clip:text;
-	color: transparent; background-size:cover;
-}
+	color: transparent; 
+	background-size:cover;}
 
 body {background-color: #121217;}
 
-* {margin:auto auto; text-align:center;
+* {margin:auto auto; 
+	text-align:center;
 	-webkit-font-smoothing:antialiased;
 	font-family:"SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY 돋움","맑은 고딕","HY 고딕","Lexi Gulim","Helvetica Neue","Helvetica","Arial","sans-serif";}
 /* background-color: #121217; */
@@ -79,8 +81,10 @@ header {
 	padding:0em; 
 	height:48px;}
 
-a {vertical-align:middle; background-position:center; 
-text-decoration:none; display:inline-block;}
+a {vertical-align:middle; 
+	background-position:center; 
+	text-decoration:none; 
+	display:inline-block;}
 
 
 #LOGO {
