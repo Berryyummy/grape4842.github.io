@@ -1,23 +1,7 @@
 @charset "UTF-8";
-:lang(ko) {word-break: keep-all;}
-::selection {background:#75f; color:white;}
-
-#langzone {background-color:white;}
-.cicon {width:1em; height:1em;}
-div.langregion {background-clip:border-box;}
-div.langregion a{color:white;}
-ul.langregion *{color:black;}
-
-img,video 
-{width:100%;}
-
-.wrap,#inP0,#hello,.w980 
-	{box-sizing:border-box; 
-	width:90%;}
-
 
 #ApplePro,#hello,main
-{animation-duration:2s;
+{animation-duration:1s;
 animation-name:load; 
 animation-delay:1s;
 animation-fill-mode:forwards;
@@ -25,12 +9,12 @@ opacity:0;
 position:relative;}
 
 @keyframes load {
-	from {opacity:0; top:1em;}
+	from {opacity:0; top:0.5em;}
 	to {opacity:1; top:0em;}}
 
 #MacS {opacity:0;
 animation-delay:1s;
-animation-duration:2s;
+animation-duration:1s;
 animation-name:bmac;
 animation-fill-mode:forwards;}
 
@@ -49,138 +33,17 @@ animation-fill-mode:forwards;}
 	to {opacity:0;}}
 */
 
-.hidden {
-	z-index:-1; 
-	position:absolute; 
-	top:50%; 
-	overflow:hidden; 
-	width:1px; 
-	height:1px; 
-	color:transparent; 
-	border:0; 
-	box-sizing:content-box;
-	clip: rect(1px, 1px, 1px, 1px); 
-	clip-path: inset(0px 0px 99.9% 99.9%);}
 
-div,section {
+
+.clip {
 	background-clip:text; 
 	-webkit-background-clip:text;
 	color: transparent; 
 	background-size:cover;}
 
-body {background-color: #121217;}
-
-* {margin:auto auto; 
-	text-align:center;
-	-webkit-font-smoothing:antialiased;
-	font-family:"SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY 돋움","맑은 고딕","HY 고딕","Lexi Gulim","Helvetica Neue","Helvetica","Arial","sans-serif";}
-/* background-color: #121217; */
-
-header {
-	background:rgba(0,0,0,0.8); 
-	z-index:9999; 
-	backdrop-filter: saturate(180%) blur(20px);
-	-webkit-backdrop-filter: saturate(180%) blur(20px);
-	top:0em; 
-	left:0em;
-	position:relative; 
-	padding:0em; 
-	height:48px;}
-
-a {vertical-align:middle; 
-	background-position:center; 
-	text-decoration:none; 
-	display:inline-block;}
+body {background-color:#121217;}
 
 
-#LOGO {
-	outline-offset:-7px; 
-	padding:0 10px; 
-	height:44px; 
-	display:inline-block; 
-	direction: ltr; 
-	background-position:center center; 
-	background-size:16px 44px; 
-	position:relative;
-	-webkit-tap-highlight-color:transparent;}
-
-#LOGO path,.numapplelogo path{opacity:0.8; 
-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
--webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);}
-#LOGO:focus path,#LOGO:hover path,.numapplelogo:hover path,svg:hover path {opacity:1;}
-
- 
-
-
-#skipnav {
-	display:block; 
-	position:relative; 
-	margin:0px; 
-	padding:0px;}
-
-#jump {line-height:48px; 
-	position:absolute; 
-	left:0px;
-	top:0px; 
-	z-index:-1; 
-	background-color:transparent;
-	font-weight:900; 
-	color:transparent; 
-	width:100%;
-	padding:0px; 
-	margin:0px;}
-
-#jump:focus {z-index:99999; outline:#03B 3px dashed; color:black;
-			background:rgba(255,255,255,0.8);}
-
-
-#notice {
-	box-sizing:border-box; 
-	line-height:48px;
-	color:white; 
-	z-index:9999; 
-	top:0px; 
-	position:sticky;
-	border-bottom:solid 1px #ffffff33; 
-	text-align:left; 
-	display:block; 
-	margin:0px; 
-	font-size:19px; 
-	font-weight:600; 
-	letter-spacing: 0.012em; 
-	backdrop-filter: saturate(180%) blur(20px);
-	background-color:#121217b3;}
-
-#notice,#apple{
-	font-weight:900; 
-	width:100%; 
-	vertical-align:middle; 
-	padding:0px; 
-	margin:0px;}
-	.w980 {vertical-align:middle; position:relative;}
-
-#start {display:block; text-align:center; 
-	color:#EBEBE3; position:relative; z-index:3;}
-
-
-
-#AT {color:white; text-align:left;}
-#gochat {min-width:23px; 
-		line-height:1.33337;
-	 	background-color:#0071e3; 
-		color:white; border-radius:12px; 
-		font-size:12px; 
-		font-weight:400; 
-		position:absolute; 
-		margin:12px auto; 
-		top:0%; 
-		cursor:pointer;
-		white-space:nowrap; 
-		letter-spacing:-0.1em; 
-		display:inline-block;
-		padding:4px 11px; 
-		box-sizing:border-box; 
-		right:0;}
 
 
 
@@ -220,12 +83,13 @@ ul,li,ol {
 	list-style:none;}
 .fullist {margin:1em auto;}
 .fullist ul {margin:0.1em auto; padding:0px;}
-.fullist li,.fullist dl{
+.fullist li,.fullist dl,.kr{
 	margin:0.3em auto; 
 	padding:0px; 
 	list-style-position:outside; 
 	word-break: keep-all; 
-	font-size:19px;}
+	font-size:19px;
+	text-align:left;}
 dl * {text-align:left; vertical-align:middle;}
 dl svg {margin:-1em auto;}
 
@@ -237,10 +101,15 @@ h3 {color:white; font-size:19px; font-weight:600;
 	letter-spacing: 0.012em; vertical-align:middle; 
     line-height: 1.31579;}
 
+#help strong,#helpM strong {color:#EBEBE3; font-weight:900; display:block;}
 #help a,#helpM a {width:12em;}
-#help p,#helpM p{color:#EBEBE3; font-size:14px; 
-text-align:left; font-weight:400;
-margin-top:0.4em}
+#help span,#helpM span{
+color:#EBEBE3; 
+font-size:14px; 
+text-align:left; 
+font-weight:400;
+margin-top:0.4em;
+display:inline-block;}
 
 #helpbox,#helpboxM {padding:0px; 
 background-color:#222; 
@@ -267,9 +136,7 @@ background-clip:unset; width:100%;}
 	font-weight: 600; letter-spacing: .011em;}
 /*https://www.apple.com/v/iphone-xs/d/images/overview/copy_texture_3_large.jpg*/
 
-#all {background-image:url(https://www.apple.com/v/ios/ios-13/b/images/overview/ios_background__cjzdw680f9yu_large.jpg);}
-
-.kr {font-size:20px; color:#fab;}
+.kr {color:#fab;}
 
 .walert {
 	color:black; 
@@ -301,12 +168,7 @@ background-clip:unset; width:100%;}
 .m320 {display:none;}
 
 
-#a11ymark {color:white; font-weight:900;}
-#a11ymark img {
-background-color:white; 
-border-radius:100%; 
-width:7em;}
-#a11ymark span {color:#77aaff;}
+
 
 #appleseries {width:100%;}
 #memoticon {box-shadow: 0px 0px 1em 2em rgb(33,33,33); margin:7em 0px;}
@@ -331,7 +193,12 @@ main section {background-color:#121217;}
 
 
 
-
+#raina1 {fill:#fcc;}
+#raina2 {fill:#fda;}
+#raina3 {fill:#ffa;}
+#raina4 {fill:#;}
+#raina5 {fill:#;}
+#raina7 {fill:#;}
 
 
 /*MacBook Pro 15 2018*/
@@ -387,9 +254,7 @@ main section {background-color:#121217;}
 #MacS {position:relative;}
 #MBP {position:relative; overflow:hidden;}
 
-.wrap {margin:0 auto; box-sizing:border-box;}
 
-footer {padding:2em !important; background-color:#222;}
 
 
 /*iPad Pro 11 landscape*/
@@ -519,7 +384,7 @@ footer {padding:2em !important; background-color:#222;}
 	#MacS {top:-7.3em; left:-2em; width:27.5em;
 	display:block; overflow:hidden;}
 	#MBP {margin-bottom:-7em;}
-	#inP {top:-21em;}
+	#inP {top:-21.5em;}
 	.walert {font-size:0.8em;}}
 
 /*iPhone X landscape*/
@@ -595,36 +460,16 @@ footer {padding:2em !important; background-color:#222;}
 
 /*iPhone SE*/
 	@media screen and (max-width:320px) {
-	.no320 {display:none !important;}
 	.m320 {display:inline-block;}
-	
-	section,li,footer,div,p,h3 {
-	box-sizing:border-box; 
-	background-clip:border-clip; 
-	font-size:17px;
-	letter-spacing: 0.011em; 
-	color: #8c8c8c;}
-
-	.wrap,#inP0,#hello,.w980,#helpM,.fullist {
-	width:90%; 
-	font-size:17px;}
 	li,.fullist li {font-size:17px;}
 	
 	#SE11 {padding:0px;
 	margin-top:3em;}
 
 	#Atitle {position:relative; left:0px; color:#1d1d1f;}
-	#SE11 video {margin-bottom:11em; }
-	#skipnav {position:relative; margin:0px; padding:0px;}
-	#notice {background-color: rgba(255,255,255,0.7);
-	/* -webkit-transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
-	-webkit-transition: -webkit-transform var(--inline-compare-transition-duration);
-	-webkit-transition: background-color 0.5s ease 0.7s;
-	direction: ltr; */ 
-	border-bottom-color: rgba(29,29,31,0.2);
-	border-bottom-style:solid;
-	border-bottom-width:1px;}
+	#SE11 video {margin-bottom:11em;}
 	body {background-color:white;}
+
 	#notch {width:95%;}
 	#full {font-size:1.2em;}
 	.walert {border-radius:0.8em;
@@ -636,22 +481,24 @@ footer {padding:2em !important; background-color:#222;}
 	.by {display:block;}
 	h1 span,h2 span,#i11 {color:#1d1d1f; 
 	font-weight:900; line-height:1.2em; font-size: 40px;}
-	#helpM p{color:#1d1d1f;}
+	#helpM span{color:#1d1d1f;}
 	#helpM,footer {background-clip:unset; 
 	font-size:17px;}
 	#helpboxM {margin-bottom:2em;}
 	#helpboxM,footer {background-color:#f2f2f2; padding:70px 0px;}
-	#help img {width:95%;}
-	#help h3 {color:#1d1d1f; font-weight:900;}
+	#helpM img {width:95%;}
+	#helpM strong {color:#1d1d1f; font-weight:900;}
 	.goask {color:#06c;}
-	footer {background-color:#f2f2f2;}
-	#a11ymark {font-size:0.9em; color:#dd006d;}
-	#a11ymark span {color:#073ca5;}
-	#CP {font-size:0.8em; border-top:#d2d2d7 1px solid;}
-	.kr {color:#029d50;}
+	
+	
 	#hello {text-align:left;}
-	#SEST {font-size:17px; color:#6D7A71; position:relative;
-		display:inline-block; font-weight:600; top:-3px;}}
+	#SEST {font-size:17px; 
+		color:#6D7A71; 
+		position:relative;
+		display:inline-block; 
+		font-weight:600; 
+		top:-3px;}
+		.kr {color:#029d50;}}
 
 
 
@@ -659,16 +506,7 @@ footer {padding:2em !important; background-color:#222;}
 	@media screen and (min-width:560px) and (max-width:580px) {
 	.no320 {display:none !important;}
 	.m320 {display:inline-block;}
-	
-	section,li,footer,div,p,h3 {
-	box-sizing:border-box; 
-	background-clip:border-clip; 
-	font-size:17px;
-	letter-spacing: 0.011em; 
-	color: #8c8c8c;}
 
-	.wrap,#inP0,#hello,.w980,#help {
-	font-size:17px;}
 	li,.fullist li {font-size:17px;}
 	
 	#SE11 {padding:0px;
@@ -677,11 +515,7 @@ footer {padding:2em !important; background-color:#222;}
 	#Atitle {position:relative; left:0px; color:#1d1d1f;}
 	#SE11 video {margin-bottom:11em; }
 	#skipnav {position:relative; margin:0px; padding:0px;}
-	#notice {background-color: rgba(255,255,255,0.7);
-	border-bottom-color: rgba(29,29,31,0.2);
-	border-bottom-style:solid;
-	border-bottom-width:1px;}
-	body {background-color:white;}
+	
 	#notch {width:95%;}
 	#full {font-size:1.2em;}
 	.walert {border-radius:1em;
@@ -693,11 +527,11 @@ footer {padding:2em !important; background-color:#222;}
 	.by {display:block;}
 	h1 span,h2 span,#i11 {color:#1d1d1f; 
 	font-weight:900; line-height:1.2em; font-size: 40px;}
-	#helpM p{color:#1d1d1f;}
+	#helpM span{color:#1d1d1f;}
 	#helpM,footer {background-clip:unset; font-size:17px;}
 	#helpboxM {margin-bottom:2em;}
 	#helpboxM,footer {background-color:#f2f2f2; padding:1em 0px;}
-	#helpM h3 {color:#1d1d1f; font-weight:900;}
+	#helpM strong {color:#1d1d1f; font-weight:900;}
 	.goask {color:#06c;}
 	footer {background-color:#f2f2f2;}
 	#a11ymark {font-size:0.9em; color:#dd006d;}
