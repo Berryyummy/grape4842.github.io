@@ -2,7 +2,10 @@
 :lang(ko) {word-break: keep-all;}
 ::selection {background:#75f; color:white;}
 
+#langzone {background-color:white;}
 .cicon {width:1em; height:1em;}
+.langregion {color:white;}
+ul.langregion *{color:black;}
 
 img,video 
 {width:100%;}
