@@ -4,7 +4,7 @@
 
 #langzone {background-color:white;}
 .cicon {width:1em; height:1em;}
-.langregion {color:white;}
+div.langregion a{color:white;}
 ul.langregion *{color:black;}
 
 img,video 
