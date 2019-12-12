@@ -1,5 +1,6 @@
 @charset "UTF-8";
 :lang(ko) {word-break: keep-all;}
+:lang(ja) {word-break: keep-all;}
 ::selection {background:#75f; color:white;}
 
 #langzone {background-color:white;}

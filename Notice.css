@@ -44,10 +44,6 @@ animation-fill-mode:forwards;}
 body {background-color:#121217;}
 
 
-
-
-
-
 p {word-break:keep-all; 
 	margin:29px 0px; 
 	font-size:21px; 
@@ -196,9 +192,9 @@ main section {background-color:#121217;}
 #raina1 {fill:#fcc;}
 #raina2 {fill:#fda;}
 #raina3 {fill:#ffa;}
-#raina4 {fill:#;}
-#raina5 {fill:#;}
-#raina7 {fill:#;}
+#raina4 {fill:#dfa;}
+#raina5 {fill:#abf;}
+#raina7 {fill:#baf;}
 
 
 /*MacBook Pro 15 2018*/
@@ -498,7 +494,14 @@ main section {background-color:#121217;}
 		display:inline-block; 
 		font-weight:600; 
 		top:-3px;}
-		.kr {color:#029d50;}}
+		.kr {color:#029d50;}
+
+#raina1 {fill:#e00;}
+#raina2 {fill:#f70;}
+#raina3 {fill:#fc0;}
+#raina4 {fill:#0c5;}
+#raina5 {fill:#69f;}
+#raina7 {fill:#87f;}}
 
 
 
@@ -539,6 +542,17 @@ main section {background-color:#121217;}
 	#CP {font-size:0.8em;}
 	.kr {color:#029d50;}
 	#hello {text-align:left;}
-	#SEST {font-size:17px; color:#6D7A71; position:relative;
-		display:inline-block; font-weight:600; top:-3px;}}
+	#SEST {font-size:17px; 
+		color:#6D7A71; 
+		position:relative;
+		display:inline-block; 
+		font-weight:600; 
+		top:-3px;}
+		
+#raina1 {fill:#e00;}
+#raina2 {fill:#f70;}
+#raina3 {fill:#fc0;}
+#raina4 {fill:#0c5;}
+#raina5 {fill:#69f;}
+#raina7 {fill:#87f;}}
 
