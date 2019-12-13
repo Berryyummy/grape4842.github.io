@@ -1,12 +1,12 @@
 @charset "UTF-8";
 :lang(ko) {word-break: keep-all;}
-:lang(ja) {word-break: keep-all;}
+:lang(ja) {word-break:break-all;}
 ::selection {background:#75f; color:white;}
 
 #langzone {background-color:white;}
 .cicon {width:1em; height:1em;}
-div.langregion a{color:white;}
-ul.langregion a{color:black;}
+div.lanregion {padding:1em;}
+.langregion a{color:white;}
 
 img,video 
 {width:100%;}
