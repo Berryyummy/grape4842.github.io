@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0.5,user-scalable=yes"/>
+	<title>
+	Miyazawa0324 Test
+	</title>
+	<link rel="stylesheet" type="text/css" href=""/>
+	<link rel="stylesheet" type="text/css" href=""/>\
+	<style>
+		.blind {overflow: hidden;
+    display: block;
+    width: 0;
+    height: 0;
+    opacity: 0;}
+
+@media (prefers-color-sheme: dark) {
+	body {background-color:#33a; color:#baf;}
+	input {background-color:black; color:white;}
+}
+	</style>
+</head>
+
+
+<body>
+	<div class="input-timer-wrap">
+<span class="blind" aira-hidden="true" id="limit5m">
+5분이내에 인증번호를 확인하여 수정창에 입력해 주세요.</span>
+<span id="timer" class="timer" aria-labeledby="limit5m">4:43</span>
+<input id="cer_num" type="tel" placeholder="인증번호를 입력해주세요" maxlength="5" title="인증번호 입력">
+</div>
+
+</body>
+</html>
