@@ -7,7 +7,7 @@
 	Miyazawa0324 Test
 	</title>
 	<link rel="stylesheet" type="text/css" href=""/>
-	<link rel="stylesheet" type="text/css" href=""/>\
+	<link rel="stylesheet" type="text/css" href=""/>
 	<style>
 		.blind {overflow: hidden;
     display: block;
@@ -16,16 +16,17 @@
     opacity: 0;}
 
 @media (prefers-color-scheme: dark) {
-	body {background-color:#33a; color:#baf;}
-	input {background-color:black; color:white;}}
+	body {background-color:#325; color:#baf;}
+	input {background-color:black; color:white; }}
+	input {padding:10px; font-size:12pt;}
 	</style>
 </head>
 <body>
 	<div class="input-timer-wrap">
-		<span class="blind" aira-hidden="true" id="limit5m">
-		5분이내에 인증번호를 확인하여 수정창에 입력해 주세요.
+		<span class="blind" aria-hidden="true" id="limit5m">
+			5분이내에 인증번호를 확인하여 수정창에 입력해 주세요.
 	</span>
-		<span id="timer" class="timer" aria-labeledby="limit5m"> 4:43 </span>
+		<span id="timer" class="timer" aria-labeledby="limit5m timer"> 4:43 </span>
 		<input id="cer_num" type="tel" placeholder="인증번호를 입력해주세요" maxlength="5" title="인증번호 입력"/>
 	</div>
 </body>
