@@ -149,7 +149,7 @@ width:7em;}
 
 .wrap {margin:0 auto; box-sizing:border-box;}
 
-footer {padding:2em !important; background-color:#222;}
+footer {padding:2em !important; background-color:#222; position:relative; bottom:0px;}
 
 
 

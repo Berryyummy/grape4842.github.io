@@ -13,8 +13,8 @@ position:relative;}
 	to {opacity:1; top:0em;}}
 
 #MacS {opacity:0;
-animation-delay:1s;
-animation-duration:1s;
+animation-delay:2.7s;
+animation-duration:2s;
 animation-name:bmac;
 animation-fill-mode:forwards;}
 
@@ -41,7 +41,7 @@ animation-fill-mode:forwards;}
 	color: transparent; 
 	background-size:cover;}
 
-body {background-color:#121217;}
+body {background-color:#121217; color:white;}
 
 
 p {word-break:keep-all; 
@@ -147,7 +147,7 @@ background-clip:unset; width:100%;}
 
 #MBP {position:relative;}
 #MacS {position:absolute; top:0px; left:0px; opacity:0;}
-#MacBookPro {
+/*#MacBookPro {
 	-webkit-mask-image:url(https://www.apple.com/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.pnghttps://www.apple.com/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png); 
 	-webkit-mask-repeat:no-repeat;
 	-webkit-mask-position:top;
@@ -155,12 +155,12 @@ background-clip:unset; width:100%;}
 	z-index:3; 
 	position:relative;
 	margin:0px auto;}
-
-	/* #MacBookPro {-webkit-mask-image:url(https://www.apple.com/v/macbook-pro-13/a/images/overview/hero/hero_fallback__dvvrevq48jcm_large.jpg);
+*/
+/*	 #MacBookPro {-webkit-mask-image:url(https://www.apple.com/v/macbook-pro-13/a/images/overview/hero/hero_fallback__dvvrevq48jcm_large.jpg);
 	-webkit-mask-size:cover;
 	-webkit-masek-repeat:no-repeat;
-	-webkit-mask-position:top;} */
-
+	-webkit-mask-position:top;} 
+*/
 .m320 {display:none;}
 
 
