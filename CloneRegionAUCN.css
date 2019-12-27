@@ -6,7 +6,9 @@
 #langzone {background-color:white;}
 .cicon {width:1em; height:1em;}
 div.lanregion {padding:1em;}
-.langregion a{color:white;}
+/*.langregion {clear:both;}
+.langregion li {float:left;}
+*/.langregion a{color:white;}
 
 img,video 
 {width:100%;}
