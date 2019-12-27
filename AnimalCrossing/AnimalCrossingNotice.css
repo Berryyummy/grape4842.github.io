@@ -1,7 +1,48 @@
 @charset "UTF-8";
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
-::selection {background:#1c0; color:white;}
-body {background-image:url(https://www.tanuki-kaihatsu.com/assets/images/tanuki_bg.png); }
-header {width:100%;}
-main {background-color:white; border:10px solid #dd9900;}
+::selection {background:#3b0; color:white;}
+
+body {background-image:url(https://www.tanuki-kaihatsu.com/assets/images/tanuki_bg.png);
+margin:auto auto;}
+a {text-decoration:none; 
+	display:inline-block;}
+#skipbar {
+	text-align:center;
+	padding:0px;
+	width:100%;
+	position:relative;}
+#skipnav {
+	z-index:10;
+	position:absolute;
+	top:-10em;
+	margin:auto;
+	width:90%; 
+	line-height:1em; 
+	padding:1em; 
+	text-align:center;
+	background-color:black;
+	color:white;}
+#skipnav:focus {top:0em;}
+header {
+	position:sticky;
+	width:100%; 
+	background-color:white; 
+	height:74px;}
+	.menu {
+		height:74px; 
+		position:relative; 
+		top:0px; 
+		margin:0px;}
+	.menu span{vertical-align:middle;}
+#LOGO {background-image:url(https://www.nintendo.co.kr/images/renew/common/logo_nintendo_red.gif);
+	background-color:red;
+	width:150px;
+	background-repeat:no-repeat;
+	background-position:center center;}
+main {
+	background-color:white; 
+	border:10px solid #dd9900; 
+	width:70%;
+	margin:auto auto;
+	padding:20px;}
