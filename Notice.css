@@ -115,9 +115,12 @@ background-clip:unset; width:100%;}
 .goask { font-size:14px; color:#2997ff;}
 
 
-.master {background-color:white; 
-	color:black; font-weight:900; display:inline-flex;}
-.made {color:#6e6e73; font-size:1em;}
+.master {
+	background-color:white; 
+	color:black; 
+	font-weight:900; 
+	display:inline-flex;}
+
 
 #ApplePro {color:white; text-align:center;  
 	font-size: 30px; line-height:1.1em; 

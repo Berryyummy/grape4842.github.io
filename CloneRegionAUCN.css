@@ -134,7 +134,6 @@ transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 		position:absolute; 
 		margin:12px auto; 
 		top:0%; 
-		cursor:pointer;
 		white-space:nowrap; 
 		letter-spacing:-0.1em; 
 		display:inline-block;
@@ -151,9 +150,13 @@ width:7em;}
 
 .wrap {margin:0 auto; box-sizing:border-box;}
 
-footer {padding:2em !important; background-color:#222; position:relative; bottom:0px;}
+footer {
+	padding:2em !important; 
+	background-color:#222; 
+	position:relative; 
+	bottom:0px;}
 
-
+.made {color:#6e6e73; font-size:1em;}
 
 
 /*iPhone SE*/
