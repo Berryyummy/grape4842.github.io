@@ -7,20 +7,20 @@ body * {
 	-webkit-font-smoothing: antialiased;
 	box-sizing:border-box;
 		font-family:"SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY 돋움","맑은 고딕","HY 고딕","Lexi Gulim","Helvetica Neue","Helvetica","Arial","sans-serif";}
-
+h1,h2,h3 {font-weight:900;}
 a {
 	text-decoration:none;
 	align-items:center;
 	display:inline-flex;
 	vertical-align:top;
-	vertical-align:middle;
-	color:white;}
+	color:white;
+}
 .w90 {width:95%; margin:auto;}
 
 ol,ul,dl {margin:0px; padding:0px;}
 dl+dl {margin:0.5em 0px;}
 ol,ul,dl,li {list-style:none;}
-dd,dt {margin:auto 1em;}
+dd,dt {margin:0px; font-weight:400;}
 header {
 	position:sticky;
 	top:0px;
@@ -74,10 +74,10 @@ main {margin:auto auto;}
 #HELLO {
 	position:relative;
 	text-align:center;
-	background-color:black;
+	background: linear-gradient(to bottom, #000 40%, #222425 70%);
 	padding:1em 0px;
 	margin-bottom:5em; 
-	box-shadow: 0px 0px 3em 2em rgba(0,0,0,1);}
+	box-shadow:0px 0px 2em 3em #222425;}
 .hi {bottom:0px;}
 #HELLO span {
 	font-size:3em; 
@@ -87,14 +87,24 @@ main {margin:auto auto;}
 	display:flex;
 	justify-content:center;}
 h3 {
-	color:;
-	font-weight:800;
+	color:#def;
 	font-size:2em;}
 li {
 	margin:1em 0px;
 	padding:1.5em;
 	border-radius:2em;
-	background-color:black;}
+	background-color:#102;}
+li li,li li strong,li dl strong {
+	padding:0px; 
+	font-weight:500;
+	font-size:1em;}
+li li,li dl {
+	margin:0.3em 0px;}
+li dt {font-weight:600;}
+li,strong {
+	font-weight:800; 
+	font-size:1.2em;}
+.master {background-color:white; color:#400;}
 
 footer {
 	padding:5%;
@@ -107,8 +117,7 @@ footer {
 
 @media (prefers-color-scheme: light) {
 	body {background-color:#eef;}
-	li {background-color:#ced; color:#530;}
+	li,li a {background-color:#ced; color:#630;}
 	h3 {color:#33a;}
-	#HELLO {box-shadow: 0px 0px 3em 2em rgba(0,0,0,1);}
 	footer{background-color:#acf; color:black;}
 }
