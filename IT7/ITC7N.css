@@ -1,0 +1,52 @@
+@charset "UTF-8";
+:lang(ko) {word-break: keep-all; line-break:normal;}
+:lang(ja) {word-wrap:break-word; word-break:break-all;}
+::selection {background:#3b0; color:white;}
+img {width:100%;}
+* {
+	-webkit-font-smoothing: antialiased;`
+	box-sizing:border-box;}
+
+a {
+	text-decoration:none;
+	display:inline-block;}
+ol,ul,dl {margin:0px; padding:0px;}
+ol,ul,dl,li {list-style:none;}
+header {
+	text-align:center;
+	position:relative;
+	top:0px;
+	z-index:40;
+	width:100%;
+	margin:0px;
+	padding-bottom:0px;}
+#pagetitle {
+	margin:0px;
+	overflow:hidden;}
+#pagetitle a {
+	color:white;
+	background-color:#235;
+	width:100%;
+	padding:0.5em 0px;
+}
+nav {
+	width:100%;
+	position:sticky;
+	margin:0px;
+	z-index:100;
+}
+#gochat {
+	position:absolute;
+	right:0px;
+	color:white;
+	background-color:#0074c2;
+	width:30%;
+	padding:1em 0px;
+}
+body {
+	background-color:#121217; 
+	color:white;
+	margin:0px auto;}
+main {
+	width:95%;
+	margin:auto auto;}
