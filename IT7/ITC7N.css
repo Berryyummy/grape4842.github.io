@@ -74,18 +74,31 @@ main {margin:auto auto;}
 #HELLO {
 	position:relative;
 	text-align:center;
-	background: linear-gradient(to bottom, #000 40%, #222425 70%);
-	padding:1em 0px;
 	margin-bottom:5em; 
-	box-shadow:0px 0px 2em 3em #222425;}
+	box-shadow:0px 0px 2em 3em #222425;
+	background-color:black;}
+#ITtitle {
+	background: linear-gradient(to bottom, #000 , #222425 );
+	width:100%;
+	height:100%;
+	padding:1em 0px;
+
+	}
 .hi {bottom:0px;}
 #HELLO span {
-	font-size:3em; 
+	font-size:2em; 
 	font-weight:700;
 	letter-spacing:0px;}
 #staff {
-	display:flex;
-	justify-content:center;}
+	width:10em;
+	background: -webkit-linear-gradient(top, rgba(221,204,255,1) 0%, rgba(121,71,238,1) 49%, rgba(119,68,238,1) 50%, rgba(85,0,170,1) 51%, rgba(102,17,221,1) 100%);
+	padding:1em;
+	align-items:center;	border:1px solid #5555dddd;
+	font-weight:900;
+	margin:auto;
+	margin-top:2em;
+	display:block;
+}
 h3 {
 	color:#def;
 	font-size:2em;}
@@ -104,20 +117,25 @@ li dt {font-weight:600;}
 li,strong {
 	font-weight:800; 
 	font-size:1.2em;}
-.master {background-color:white; color:#400;}
+.master {
+	background-color:white; 
+	color:#400;
+	display:inline-flex;
+	font-weight:800;}
 
 footer {
 	padding:5%;
 	background-color:black;}
-.made {display:inline-flex;
-	flex-direction:column-reverse;}
 
+.light {display:none;}
 
-
+@media and screen (max-width:767px){
+	.made {display:block;}
+}
 
 @media (prefers-color-scheme: light) {
 	body {background-color:#eef;}
-	li,li a {background-color:#ced; color:#630;}
+	li,li a {background-color:#ced; color:#730;}
 	h3 {color:#33a;}
 	footer{background-color:#acf; color:black;}
 }
@@ -129,3 +147,15 @@ footer {
 #sellist dt {padding-bottom:0.3em; border-bottom:solid 1px #eef;}
 #sellist dd {padding-top:0.3em;}
 #sellisk {color:#faa;}
+
+
+
+
+
+#master a{
+	font-size:1.2em;
+	font-weight:900;
+}
+.staffs {
+	font-size:1.1em;
+	font-weight:700;}
