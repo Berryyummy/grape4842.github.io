@@ -194,7 +194,18 @@ footer {
 
 
 
-#master {margin:3em auto;}
+#master {
+	justify-content:center;
+	margin:3em auto;
+	position:relative;
+	top:-100em;
+	animation-name:masterD;
+	animation-duration:0.2s;
+	animation-fill-mode:forwards;}
+@keyframes masterD {
+	0% {top:-100em;}
+	100% {top:0em;}
+}
 #master a,#master dd{
 	font-size:1.3em;
 	font-weight:900;
@@ -218,14 +229,14 @@ footer {
 .STF {margin:1em auto;	
 	animation-name:stafflist;
 	animation-fill-mode:forwards;
-	animation-duration:0.4s;
+	animation-duration:0.5s;
 	position:relative;
 	left:100em;}
 @keyframes stafflist {
 	0% {left:100em;}
-	70% {left:-2em}
-	80% {left:0.5em;}
-	90% {left:-1em;}
+	40% {left:-2em}
+	60% {left:0.5em;}
+	75% {left:-1em;}
 	100% { left:0em;}
 }
 .STF dt {
@@ -237,19 +248,19 @@ footer {
 .staffs {
 	width:100%; 
 	height:100%;}
-#robin {}
+#robin {animation-delay:0.2s}
 #robin dt,#robin a {background-color:#630; color:#ced;}
 #robin dd {border:solid #630 2px;}
 
-#kejang {animation-delay:0.1s}
+#kejang {animation-delay:0.3s}
 #kejang dt {background-color:#333;}
 #kejang dd {border:solid 2px #333;}
 
-#psps {animation-delay:0.2s}
+#psps {animation-delay:0.4s}
 #psps dt,#psps a {background-color:#0a1;}
 #psps dd {border:#0a1 solid 2px;}
 
-#purple {animation-delay:0.3s}
+#purple {animation-delay:0.5s}
 #purple dt {background-color:#306;}
 #purple dd {border:#306 solid 2px;}
 
