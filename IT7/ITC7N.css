@@ -79,7 +79,7 @@ main {
 	text-align:center;
 	margin-bottom:5em; 
 	box-shadow:0px 0px 2em 3em #222425;
-	background-color:black;}
+	background: linear-gradient(to bottom, #000 90%, #222425 );}
 #ITtitle {
 	background: linear-gradient(to bottom, #000 , #222425 );
 	width:100%;
@@ -91,10 +91,15 @@ main {
 
 
 #HELLO span {
+	justify-content:center;
 	font-size:2em; 
 	font-weight:700;
-	letter-spacing:0px;}
-
+	letter-spacing:0px;
+	display:inline-block;}
+/*	animation-fill-mode:forwards;
+	animation-name:ITWEC;
+	animation-delay:3s;}
+*/
 
 #ITtitle *,#staff {
 animation-duration:2s;
@@ -132,7 +137,10 @@ position:relative;}
 		top:-5em;
 		opacity:0;}
 	60% {width:70%; 
-		height:50%;}
+		height:50%;
+		margin-left:-20%;}
+	90% {width:110%;
+		margin-left:-5%;}
 	100% {width:100%; 
 		height:100%; 
 		margin-left:0%;
