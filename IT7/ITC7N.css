@@ -218,11 +218,14 @@ footer {
 .STF {margin:1em auto;	
 	animation-name:stafflist;
 	animation-fill-mode:forwards;
-	animation-duration:0.5s;
+	animation-duration:0.4s;
 	position:relative;
 	left:100em;}
 @keyframes stafflist {
 	0% {left:100em;}
+	70% {left:-2em}
+	80% {left:0.5em;}
+	90% {left:-1em;}
 	100% { left:0em;}
 }
 .STF dt {
@@ -231,23 +234,26 @@ footer {
 .STF dd {
 	font-size:1.0em;
 	font-weight:700;}
-
 .staffs {
 	width:100%; 
 	height:100%;}
+#robin {}
+#robin dt,#robin a {background-color:#630; color:#ced;}
+#robin dd {border:solid #630 2px;}
 
-
-#purple dt {background-color:#306;}
-#purple dd {border:#306 solid 2px;}
-
+#kejang {animation-delay:0.1s}
 #kejang dt {background-color:#333;}
 #kejang dd {border:solid 2px #333;}
 
+#psps {animation-delay:0.2s}
 #psps dt,#psps a {background-color:#0a1;}
 #psps dd {border:#0a1 solid 2px;}
 
-#robin dt,#robin a {background-color:#630; color:#ced;}
-#robin dd {border:solid #630 2px;}
+#purple {animation-delay:0.3s}
+#purple dt {background-color:#306;}
+#purple dd {border:#306 solid 2px;}
+
+
 
 
 
