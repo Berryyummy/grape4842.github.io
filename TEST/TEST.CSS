@@ -70,7 +70,7 @@ ul,ol,dl {
 .QNAL {clear:both;}
 .Q dd,.QNAL>dd{
 	border-radius:7px;
-	padding:0.1em 0.3em;
+	padding:0.2em 0.4em;
 	margin:auto 0px;}
 .Q {
 	float:left; 
