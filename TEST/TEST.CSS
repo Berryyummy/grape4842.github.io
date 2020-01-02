@@ -10,7 +10,7 @@ body {width:40%;
 img {width:100%;}
 body * {justify-content:center; margin:0px auto;}
 main,header {
-	background: linear-gradient(-70deg, #8dc900 1%,#e3f5ab 32%,#d0f4ab 42%,#5f8c00 79%,#7abc00 100%);}
+	background: linear-gradient(70deg, #8dc90033 1%,#e3f5ab33 32%,#d0f4ab33 42%,#5f8c0033 79%,#7abc0033 100%);}
 
 header,footer {
 	z-index:100;
@@ -31,7 +31,7 @@ footer {bottom:0px;
 	top:0px;
 	height:100%;
 	display:block;
-	width:2.2em;
+	width:3em;
 	background-color:#FD0;}
 
 h2,h1 {padding:0.5em;
@@ -128,7 +128,19 @@ footer {
 	body {width:100%;}
 }
 @media screen and (min-width:1000px) {
-	.Q dd {width:30%; padding:1em;}
-	.QNAL>dd {width:50%; padding:1em;}
+	.Q dd {width:30%; padding:0.7em;}
+	.QNAL>dd {width:50%; padding:0.7em;}
 }
-@media (prefers-color-scheme: dark) {}
+@media (prefers-color-scheme: dark) {
+	.Q dd {
+		color:#FD0;
+		background-color:#320;}
+	.QNAL>dd {
+		color:white;
+		background-color:black;}
+	.Q span {color:white;}
+	h1{background: linear-gradient(135deg, rgba(150,120,255,0.1) 0%,rgba(30,0,100,0.9) 69%,rgba(30,0,100,0.9) 69%,rgba(50,0,150,0.9) 100%); 
+		color:white;}
+	body {background: linear-gradient(135deg, rgba(150,120,255,1) 0%,rgba(30,0,100,1) 69%,rgba(30,0,100,1) 69%,rgba(50,0,150,1) 100%); }
+	main,header {background: linear-gradient(-70deg, rgba(150,120,255,0.3) 0%,rgba(30,0,100,0.3) 69%,rgba(30,0,100,0.3) 69%,rgba(50,0,150,0.3) 100%);}
+}
