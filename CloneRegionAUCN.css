@@ -72,12 +72,6 @@ transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
  
 
 
-#skipnav {
-	display:block; 
-	position:relative; 
-	margin:0px; 
-	padding:0px;}
-
 #jump {
 	align-items:center;
 	justify-content:center;
@@ -125,10 +119,16 @@ transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 	vertical-align:middle; 
 	padding:0px; 
 	margin:0px;}
-	.w980 {vertical-align:middle; position:relative;}
+.w980 {
+	width:90%;
+	vertical-align:middle; 
+	position:relative;}
 
-#start {display:block; text-align:center; 
-	color:#EBEBE3; position:relative; z-index:3;}
+#start {
+	display:block; 
+	text-align:center; 
+	position:relative; 
+	z-index:3;}
 
 
 
@@ -166,17 +166,35 @@ footer {
 	position:relative; 
 	bottom:0px;}
 
-.made {
-	color:#6e6e73; 
-	font-size:1em;}
+.made,#a11ymark {
+	font-size:2em;}
+.made {color:#6e6e73;}
 
+/*큰 기기PC등에서만 보이는 부분*/
+.wbig {display:block;}
+
+/*스마트폰 등에서만 보이는 부분*/
+.wsmall {display:none;}
+
+    /*iPhone SE용 레이아웃*/
+.m320 {display:none;}
+.no320 {display:block;}
+
+@media  (min-width:1100px) {
+		.w980 {width:52% !important;}
+	}
+
+/*SmartPhone*/
+	@media screen and (max-width:750px) {
+		#a11ymark {font-size:1.5em;}
+	}
 
 /*iPhone SE*/
 	@media screen and (max-width:320px) {
 	.no320 {display:none !important;}
 	.m320 {display:inline-block;}
 	body {background-color:white;}
-	h1 span,h2 span, h4 span {
+	h1 span,h2, h4 span {
 	color:#1d1d1f !important;}
 	section,li,footer,div,p,h3 {
 	box-sizing:border-box; 
@@ -189,7 +207,7 @@ footer {
 		font-size:17px;}
 
 	#notice {background:rgba(255,255,255,0.7);}
-	#a11ymark {font-size:0.9em; color:#dd006d;}
+	#a11ymark {font-size:1.2em; color:#dd006d;}
 	#a11ymark span {color:#073ca5;}
 	#CP {font-size:0.8em; border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}

@@ -12,7 +12,7 @@ position:relative;}
 	to {opacity:1; top:0em;}}
 
 /*애니메이션이 끝난 비디오맥북을 숨기는 애니메이션*/
-#MacBookPro {
+/*#MacBookPro {
 animation-delay:4s;
 animation-duration:2s;
 animation-name:bmac;
@@ -20,7 +20,7 @@ animation-fill-mode:forwards;}
 
 @keyframes bmac {
 	from {opacity:1;}
-	to {opacity:0;}}
+	to {opacity:0;}}*/
 
 /*#MacBookPro {
 animation-delay:5s;
@@ -52,7 +52,7 @@ body {
 	margin-bottom:-25%;
 	position:relative;
 	overflow-x:hidden;}
-#MacS {top:-25.5em; 
+#MacS {top:-25.8em; 
 	width:84%;
 	position:relative; 
 	left:0px;}
@@ -64,7 +64,8 @@ body {
 	background-size:contain;
 	-webkit-mask-position:center;
     -webkit-mask-repeat:no-repeat;
-    -webkit-mask-image: url(https://www.apple.com/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png);}
+    background:rgba(250,250,255,0.1);
+    /*-webkit-mask-image: url(https://www.apple.com/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png);*/}
 
 
 p {word-break:keep-all; 
@@ -212,15 +213,9 @@ display:inline-block;}
 	color:black; 
 	position:absolute; 
 	height:0em;}
+#full {text-align:left;}
 
-/*큰 기기PC등에서만 보이는 부분*/
-.wbig {display:block;}
 
-/*스마트폰 등에서만 보이는 부분*/
-.wsmall {display:none;}
-
-    /*iPhone SE용 레이아웃*/
-.m320 {display:none;}
 
 
 
@@ -228,7 +223,7 @@ display:inline-block;}
 #appleseries {width:100%; position:relative;}
 #memoticon {
 	box-shadow: 0px 0px 1em 2em rgb(33,33,33); 
-	margin:7em 0px;}
+	margin:7em auto;}
 
 #MPC {padding:0px; margin:0px;}
 	#FPC {text-align:center;}
@@ -257,7 +252,6 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 #raina5 {fill:#abf;}
 #raina7 {fill:#baf;}
 
-.made,#a11ymark {font-size:2em;}
 
 
 
@@ -268,7 +262,6 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 
 /*PC 16:9 landscape display*/
 	@media  (min-width:1100px) {
-		.w980 {width:52%;}
 		#MacBookPro {width:60%;}
 	}
 
@@ -354,8 +347,10 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 		letter-spacing: .009em;}
 	.made {display:block;}
 	#a11ymark {font-size:2em;}
-	h2 {line-height:1.5em; letter-spacing: 0em;
-	font-size:48px;}
+	h2,h3 {
+		line-height:1.5em; 
+		letter-spacing: 0em;
+		font-size:48px;}
 	#memoticon {width:80%;}
 	#help {padding:2em;}
 	.wbig {display:block;}
@@ -506,7 +501,13 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 		opacity:1;}
 	#SE11 video {margin-bottom:11em;}
 	body {background-color:white;}
-
+	#i11 {
+		margin-left:7%;
+		width:70%;
+		font-size:40px;
+		font-weight:700;
+		line-height:1.2em;
+		text-align:left;}
 	#full {font-size:1.2em;}
 	.walert {
 	padding:0.3em 0.5em;
@@ -571,7 +572,7 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 	line-height:1.2em; font-size:1em;}
 	#inP {top:-40em; width:80%;}
 	#memoticon {width:90%;
-		box-shadow: 0px 0px 0.5em 1em rgb(33,33,33); margin:3em 0px;}
+		box-shadow: 0px 0px 0.5em 1em rgb(33,33,33); margin:3em auto;}
 	.by {display:block;}
 	#helpM span{color:#1d1d1f;}
 	#helpM,footer {background-clip:unset; font-size:17px;}
