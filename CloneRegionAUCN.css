@@ -29,7 +29,7 @@ img,video
 	box-sizing:content-box;
 	clip: rect(1px, 1px, 1px, 1px); 
 	clip-path: inset(0px 0px 99.9% 99.9%);}
-body {margin:0px;}
+body {margin:0px; height:100%;}
 body * {margin:auto auto; 
 	text-align:center;
 	-webkit-font-smoothing:antialiased;
