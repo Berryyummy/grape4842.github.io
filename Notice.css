@@ -256,7 +256,9 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 
 /*MacBook Pro 15 2018*/
 	@media screen and (min-width:1440px) and (max-width:1450px) {
-	#MacS {left:-3.8em;}}
+	#MacS {
+		left:0em;
+		top:-20em;}}
 
 
 /*PC 16:9 landscape display*/
