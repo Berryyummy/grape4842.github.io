@@ -13,7 +13,7 @@ div.lanregion {padding:1em;}
 img,video 
 {width:100%;}
 
-.wrap,#inP0,#hello,.w980 
+.w980 
 	{box-sizing:border-box; 
 	width:90%;}
 
@@ -29,7 +29,7 @@ img,video
 	box-sizing:content-box;
 	clip: rect(1px, 1px, 1px, 1px); 
 	clip-path: inset(0px 0px 99.9% 99.9%);}
-
+body {margin:0px;}
 body * {margin:auto auto; 
 	text-align:center;
 	-webkit-font-smoothing:antialiased;
@@ -39,8 +39,8 @@ body * {margin:auto auto;
 header {
 	background:rgba(0,0,0,0.8); 
 	z-index:9999; 
-	backdrop-filter: saturate(180%) blur(20px);
-	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
 	top:0em; 
 	left:0em;
 	position:relative; 
@@ -78,7 +78,10 @@ transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 	margin:0px; 
 	padding:0px;}
 
-#jump {line-height:48px; 
+#jump {
+	align-items:center;
+	justify-content:center;
+	height:48px; 
 	position:absolute; 
 	left:0px;
 	top:0px; 
@@ -87,11 +90,16 @@ transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 	font-weight:900; 
 	color:transparent; 
 	width:100%;
+	display:flex;
 	padding:0px; 
 	margin:0px;}
 
-#jump:focus {z-index:99999; outline:#03B 3px dashed; color:black;
-			background:rgba(255,255,255,0.8);}
+#jump:focus {
+	z-index:99999; 
+	outline:#03B 3px dashed; 
+	color:black;
+	background:rgba(200,200,200,0.5);
+	backdrop-filter:blur(10px);}
 
 
 #notice {
@@ -148,7 +156,9 @@ border-radius:100%;
 width:7em;}
 #a11ymark span {color:#77aaff;}
 
-.wrap {margin:0 auto; box-sizing:border-box;}
+.wrap {
+	margin:0 auto; 
+	box-sizing:border-box;}
 
 footer {
 	padding:2em !important; 
@@ -156,7 +166,9 @@ footer {
 	position:relative; 
 	bottom:0px;}
 
-.made {color:#6e6e73; font-size:1em;}
+.made {
+	color:#6e6e73; 
+	font-size:1em;}
 
 
 /*iPhone SE*/
@@ -164,6 +176,8 @@ footer {
 	.no320 {display:none !important;}
 	.m320 {display:inline-block;}
 	body {background-color:white;}
+	h1 span,h2 span, h4 span {
+	color:#1d1d1f !important;}
 	section,li,footer,div,p,h3 {
 	box-sizing:border-box; 
 	background-clip:border-clip; 
@@ -171,15 +185,13 @@ footer {
 	letter-spacing: 0.011em; 
 	color: #8c8c8c;}
 
-	.wrap,#inP0,#hello,.w980,#helpM,.fullist {
-	width:90%; 
-	font-size:17px;}
+	.w980{width:85%;
+		font-size:17px;}
 
-	#skipnav {position:relative; margin:0px; padding:0px;}
-	#notice {background-color: rgba(255,255,255,0.7);}
+	#notice {background:rgba(255,255,255,0.7);}
 	#a11ymark {font-size:0.9em; color:#dd006d;}
 	#a11ymark span {color:#073ca5;}
 	#CP {font-size:0.8em; border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}
 	footer {background-color:#f2f2f2;}
-	.langregion a{color:black !important;}}
+	.langregion a{color:black;}}
