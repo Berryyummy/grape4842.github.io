@@ -12,7 +12,7 @@ position:relative;}
 	to {opacity:1; top:0em;}}
 
 /*애니메이션이 끝난 비디오맥북을 숨기는 애니메이션*/
-/*#MacBookPro {
+#MacBookPro {
 animation-delay:4s;
 animation-duration:2s;
 animation-name:bmac;
@@ -20,7 +20,7 @@ animation-fill-mode:forwards;}
 
 @keyframes bmac {
 	from {opacity:1;}
-	to {opacity:0;}}*/
+	to {opacity:0;}}
 
 /*#MacBookPro {
 animation-delay:5s;
@@ -443,15 +443,21 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 
 /*Note 8 landscape*/
 	@media screen and (min-width:850px) and (max-width:870px) {
-	#MacS {top:-14.3em; left:-0.5em; width:55em;}
+	#MacS {
+		top:-14.3em; 
+		left:-0.5em; 
+		width:112%;}
 	#MBP {margin-bottom:-15em;}
 	.wsmall {display:none;}
 	.wbig {display:block;}}
 
 /*Note 8 landscape see navibar*/
 	@media screen and (min-width:790px) and (max-width:800px) {
-	#MacS {top:-14.3em; left:-2.1em; width:55em;}
-	#MBP {margin-bottom:-15em;}
+	#MacS {
+		top:-14.2em; 
+		left:-2.7em; 
+		width:111%;}
+	#MBP {margin-bottom:-30%;}
 	#inPC2 {top:12em;}
 	.wsmall {display:none;}
 	.wbig {display:block;}}
