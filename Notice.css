@@ -383,10 +383,9 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 
 	#MBP {
 		width:100%; 
-		margin-bottom:-7em;}
+		margin-bottom:-7%;}
 	#AUC {font-size:21px;}
-	#MacBookPro {width:20em;}
-	#MacS {width:27em; top:-7.5em; left:-2.3em;}
+	#MacS {width:100%; top:-7.5em;}
 	h2,h3 {
 		font-size:40px;
 		line-height:1.1em;}
