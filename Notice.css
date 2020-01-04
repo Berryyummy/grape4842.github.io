@@ -510,36 +510,48 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 
 /*iPhone SE landscape*/
 	@media screen and (min-width:560px) and (max-width:580px) {
-	.no320 {display:none;}
-	.m320 {display:inline-block;}
-	body {background-color:white;}
-
 	li,.fullist li {font-size:17px;}
 	
 	#SE11 {padding:0px;
-	margin:3em auto;}
+	margin-top:3em;}
 
-	#Atitle {position:relative; left:0px; color:#1d1d1f;}
-	#SE11 video {margin-bottom:100%; }
-	#skipnav {position:relative; margin:0px; padding:0px;}
-	
-	#notch {width:95%;}
+	h1 {
+		position:relative; 
+		left:0px; 
+		color:#1d1d1f;
+		opacity:1;}
+	#SE11 video {margin-bottom:100%;}
+	body {background-color:white;}
+	#i11 {
+		margin-left:7%;
+		width:70%;
+		font-size:40px;
+		font-weight:700;
+		line-height:1.2em;
+		text-align:left;}
 	#full {font-size:1.2em;}
-	.walert {border-radius:1em;
-	padding:1em;
-	line-height:1.2em; font-size:1em;}
-	#inP {top:-40em; width:80%;}
+	#inP {top:30%;}
+	.walert {
+	padding:0.5em 0.7em;
+	line-height:1.2em; 
+	font-size:1.5em;}
+	h1 span,h2 span,#i11 {
+	font-weight:900; 
+	line-height:1.2em; 
+	font-size: 40px;}
 	#helpM span{color:#1d1d1f;}
-	#helpM,footer {background-clip:unset; font-size:17px;}
+	#helpM,footer {
+	background-clip:unset; 
+	font-size:17px;}
 	#helpboxM {margin-bottom:2em;}
-	#helpboxM,footer {background-color:#f2f2f2; padding:1em 0px;}
-	#helpM strong {color:#1d1d1f; font-weight:900;}
+	#helpboxM,footer {
+	background-color:#f2f2f2; 
+	padding:70px 0px;}
+	#helpM strong {
+	color:#1d1d1f; 
+	font-weight:900;}
 	.goask {color:#06c;}
-	footer {background-color:#f2f2f2;}
-	#a11ymark {font-size:0.9em; color:#dd006d;}
-	#a11ymark span {color:#073ca5;}
-	#CP {font-size:0.8em;}
-	.kr {color:#029d50;}
+	
 	#hello {text-align:left;}
 	#SEST {font-size:17px; 
 		color:#6D7A71; 
@@ -547,12 +559,15 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 		display:inline-block; 
 		font-weight:600; 
 		top:-3px;}
-		
+		.kr {color:#029d50;}
+
 #raina1 {fill:#e00;}
 #raina2 {fill:#f70;}
 #raina3 {fill:#fc0;}
 #raina4 {fill:#0c5;}
 #raina5 {fill:#69f;}
 #raina7 {fill:#87f;}
+
 .wbig {display:none;}}
+
 
