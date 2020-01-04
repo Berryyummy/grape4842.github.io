@@ -276,7 +276,7 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
     /*-webkit-mask-image: url(https://www.apple.com/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png);*/}
 
 /*16:10 Display*/
-	@media (device-aspect-ratio:16/10) {
+	@media (device-aspect-ratio:16/10) and screen (min-width:1200px;) {
 	#MacBookPro {
 		width:60%;
 		margin-bottom:-21.6%;}
@@ -290,7 +290,7 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 
 /*PC 16:9 landscape display*/
 	/*@media  (min-width:1100px) {*/
-@media (device-aspect-ratio:16/9) and screen (min-width:1000px;){
+@media (device-aspect-ratio:16/9) and screen (min-width:1200px;){
 		#MacBookPro {
 			width:60%;
 			margin-bottom:-21.6%;}
@@ -309,19 +309,8 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 
 
 
-/*iPad Pro landscape*/
-	@media (device-aspect-ratio:3/4) {
-	#MBP {margin-bottom:-10%;}}
-
-/*iPad Pro*/
-	/*@media screen and (min-width:1024px) and (max-width:1200px) {*/
-	@media (device-aspect-ratio:4/3) {
-		#inPC2 {top:7em;}
-	}
-
-
 /*iPad*/
-	@media screen and (min-width:760px) and (max-width:1020px) {
+	@media screen and (min-width:760px) and (max-width:1200px) {
 	.w980{box-sizing:border-box;}
 	#AUC,#ApplePro {font-weight:600;}
 	#AUC {
@@ -334,18 +323,6 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 		line-height:1.5em; 
 		letter-spacing: 0em;
 		font-size:48px;}}
-
-/*iPad Pro 10.5 landscape*/
-/*	@media screen and (min-width:1110px) and (max-width:1120px) {
-	#MacS {
-		left:-12.5%; 
-		width:125%;}
-	#MacBookPro {margin-bottom:-32.3%}
-	#MBP {margin-bottom:-15%;}
-	.wbig {display:block;}
-	.wsamll {display:none;}}*/
-
-
 
 
 /*SmartPhone*/
@@ -390,20 +367,6 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 /* iPhone X */
 	@media screen and (min-width:370px) and (max-width:380px) {
 	.walert {font-size:90%;}}
-
-
-
-
-/*New Infinity Galaxy landscape*/
-	@media screen and (min-width:840px) and (max-width:850px) {
-	.wsmall {display:none;}
-	.wbig {display:block;}}
-
-/*Note 8 landscape see navibar*/
-	@media screen and (min-width:790px) and (max-width:800px) {
-	.wsmall {display:none;}
-	.wbig {display:block;}}
-
 
 
 
