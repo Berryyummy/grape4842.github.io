@@ -469,6 +469,8 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 		left:-12.5%;}
 	#MacBookPro {margin-bottom:-33%;}
 	#MBP {margin-bottom:-15%;}
+	.wbig {display:none;}
+	.wsmall {display:block;}
 	}
 
 /*iPhone 678+ landscape*/
