@@ -267,15 +267,13 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 	width:90%;
 	position:relative;
 	z-index:100;
-	background-size:contain;
+	-webkit-mask-size:contain;
 	-webkit-mask-position:center;
     -webkit-mask-repeat:no-repeat;
     /*-webkit-mask-image: url(https://www.apple.com/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png);*/}
 
 /*16:10 Display*/
 	@media (device-aspect-ratio:16/10) {
-	#MacS {
-		left:0%;}
 	#MacBookPro {
 		width:60%;
 		margin-bottom:-21.6%;}
@@ -307,22 +305,13 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 
 /*iPad Pro landscape*/
 	@media (device-aspect-ratio:3/4) {
-	#MacS {left:-12.5%; 
-		width:125%;}
-	#MacBookPro {margin-bottom:-32.3%;}
 	#MBP {margin-bottom:-10%;}}
 
 /*iPad Pro*/
-	@media screen and (min-width:1024px) and (max-width:1099px) {
-	#MacBookPro {width:90%;}
-	#MacS {
-	left:-12.5%;
-	width:125%; 
-	display:block;}
-	#MacBookPro {margin-bottom:-32.3%;}
-	#MBP {margin-bottom:-10%;}
+	@media screen and (min-width:1024px) and (max-width:1200px) {
 	#AUC,#ApplePro {font-weight:600;}
 	#ApplePro {font-size:64px; line-height: 1.14286;}
+	#inPC2 {top:7em;}
 	#wsmall {display:none;}
 	#wbig {display:block;}
 	#start {font-size:64px;}}
@@ -339,8 +328,7 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 	#MacS {
 		width:125%;
 		left:-12.5%;}
-	#inPC {top:-18em;}
-	#appleseries {top:11em;}
+	#inPC2 {top:10em;}
 	#AUC,#ApplePro {font-weight:600;}
 	#AUC {
 		line-height: 1.16667;
@@ -460,7 +448,6 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 		width:125%;}
 	#MacBookPro {margin-bottom:-32.3%;}
 	#MBP {margin-bottom:-10%;}
-	#inPC2 {top:12em;}
 	.wsmall {display:none;}
 	.wbig {display:block;}}
 
@@ -480,7 +467,7 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 	#MacS {
 		width:125%;
 		left:-12.5%;}
-	#MacBookPro {margin-bottom:-32.7%;}
+	#MacBookPro {margin-bottom:-33%;}
 	#MBP {margin-bottom:-15%;}
 	}
 
@@ -515,7 +502,7 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 		left:0px; 
 		color:#1d1d1f;
 		opacity:1;}
-	#SE11 video {margin-bottom:11em;}
+	#SE11 video {margin-bottom:100%;}
 	body {background-color:white;}
 	#i11 {
 		margin-left:7%;
@@ -529,7 +516,6 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 	padding:0.3em 0.5em;
 	line-height:1.2em; 
 	font-size:0.9em;}
-	.by {display:block;}
 	h1 span,h2 span,#i11 {
 	font-weight:900; 
 	line-height:1.2em; 
@@ -542,7 +528,6 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 	#helpboxM,footer {
 	background-color:#f2f2f2; 
 	padding:70px 0px;}
-	#helpM img {width:95%;}
 	#helpM strong {
 	color:#1d1d1f; 
 	font-weight:900;}
@@ -562,7 +547,9 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 #raina3 {fill:#fc0;}
 #raina4 {fill:#0c5;}
 #raina5 {fill:#69f;}
-#raina7 {fill:#87f;}}
+#raina7 {fill:#87f;}
+
+.wbig {display:none;}}
 
 
 
@@ -578,7 +565,7 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 	margin:3em auto;}
 
 	#Atitle {position:relative; left:0px; color:#1d1d1f;}
-	#SE11 video {margin-bottom:11em; }
+	#SE11 video {margin-bottom:100%; }
 	#skipnav {position:relative; margin:0px; padding:0px;}
 	
 	#notch {width:95%;}
@@ -587,9 +574,6 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 	padding:1em;
 	line-height:1.2em; font-size:1em;}
 	#inP {top:-40em; width:80%;}
-	#memoticon {width:90%;
-		box-shadow: 0px 0px 0.5em 1em rgb(33,33,33); margin:3em auto;}
-	.by {display:block;}
 	#helpM span{color:#1d1d1f;}
 	#helpM,footer {background-clip:unset; font-size:17px;}
 	#helpboxM {margin-bottom:2em;}
@@ -614,5 +598,6 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 #raina3 {fill:#fc0;}
 #raina4 {fill:#0c5;}
 #raina5 {fill:#69f;}
-#raina7 {fill:#87f;}}
+#raina7 {fill:#87f;}
+.wbig {display:none;}}
 
