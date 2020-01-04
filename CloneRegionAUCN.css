@@ -13,9 +13,11 @@ div.lanregion {padding:1em;}
 img,video 
 {width:100%;}
 
-.w980 
-	{box-sizing:border-box; 
-	width:90%;}
+.w980 {
+	width:90%;
+	vertical-align:middle; 
+	position:relative;
+	box-sizing:border-box;}
 
 .hidden {
 	z-index:-1; 
@@ -119,10 +121,6 @@ transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 	vertical-align:middle; 
 	padding:0px; 
 	margin:0px;}
-.w980 {
-	width:90%;
-	vertical-align:middle; 
-	position:relative;}
 
 #start {
 	display:block; 
@@ -179,10 +177,6 @@ footer {
     /*iPhone SE용 레이아웃*/
 .m320 {display:none;}
 .no320 {display:block;}
-
-@media  (min-width:1100px) {
-		.w980 {width:52% !important;}
-	}
 
 /*SmartPhone*/
 	@media screen and (max-width:750px) {
