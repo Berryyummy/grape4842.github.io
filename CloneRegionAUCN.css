@@ -13,9 +13,11 @@ div.lanregion {padding:1em;}
 img,video 
 {width:100%;}
 
-.w980 
-	{box-sizing:border-box; 
-	width:90%;}
+.w980 {
+	width:90%;
+	vertical-align:middle; 
+	position:relative;
+	box-sizing:border-box;}
 
 .hidden {
 	z-index:-1; 
@@ -119,10 +121,6 @@ transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 	vertical-align:middle; 
 	padding:0px; 
 	margin:0px;}
-.w980 {
-	width:90%;
-	vertical-align:middle; 
-	position:relative;}
 
 #start {
 	display:block; 
@@ -180,10 +178,6 @@ footer {
 .m320 {display:none;}
 .no320 {display:block;}
 
-@media  (min-width:1100px) {
-		.w980 {width:52% !important;}
-	}
-
 /*SmartPhone*/
 	@media screen and (max-width:750px) {
 		#a11ymark {font-size:1.5em;}
@@ -191,7 +185,35 @@ footer {
 
 /*iPhone SE*/
 	@media screen and (max-width:320px) {
-	.no320 {display:none !important;}
+	.no320 {display:none;}
+	.m320 {display:inline-block;}
+	body {background-color:white;}
+	h1 span,h2, h4 span {
+	color:#1d1d1f !important;}
+	section,li,footer,div,p,h3 {
+	box-sizing:border-box; 
+	background-clip:border-clip; 
+	font-size:17px;
+	letter-spacing: 0.011em; 
+	color: #8c8c8c;}
+
+	.w980{width:85%;
+		font-size:17px;}
+
+	#notice {background:rgba(255,255,255,0.7);}
+	#a11ymark {font-size:1.2em; color:#dd006d;}
+	#a11ymark span {color:#073ca5;}
+	#CP {font-size:0.8em; border-top:#d2d2d7 1px solid;}
+	.kr {color:#029d50;}
+	footer {background-color:#f2f2f2;}
+	.langregion a{color:black;}}
+
+
+
+
+/*iPhone SE landscape*/
+	@media screen and (min-width:560px) and (max-width:580px) {
+	.no320 {display:none;}
 	.m320 {display:inline-block;}
 	body {background-color:white;}
 	h1 span,h2, h4 span {
