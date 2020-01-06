@@ -152,8 +152,8 @@ transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 #a11ymark {color:white; font-weight:900;}
 #a11ymark img {
 background-color:white; 
-border-radius:100%; 
-width:7em;}
+border-radius:100%;
+width:30%;}
 #a11ymark span {color:#77aaff;}
 
 .wrap {
