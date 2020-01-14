@@ -13,6 +13,9 @@ body {
 main {
 	margin:0px auto;
 	width:90%;}
+section {
+	margin:0px auto;
+	width:80%;}
 .ctnt:focus {
 	position: absolute; 
 	top:0px;}
@@ -37,13 +40,13 @@ td,th {
 	vertical-align:middle; 
 	border:1px solid #235; 
 	width:30%; 
-	padding:1%; 
+	padding:2%; 
 	font-weight:400; 
 	font-size:150%;}
 th{background-color:#aaf; 
 	text-align:left;
-	font-weight:900;}
-td {font-weight:700;}
+	font-weight:700;}
+td {font-weight:600;}
 caption {
 	position:relative;
 	z-index:-3;
@@ -52,7 +55,7 @@ ul {margin:0px;
 	padding:0px;}
 li {list-style:none; 
 	list-style-position:outside;}
-h1 {color:#ffa;}
+h1 {color:#ffa; font-weight:900;}
 
 
 .unsub th {background-clip: border-box;
@@ -64,7 +67,7 @@ h2 {color:#ffffff;}
 br {display:none;}
 
 @media screen and (min-width:1200px) {
- main {width:60%;}
+ section {width:60%;}
 }
 </style>
 </head>
@@ -72,15 +75,18 @@ br {display:none;}
 
 
 
-
+<header>
+<nav>
 <a class="ctnt" href="#CT1">인식의 용이성</a>
 <a class="ctnt" href="#CT2">운용의 용이성</a>
 <a class="ctnt" href="#CT3">이해의 용이성</a>
 <a class="ctnt" href="#CT4">견고성</a>
-<a class="ctnt" href="#CT5">번외편</a>
-
+<!-- <a class="ctnt" href="#CT5">번외편</a> -->
+</nav>
+</header>
 <main>
 	<h1 id="CT1">인식의 용이성</h1>
+<section>
 <table>
 <caption>
 	KWCAG2.1 검사항목1
@@ -259,8 +265,9 @@ br {display:none;}
 		</tr>
 	</tbody>
 </table>
+</section>
 
-
+<section>
 <h1 id="CT2">운용의 용이성</h1>
 <table>
 	<caption>
@@ -485,8 +492,9 @@ br {display:none;}
 		</tr>
 	</tbody>
 </table>
+</section>
 
-
+<section>
 <h1 id="CT3">이해의 용이성</h1>
 <table>
 	<caption>KWCAG2.1 검사항목17</caption>
@@ -623,9 +631,11 @@ br {display:none;}
 	<tr>
 		<td>22-4. 입력 오류 발생 시 입력 내용이 모두 사라지는 경우</td>
 	</tr>
-</tbody></table>
+</tbody>
+</table>
+</section>
 
-
+<section>
 <h1 id="CT4">견고성</h1>
 <table>
 	<caption>KWCAG2.1 검사항목23</caption>
@@ -665,6 +675,7 @@ br {display:none;}
 		</tr>
 	</tbody>
 </table>
+</section>
 </main>
 <!-- 
 <section>
