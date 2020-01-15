@@ -9,6 +9,10 @@ TEST Page
 <link rel="stylesheet" type="text/css" href=""/>
 <link rel="stylesheet" type="text/css" href=""/>
 <style type="text/css">
+@charset "UTF-8";
+:lang(ko) {word-break: keep-all; line-break:normal;}
+:lang(ja) {word-wrap:break-word; word-break:break-all;}
+::selection {background:#afc; color:white;}
 body {background-color:#215; color:white;}
 input {border:1px darkblue solid; color:white; background-color:black;}
 .blind {overflow: hidden;
@@ -16,18 +20,66 @@ input {border:1px darkblue solid; color:white; background-color:black;}
     width: 0;
     height: 0;
     opacity: 0;}
-
+a {text-decoration:none; color:white; font-weight:800;}
+li {list-style-type:none;}
 @media (prefers-color-scheme:light) {
 
 }
 </style>
 </head>
 <body>
+	<h1>스크린리더 테스트를 위한 요소가 배치된 페이지입니다.</h1>
 <div class="input-timer-wrap">
 <span class="blind" aria-hidden="true" id="limit5m">
 5분이내에 인증번호를 확인하여 수정창에 입력해 주세요.</span>
-<span id="timer" class="timer" aria-labeledby="limit5m timer"> 4:43 </span>
-<input id="cer_num" type="tel" placeholder="인증번호를 입력해주세요" maxlength="5" title="인증번호 입력"/>
+<span id="timer" class="timer" aria-labeledby="limit5m timer" role="timer"> 4:43 </span>
+<input required="required" id="cer_num" type="tel" placeholder="인증번호를 입력해주세요" maxlength="5" title="인증번호 입력"/>
 
+<a href="https:www.apple.co.kr" aria-label="애플코리아">APPLE</a>
+<div aria-label="각종 바로가기 링크 목록" role="region">
+	<h3>평소 이용할 것 같은 사이트 목록</h3>
+	다양한 링크를 목록으로 제공합니다 자주 방문하시는 사이트의 링크를 임의로 선정하여 채워넣으십시오.
+	<ul>
+		<li>	
+			<a href="https://developer.mozilla.org/ja/docs/Web/Accessibility/ARIA/Roles" target="_blank">aria-role MDN</a>	
+		</li>
+		<li>
+			<a href="" target="_blank">SAMSUNG</a>	
+		</li>
+		<li>
+			<a href="https://www.apple.co.kr" target="_blank">Apple</a>	
+		</li>
+		<li>
+			<a href="" target="_blank">DELL</a>	
+		</li>
+		<li>
+			<a href="https://www.youtube.com" target="_blank">YouTube</a>	
+		</li>
+		<li>
+			<a href="https://www.naver.com" target="_blank">Naver</a>	
+		</li>
+		<li>
+			<a href="https://twitter.com/home" target="_blank">Twitter</a>	
+		</li>
+	</ul>
+
+<label aria-hidden="true" for="testinput1">모델명 
+	<span aria-label="필수">*</span>
+</label>
+<input id="testinput1" type="text" name=""/>
+
+<a href="https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.pro" title="플레이 스토어로 연결됨" aria-label="플레이 스토어에서 MX 플레이어 프로 다운로드">MX Player Pro</a>
+
+<p role="button" title="동영상 보기">TEST</p>
+<video id="movie" style="width:100%; margin-bottom:10px;" src="http://203.233.85.18/VOD/mobile_20190730135153.mp4" type=".mp4" controls="" title="교보러버스"></video>
+</div>
+<ol>
+	<li>ALT</li>
+	<li>Caption</li>
+	<li>COlor</li>
+	<li>Instruction</li>
+	<li>COntrast</li>
+	<li>Auto Start</li>
+</ol>
 </body>
 </html>
