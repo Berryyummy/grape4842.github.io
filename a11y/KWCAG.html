@@ -77,7 +77,18 @@ br {display:none;}
 @media screen and (min-width:1200px) {
  section {width:60%;}
 }
+@media screen and (max-width:320px) {
+	section {width:100%;}
+	th,td {font-size:100%;}
+}
 
+@media (prefers-contrast:high) {
+	body {background-color:black;}
+	table {color:white;}
+	th,td {border:3px solid #aaf;}
+	th {background-color:#103;}
+	td {background-color:#103;}
+}
 @media (prefers-color-scheme:dark) {
 	body {background-color:black;}
 	table {color:white;}
