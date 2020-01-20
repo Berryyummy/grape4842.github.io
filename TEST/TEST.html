@@ -32,11 +32,13 @@ li {list-style-type:none;}
 
 <span class="blind" id="ad">aria-describedby test</span>
 <span class="blind" id="none1">아무거나 입력해보세요.</span>
-<input type="text" aria-describedby="ad none1"/>
+<label for="adlabel">아리아 디스크립션의 라벨입니다</label>
+<input type="text" id="adlabel" aria-describedby="ad none1" title="디스크립션의 타이틀입니다."/>
 
 <span class="blind" id="alb">aria-labeledby test</span>
 <span class="blind" id="none2">이 편집창은 의미가 없습니다.</span>
-<input type="text" aria-labeledby="alb none2"/>
+<label for="alblabel">labeledby의 라벨입니다.</label>
+<input id="alblabel" type="text" aria-labeledby="alb none2" title="labeledby의 title입니다."/>
 
 <div class="input-timer-wrap">
 <span class="blind" aria-hidden="true" id="limit5m">
