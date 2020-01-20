@@ -29,9 +29,19 @@ li {list-style-type:none;}
 </head>
 <body>
 	<h1>스크린리더 테스트를 위한 요소가 배치된 페이지입니다.</h1>
+
+<span class="blind" id="ad">aria-describedby test</span>
+<span class="blind" id="none1">아무거나 입력해보세요.</span>
+<input type="text" aria-describedby="ad none1"/>
+
+<span class="blind" id="alb">aria-labeledby test</span>
+<span class="blind" id="none1">이 편집창은 의미가 없습니다.</span>
+<input type="text" aria-labeledby="alb none2"/>
+
 <div class="input-timer-wrap">
 <span class="blind" aria-hidden="true" id="limit5m">
 5분이내에 인증번호를 확인하여 수정창에 입력해 주세요.</span>
+<span>aria-labeledby 2개 중 1개는 aria-hidden으로 숨겨져 있어 iOS는 읽지 못할 것입니다.</span>
 <span id="timer" class="timer" aria-labeledby="limit5m timer" role="timer"> 4:43 </span>
 <input required="required" id="cer_num" type="tel" placeholder="인증번호를 입력해주세요" maxlength="5" title="인증번호 입력"/>
 
@@ -63,7 +73,7 @@ li {list-style-type:none;}
 		</li>
 	</ul>
 
-<label aria-hidden="true" for="testinput1">모델명 
+<label for="testinput1">모델명 
 	<span aria-label="필수">*</span>
 </label>
 <input id="testinput1" type="text" name=""/>
