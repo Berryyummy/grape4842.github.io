@@ -12,7 +12,7 @@ TEST Page
 @charset "UTF-8";
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
-::selection {background:#afc; color:white;}
+::selection {background:#0b0; color:white;}
 body {background-color:#215; color:white;}
 input {border:1px darkblue solid; color:white; background-color:black;}
 .blind {overflow: hidden;
@@ -22,13 +22,101 @@ input {border:1px darkblue solid; color:white; background-color:black;}
     opacity: 0;}
 a {text-decoration:none; color:white; font-weight:800;}
 li {list-style-type:none;}
+
+tr {padding:0px;}
+thead,th {background-color:#dcf;}
+td,th {
+	font-weight:800;
+	border-collapse:collapse; 
+	color:black; 
+	font-size:200%;
+	width:3em;
+	height:3em;
+	padding:0.3em;
+	margin:0px auto;}
+
+td:last-child,th:last-child {background-color:#ccf; color:blue;}
+td:first-child,th:first-child,.offd {color:red;}
+td:first-child,th:first-child {background-color:#fcc;}
+.event {
+	background-color:#dfd; 
+	color:green;
+	font-weight:900;}
+
+td {background-color:white;}
+
+
+
+
+
 @media (prefers-color-scheme:light) {
 
 }
 </style>
 </head>
 <body>
-	<h1>스크린리더 테스트를 위한 요소가 배치된 페이지입니다.</h1>
+	<h1>스크린리더 테스트를 위한 요소 등을 마크업 한 페이지입니다.</h1>
+
+<table id="JAN20">
+	<caption>2020년 1월 설 명절 맞이 대 세일 일정표</caption>
+	<thead>해당 기간 내에 행사가 진행됩니다 자세한 사항은 홈페이지를 확인하세요.</thead>
+	<tbody>
+	<tr>
+		<th class="sund">일</th>
+		<th>월</th>
+		<th>화</th>
+		<th>수</th>
+		<th>목</th>
+		<th>금</th>
+		<th class="satd">토</th>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+		<td>4</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>6</td>
+		<td>7</td>
+		<td>8</td>
+		<td>9</td>
+		<td>10</td>
+		<td>11</td>
+	</tr>
+	<tr>
+		<td>12</td>
+		<td>13</td>
+		<td>14</td>
+		<td>15</td>
+		<td>16</td>
+		<td>17</td>
+		<td>18</td>
+	</tr>
+	<tr>
+		<td>19</td>
+		<td>20</td>
+		<td>21</td>
+		<td class="event">22</td>
+		<td class="event">23</td>
+		<td class="offd event">24</td>
+		<td class="offd event">25</td>
+	</tr>
+	<tr>
+		<td class="offd event">26</td>
+		<td class="offd event">27</td>
+		<td class="event">28</td>
+		<td class="event">29</td>
+		<td>30</td>
+		<td>31</td>
+		<td></td>
+	</tr>
+	</tbody>
+</table>
 
 <span class="blind" id="ad">aria-describedby test</span>
 <span class="blind" id="none1">아무거나 입력해보세요.</span>
