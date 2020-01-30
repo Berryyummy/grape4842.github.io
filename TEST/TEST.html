@@ -14,7 +14,11 @@ TEST Page
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#0b0; color:white;}
 body {background-color:#215; color:white;}
-input {border:1px darkblue solid; color:white; background-color:black;}
+input {
+	border:1px darkblue solid; 
+	color:white; 
+	background-color:black;
+	padding:5px;}
 .blind {overflow: hidden;
     display: block;
     width: 0;
@@ -23,29 +27,44 @@ input {border:1px darkblue solid; color:white; background-color:black;}
 a {text-decoration:none; color:white; font-weight:800;}
 li {list-style-type:none;}
 
+table {
+	border:solid 2px #112;
+	border-collapse:collapse;}
 tr {padding:0px;}
 thead,th {background-color:#dcf;}
 td,th {
 	font-weight:800;
-	border-collapse:collapse; 
+	border:solid 2px #112;
 	color:black; 
 	font-size:200%;
 	width:3em;
 	height:3em;
 	padding:0.3em;
 	margin:0px auto;}
-
-td:last-child,th:last-child {background-color:#ccf; color:blue;}
-td:first-child,th:first-child,.offd {color:red;}
-td:first-child,th:first-child {background-color:#fcc;}
-.event {
-	background-color:#dfd; 
-	color:green;
+.white {
+	background-color:white; 
+	padding:3% 1%;}
+.JAN20 caption {
+	font-size:220%; 
+	font-weight:900; 
+	color:#e00;}
+td:last-child,th:last-child {
+	background-color:#def; 
+	color:#03d;}
+td:first-child,th:first-child,.offd {color:#b20;}
+td:first-child,th:first-child {background-color:#fdd;}
+.event,.TT {
+	/*border:none;*/
+	background-color:#dfd !important; 
+	color:#070 !important;
 	font-weight:900;}
+.TT {font-size:150%;}
 
 td {background-color:white;}
 
-
+.event {border-width:4px 1px;}
+.entx {font-size:70%;}
+.better {}
 
 
 
@@ -57,9 +76,13 @@ td {background-color:white;}
 <body>
 	<h1>스크린리더 테스트를 위한 요소 등을 마크업 한 페이지입니다.</h1>
 
-<table id="JAN20">
+<section class="white">
+<table class="JAN20">
 	<caption>2020년 1월 설 명절 맞이 대 세일 일정표</caption>
-	<thead>해당 기간 내에 행사가 진행됩니다 자세한 사항은 홈페이지를 확인하세요.</thead>
+	<thead>
+		<th colspan="7" class="TT">해당 기간 내에 행사가 진행됩니다 자세한 사항은 홈페이지를 확인하세요.
+		</th>
+	</thead>
 	<tbody>
 	<tr>
 		<th class="sund">일</th>
@@ -101,22 +124,58 @@ td {background-color:white;}
 		<td>19</td>
 		<td>20</td>
 		<td>21</td>
-		<td class="event">22</td>
-		<td class="event">23</td>
-		<td class="offd event">24</td>
-		<td class="offd event">25</td>
+		<td class="event">22
+			<span class="event better entx">행사기간</span>
+		</td>
+		<td class="event">23
+			<span class="event better entx">행사기간</span>
+		</td>
+		<td class="offd event">24
+			<span class="event better entx">행사기간</span>
+		</td>
+		<td class="offd event">25
+			<span class="event better entx">행사기간</span>
+		</td>
 	</tr>
 	<tr>
-		<td class="offd event">26</td>
-		<td class="offd event">27</td>
-		<td class="event">28</td>
-		<td class="event">29</td>
+		<td class="offd event">26
+<span class="event better entx">행사기간</span>
+</td>
+		<td class="offd event">27
+<span class="event better entx">행사기간</span>
+</td>
+		<td class="event">28
+<span class="event better entx">행사기간</span>
+</td>
+		<td class="event">29
+<span class="event better entx">행사기간</span>
+</td>
 		<td>30</td>
 		<td>31</td>
 		<td></td>
 	</tr>
 	</tbody>
+	<tfoot>
+		<td class="TT" colspan="7">
+		행사기간:2020년 1월 22일부터 29일까지
+		</td>
+	</tfoot>
 </table>
+
+<div class="colortestarea">
+	<ul>
+		<li style="color:#f00000;"></li>
+		<li style="color:#"></li>
+		<li style="color:#"></li>
+		<li style="color:#"></li>
+		<li style="color:#"></li>
+		<li style="color:#"></li>
+		<li style="color:#"></li>
+		<li style="color:#"></li>
+		<li style="color:#"></li>
+	</ul>
+</div>
+</section>
 
 <span class="blind" id="ad">aria-describedby test</span>
 <span class="blind" id="none1">아무거나 입력해보세요.</span>

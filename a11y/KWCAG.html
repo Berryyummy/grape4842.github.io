@@ -32,7 +32,7 @@ section {
 	width:100%; 
 	font-weight:bolder;  
 	line-height:50px; 
-	background-color:#090; 
+	background-color:#080; 
 	color:white; margin:0; 
 	text-align:center; 
 	vertical-align:middle; 
@@ -82,12 +82,21 @@ br {display:none;}
 	th,td {font-size:100%;}
 }
 
+
+
+
+
+
+
 @media (prefers-contrast:high) {
 	body {background-color:black;}
 	table {color:white;}
 	th,td {border:3px solid #aaf;}
 	th {background-color:#103;}
 	td {background-color:#103;}
+	.ctnt {background-color:#130;
+		border:solid 1px #0c0;}
+	::selection {background:#fff; color:black;}
 }
 @media (prefers-color-scheme:dark) {
 	body {background-color:black;}
@@ -95,6 +104,9 @@ br {display:none;}
 	th,td {border:1px solid #aaf;}
 	th {background-color:#103;}
 	td {background-color:#326;}
+	.ctnt {background-color:#130;
+		border:solid 1px #0c0;}
+	::selection {background:#fff; color:black;}
 }
 </style>
 </head>
