@@ -176,7 +176,12 @@ td {background-color:white;}
 	</ul>
 </div>
 </section>
-
+<form>
+<label for="labels">복수의 label에 동일한 for값을 부여한 경우를 테스트합니다.</label>
+<input id="labels" type="text">
+<label for="labels" class="blind">5분이내에 인증번호 6자리를 입력하세요</label>
+<label for="labels">3:30</label>
+</form>
 <span class="blind" id="ad">aria-describedby test</span>
 <span class="blind" id="none1">아무거나 입력해보세요.</span>
 <label for="adlabel">아리아 디스크립션의 라벨입니다</label>
