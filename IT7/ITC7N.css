@@ -16,7 +16,7 @@ a {
 	vertical-align:top;
 	color:white;
 }
-.w90 {width:95%; margin:auto;}
+.w90,h3 {width:95%; margin:auto;}
 
 ol,ul,dl {margin:0px; padding:0px;}
 dl+dl {margin:0.5em 0px;}
@@ -162,24 +162,26 @@ position:relative;}
 	margin-top:2em;
 	display:block;
 }
-h3 {
+h3 {background-color:black;
+	position:relative;
+	z-index:3;
 	color:#def;
-	font-size:2em;}
+	font-size:2rem;}
 li {
 	margin:1em 0px;
 	padding:1.5em;
-	border-radius:2em;
+	border-radius:2rem;
 	background-color:#102;}
 li li,li li strong,li dl strong {
 	padding:0px; 
 	font-weight:500;
-	font-size:1em;}
+	font-size:1rem;}
 li li,li dl {
 	margin:0.3em 0px;}
 li dt {font-weight:600;}
 li,strong {
 	font-weight:800; 
-	font-size:1.2em;}
+	font-size:1.2rem;}
 .master {
 	background-color:white; 
 	color:#400;
@@ -298,6 +300,7 @@ footer {
 		background-color:white;
 		box-shadow:0px 0px 2em 3em white;
 	}
+	h3 {background-color:transparent;}
 	.hi {color: rgba(165, 0, 52, 0.9);;}
 	#ITtitle {background: radial-gradient(#fcd , #fde ,#fff, #fff);}
 	#staff {background: -webkit-linear-gradient(top, rgba(255,150,200,1) 0%, rgba(220,70,120,0.9) 50%, rgba(165,0,52,0.9) 51%, rgba(200,0,88,0.9) 100%);
@@ -310,8 +313,6 @@ footer {
 
 
 	#sellisk {color:#a00;}
-
-
 
 
 
