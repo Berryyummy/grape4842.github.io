@@ -291,6 +291,7 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 #Mlist span {vertical-align:top;}
 /*#Mlist td,th {border:solid 1px black;}*/
 #Mlist td {display:unset;}
+#Mlist p {display:none;}
 
 
 
