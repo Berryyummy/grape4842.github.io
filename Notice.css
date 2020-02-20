@@ -376,7 +376,8 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 		height:48px;}
 	#memoticon {width:80%;}
 	.wsmall {display:block;}
-	.wbig {display:none;}}
+	.wbig {display:none;}
+	#Mlist dd {display:flex;}}
 
 /* iPhone X */
 	@media screen and (min-width:370px) and (max-width:380px) {
