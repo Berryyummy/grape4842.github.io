@@ -10,6 +10,7 @@ div.lanregion {padding:1em;}
 .langregion li {float:left;}
 */.langregion a{color:white;}
 
+table {border-collapse:collapse;}
 img,video 
 {width:100%;}
 
