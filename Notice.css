@@ -288,6 +288,7 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 #Mlist dd {
 	display:inline-flex;
 	padding:0px 0.3rem;}
+#Mlist span {vertical-align:top;}
 
 
 
