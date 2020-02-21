@@ -295,7 +295,7 @@ padding:3% 0px;}
 	margin:10% auto;}
 #Mlist span {vertical-align:top;}
 /*#Mlist td,th {border:solid 1px black;}*/
-#Mlist td {display:unset;}
+#Mlist td {width:70%; }
 #Mlist p {display:none;}
 
 #RM4 a{border:solid skyblue 0.1rem;}
@@ -334,7 +334,8 @@ url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-po
 #Mcchi a {
 /*background: radial-gradient(ellipse at center, rgba(153,204,255,1) 0%,rgba(221,238,255,1) 54%,rgba(153,204,255,1) 100%);*/
 background-image:url(https://lh5.googleusercontent.com/proxy/I0lhyqBxuUsUg0Sxzvm6KmT7GFT9pBCYNKjkwVMo2u8ic0LRQBDvkHP8-sUmtngltZp59hlrlmkxSuE3AeC2NCjLPwqBB9vYvo4YqGxd9-w6hbGZH9JsND4VuTLCqrMKu3Q0lZGk7YI);
-background-size:100% 100%;
+background-size:100% 120%;
+background-position:bottom;
 color:#520;
 border:solid white 0.1rem;}
 
@@ -353,7 +354,13 @@ background-position:top;
 color:#301;
 border:pink 0.1rem solid;}
 
-#HHC a {color:black; background-color:white;}
+#HHC a {
+color:black; 
+/*background-color:white;*/
+background-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 70%), 
+url(https://images.assetsdelivery.com/compings_v2/intara1/intara11904/intara1190400012.jpg);
+background-size:contain;
+background-position:top;}
 
 
 /*16:10 Display*/
