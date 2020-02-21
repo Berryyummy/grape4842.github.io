@@ -456,10 +456,15 @@ background-position:top;}
 
 /*iPhone SE*/
 	@media screen and (max-width:320px) {
-	li,.fullist li {font-size:17px;}
-	
+	#full {font-size:1.2rem;}
+	.walert {
+	padding:0.3rem 0.5rem;
+	line-height:1.2rem; 
+	font-size:0.9em;}
+
+	/*@media (prefers-color-scheme:light) {*/
 	#SE11 {padding:0px;
-	margin-top:3em;}
+	margin-top:3rem;}
 
 	h1 {
 		position:relative; 
@@ -468,21 +473,15 @@ background-position:top;}
 		opacity:1;}
 	#SE11 video {margin-bottom:100%;}
 	body {background-color:white;}
+	li,.fullist li {font-size:17px;}
 	#i11 {
 		margin-left:7%;
 		width:70%;
 		font-size:40px;
 		font-weight:700;
-		line-height:1.2em;
 		text-align:left;}
-	#full {font-size:1.2em;}
-	.walert {
-	padding:0.3em 0.5em;
-	line-height:1.2em; 
-	font-size:0.9em;}
 	h1 span,h2 span,#i11 {
 	font-weight:900; 
-	line-height:1.2em; 
 	font-size: 40px;}
 	#helpM span{color:#1d1d1f;}
 	#helpM,footer {
@@ -492,10 +491,6 @@ background-position:top;}
 	#helpboxM,footer {
 	background-color:#f2f2f2; 
 	padding:70px 0px;}
-	#helpM strong {
-	color:#1d1d1f; 
-	font-weight:900;}
-	.goask {color:#06c;}
 	
 	#hello {text-align:left;}
 	#SEST {font-size:21px; 
@@ -504,7 +499,12 @@ background-position:top;}
 		display:inline-block; 
 		font-weight:600; 
 		top:-3px;}
-		.kr {color:#029d50;}
+	.kr {color:#029d50;}
+	#helpM strong {
+	color:#1d1d1f; 
+	font-weight:900;}
+	.goask {color:#06c;}
+
 
 #raina1 {fill:#e00;}
 #raina2 {fill:#f70;}

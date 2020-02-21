@@ -185,6 +185,7 @@ footer {
 
 /*iPhone SE*/
 	@media screen and (max-width:320px) {
+	/*@media (prefers-color-scheme:light) {*/
 	.no320 {display:none;}
 	.m320 {display:inline-block;}
 	body {background-color:white;}
@@ -212,7 +213,7 @@ footer {
 
 
 /*iPhone SE landscape*/
-	@media screen and (min-width:560px) and (max-width:580px) {
+/*	@media screen and (min-width:560px) and (max-width:580px) {
 	.no320 {display:none;}
 	.m320 {display:inline-block;}
 	body {background-color:white;}
@@ -234,4 +235,4 @@ footer {
 	#CP {font-size:0.8em; border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}
 	footer {background-color:#f2f2f2;}
-	.langregion a{color:black;}}
+	.langregion a{color:black;}}*/
