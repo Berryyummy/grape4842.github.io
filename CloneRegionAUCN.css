@@ -124,7 +124,6 @@ transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 	margin:0px;}
 
 #start {
-	display:block; 
 	text-align:center; 
 	position:relative; 
 	z-index:3;}
