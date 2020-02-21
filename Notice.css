@@ -306,7 +306,7 @@ background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(204,238,221,1) 5
 color:black;}
 #Myuna a{
 	/*background: -webkit-linear-gradient(top, rgba(210,204,255,1) 0%, rgba(110,71,238,1) 49%, rgba(100,68,238,1) 50%, rgba(60,0,170,1) 51%, rgba(70,17,221,1) 100%);*/
-background-image:/* rgba(100, 0, 255, 0.5), */
+background-image:linear-gradient(rgba(70, 0, 255, 0.3), rgba(100, 50, 255, 0.2), rgba(70, 0, 255, 0.3)),
 url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
 background-size:100% 100%;}
 #Myuna span {color:white;}
