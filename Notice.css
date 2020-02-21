@@ -305,14 +305,16 @@ background-size:200% 150%;}
 #OMU a {
 /*background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(204,238,221,1) 50%,rgba(187,238,204,1) 100%);*/
 background-image:
-url(Mleaf.png),
-url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Wallpapers-Free-Download.jpg);
-background-size:95% 95%;
+url(Muleaf.png),
+url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);
+background-size:90% 110%;
 color:black;}
+/*#OMU:before {
+transform: rotate(1000deg);}*/
 
 #Myuna a{
 	/*background: -webkit-linear-gradient(top, rgba(210,204,255,1) 0%, rgba(110,71,238,1) 49%, rgba(100,68,238,1) 50%, rgba(60,0,170,1) 51%, rgba(70,17,221,1) 100%);*/
-background-image:linear-gradient(rgba(70, 0, 255, 0.3), rgba(100, 50, 255, 0.2), rgba(70, 0, 255, 0.3)),
+background-image:linear-gradient(to left,rgba(100, 0, 255, 0.1), rgba(150, 50, 255, 0.3), rgba(100, 0, 255, 0.1)),
 url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
 background-size:100% 100%;}
 #Myuna span {color:white;}
