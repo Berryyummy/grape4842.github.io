@@ -275,7 +275,10 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
     /*-webkit-mask-image: url(https://www.apple.com/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png);*/}
 
 
-
+#Mlist th {
+text-align:left;
+font-size:1rem;
+padding:3% 0px;}
 #Mlist a {
 	border-radius:1rem;
 	margin:1% auto;
@@ -284,7 +287,7 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 	color:white; 
 	font-weight:900;
 	font-size:1.4rem;
-	padding:1rem 0.5rem;
+	padding:2rem 0.5rem;
 	text-align:center;
 	align-items:center;
 	box-sizing:border-box;}
@@ -310,7 +313,8 @@ border:solid gold 0.1rem;}
 background-image:
 url(Muleaf.png),
 url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);
-background-size:90% 110%;
+background-size:100% 200%;
+background-position:50% 20%;
 color:#022;
 border:solid white 0.1rem;}
 /*#OMU:before {
@@ -323,7 +327,7 @@ url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-po
 border:solid 0.1rem gold;
 /*background:rgba(100, 0, 255, 0.1), 
 url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
-*/background-size:100% 100%;}
+*/background-size:95% 95%;}
 
 #Myuna span {color:white;}
 
@@ -339,11 +343,13 @@ background-image: url(https://media.istockphoto.com/vectors/orange-seamless-patt
 background-size:contain;
 color:#310;
 border:orange 0.1rem solid;}
+
 #CSA a {
 /*background: radial-gradient(ellipse at center, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 50%,rgba(252,126,210,1) 100%);*/
-background-image:url(https://i.pinimg.com/originals/0d/ee/48/0dee4818267c2183793f7505d06a3b47.jpg);
-background-size:50% 100%;
-background-position:left center;
+/*background-image:url(https://i.pinimg.com/originals/0d/ee/48/0dee4818267c2183793f7505d06a3b47.jpg);*/
+background-image: url(https://data.ac-illust.com/data/thumbnails/ab/ab9a45d052331b7c813cedc7f3245bf5_t.jpeg);
+background-size:contain;
+background-position:top;
 color:#301;
 border:pink 0.1rem solid;}
 
