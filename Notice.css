@@ -295,7 +295,7 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 #Mlist td {display:unset;}
 #Mlist p {display:none;}
 
-
+#RM4 a{border:solid skyblue 0.1rem;}
 
 #SMM a{color:black;
 /*background: linear-gradient(165deg, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%);}*/
@@ -316,24 +316,30 @@ transform: rotate(1000deg);}*/
 	/*background: -webkit-linear-gradient(top, rgba(210,204,255,1) 0%, rgba(110,71,238,1) 49%, rgba(100,68,238,1) 50%, rgba(60,0,170,1) 51%, rgba(70,17,221,1) 100%);*/
 background-image:linear-gradient(to left,rgba(100, 0, 255, 0.1), rgba(150, 50, 255, 0.3), rgba(100, 0, 255, 0.1)),
 url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
-background-size:100% 100%;}
+
+/*background:rgba(100, 0, 255, 0.1), 
+url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
+*/background-size:100% 100%;}
+
 #Myuna span {color:white;}
 
 #Mcchi a {
 background: radial-gradient(ellipse at center, rgba(153,204,255,1) 0%,rgba(221,238,255,1) 54%,rgba(153,204,255,1) 100%);
-color:#350;}
+color:#350;
+border:solid #0a0 0.1rem;}
 
 #CSJ a{
 background-image: url(https://media.istockphoto.com/vectors/orange-seamless-pattern-orange-citrus-fruit-vector-illustration-vector-id531480528);
 background-size:contain;
-color:black;}
+color:black;
+border:orange 0.1rem solid;}
 #CSA a {
 /*background: radial-gradient(ellipse at center, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 50%,rgba(252,126,210,1) 100%);*/
 background-image:url(https://i.pinimg.com/originals/0d/ee/48/0dee4818267c2183793f7505d06a3b47.jpg);
 background-size:50% 100%;
 background-position:left center;
 color:black;
-}
+border:pink 0.1rem solid;}
 
 #HHC a {color:black; background-color:white;}
 
