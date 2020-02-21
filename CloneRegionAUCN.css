@@ -189,7 +189,7 @@ footer {
 	.no320 {display:none;}
 	.m320 {display:inline-block;}
 	body {background-color:white;}
-	h1 span,h2, h4 span {
+	h1 span,h2, h4,h4 span {
 	color:#1d1d1f !important;}
 	section,li,footer,div,p,h3 {
 	box-sizing:border-box; 
@@ -217,7 +217,7 @@ footer {
 	.no320 {display:none;}
 	.m320 {display:inline-block;}
 	body {background-color:white;}
-	h1 span,h2, h4 span {
+	h1 span,h2, h4,h4 span {
 	color:#1d1d1f !important;}
 	section,li,footer,div,p,h3 {
 	box-sizing:border-box; 
