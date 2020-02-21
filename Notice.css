@@ -303,6 +303,7 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 background-image:url(https://i.pinimg.com/originals/8f/21/96/8f219642c11fa57f38f2355988fb24d0.jpg);
 background-size:100% 100%;
 border:solid gold 0.1rem;}
+#SMM span {color:#220;}
 
 #OMU a {
 /*background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(204,238,221,1) 50%,rgba(187,238,204,1) 100%);*/
@@ -310,7 +311,7 @@ background-image:
 url(Muleaf.png),
 url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);
 background-size:90% 110%;
-color:black;
+color:#022;
 border:solid white 0.1rem;}
 /*#OMU:before {
 transform: rotate(1000deg);}*/
@@ -336,14 +337,14 @@ border:solid white 0.1rem;}
 #CSJ a{
 background-image: url(https://media.istockphoto.com/vectors/orange-seamless-pattern-orange-citrus-fruit-vector-illustration-vector-id531480528);
 background-size:contain;
-color:black;
+color:#310;
 border:orange 0.1rem solid;}
 #CSA a {
 /*background: radial-gradient(ellipse at center, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 50%,rgba(252,126,210,1) 100%);*/
 background-image:url(https://i.pinimg.com/originals/0d/ee/48/0dee4818267c2183793f7505d06a3b47.jpg);
 background-size:50% 100%;
 background-position:left center;
-color:black;
+color:#301;
 border:pink 0.1rem solid;}
 
 #HHC a {color:black; background-color:white;}
