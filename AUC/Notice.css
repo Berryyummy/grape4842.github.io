@@ -410,7 +410,7 @@ background-image:url(img/ManyColorApple.png); }
 
 
 /*16:10 Display*/
-/*@media screen and (min-width:1200px) and (aspect-ratio:16/10) {
+@media screen and (min-width:1200px) and (aspect-ratio:16/10) {
 	#MacBookPro {
 		width:60%;
 		margin-bottom:-21.6%;}
@@ -419,15 +419,13 @@ background-image:url(img/ManyColorApple.png); }
 			left:0px;}
 	#MBP {margin-bottom:-5%;}
 	.w980 {width:52%;}
-		#appleseries {margin-top:-23%;}
-#Mlist table {margin-bottom:-3%;}
-#iMacPNG {display:block;}
-*/}
+		#appleseries {margin-top:-23%;}}
+
 
 
 /*PC 16:9 landscape display*/
-@media screen and (min-width:1200px) {
-/*@media screen and (min-width:1200px) and (aspect-ratio:16/9) {*/
+/*@media screen and (min-width:1200px) {*/
+@media screen and (min-width:1200px) and (aspect-ratio:16/9) {
 		#MacBookPro {
 			width:60%;
 			margin-bottom:-21.6%;}
@@ -437,7 +435,7 @@ background-image:url(img/ManyColorApple.png); }
 		#MBP {margin-bottom:0%;}
 		.w980 {width:52%;}
 		#appleseries {margin-top:-25%;}
-#Mlist table {margin-bottom:-30%;}
+#Mlist table {margin-bottom:-53%;}
 #iMacPNG {display:block;}}
 
 
@@ -495,8 +493,13 @@ background-image:url(img/ManyColorApple.png); }
 	#memoticon {width:80%;}
 	.wsmall {display:block;}
 	.wbig {display:none;}
-	#Mlist td {display:grid; width:auto;}
-	#Mlist a {padding:2rem 0.5rem;}}
+	#Mlist td {
+		display:grid; 
+		width:auto;}
+	#Mlist a {padding:2rem 0.5rem;}
+	#Mlist a:before {
+		background-size:contain;
+		left:0px;}}
 
 /* iPhone X */
 	@media screen and (min-width:370px) and (max-width:380px) {
