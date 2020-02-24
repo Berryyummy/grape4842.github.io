@@ -203,9 +203,8 @@ display:inline-block;}
 	-webkit-backdrop-filter: blur(20px);}
 #inP0, #inPC2 {position:relative;}
 #inPC2 {
-	width:100%; 
-	top:0px;}
-
+	padding:1%;
+	width:100%; }
 #inP {
 	width:83%;
 	top:27%;
@@ -279,6 +278,7 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
 text-align:left;
 font-size:1rem;
 padding:3% 0px;}
+
 #Mlist a {
 	position:relative;
 	border-radius:1rem;
@@ -312,9 +312,9 @@ display:flex;}
 
 #RM4 a{
 background:
-linear-gradient(155deg, rgba(170,170,187,1) 0%,rgba(85,85,102,1) 40%,rgba(0,0,17,1) 41%,rgba(51,51,68,1) 100%);
+linear-gradient(165deg, rgba(170,170,187,1) 0%,rgba(85,85,102,1) 40%,rgba(0,0,17,1) 41%,rgba(51,51,68,1) 100%);
 border:solid skyblue 0.1rem;}
-#RM4 a:before{background-image:url(appleX.png);}
+#RM4 a:before{background-image:url(img/appleX.png);}
 
 
 #SMM a{color:black;
@@ -332,14 +332,25 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 #OMU a {
 /*background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(204,238,221,1) 50%,rgba(187,238,204,1) 100%);*/
 background-image:
-url(Muleaf.png),
 url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);
-background-size:100% 150%;
-background-position:50% 20%;
+background-size:contain;
 color:#022;
 border:solid white 0.1rem;}
-/*#OMU:before {
-transform: rotate(1000deg);}*/
+
+#OMU a:before {
+z-index:5;
+background-size:130%;
+background-image:url(img/FruitApple.png);}
+#OMU a:after {
+content:'';
+background-size:100% 100%;
+position:absolute;
+width:100%; height:100%;
+top:0px; left:0px;
+display:block;
+background-image:url(img/Muleaf.png);
+border-radius:1rem;}
+
 
 #Myuna a{
 	/*background: -webkit-linear-gradient(top, rgba(210,204,255,1) 0%, rgba(110,71,238,1) 49%, rgba(100,68,238,1) 50%, rgba(60,0,170,1) 51%, rgba(70,17,221,1) 100%);*/
@@ -349,7 +360,10 @@ border:solid 0.1rem gold;
 /*background:rgba(100, 0, 255, 0.1), 
 url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
 */background-size:95% 95%;}
-
+#Myuna a:before{
+background-size:170%;
+background-image:url(img/PurpleMetalApple.png);
+}
 #Myuna span {color:white;}
 
 #Mcchi a {
@@ -359,12 +373,19 @@ background-size:100% 120%;
 background-position:bottom;
 color:#520;
 border:solid white 0.1rem;}
+#Mcchi a:before{
+background-image:url(img/OSXApple.png);
+}
 
 #CSJ a{
 background-image: url(https://media.istockphoto.com/vectors/orange-seamless-pattern-orange-citrus-fruit-vector-illustration-vector-id531480528);
 background-size:contain;
 color:#310;
 border:orange 0.1rem solid;}
+#CSJ a:before {
+background-size:120%;
+background-image:url(img/GoldenApple.png);
+}
 
 #CSA a {
 /*background: radial-gradient(ellipse at center, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 50%,rgba(252,126,210,1) 100%);*/
@@ -374,7 +395,7 @@ background-size:contain;
 background-position:top;
 color:#301;
 border:pink 0.1rem solid;}
-#CSA a:before {background-image:url(pinkapple.png);}
+#CSA a:before {background-image:url(img/pinkapple.png);}
 
 #HHC a {
 color:black; 
@@ -383,6 +404,9 @@ background-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgb
 url(https://images.assetsdelivery.com/compings_v2/intara1/intara11904/intara1190400012.jpg);
 background-size:contain;
 background-position:top;}
+
+#HHC a:before {
+background-image:url(img/ManyColorApple.png); }
 
 
 /*16:10 Display*/
