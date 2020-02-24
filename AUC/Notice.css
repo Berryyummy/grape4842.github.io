@@ -299,12 +299,21 @@ padding:3% 0px;}
 	padding:1%;}
 #Mlist p {display:none;}
 
-#RM4 a{border:solid skyblue 0.1rem;}
+#RM4 a{
+background-image: 
+url(appleX.png),
+linear-gradient(135deg, rgba(170,170,187,1) 0%,rgba(85,85,102,1) 50%,rgba(0,0,17,1) 52%,rgba(51,51,68,1) 100%);
+border:solid skyblue 0.1rem;
+}
+#RM4 a:before{content: ''; display:block; width:100px; height:100px; background:#bebebe;}
+
 
 #SMM a{color:black;
 /*background: linear-gradient(165deg, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%);}*/
 /*background-image:url(https://cdn.imgbin.com/24/15/24/imgbin-gold-background-LG9acL6xEbmd0uC6D9v9y3VxY.jpg);*/
-background-image:url(https://i.pinimg.com/originals/8f/21/96/8f219642c11fa57f38f2355988fb24d0.jpg);
+background-image:
+url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-png.png),
+url(https://i.pinimg.com/originals/8f/21/96/8f219642c11fa57f38f2355988fb24d0.jpg);
 background-size:100% 100%;
 border:solid gold 0.1rem;}
 #SMM span {color:#220;}
