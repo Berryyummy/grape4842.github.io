@@ -273,6 +273,8 @@ ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
     -webkit-mask-repeat:no-repeat;
     /*-webkit-mask-image: url(https://www.apple.com/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png);*/}
 
+#Mlist {padding:5%;}
+#iMacPNG {display:none;}
 
 #Mlist th {
 text-align:left;
@@ -302,8 +304,6 @@ background-position:center;
 width:10%; height:30%;
 display:flex;}
 
-#Mlist table {
-	margin:10% auto;}
 #Mlist span {vertical-align:top;}
 #Mlist td { 
 	width: calc(100% / 2);
@@ -410,7 +410,7 @@ background-image:url(img/ManyColorApple.png); }
 
 
 /*16:10 Display*/
-	@media (device-aspect-ratio:16/10) and screen (min-width:1200px;) {
+/*@media screen and (min-width:1200px) and (aspect-ratio:16/10) {
 	#MacBookPro {
 		width:60%;
 		margin-bottom:-21.6%;}
@@ -419,12 +419,15 @@ background-image:url(img/ManyColorApple.png); }
 			left:0px;}
 	#MBP {margin-bottom:-5%;}
 	.w980 {width:52%;}
-		#appleseries {margin-top:-23%;}}
+		#appleseries {margin-top:-23%;}
+#Mlist table {margin-bottom:-3%;}
+#iMacPNG {display:block;}
+*/}
 
 
 /*PC 16:9 landscape display*/
-	/*@media  (min-width:1100px) {*/
-@media (device-aspect-ratio:16/9) and screen (min-width:1200px;){
+@media screen and (min-width:1200px) {
+/*@media screen and (min-width:1200px) and (aspect-ratio:16/9) {*/
 		#MacBookPro {
 			width:60%;
 			margin-bottom:-21.6%;}
@@ -433,11 +436,13 @@ background-image:url(img/ManyColorApple.png); }
 			left:0px;}
 		#MBP {margin-bottom:0%;}
 		.w980 {width:52%;}
-		#appleseries {margin-top:-25%;}}
+		#appleseries {margin-top:-25%;}
+#Mlist table {margin-bottom:-30%;}
+#iMacPNG {display:block;}}
 
 
 /*iPad*/
-	@media screen and (min-width:760px) and (max-width:1200px) {
+	@media screen and (max-width:1100px) {
 	.w980{box-sizing:border-box;}
 	#AUC,#ApplePro {font-weight:600;}
 	#AUC {
