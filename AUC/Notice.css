@@ -409,7 +409,7 @@ background-image:url(img/ManyColorApple.png); }
 
 
 /*16:10 Display*/
-@media screen and (min-width:1000px) and (aspect-ratio:16/10), (aspect-ratio:10/16) {
+@media screen and (min-width:1000px) and (min-aspect-ratio:16/10), (aspect-ratio:10/16) {
 	#MacBookPro {
 		width:60%;
 		margin-bottom:-21.6%;}
@@ -419,6 +419,11 @@ background-image:url(img/ManyColorApple.png); }
 	#MBP {margin-bottom:-5%;}
 	.w980 {width:52%;}
 		#appleseries {margin-top:-23%;}}
+
+@media screen and (min-width:1000px) and (min-aspect-ratio:16/10) {
+	#Mlist table {margin-bottom:-55%;}
+	#Mlist a {padding:2rem 0.3rem;}
+	#iMacPNG {display:block;}}
 
 
 
@@ -435,8 +440,8 @@ background-image:url(img/ManyColorApple.png); }
 		.w980 {width:52%;}
 		#appleseries {margin-top:-25%;}}
 
-@media screen and (min-width:1000px) and (aspect-ratio:16/9) {
-#Mlist table {margin-bottom:-53%;}
+@media screen and (min-width:1000px) and (min-aspect-ratio:16/9) {
+#Mlist table {margin-bottom:-54%;}
 #iMacPNG {display:block;}}
 
 
@@ -458,7 +463,6 @@ background-image:url(img/ManyColorApple.png); }
 
 /*SmartPhone*/
 	@media screen and (max-width:760px) {
-	/*@media (device-aspect-ratio:9/16) {*/
 	.w980 {
 		box-sizing:border-box; 
 		width:85%; 
