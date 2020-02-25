@@ -422,7 +422,7 @@ background-image:url(img/ManyColorApple.png); }
 
 @media screen and (min-width:1000px) and (min-aspect-ratio:16/10) {
 	#Mlist table {margin-bottom:-55%;}
-	/*#Mlist a {padding:2rem 0.3rem;}*/
+	#Mlist a {padding:2rem 0.3rem;}
 	#iMacPNG {display:block;}}
 
 
