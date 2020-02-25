@@ -13,7 +13,9 @@ TEST Page
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#0b0; color:white;}
-body {background-color:#215; color:white;}
+
+
+body {background-color:#53d; color:white;}
 input {
 	border:1px darkblue solid; 
 	color:white; 
@@ -37,16 +39,16 @@ li {list-style-type:none; margin:0.5rem auto;}
 table {margin:1% auto;
 	border:solid 2px #112;
 	border-collapse:collapse;}
-.blankcell {font-size:120%;}
+.blankcell {font-size:120%; width:10%;}
 tr {padding:0px;}
-thead,th {background-color:#dcf;}
+thead,th {background-color:#a9f;}
 td,th {
 	font-size:120%;
 	font-weight:800;
 	border:solid 2px #112;
 	color:black;
 	padding:0.5%;}
-#displayoption td {width: calc(100%/4);}
+#displayoption td {width: calc(90%/4);}
 .white td,th {
 	font-size:200%;
 	padding:0.3em;
@@ -79,9 +81,12 @@ td {background-color:white;}
 
 
 
-@media (prefers-color-scheme:light) {
+@media (prefers-color-scheme:dark) {
+body {background-color:#215;}
+.dark {color:white;}
+th.dark {background-color:#103;}
+td.dark{background-color:#439;}}
 
-}
 </style>
 </head>
 <body>
@@ -119,7 +124,7 @@ td {background-color:white;}
 				행:설명항목
 			</th>
 			<th>고대비모드</th>
-			<th>다크모드</th>
+			<th class="dark">다크모드</th>
 			<th>&#40;스마트&#41;색반전</th>
 			<th>색반전</th>
 		</thead>
@@ -127,7 +132,7 @@ td {background-color:white;}
 			<tr>
 				<th>정의</th>
 				<td>사용자가 각 요소&#40;배경과 텍스트, 아이콘과 배경, 요소 테두리와 배경&#41;간을 명도대비가 높은 색상&#40;검정색:흰색, 검정색:노란색 등&#41;으로 색 체계를 재구성하여 표시하는 설정</td>
-				<td>사용자가 어두운 환경에서 기기를 사용할 경우, 빛으로 인해 눈이 부시지 않도록 어두운 색 체계로 재구성하여 표시하는 설정</td>
+				<td class="dark">사용자가 어두운 환경에서 기기를 사용할 경우, 빛으로 인해 눈이 부시지 않도록 어두운 색 체계로 재구성하여 표시하는 설정</td>
 				<td>사용자가 보는 화면을 멀티미디어&#40;이미지,동영상&#41;를 제외하고, 색을 반대되는 색상으로 표시하는 설정</td>
 				<td>사용자가 보는 화면을 반대되는 색상으로 표시하는 설정</td>
 			</tr>
@@ -140,7 +145,7 @@ td {background-color:white;}
 						<li>각 요소의 경계가 뚜렷하므로 요소의 위치나 영역을 정확히 인지하고 선택,조작할 수 있음.</li>
 					</ul>
 				</td>
-				<td>
+				<td class="dark">
 					<ul>
 						<li>밝은 화면을 보기 어려워하는 사용자는 전체적으로 어두운 색으로 변경된 화면이므로, 밝기를 줄인 것과 달리 화면을 쾌적하게 사용할 수 있음.</li>
 						<li>사용자에 따라 다를 수 있으나 같은 명도대비 조건의 경우, 어두운 배경에 밝은 글씨를 더 인지하기 쉬운 경우가 있으므로, 그러한 사용자의 경우, 사용성이 증진함.</li>
