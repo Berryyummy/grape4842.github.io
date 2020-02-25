@@ -30,13 +30,14 @@ input {
 a {text-decoration:none; 
 	color:white; 
 	font-weight:800;}
-ul {padding:0px; margin:0px;}
-li {list-style-type:none;}
+ul,dl {padding:0px; margin:0px;}
+li {list-style-type:none; margin:0.5rem auto;}
 
-#displayoption {width:70%; margin:1% auto;}
+#displayoption {width:80%; margin:1% auto;}
 table {
 	border:solid 2px #112;
 	border-collapse:collapse;}
+.blankcell {font-size:120%;}
 tr {padding:0px;}
 thead,th {background-color:#dcf;}
 td,th {
@@ -100,7 +101,10 @@ td {background-color:white;}
 	<table>
 		<caption class="blind">디스플레이 옵션의 각 명칭과 특징</caption>
 		<thead>
-			<th></th>
+			<th class="blankcell">
+				열:각 모드<br/>
+				행:설명항목
+			</th>
 			<th>고대비모드</th>
 			<th>다크모드</th>
 			<th>&#40;스마트&#41;색반전</th>
@@ -114,6 +118,7 @@ td {background-color:white;}
 				<td>사용자가 보는 화면을 멀티미디어&#40;이미지,동영상&#41;를 제외하고, 색을 반대되는 색상으로 표시하는 설정</td>
 				<td>사용자가 보는 화면을 반대되는 색상으로 표시하는 설정</td>
 			</tr>
+
 			<tr>
 				<th>특징</th>
 				<td>
@@ -122,7 +127,13 @@ td {background-color:white;}
 						<li>각 요소의 경계가 뚜렷하므로 요소의 위치나 영역을 정확히 인지하고 선택,조작할 수 있음.</li>
 					</ul>
 				</td>
-				<td></td>
+				<td>
+					<ul>
+						<li>밝은 화면을 보기 어려워하는 사용자는 전체적으로 어두운 색으로 변경된 화면이므로, 밝기를 줄인 것과 달리 화면을 쾌적하게 사용할 수 있음.</li>
+						<li>사용자에 따라 다를 수 있으나 같은 명도대비 조건의 경우, 어두운 배경에 밝은 글씨를 더 인지하기 쉬운 경우가 있으므로, 그러한 사용자의 경우, 사용성이 증진함.</li>
+						<li>OLED를 사용하는 전자기기의 경우, 밝기가 낮거나 어두운 색상으로 이루어진 화면은 자체적으로 발광하는 OLED의 특성상 전력소모가 줄어들게 되어 배터리를 다소 절약할 수 있음.</li>
+					</ul>
+				</td>
 				<td></td>
 				<td></td>
 			</tr>
