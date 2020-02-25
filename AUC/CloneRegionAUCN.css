@@ -108,7 +108,7 @@ transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 	position:sticky;
 	border-bottom:solid 1px #ffffff33; 
 	text-align:left; 
-	display:block; 
+	display:flex; 
 	margin:0px; 
 	font-size:19px; 
 	font-weight:600; 
