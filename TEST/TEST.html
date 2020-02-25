@@ -15,16 +15,24 @@ TEST Page
 ::selection {background:#0b0; color:white;}
 
 
-body {background-color:#53d; color:white;}
+body {background-color:#53d; color:white; margin:0px;}
+section,header {width:90%; margin:0px auto;}
+footer {
+	margin:0px; 
+	background-color:#103;
+	padding:3%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-top:5%;}
 input {
 	border:1px darkblue solid; 
 	color:white; 
 	background-color:black;
 	padding:5px;}
 .blind {overflow: hidden;
-	padding:0px; margin:0px;
-    display: block;
     position:relative;
+    font-size:1px;
     z-index:-1;
     width: 1px;
     height: 1px;
@@ -38,7 +46,7 @@ dd {font-size:90%; font-weight:900;}
 li {list-style-type:none; margin:0.5rem auto;}
 
 #a11ydate {width:80%; margin:1% auto;}
-table {margin:1% auto;
+table {margin:3% auto; 
 	border:solid 2px #112;
 	border-collapse:collapse;}
 .blankcell {font-size:120%; width:10%;}
@@ -53,6 +61,7 @@ td,th {
 	color:black;
 	padding:0.5%;}
 #displayoption td {width: calc(90%/4);}
+
 .white td,th {
 	font-size:200%;
 	padding:0.3em;
@@ -95,7 +104,9 @@ td.dark{background-color:#439; color:white;}}
 </style>
 </head>
 <body>
+<header>
 	<h1>스크린리더 테스트를 위한 요소,기타 잡다한 것을 일시적으로 마크업 한 페이지입니다.</h1>
+</header>
 <section id="a11ydate">
 	<table class="dark">
 		<caption class="blind">저시력,확대기능 사용자가 겪는 불편함</caption>
@@ -106,17 +117,49 @@ td.dark{background-color:#439; color:white;}}
 		</thead>
 		<tbody>
 			<tr>
-				<th rowspan="4">이미지 텍스트</th>
+				<th rowspan="5">이미지 텍스트</th>
 				<td class="imgcell"><img src="img/ZoomimgText.jpg" alt="확대 시 이미지가 뭉개져 글자를 읽기 어려움"></td>
 			</tr>
 			<tr>
 				<td class="imgcell"><img src="img/NoTheme.png" alt="다크모드, 고대비 등에서 제외되어 읽기 어려움"></td>
 			</tr>
 			<tr>
-				<td>이미지 텍스트는 한 번에 많은 내용이 제공된 경우, 스크린리더로 끊어 읽을 수 없음.</td>
+				<td>한 번에 많은 내용이 제공된 경우, 스크린리더로 끊어 읽을 수 없음.</td>
 			</tr>
 			<tr>
-				<td>이미지 텍스트는 별도의 대체텍스트가 올바르게 제공되지 않은 경우, 내용을 파악할 수 없음.</td>
+				<td>프로그램이 읽어들일 수 없기 때문에 번역,TTS출력등이 불가능함.</td>
+			</tr>
+			<tr>
+				<td>별도의 대체텍스트가 올바르게 제공되지 않은 경우, 내용을 파악할 수 없음.</td>
+			</tr>
+		</tbody>
+	</table>
+	<table>
+		<caption class="blind">확대기능 사용자와 저시력 사용자의 불편 사항</caption>
+		<thead>
+			<th colspan="2">문제</th>
+		</thead>
+		<tbody>
+			<tr>
+				<th rowspan="4">확대/크기조정</th>
+				<td>글자,화면을 크게 사용하는 경우 발생할 수 있는 문제
+				앱이 대응(크기와 무관하게 고정된 크기로 설정했거나 유동적인 크기 변경에 대응)하지 않았을 경우 화면의 레이아웃이 꺠져 앱을 정상적으로 이용하기 어려울 수 있음</td>
+			</tr>
+			<tr>
+				<td>PC에서 돋보기로 화면을 확대하여 사용하는 경우 마우스 오버 이벤트로 열리고 마우스가 영역 내에 있는 동안만 열려있는 메뉴의 경우, 주변 탐색을 위해 마우스가 해당 영역을 벗어나면 메뉴가 닫혀 자세한 내용을 확인할 수 없음.</td>
+			</tr>
+			<tr>
+				<td>위와 동일한 이유로 마우스 호버로만 확인할 수 있는 툴팁 또한 내용을 확인하기 어려움.</td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<th rowspan="2">그 외</th>
+				<td>아이콘만으로 기능을 설명하는 경우, 아이콘의 윤곽이 뚜렷히 보이지 않아 기능을 이해하지 못할 수 있음.</td>
+			</tr>
+			<tr>
+				<td>입력서식이 label과 연결되지 않은 경우, 입력서식을 직접 터치해야 하기 때문에 입력서식의 위치를 정확히 찾아 누르는 것이 어려움.</td>
 			</tr>
 		</tbody>
 	</table>
@@ -193,209 +236,199 @@ td.dark{background-color:#439; color:white;}}
 			</tr>
 		</tbody>
 	</table>
-
 </section>
+
+
 <section class="white">
-<table class="JAN20">
-	<caption>2020년 1월 설 명절 맞이 대 세일 일정표</caption>
-	<thead>
-		<th colspan="7" class="TT">해당 기간 내에 행사가 진행됩니다 자세한 사항은 홈페이지를 확인하세요.
-		</th>
-	</thead>
-	<tbody>
-	<tr>
-		<th class="sund">일</th>
-		<th>월</th>
-		<th>화</th>
-		<th>수</th>
-		<th>목</th>
-		<th>금</th>
-		<th class="satd">토</th>
-	</tr>
-	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td>1</td>
-		<td>2</td>
-		<td>3</td>
-		<td>4</td>
-	</tr>
-	<tr>
-		<td>5</td>
-		<td>6</td>
-		<td>7</td>
-		<td>8</td>
-		<td>9</td>
-		<td>10</td>
-		<td>11</td>
-	</tr>
-	<tr>
-		<td>12</td>
-		<td>13</td>
-		<td>14</td>
-		<td>15</td>
-		<td>16</td>
-		<td>17</td>
-		<td>18</td>
-	</tr>
-	<tr>
-		<td>19</td>
-		<td>20</td>
-		<td>21</td>
-		<td class="event">22
-			<span class="event better entx">행사기간</span>
-		</td>
-		<td class="event">23
-			<span class="event better entx">행사기간</span>
-		</td>
-		<td class="offd event">24
-			<span class="event better entx">행사기간</span>
-		</td>
-		<td class="offd event">25
-			<span class="event better entx">행사기간</span>
-		</td>
-	</tr>
-	<tr>
-		<td class="offd event">26
-<span class="event better entx">행사기간</span>
-</td>
-		<td class="offd event">27
-<span class="event better entx">행사기간</span>
-</td>
-		<td class="event">28
-<span class="event better entx">행사기간</span>
-</td>
-		<td class="event">29
-<span class="event better entx">행사기간</span>
-</td>
-		<td>30</td>
-		<td>31</td>
-		<td></td>
-	</tr>
-	</tbody>
-	<tfoot>
-		<td class="TT" colspan="7">
-		행사기간:2020년 1월 22일부터 29일까지
-		</td>
-	</tfoot>
-</table>
+	<table class="JAN20">
+		<caption>2020년 1월 설 명절 맞이 대 세일 일정표</caption>
+		<thead>
+			<th colspan="7" class="TT">해당 기간 내에 행사가 진행됩니다 자세한 사항은 홈페이지를 확인하세요.
+			</th>
+		</thead>
+		<tbody>
+		<tr>
+			<th class="sund">일</th>
+			<th>월</th>
+			<th>화</th>
+			<th>수</th>
+			<th>목</th>
+			<th>금</th>
+			<th class="satd">토</th>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+			<td>11</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>13</td>
+			<td>14</td>
+			<td>15</td>
+			<td>16</td>
+			<td>17</td>
+			<td>18</td>
+		</tr>
+		<tr>
+			<td>19</td>
+			<td>20</td>
+			<td>21</td>
+			<td class="event">22
+				<span class="event better entx">행사기간</span>
+			</td>
+			<td class="event">23
+				<span class="event better entx">행사기간</span>
+			</td>
+			<td class="offd event">24
+				<span class="event better entx">행사기간</span>
+			</td>
+			<td class="offd event">25
+				<span class="event better entx">행사기간</span>
+			</td>
+		</tr>
+		<tr>
+			<td class="offd event">26
+	<span class="event better entx">행사기간</span>
+	</td>
+			<td class="offd event">27
+	<span class="event better entx">행사기간</span>
+	</td>
+			<td class="event">28
+	<span class="event better entx">행사기간</span>
+	</td>
+			<td class="event">29
+	<span class="event better entx">행사기간</span>
+	</td>
+			<td>30</td>
+			<td>31</td>
+			<td></td>
+		</tr>
+		</tbody>
+		<tfoot>
+			<td class="TT" colspan="7">
+			행사기간:2020년 1월 22일부터 29일까지
+			</td>
+		</tfoot>
+	</table>
 
-<div class="colortestarea">
-	<ul>
-		<li style="color:#f00000;"></li>
-		<li style="color:#"></li>
-		<li style="color:#"></li>
-		<li style="color:#"></li>
-		<li style="color:#"></li>
-		<li style="color:#"></li>
-		<li style="color:#"></li>
-		<li style="color:#"></li>
-		<li style="color:#"></li>
-	</ul>
-</div>
+	<!-- <div class="colortestarea">
+		<ul>
+			<li style="color:#f00000;"></li>
+			<li style="color:#"></li>
+			<li style="color:#"></li>
+			<li style="color:#"></li>
+			<li style="color:#"></li>
+			<li style="color:#"></li>
+			<li style="color:#"></li>
+			<li style="color:#"></li>
+			<li style="color:#"></li>
+		</ul>
+	</div> -->
 </section>
-<form>
-<label for="labels">복수의 label에 동일한 for값을 부여한 경우를 테스트합니다.</label>
-<input id="labels" type="text">
-<label for="labels" class="blind">5분이내에 인증번호 6자리를 입력하세요</label>
-<label for="labels">3:30</label>
-</form>
-<label for="macbook-pro-13">Mac Book Pro</label>
-<input id="macbook-pro-13" type="image" name="" src="https://www.apple.com/v/macbook-pro-13/a/images/overview/hero/hero_fallback__dvvrevq48jcm_large.jpg">
 
-<span class="blind" id="ad">aria-describedby test</span>
-<span class="blind" id="none1">아무거나 입력해보세요.</span>
-<label for="adlabel">아리아 디스크립션의 라벨입니다</label>
-<input type="text" id="adlabel" aria-describedby="ad none1" title="디스크립션의 타이틀입니다."/>
+<section>
+	<form>
+		<label for="labels">복수의 label에 동일한 for값을 부여한 경우를 테스트합니다.</label>
+		<input id="labels" type="text">
+		<label for="labels" class="blind">5분이내에 인증번호 6자리를 입력하세요</label>
+		<label for="labels">3:30</label>
+	</form>
 
-<span class="blind" id="alb">aria-labeledby test</span>
-<span class="blind" id="none2">이 편집창은 의미가 없습니다.</span>
-<label for="alblabel">labeledby의 라벨입니다.</label>
-<input id="alblabel" type="text" aria-labeledby="alb none2" title="labeledby의 title입니다."/>
+	<span class="blind" id="ad">aria-describedby test</span>
+	<span class="blind" id="none1">아무거나 입력해보세요.</span>
+	<label for="adlabel">아리아 디스크립션의 라벨입니다</label>
+	<input type="text" id="adlabel" aria-describedby="ad none1" title="디스크립션의 타이틀입니다."/>
 
-<div class="input-timer-wrap">
-<span class="blind" aria-hidden="true" id="limit5m">
-5분이내에 인증번호를 확인하여 수정창에 입력해 주세요.</span>
-<span>aria-labeledby 2개 중 1개는 aria-hidden으로 숨겨져 있어 iOS는 읽지 못할 것입니다.</span>
-<br/>
-<span id="timer" class="timer" role="timer"> 4:43 </span>
-<label for="cer_num" aria-hidden="true" class="hidden">aria-hiddem으로 숨겨져 있어 iOS는 읽을 수 없을 것입니다.</label>
-<input aria-labeledby="limit5m timer" required="required" id="cer_num" type="tel" placeholder="인증번호를 입력해주세요" maxlength="5" title="인증번호 입력"/>
+	<span class="blind" id="alb">aria-labeledby test</span>
+	<span class="blind" id="none2">이 편집창은 의미가 없습니다.</span>
+	<label for="alblabel">labeledby의 라벨입니다.</label>
+	<input id="alblabel" type="text" aria-labeledby="alb none2" title="labeledby의 title입니다."/>
 
-<a href="https:www.apple.co.kr" aria-label="애플코리아">APPLE</a>
-<div aria-label="각종 바로가기 링크 목록" role="region">
-	<h3>평소 이용할 것 같은 사이트 목록</h3>
-	다양한 링크를 목록으로 제공합니다 자주 방문하시는 사이트의 링크를 임의로 선정하여 채워넣으십시오.
-	<ul>
-		<li>	
-			<a href="https://developer.mozilla.org/ja/docs/Web/Accessibility/ARIA/Roles" target="_blank">aria-role MDN</a>	
-		</li>
-		<li>
-			<a href="" target="_blank">SAMSUNG</a>	
-		</li>
-		<li>
-			<a href="https://www.apple.co.kr" target="_blank">Apple</a>	
-		</li>
-		<li>
-			<a href="" target="_blank">DELL</a>	
-		</li>
-		<li>
-			<a href="https://www.youtube.com" target="_blank">YouTube</a>	
-		</li>
-		<li>
-			<a href="https://www.naver.com" target="_blank">Naver</a>	
-		</li>
-		<li>
-			<a href="https://twitter.com/home" target="_blank">Twitter</a>	
-		</li>
-	</ul>
+	<div class="input-timer-wrap">
+		<span class="blind" aria-hidden="true" id="limit5m">
+		5분이내에 인증번호를 확인하여 수정창에 입력해 주세요.</span>
+		<span>aria-labeledby 2개 중 1개는 aria-hidden으로 숨겨져 있어 iOS는 읽지 못할 것입니다.</span>
+		<br/>
+		<span id="timer" class="timer" role="timer"> 4:43 </span>
+		<label for="cer_num" aria-hidden="true" class="hidden">aria-hiddem으로 숨겨져 있어 iOS는 읽을 수 없을 것입니다.</label>
+		<input aria-labeledby="limit5m timer" required="required" id="cer_num" type="tel" placeholder="인증번호를 입력해주세요" maxlength="5" title="인증번호 입력"/>
 
-<label for="testinput1">모델명 
-	<span aria-label="필수">*</span>
-</label>
-<input id="testinput1" type="text" name=""/>
+		<a href="https:www.apple.co.kr" aria-label="애플코리아">APPLE</a>
+	</div>
+	<div aria-label="각종 바로가기 링크 목록" role="region">
+		<h3>평소 이용할 것 같은 사이트 목록</h3>
+		다양한 링크를 목록으로 제공합니다 자주 방문하시는 사이트의 링크를 임의로 선정하여 채워넣으십시오.
+		<ul>
+			<li>	
+				<a href="https://developer.mozilla.org/ja/docs/Web/Accessibility/ARIA/Roles" target="_blank">aria-role MDN</a>	
+			</li>
+			<li>
+				<a href="" target="_blank">SAMSUNG</a>	
+			</li>
+			<li>
+				<a href="https://www.apple.co.kr" target="_blank">Apple</a>	
+			</li>
+			<li>
+				<a href="" target="_blank">DELL</a>	
+			</li>
+			<li>
+				<a href="https://www.youtube.com" target="_blank">YouTube</a>	
+			</li>
+			<li>
+				<a href="https://www.naver.com" target="_blank">Naver</a>	
+			</li>
+			<li>
+				<a href="https://twitter.com/home" target="_blank">Twitter</a>	
+			</li>
+		</ul>
 
-<a href="https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.pro" title="플레이 스토어로 연결됨" aria-label="플레이 스토어에서 MX 플레이어 프로 다운로드">MX Player Pro</a>
+	<label for="testinput1">모델명 
+		<span aria-label="필수">*</span>
+	</label>
+	<input id="testinput1" type="text" name=""/>
 
-<p role="button" title="동영상 보기">TEST</p>
-<video id="movie" style="width:100%; margin-bottom:10px;" src="http://203.233.85.18/VOD/mobile_20190730135153.mp4" type=".mp4" controls="" title="교보러버스"></video>
-</div>
-<ol>
-	<li>ALT</li>
-	<li>Caption</li>
-	<li>COlor</li>
-	<li>Instruction</li>
-	<li>COntrast</li>
-	<li>Auto Start</li>
-</ol>
+	<a href="https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.pro" title="플레이 스토어로 연결됨" aria-label="플레이 스토어에서 MX 플레이어 프로 다운로드">MX Player Pro</a>
+</section>
 
+<section>
+	<p role="button" title="동영상 보기">TEST</p>
+	<video id="movie" style="width:100%; margin-bottom:10px;" src="http://203.233.85.18/VOD/mobile_20190730135153.mp4" type=".mp4" controls="" title="교보러버스"></video>
+	</div>
+	<ol>
+		<li>ALT</li>
+		<li>Caption</li>
+		<li>COlor</li>
+		<li>Instruction</li>
+		<li>COntrast</li>
+		<li>Auto Start</li>
+	</ol>
+</section>
 <section aria-hidden="true">
 	<input type="text" name="" title="그냥 편집창">
 	<h6>헤딩 6</h6>
 	<span>Nintendo</span>
-<div>
-	<div style="font-size:14pt;">5-1. 일반 텍스트의 경우 보통 크기 (18pt 미만, 또는 굵은 14pt 미만)의 텍스트가 4.5:1을 만족하지 않은 경우</div>
-	<div style="font-size:18pt;">5-2. 일반 텍스트의 경우 텍스트의 크기가 18pt 이상, 또는 굵은 14pt 이상의 텍스트가 3:1을 만족하지 않은 경우</div>
-	<div style="font-size:14pt; font-weight:900;">5-2. 일반 텍스트의 경우 텍스트의 크기가 18pt 이상, 또는 굵은 14pt 이상의 텍스트가 3:1을 만족하지 않은 경우</div>
-</div>
+	<div>
+		<div style="font-size:14pt;">5-1. 일반 텍스트의 경우 보통 크기 (18pt 미만, 또는 굵은 14pt 미만)의 텍스트가 4.5:1을 만족하지 않은 경우</div>
+		<div style="font-size:18pt;">5-2. 일반 텍스트의 경우 텍스트의 크기가 18pt 이상, 또는 굵은 14pt 이상의 텍스트가 3:1을 만족하지 않은 경우</div>
+		<div style="font-size:14pt; font-weight:900;">5-2. 일반 텍스트의 경우 텍스트의 크기가 18pt 이상, 또는 굵은 14pt 이상의 텍스트가 3:1을 만족하지 않은 경우</div>
+	</div>
 </section>
+<footer>
+	배찬우 2020
+</footer>
 </body>
 </html>
-
-
-<table>
-<caption>자산구성현황</caption>
-<thead>
-<th>주식</th>
-<th>채권</th>
-<th>유동성,기타</th>
-</thead>
-<tbody>
-<tr>
-<td>36.35%</td>
-<td>11.39%</td>
-<td>52.26%</td>
-</tr>
-</tbody>
-</table>
