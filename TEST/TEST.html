@@ -12,74 +12,423 @@ TEST Page
 @charset "UTF-8";
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
-::selection {background:#afc; color:white;}
-body {background-color:#215; color:white;}
-input {border:1px darkblue solid; color:white; background-color:black;}
-.blind {overflow: hidden;
-    display: block;
-    width: 0;
-    height: 0;
-    opacity: 0;}
-a {text-decoration:none; color:white; font-weight:800;}
-li {list-style-type:none;}
-@media (prefers-color-scheme:light) {
+::selection {background:#0b0; color:white;}
 
-}
+
+body {background-color:#53d; color:white; margin:0px;}
+section,header {width:90%; margin:0px auto;}
+footer {
+	margin:0px; 
+	background-color:#103;
+	padding:3%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-top:5%;}
+input {
+	border:1px darkblue solid; 
+	color:white; 
+	background-color:black;
+	padding:5px;}
+.blind {overflow: hidden;
+    position:relative;
+    font-size:1px;
+    z-index:-1;
+    width: 1px;
+    height: 1px;
+    opacity: 0;}
+a {text-decoration:none; 
+	color:white; 
+	font-weight:800;}
+ul,dl,dd,dt {padding:0px; margin:0px;}
+dd {margin-bottom:3%;}
+dd {font-size:90%; font-weight:900;}
+li {list-style-type:none; margin:0.5rem auto;}
+
+#a11ydate {width:80%; margin:1% auto;}
+table {margin:3% auto; 
+	border:solid 2px #112;
+	border-collapse:collapse;}
+.blankcell {font-size:120%; width:10%;}
+.imgcell {padding:0px; margin:0px; border:none;}
+.imgcell img {height:100%; align-items:center; display:flex;}
+tr {padding:0px;}
+thead,th {background-color:#a9f;}
+td,th {
+	font-size:120%;
+	font-weight:800;
+	border:solid 2px #112;
+	color:black;
+	padding:0.5%;}
+#displayoption td {width: calc(90%/4);}
+
+.white td,th {
+	font-size:200%;
+	padding:0.3em;
+	width:5rem; height:5rem;
+	margin:0px auto;}
+.white {
+	background-color:white; 
+	padding:3% 1%;}
+.JAN20 caption {
+	font-size:220%; 
+	font-weight:900; 
+	color:#e00;}
+.white td:last-child,.white th:last-child {
+	background-color:#def; 
+	color:#03d;}
+.white td:first-child,.wthie th:first-child,.offd {color:#b30;}
+.white td:first-child,.white th:first-child {background-color:#fed;}
+.event,.TT {
+	/*border:none;*/
+	background-color:#dfe !important; 
+	color:#073 !important;
+	font-weight:900;}
+.TT {font-size:150%;}
+
+td {background-color:white;}
+
+.event {border-width:4px 1px;}
+.entx {font-size:70%;}
+.better {}
+
+
+
+@media (prefers-color-scheme:dark) {
+body {background-color:#215;}
+.dark th{background-color:#103; color:white;}
+.dark td{background-color:#439; color:white;}
+th.dark{background-color:#103; color:white;}
+td.dark{background-color:#439; color:white;}}
+
 </style>
 </head>
 <body>
-	<h1>스크린리더 테스트를 위한 요소가 배치된 페이지입니다.</h1>
-<div class="input-timer-wrap">
-<span class="blind" aria-hidden="true" id="limit5m">
-5분이내에 인증번호를 확인하여 수정창에 입력해 주세요.</span>
-<span id="timer" class="timer" aria-labeledby="limit5m timer" role="timer"> 4:43 </span>
-<input required="required" id="cer_num" type="tel" placeholder="인증번호를 입력해주세요" maxlength="5" title="인증번호 입력"/>
+<header>
+	<h1>스크린리더 테스트를 위한 요소,기타 잡다한 것을 일시적으로 마크업 한 페이지입니다.</h1>
+</header>
+<section id="a11ydate">
+	<table class="dark">
+		<caption class="blind">저시력,확대기능 사용자가 겪는 불편함</caption>
+		<thead>
+			<th class="blankcell"></th>
+			<th>문제</th>
+			<!-- <th>예시</th> -->
+		</thead>
+		<tbody>
+			<tr>
+				<th rowspan="5">이미지 텍스트</th>
+				<td class="imgcell"><img src="img/ZoomimgText.jpg" alt="확대 시 이미지가 뭉개져 글자를 읽기 어려움"></td>
+			</tr>
+			<tr>
+				<td class="imgcell"><img src="img/NoTheme.png" alt="다크모드, 고대비 등에서 제외되어 읽기 어려움"></td>
+			</tr>
+			<tr>
+				<td>한 번에 많은 내용이 제공된 경우, 스크린리더로 끊어 읽을 수 없음.</td>
+			</tr>
+			<tr>
+				<td>프로그램이 읽어들일 수 없기 때문에 번역,TTS출력등이 불가능함.</td>
+			</tr>
+			<tr>
+				<td>별도의 대체텍스트가 올바르게 제공되지 않은 경우, 내용을 파악할 수 없음.</td>
+			</tr>
+		</tbody>
+	</table>
+	<table>
+		<caption class="blind">확대기능 사용자와 저시력 사용자의 불편 사항</caption>
+		<thead>
+			<th colspan="2">문제</th>
+		</thead>
+		<tbody>
+			<tr>
+				<th rowspan="4">확대/크기조정</th>
+				<td>글자,화면을 크게 사용하는 경우 발생할 수 있는 문제
+				앱이 대응(크기와 무관하게 고정된 크기로 설정했거나 유동적인 크기 변경에 대응)하지 않았을 경우 화면의 레이아웃이 꺠져 앱을 정상적으로 이용하기 어려울 수 있음</td>
+			</tr>
+			<tr>
+				<td>PC에서 돋보기로 화면을 확대하여 사용하는 경우 마우스 오버 이벤트로 열리고 마우스가 영역 내에 있는 동안만 열려있는 메뉴의 경우, 주변 탐색을 위해 마우스가 해당 영역을 벗어나면 메뉴가 닫혀 자세한 내용을 확인할 수 없음.</td>
+			</tr>
+			<tr>
+				<td>위와 동일한 이유로 마우스 호버로만 확인할 수 있는 툴팁 또한 내용을 확인하기 어려움.</td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<th rowspan="2">그 외</th>
+				<td>아이콘만으로 기능을 설명하는 경우, 아이콘의 윤곽이 뚜렷히 보이지 않아 기능을 이해하지 못할 수 있음.</td>
+			</tr>
+			<tr>
+				<td>입력서식이 label과 연결되지 않은 경우, 입력서식을 직접 터치해야 하기 때문에 입력서식의 위치를 정확히 찾아 누르는 것이 어려움.</td>
+			</tr>
+		</tbody>
+	</table>
 
-<a href="https:www.apple.co.kr" aria-label="애플코리아">APPLE</a>
-<div aria-label="각종 바로가기 링크 목록" role="region">
-	<h3>평소 이용할 것 같은 사이트 목록</h3>
-	다양한 링크를 목록으로 제공합니다 자주 방문하시는 사이트의 링크를 임의로 선정하여 채워넣으십시오.
-	<ul>
-		<li>	
-			<a href="https://developer.mozilla.org/ja/docs/Web/Accessibility/ARIA/Roles" target="_blank">aria-role MDN</a>	
-		</li>
-		<li>
-			<a href="" target="_blank">SAMSUNG</a>	
-		</li>
-		<li>
-			<a href="https://www.apple.co.kr" target="_blank">Apple</a>	
-		</li>
-		<li>
-			<a href="" target="_blank">DELL</a>	
-		</li>
-		<li>
-			<a href="https://www.youtube.com" target="_blank">YouTube</a>	
-		</li>
-		<li>
-			<a href="https://www.naver.com" target="_blank">Naver</a>	
-		</li>
-		<li>
-			<a href="https://twitter.com/home" target="_blank">Twitter</a>	
-		</li>
-	</ul>
 
-<label aria-hidden="true" for="testinput1">모델명 
-	<span aria-label="필수">*</span>
-</label>
-<input id="testinput1" type="text" name=""/>
 
-<a href="https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.pro" title="플레이 스토어로 연결됨" aria-label="플레이 스토어에서 MX 플레이어 프로 다운로드">MX Player Pro</a>
 
-<p role="button" title="동영상 보기">TEST</p>
-<video id="movie" style="width:100%; margin-bottom:10px;" src="http://203.233.85.18/VOD/mobile_20190730135153.mp4" type=".mp4" controls="" title="교보러버스"></video>
-</div>
-<ol>
-	<li>ALT</li>
-	<li>Caption</li>
-	<li>COlor</li>
-	<li>Instruction</li>
-	<li>COntrast</li>
-	<li>Auto Start</li>
-</ol>
+	<table id="displayoption">
+		<caption class="blind">디스플레이 옵션의 각 명칭과 특징</caption>
+		<thead>
+			<th class="blankcell">
+				열:각 모드<br/>
+				행:설명항목
+			</th>
+			<th>고대비모드</th>
+			<th class="dark">다크모드</th>
+			<th>&#40;스마트&#41;색반전</th>
+			<th>색반전</th>
+		</thead>
+		<tbody>
+			<tr>
+				<th>정의</th>
+				<td>사용자가 각 요소&#40;배경과 텍스트, 아이콘과 배경, 요소 테두리와 배경&#41;간을 명도대비가 높은 색상&#40;검정색:흰색, 검정색:노란색 등&#41;으로 색 체계를 재구성하여 표시하는 설정</td>
+				<td class="dark">사용자가 어두운 환경에서 기기를 사용할 경우, 빛으로 인해 눈이 부시지 않도록 어두운 색 체계로 재구성하여 표시하는 설정</td>
+				<td>사용자가 보는 화면을 멀티미디어&#40;이미지,동영상&#41;를 제외하고, 색을 반대되는 색상으로 표시하는 설정</td>
+				<td>사용자가 보는 화면을 반대되는 색상으로 표시하는 설정</td>
+			</tr>
+
+			<tr>
+				<th>특징</th>
+				<td>
+					<ul>
+						<li>각 요소간의 경계가 색상과 상관없이 명도대비로 구별되어 색을 인지하지 못하여도 경계를 뚜렷히 구분할 수 있음.</li>
+						<li>각 요소의 경계가 뚜렷하므로 요소의 위치나 영역을 정확히 인지하고 선택,조작할 수 있음.</li>
+					</ul>
+				</td>
+				<td class="dark">
+					<ul>
+						<li>밝은 화면을 보기 어려워하는 사용자는 전체적으로 어두운 색으로 변경된 화면이므로, 밝기를 줄인 것과 달리 화면을 쾌적하게 사용할 수 있음.</li>
+						<li>사용자에 따라 다를 수 있으나 같은 명도대비 조건의 경우, 어두운 배경에 밝은 글씨를 더 인지하기 쉬운 경우가 있으므로, 그러한 사용자의 경우, 사용성이 증진함.</li>
+						<li>OLED를 사용하는 전자기기의 경우, 밝기가 낮거나 어두운 색상으로 이루어진 화면은 자체적으로 발광하는 OLED의 특성상 전력소모가 줄어들게 되어 배터리를 다소 절약할 수 있음.</li>
+					</ul>
+				</td>
+				<td>일반적인 색상 반전과 달리, 영상이나 이미지 등을 반전하지 않기 때문에 다크모드가 제공되지 않는 환경에서 사용하기에 적합함.</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th>설정방법</th>
+				<td></td>
+				<td class="dark">
+<!-- 					<dl>
+						<dt>Android &#40;10부터 지원&#41;</dt>
+						<dd></dd>
+					</dl> -->
+					<dl>
+						<dt>Galaxy &#40;Android Pie 9 이상&#41;</dt>
+						<dd>설정-디스플레이=야간 모드/다크 모드</dd>
+					</dl>
+					<dl>
+						<dt>iOS &#40;13부터 지원&#41;</dt>
+						<dd>설정-디스플레이=화면 모드</dd>
+					</dl>
+					<dl>
+						<dt>Windows 10</dt>
+						<dd>설정-개인 설정-색=색 선택</dd>
+					</dl>
+					<dl>
+						<dt>MacOS &#40;10.14 <span aria-label="모하비">Mojave</span>부터 지원&#41;</dt>
+						<dd>설정-일반=화면 모드</dd>
+					</dl>
+				</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+
+<section class="white">
+	<table class="JAN20">
+		<caption>2020년 1월 설 명절 맞이 대 세일 일정표</caption>
+		<thead>
+			<th colspan="7" class="TT">해당 기간 내에 행사가 진행됩니다 자세한 사항은 홈페이지를 확인하세요.
+			</th>
+		</thead>
+		<tbody>
+		<tr>
+			<th class="sund">일</th>
+			<th>월</th>
+			<th>화</th>
+			<th>수</th>
+			<th>목</th>
+			<th>금</th>
+			<th class="satd">토</th>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+			<td>11</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>13</td>
+			<td>14</td>
+			<td>15</td>
+			<td>16</td>
+			<td>17</td>
+			<td>18</td>
+		</tr>
+		<tr>
+			<td>19</td>
+			<td>20</td>
+			<td>21</td>
+			<td class="event">22
+				<span class="event better entx">행사기간</span>
+			</td>
+			<td class="event">23
+				<span class="event better entx">행사기간</span>
+			</td>
+			<td class="offd event">24
+				<span class="event better entx">행사기간</span>
+			</td>
+			<td class="offd event">25
+				<span class="event better entx">행사기간</span>
+			</td>
+		</tr>
+		<tr>
+			<td class="offd event">26
+	<span class="event better entx">행사기간</span>
+	</td>
+			<td class="offd event">27
+	<span class="event better entx">행사기간</span>
+	</td>
+			<td class="event">28
+	<span class="event better entx">행사기간</span>
+	</td>
+			<td class="event">29
+	<span class="event better entx">행사기간</span>
+	</td>
+			<td>30</td>
+			<td>31</td>
+			<td></td>
+		</tr>
+		</tbody>
+		<tfoot>
+			<td class="TT" colspan="7">
+			행사기간:2020년 1월 22일부터 29일까지
+			</td>
+		</tfoot>
+	</table>
+
+	<!-- <div class="colortestarea">
+		<ul>
+			<li style="color:#f00000;"></li>
+			<li style="color:#"></li>
+			<li style="color:#"></li>
+			<li style="color:#"></li>
+			<li style="color:#"></li>
+			<li style="color:#"></li>
+			<li style="color:#"></li>
+			<li style="color:#"></li>
+			<li style="color:#"></li>
+		</ul>
+	</div> -->
+</section>
+
+<section>
+	<form>
+		<label for="labels">복수의 label에 동일한 for값을 부여한 경우를 테스트합니다.</label>
+		<input id="labels" type="text">
+		<label for="labels" class="blind">5분이내에 인증번호 6자리를 입력하세요</label>
+		<label for="labels">3:30</label>
+	</form>
+
+	<span class="blind" id="ad">aria-describedby test</span>
+	<span class="blind" id="none1">아무거나 입력해보세요.</span>
+	<label for="adlabel">아리아 디스크립션의 라벨입니다</label>
+	<input type="text" id="adlabel" aria-describedby="ad none1" title="디스크립션의 타이틀입니다."/>
+
+	<span class="blind" id="alb">aria-labeledby test</span>
+	<span class="blind" id="none2">이 편집창은 의미가 없습니다.</span>
+	<label for="alblabel">labeledby의 라벨입니다.</label>
+	<input id="alblabel" type="text" aria-labeledby="alb none2" title="labeledby의 title입니다."/>
+
+	<div class="input-timer-wrap">
+		<span class="blind" aria-hidden="true" id="limit5m">
+		5분이내에 인증번호를 확인하여 수정창에 입력해 주세요.</span>
+		<span>aria-labeledby 2개 중 1개는 aria-hidden으로 숨겨져 있어 iOS는 읽지 못할 것입니다.</span>
+		<br/>
+		<span id="timer" class="timer" role="timer"> 4:43 </span>
+		<label for="cer_num" aria-hidden="true" class="hidden">aria-hiddem으로 숨겨져 있어 iOS는 읽을 수 없을 것입니다.</label>
+		<input aria-labeledby="limit5m timer" required="required" id="cer_num" type="tel" placeholder="인증번호를 입력해주세요" maxlength="5" title="인증번호 입력"/>
+
+		<a href="https:www.apple.co.kr" aria-label="애플코리아">APPLE</a>
+	</div>
+	<div aria-label="각종 바로가기 링크 목록" role="region">
+		<h3>평소 이용할 것 같은 사이트 목록</h3>
+		다양한 링크를 목록으로 제공합니다 자주 방문하시는 사이트의 링크를 임의로 선정하여 채워넣으십시오.
+		<ul>
+			<li>	
+				<a href="https://developer.mozilla.org/ja/docs/Web/Accessibility/ARIA/Roles" target="_blank">aria-role MDN</a>	
+			</li>
+			<li>
+				<a href="" target="_blank">SAMSUNG</a>	
+			</li>
+			<li>
+				<a href="https://www.apple.co.kr" target="_blank">Apple</a>	
+			</li>
+			<li>
+				<a href="" target="_blank">DELL</a>	
+			</li>
+			<li>
+				<a href="https://www.youtube.com" target="_blank">YouTube</a>	
+			</li>
+			<li>
+				<a href="https://www.naver.com" target="_blank">Naver</a>	
+			</li>
+			<li>
+				<a href="https://twitter.com/home" target="_blank">Twitter</a>	
+			</li>
+		</ul>
+
+	<label for="testinput1">모델명 
+		<span aria-label="필수">*</span>
+	</label>
+	<input id="testinput1" type="text" name=""/>
+
+	<a href="https://play.google.com/store/apps/details?id=com.mxtech.videoplayer.pro" title="플레이 스토어로 연결됨" aria-label="플레이 스토어에서 MX 플레이어 프로 다운로드">MX Player Pro</a>
+</section>
+
+<section>
+	<p role="button" title="동영상 보기">TEST</p>
+	<video id="movie" style="width:100%; margin-bottom:10px;" src="http://203.233.85.18/VOD/mobile_20190730135153.mp4" type=".mp4" controls="" title="교보러버스"></video>
+	</div>
+	<ol>
+		<li>ALT</li>
+		<li>Caption</li>
+		<li>COlor</li>
+		<li>Instruction</li>
+		<li>COntrast</li>
+		<li>Auto Start</li>
+	</ol>
+</section>
+<section aria-hidden="true">
+	<input type="text" name="" title="그냥 편집창">
+	<h6>헤딩 6</h6>
+	<span>Nintendo</span>
+	<div>
+		<div style="font-size:14pt;">5-1. 일반 텍스트의 경우 보통 크기 (18pt 미만, 또는 굵은 14pt 미만)의 텍스트가 4.5:1을 만족하지 않은 경우</div>
+		<div style="font-size:18pt;">5-2. 일반 텍스트의 경우 텍스트의 크기가 18pt 이상, 또는 굵은 14pt 이상의 텍스트가 3:1을 만족하지 않은 경우</div>
+		<div style="font-size:14pt; font-weight:900;">5-2. 일반 텍스트의 경우 텍스트의 크기가 18pt 이상, 또는 굵은 14pt 이상의 텍스트가 3:1을 만족하지 않은 경우</div>
+	</div>
+</section>
+<footer>
+	배찬우 2020
+</footer>
 </body>
 </html>

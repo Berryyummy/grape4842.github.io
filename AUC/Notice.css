@@ -1,0 +1,639 @@
+/*올라오는 애니메이션*/
+#ApplePro,#hello
+{animation-duration:2s;
+animation-name:load; 
+animation-delay:1.5s;
+animation-fill-mode:forwards;
+opacity:0; 
+height:100%;
+position:relative;}
+
+@keyframes load {
+	from {opacity:0; transform:translateY(15%);}
+	to {opacity:1; transform:translateY(0%);}}
+
+/*애니메이션이 끝난 비디오맥북을 숨기는 애니메이션*/
+#MacBookPro {
+animation-delay:4s;
+animation-duration:2s;
+animation-name:bmac;
+animation-fill-mode:forwards;}
+
+@keyframes bmac {
+	from {opacity:1;}
+	to {opacity:0;}}
+
+/*#MacBookPro {
+animation-delay:5s;
+animation-duration:2s;
+animation-name:macbook;
+animation-fill-mode:forwards;}
+
+@keyframes macbook {
+	from {opacity:1;}
+	to {opacity:0;}}
+*/
+
+.w980{width:90%;}
+
+/*text gradient*/
+.clip {
+	background-clip:text; 
+	-webkit-background-clip:text;
+	color: transparent; 
+	background-size:cover;}
+
+/*큰 영역별 공통 CSS*/
+body {
+	background-color:#121217; 
+	color:white;}
+
+
+
+
+p {word-break:keep-all; 
+	margin:29px 0px; 
+	font-size:131.25%; 
+	font-weight:600; 
+	letter-spacing:0.011em;
+	display: block;
+   margin-block-start:1em;
+   margin-block-end:1em;
+   margin-inline-start:0px;
+   margin-inline-end:0px;}
+
+
+	#notice {border:none;}
+	#AT {border-bottom:rgba(66,66,69,0.95) solid 1px;}
+	#CP {
+	font-size:0.5em;
+	border-top:#424245 1px solid;}
+
+
+
+/*약관 전문 a*/
+.fullgo {
+	vertical-align:top;
+	line-height:33px; 
+	color:#6D7A71; 
+	text-align:center; 
+	font-weight:600;}
+
+/*Heading*/
+h1 {display:flex;
+	font-size:100%; 
+	text-align:left;
+	opacity:0.92;
+	-webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;}
+
+
+h2 {
+	font-size:200%;
+	color:white; 
+	text-align:center;  
+	line-height:110%; 
+	font-weight: 600;
+	margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;    
+    text-align:center;
+	line-height: 1.14286;}
+
+h3 {color:#aee1cd;
+	font-weight:600; 
+	letter-spacing: 0.012em; 
+	vertical-align:middle; 
+    line-height: 1.31579;}
+
+h2,h3 {font-size:64px;}
+
+h4,h4>span {
+	color:#ffe681;
+	text-align:center; 
+	vertical-align:middle;
+	line-height:1.5em; 
+	letter-spacing: 0em;
+	font-size:48px;}
+
+
+
+ul,li,ol {
+	padding:0px; 
+	word-break:keep-all; 
+	text-align:left; 
+	font-size:21px; 
+	font-weight:600; 
+	list-style:none;}
+.fullist {margin:1em auto;}
+.fullist ul {margin:0.1em auto; padding:0px;}
+.fullist li,.fullist dl,.kr{
+	margin:0.3em auto; 
+	padding:0px; 
+	list-style-position:outside; 
+	word-break: keep-all; 
+	font-size:19px;
+	text-align:left;}
+dl * {text-align:left; vertical-align:middle;}
+dl svg {margin:-1em auto;}
+
+#hello {color:#6D7A71; text-align:center; 
+	font-weight:600; font-size:21px;}
+
+
+
+
+#help strong,#helpM strong {color:#EBEBE3; font-weight:900; display:block;}
+#help a,#helpM a {width:12em;}
+#help span,#helpM span{
+color:#EBEBE3; 
+font-size:14px; 
+text-align:left; 
+font-weight:400;
+margin-top:0.4em;
+display:inline-block;}
+
+#helpbox,#helpboxM {
+	padding:0px; 
+	background-color:#222; 
+	background-clip:unset; 
+	width:100%;}
+
+#help {
+	margin:2em auto; 
+	padding:2em;}
+#bighelp {
+	width:80%; 
+	display:flex;}
+.goask { 
+	font-size:14px; 
+	color:#2997ff;}
+
+
+.master {
+	background-color:white; 
+	color:black; 
+	font-weight:900; 
+	display:inline-flex;}
+
+
+
+#AUC {font-size:21px; 
+	text-align:center; 
+	color:#63636e; 
+	margin-bottom:0.15em; 
+	line-height: 1.19048; 
+	font-weight: 600; 
+	letter-spacing: .011em;}
+/*https://www.apple.com/v/iphone-xs/d/images/overview/copy_texture_3_large.jpg*/
+
+.kr {color:#fab;}
+
+#notch {width:100%;}
+.walert {
+	padding:0.7em;
+	border-radius:1em;
+	color:black; 
+	background-color:#ffffffaa; 
+	box-sizing:border-box; 
+	position:relative; 
+	width:100%;
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);}
+#inP0, #inPC2 {position:relative;}
+#inPC2 {
+	width:100%; }
+#inP {
+	width:83%;
+	top:27%;
+	left:50%; 
+	transform:translateX(-50%);
+	color:black; 
+	position:absolute; 
+	height:0em;}
+#full {text-align:left;}
+
+
+
+
+
+
+#appleseries {
+	width:100%; 
+	position:relative;
+	margin-top:-10%;}
+#memoticon {
+	width:80%;
+	box-shadow: 0em 0em 3em 3em rgb(33,33,33); 
+	margin:7em auto;}
+
+#MPC {padding:0px; margin:0px;}
+	#FPC {text-align:center;}
+
+	#inPC {position:relative;}
+	#inPC p {line-height: 1.52947; font-size:1.1em;}
+	.fullT {color:white; margin:auto;}
+	#fullhi {margin:0.5em auto;}
+
+#apple12 {width:100%; margin:3em 0em;}
+
+ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
+
+
+
+
+/*약관 전문-닉네임 dd Apple Logo*/
+#raina1 {fill:#fcc;}
+#raina2 {fill:#fda;}
+#raina3 {fill:#ffa;}
+#raina4 {fill:#dfa;}
+#raina5 {fill:#abf;}
+#raina7 {fill:#baf;}
+
+
+#MBP {
+	height:100%;
+	margin-bottom:-15%;
+	position:relative;
+	overflow-x:hidden;}
+#MacS {
+	width:125%;
+	position:relative; 
+	left:-12.5%;}
+
+#MacBookPro {
+	margin-bottom:-32.7%;
+	width:90%;
+	position:relative;
+	z-index:100;
+	-webkit-mask-size:contain;
+	-webkit-mask-position:center;
+    -webkit-mask-repeat:no-repeat;
+    /*-webkit-mask-image: url(https://www.apple.com/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png);*/}
+
+#Mlist {padding:5%;}
+#iMacPNG {display:none;}
+
+#Mlist th {
+text-align:left;
+font-size:1rem;
+padding:3% 0px;}
+
+#Mlist a {
+	position:relative;
+	border-radius:1rem;
+	width:100%;
+	height:100%;
+	color:white; 
+	font-weight:900;
+	font-size:1.4rem;
+	padding:3rem 0.5rem;
+	text-align:center;
+	align-items:center;
+	box-sizing:border-box;}
+
+#Mlist a:before{
+	content: ''; 
+position:absolute;
+top:3%; left:2%;
+background-repeat:no-repeat;
+background-size:contain;
+background-position:center;
+width:10%; height:30%;
+display:flex;}
+
+#Mlist span {vertical-align:top;}
+#Mlist td { 
+	width: calc(100% / 2);
+	padding:1%;}
+#Mlist p {display:none;}
+
+#RM4 a{
+background:
+linear-gradient(165deg, rgba(170,170,187,1) 0%,rgba(85,85,102,1) 40%,rgba(0,0,17,1) 41%,rgba(51,51,68,1) 100%);
+border:solid skyblue 0.1rem;}
+#RM4 a:before{background-image:url(img/appleX.png);}
+
+
+#SMM a{color:black;
+/*background: linear-gradient(165deg, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%);}*/
+/*background-image:url(https://cdn.imgbin.com/24/15/24/imgbin-gold-background-LG9acL6xEbmd0uC6D9v9y3VxY.jpg);*/
+background-image:
+url(https://i.pinimg.com/originals/8f/21/96/8f219642c11fa57f38f2355988fb24d0.jpg);
+background-size:100% 100%;
+border:solid gold 0.1rem;}
+#SMM a:before {
+background-image:
+url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-png.png);}
+#SMM span {color:#220;}
+
+#OMU a {
+/*background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(204,238,221,1) 50%,rgba(187,238,204,1) 100%);*/
+background-image:
+url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);
+background-size:contain;
+color:#022;
+border:solid white 0.1rem;}
+
+#OMU a:before {
+z-index:5;
+background-size:130%;
+background-image:url(img/FruitApple.png);}
+#OMU a:after {
+content:'';
+background-size:100% 100%;
+position:absolute;
+width:100%; height:100%;
+top:0px; left:0px;
+display:block;
+background-image:url(img/Muleaf.png);
+border-radius:1rem;}
+
+
+#Myuna a{
+	/*background: -webkit-linear-gradient(top, rgba(210,204,255,1) 0%, rgba(110,71,238,1) 49%, rgba(100,68,238,1) 50%, rgba(60,0,170,1) 51%, rgba(70,17,221,1) 100%);*/
+background-image:linear-gradient(to left,rgba(100, 0, 255, 0.1), rgba(150, 50, 255, 0.3), rgba(100, 0, 255, 0.1)),
+url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
+border:solid 0.1rem gold;
+/*background:rgba(100, 0, 255, 0.1), 
+url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
+*/background-size:95% 95%;}
+#Myuna a:before{
+background-size:170%;
+background-image:url(img/PurpleMetalApple.png);
+}
+#Myuna span {color:white;}
+
+#Mcchi a {
+/*background: radial-gradient(ellipse at center, rgba(153,204,255,1) 0%,rgba(221,238,255,1) 54%,rgba(153,204,255,1) 100%);*/
+background-image:url(https://lh5.googleusercontent.com/proxy/I0lhyqBxuUsUg0Sxzvm6KmT7GFT9pBCYNKjkwVMo2u8ic0LRQBDvkHP8-sUmtngltZp59hlrlmkxSuE3AeC2NCjLPwqBB9vYvo4YqGxd9-w6hbGZH9JsND4VuTLCqrMKu3Q0lZGk7YI);
+background-size:100% 120%;
+background-position:bottom;
+color:#520;
+border:solid white 0.1rem;}
+#Mcchi a:before{
+background-image:url(img/OSXApple.png);
+}
+
+#CSJ a{
+background-image: url(https://media.istockphoto.com/vectors/orange-seamless-pattern-orange-citrus-fruit-vector-illustration-vector-id531480528);
+background-size:contain;
+color:#310;
+border:orange 0.1rem solid;}
+#CSJ a:before {
+background-size:120%;
+background-image:url(img/GoldenApple.png);
+}
+
+#CSA a {
+/*background: radial-gradient(ellipse at center, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 50%,rgba(252,126,210,1) 100%);*/
+/*background-image:url(https://i.pinimg.com/originals/0d/ee/48/0dee4818267c2183793f7505d06a3b47.jpg);*/
+background-image: url(https://data.ac-illust.com/data/thumbnails/ab/ab9a45d052331b7c813cedc7f3245bf5_t.jpeg);
+background-size:contain;
+background-position:top;
+color:#301;
+border:pink 0.1rem solid;}
+#CSA a:before {background-image:url(img/pinkapple.png);}
+
+#HHC a {
+color:black; 
+/*background-color:white;*/
+background-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 70%), 
+url(https://images.assetsdelivery.com/compings_v2/intara1/intara11904/intara1190400012.jpg);
+background-size:contain;
+background-position:top;}
+
+#HHC a:before {
+background-image:url(img/ManyColorApple.png); }
+
+
+/*16:10 MacBook Display*/
+@media screen and (min-width:1000px) and (min-aspect-ratio:16/10), (aspect-ratio:10/16) {
+	#MacBookPro {
+		width:60%;
+		margin-bottom:-21.6%;}
+		#MacS {
+			width:84%;
+			left:0px;}
+	#MBP {margin-bottom:-5%;}
+	.w980 {width:52%;}
+		#appleseries {margin-top:-23%;}}
+
+@media screen and (min-width:1000px) and (min-aspect-ratio:16/10) {
+	#Mlist table {margin-bottom:-55%;}
+	#Mlist a {padding:2rem 0.3rem;}
+	#iMacPNG {display:block;}}
+
+
+
+/*PC 16:9 landscape display*/
+@media screen and (min-width:1000px) and (aspect-ratio:16/9), (aspect-ratio:9/16) {
+		#MacBookPro {
+			width:60%;
+			margin-bottom:-21.6%;}
+		#MacS {
+			width:84%;
+			left:0px;}
+		#MBP {margin-bottom:0%;}
+		.w980 {width:52%;}
+		#appleseries {margin-top:-25%;}}
+
+@media screen and (min-width:1000px) and (min-aspect-ratio:16/9) {
+#Mlist table {margin-bottom:-54%;}
+#iMacPNG {display:block;}}
+
+
+/*iPad*/
+	@media screen and (max-width:1000px) {
+	.w980{box-sizing:border-box;}
+	#AUC,#ApplePro {font-weight:600;}
+	#AUC {
+		line-height: 1.16667;
+		font-size:24px;
+		letter-spacing: .009em;}
+	.made {display:block;}
+	#a11ymark {font-size:2em;}
+	h2,h3 {
+		line-height:1.5em; 
+		letter-spacing: 0em;
+		font-size:48px;}}
+
+
+/*SmartPhone*/
+	@media screen and (max-width:760px) {
+	.w980 {
+		box-sizing:border-box; 
+		width:85%; 
+		font-size:19px;}
+
+	#MBP {
+		width:100%; 
+		margin-bottom:-7%;}
+	#AUC {font-size:21px;}
+	#MacBookPro {margin-bottom:-32.7%;}
+	#MacS {
+		width:125%;
+		left:-12.5%;}
+	h2,h3 {
+		font-size:40px;
+		line-height:110%;}
+	h4,h4>span {font-size:32px; font-weight:700;}
+	#helpboxM {margin-bottom:2em;}
+	#helpM {padding:2em;}
+	#full {font-size:21px;}
+	.walert {
+		border-radius:0.8em; 
+		padding:0.4em 0.5em; 
+		line-height:130%; 
+		font-size:90%;}
+	.made {display:block;}
+	#LOGO {
+		width:18px; 
+		background-size:18px 48px;
+		background-position:center center;
+		line-height:2.82353em; 
+		height:48px;}
+	#memoticon {width:80%;}
+	.wsmall {display:block;}
+	.wbig {display:none;}
+	#Mlist td {
+		display:grid; 
+		width:auto;}
+	#Mlist a {padding:2rem 0.5rem;}
+	#Mlist a:before {
+		background-size:contain;
+		left:0px;}}
+
+/* iPhone X */
+	@media screen and (min-width:370px) and (max-width:380px) {
+	.walert {font-size:90%;}}
+
+
+
+/*iPhone SE*/
+	@media screen and (max-width:320px) {
+	#full {font-size:1.2rem;}
+	.walert {
+	padding:0.3rem 0.5rem;
+	line-height:1.2rem; 
+	font-size:0.9em;}
+
+	/*@media (prefers-color-scheme:light) {*/
+	#SE11 {padding:0px;
+	margin-top:3rem;}
+
+	h1 {
+		position:relative; 
+		left:0px; 
+		color:#1d1d1f;
+		opacity:1;}
+	#SE11 video {margin-bottom:100%;}
+	body {background-color:white;}
+	li,.fullist li {font-size:17px;}
+	#i11 {
+		margin-left:7%;
+		width:70%;
+		font-size:40px;
+		font-weight:700;
+		text-align:left;}
+	h1 span,h2 span,#i11 {
+	font-weight:900; 
+	font-size: 40px;}
+	#helpM span{color:#1d1d1f;}
+	#helpM,footer {
+	background-clip:unset; 
+	font-size:17px;}
+	#helpboxM {margin-bottom:2em;}
+	#helpboxM,footer {
+	background-color:#f2f2f2; 
+	padding:70px 0px;}
+	
+	#hello {text-align:left;}
+	#SEST {font-size:21px; 
+		color:#6D7A71; 
+		position:relative;
+		display:inline-block; 
+		font-weight:600; 
+		top:-3px;}
+	.kr {color:#029d50;}
+	#helpM strong {
+	color:#1d1d1f; 
+	font-weight:900;}
+	.goask {color:#06c;}
+
+
+#raina1 {fill:#e00;}
+#raina2 {fill:#f70;}
+#raina3 {fill:#fc0;}
+#raina4 {fill:#0c5;}
+#raina5 {fill:#69f;}
+#raina7 {fill:#87f;}
+
+.wbig {display:none;}}
+
+
+
+/*iPhone SE landscape*/
+	@media screen and (min-width:560px) and (max-width:580px) {
+	li,.fullist li {font-size:17px;}
+	
+	#SE11 {padding:0px;
+	margin-top:3em;}
+
+	h1 {
+		position:relative; 
+		left:0px; 
+		color:#1d1d1f;
+		opacity:1;}
+	#SE11 video {margin-bottom:100%;}
+	body {background-color:white;}
+	#i11 {
+		margin-left:7%;
+		width:70%;
+		font-size:40px;
+		font-weight:700;
+		line-height:1.2em;
+		text-align:left;}
+	#full {font-size:1.2em;}
+	#inP {top:30%;}
+	.walert {
+	padding:0.5em 0.7em;
+	line-height:1.2em; 
+	font-size:1.5em;}
+	h1 span,h2 span,#i11 {
+	font-weight:900; 
+	line-height:1.2em; 
+	font-size: 40px;}
+	#helpM span{color:#1d1d1f;}
+	#helpM,footer {
+	background-clip:unset; 
+	font-size:17px;}
+	#helpboxM {margin-bottom:2em;}
+	#helpboxM,footer {
+	background-color:#f2f2f2; 
+	padding:70px 0px;}
+	#helpM strong {
+	color:#1d1d1f; 
+	font-weight:900;}
+	.goask {color:#06c;}
+	
+	#hello {text-align:left;}
+	#SEST {font-size:17px; 
+		color:#6D7A71; 
+		position:relative;
+		display:inline-block; 
+		font-weight:600; 
+		top:-3px;}
+		.kr {color:#029d50;}
+
+#raina1 {fill:#e00;}
+#raina2 {fill:#f70;}
+#raina3 {fill:#fc0;}
+#raina4 {fill:#0c5;}
+#raina5 {fill:#69f;}
+#raina7 {fill:#87f;}
+
+.wbig {display:none;}}
+
+

@@ -19,7 +19,7 @@ a {
 .w90 {width:95%; margin:auto;}
 
 ol,ul,dl {margin:0px; padding:0px;}
-dl+dl {margin:0.5em 0px;}
+dl+dl {margin:0.5rem 0px;}
 ol,ul,dl,li {list-style:none;}
 dd,dt {margin:0px; font-weight:400;}
 header {
@@ -74,10 +74,12 @@ body {
 main {
 	margin:auto auto;
 	margin-bottom:2em;}
+
+	
 #HELLO {
 	position:relative;
 	text-align:center;
-	margin-bottom:5em; 
+	margin-bottom:5rem; 
 	box-shadow:0px 0px 2em 3em #222425;
 	background: linear-gradient(to bottom, #000 90%, #222425 );}
 #ITtitle {
@@ -150,34 +152,38 @@ position:relative;}
 
 
 #staff {
-	width:10em;
+	width:10rem;
 	background: -webkit-linear-gradient(top, rgba(210,204,255,1) 0%, rgba(110,71,238,1) 49%, rgba(100,68,238,1) 50%, rgba(70,0,170,1) 51%, rgba(80,17,221,1) 100%);
-	padding:1em;
+	padding:1rem;
 	align-items:center;	
 	border:1px solid #5555dddd;
 	font-weight:900;
 	margin:auto;
-	margin-top:2em;
+	margin-top:2rem;
 	display:block;
 }
-h3 {
+h3 {background-color:black;
+	position:relative;
+	z-index:3;
 	color:#def;
-	font-size:2em;}
+	font-size:2rem;
+	padding:3%;
+	margin:0px;}
 li {
-	margin:1em 0px;
-	padding:1.5em;
-	border-radius:2em;
+	margin:1rem 0px;
+	padding:1.5rem;
+	border-radius:2rem;
 	background-color:#102;}
 li li,li li strong,li dl strong {
 	padding:0px; 
 	font-weight:500;
-	font-size:1em;}
+	font-size:1rem;}
 li li,li dl {
 	margin:0.3em 0px;}
 li dt {font-weight:600;}
 li,strong {
 	font-weight:800; 
-	font-size:1.2em;}
+	font-size:1.2rem;}
 .master {
 	background-color:white; 
 	color:#400;
@@ -202,35 +208,34 @@ footer {
 
 
 
-#master {
+#robin {
 	justify-content:center;
-	margin:3em auto;
+	margin:3rem auto;
 	position:relative;
-	top:-100em;
+	top:-100rem;
 	animation-name:masterD;
 	animation-duration:0.2s;
 	animation-fill-mode:forwards;}
 @keyframes masterD {
-	0% {top:-100em;}
+	0% {top:-100rem;}
 	100% {top:0em;}
 }
-#master a,#master dd{
-	font-size:1.3em;
+#robin a,#robin dd{
+	font-size:1.3rem;
 	font-weight:900;
 	color:#bdf;
 }
-#master dt {
-	background:linear-gradient(to right, #224, #557, #224);}
-#master dd{
+#robin dt, #robin a {background-color:#630; color:#ced;}
+#robin dd{
 	text-align:center;
-	border:2px solid #224;}
+	border:solid #630 2px;}
 
-#master dt,.STF dt {
+#robin dt,.STF dt {
 	display:inline-block;
-	border-top-left-radius:1em;
-	border-top-right-radius:1em;
-	padding:0.3em 1em;}
-#master dd,.STF dd {
+	border-top-left-radius:1rem;
+	border-top-right-radius:1rem;
+	padding:0.3rem 1rem;}
+#robin dd,.STF dd {
 	background-color:black;
 	padding:1em;}
 
@@ -256,9 +261,9 @@ footer {
 .staffs {
 	width:100%; 
 	height:100%;}
-#robin {animation-delay:0.2s}
-#robin dt,#robin a {background-color:#630; color:#ced;}
-#robin dd {border:solid #630 2px;}
+#aorus {animation-delay:0.2s}
+#aorus dt,#aorus a {background-color:#226; color:#def;}
+#aorus dd {border:solid #236 2px;}
 
 #kejang {animation-delay:0.3s}
 #kejang dt {background-color:#333;}
@@ -279,10 +284,13 @@ footer {
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1080px) {
 	.made {display:flex;}
 }
 
+@media screen and (min-width: 1024px) {
+	.w90 {width:70%;}
+}
 
 
 
@@ -297,6 +305,7 @@ footer {
 		background-color:white;
 		box-shadow:0px 0px 2em 3em white;
 	}
+	h3 {background-color:transparent;}
 	.hi {color: rgba(165, 0, 52, 0.9);;}
 	#ITtitle {background: radial-gradient(#fcd , #fde ,#fff, #fff);}
 	#staff {background: -webkit-linear-gradient(top, rgba(255,150,200,1) 0%, rgba(220,70,120,0.9) 50%, rgba(165,0,52,0.9) 51%, rgba(200,0,88,0.9) 100%);
@@ -309,8 +318,6 @@ footer {
 
 
 	#sellisk {color:#a00;}
-
-
 
 
 
