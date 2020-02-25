@@ -32,7 +32,8 @@ input {
 a {text-decoration:none; 
 	color:white; 
 	font-weight:800;}
-ul,dl {padding:0px; margin:0px;}
+ul,dl,dd,dt {padding:0px; margin:0px;}
+dd {font-size:90%; font-weight:900;}
 li {list-style-type:none; margin:0.5rem auto;}
 
 #a11ydate {width:80%; margin:1% auto;}
@@ -40,6 +41,8 @@ table {margin:1% auto;
 	border:solid 2px #112;
 	border-collapse:collapse;}
 .blankcell {font-size:120%; width:10%;}
+.imgcell {padding:0px; margin:0px; border:none;}
+.imgcell img {height:100%; align-items:center; display:flex;}
 tr {padding:0px;}
 thead,th {background-color:#a9f;}
 td,th {
@@ -95,16 +98,17 @@ td.dark{background-color:#439;}}
 	<table>
 		<caption class="blind">저시력,확대기능 사용자가 겪는 불편함</caption>
 		<thead>
-			<th colspan="2">문제</th>
+			<th class="blankcell"></th>
+			<th>문제</th>
+			<!-- <th>예시</th> -->
 		</thead>
 		<tbody>
 			<tr>
 				<th rowspan="4">이미지 텍스트</th>
-				<td>이미지 텍스트 확대 시 이미지가 뭉개져 글자를 읽기 어려움
-</td>
+				<td class="imgcell"><img src="img/ZoomimgText.jpg" alt="확대 시 이미지가 뭉개져 글자를 읽기 어려움"></td>
 			</tr>
 			<tr>
-				<td>이미지 텍스트 다크모드, 고대비 등에서 제외되어 읽기 어려움</td>
+				<td class="imgcell"><img src="img/NoTheme.png" alt="다크모드, 고대비 등에서 제외되어 읽기 어려움"></td>
 			</tr>
 			<tr>
 				<td>이미지 텍스트는 한 번에 많은 내용이 제공된 경우, 스크린리더로 끊어 읽을 수 없음.</td>
@@ -114,6 +118,8 @@ td.dark{background-color:#439;}}
 			</tr>
 		</tbody>
 	</table>
+
+
 
 
 	<table id="displayoption">
@@ -152,13 +158,34 @@ td.dark{background-color:#439;}}
 						<li>OLED를 사용하는 전자기기의 경우, 밝기가 낮거나 어두운 색상으로 이루어진 화면은 자체적으로 발광하는 OLED의 특성상 전력소모가 줄어들게 되어 배터리를 다소 절약할 수 있음.</li>
 					</ul>
 				</td>
-				<td></td>
+				<td>일반적인 색상 반전과 달리, 영상이나 이미지 등을 반전하지 않기 때문에 다크모드가 제공되지 않는 환경에서 사용하기에 적합함.</td>
 				<td></td>
 			</tr>
 			<tr>
-				<th></th>
+				<th>설정방법</th>
 				<td></td>
-				<td></td>
+				<td>
+<!-- 					<dl>
+						<dt>Android &#40;10부터 지원&#41;</dt>
+						<dd></dd>
+					</dl> -->
+					<dl>
+						<dt>Galaxy &#40;Android Pie 9 이상&#41;</dt>
+						<dd>설정-디스플레이=야간 모드/다크 모드</dd>
+					</dl>
+					<dl>
+						<dt>iOS &#40;13부터 지원&#41;</dt>
+						<dd>설정-디스플레이=화면 모드</dd>
+					</dl>
+					<dl>
+						<dt>Windows 10</dt>
+						<dd>설정-개인 설정-색=색 선택</dd>
+					</dl>
+					<dl>
+						<dt>MacOS &#40;10.14 <span aria-label="모하비">Mojave</span>부터 지원&#41;</dt>
+						<dd>설정-일반=화면 모드</dd>
+					</dl>
+				</td>
 				<td></td>
 				<td></td>
 			</tr>
