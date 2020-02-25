@@ -33,6 +33,7 @@ a {text-decoration:none;
 	color:white; 
 	font-weight:800;}
 ul,dl,dd,dt {padding:0px; margin:0px;}
+dd {margin-bottom:3%;}
 dd {font-size:90%; font-weight:900;}
 li {list-style-type:none; margin:0.5rem auto;}
 
@@ -86,16 +87,17 @@ td {background-color:white;}
 
 @media (prefers-color-scheme:dark) {
 body {background-color:#215;}
-.dark {color:white;}
-th.dark {background-color:#103;}
-td.dark{background-color:#439;}}
+.dark th{background-color:#103; color:white;}
+.dark td{background-color:#439; color:white;}
+th.dark{background-color:#103; color:white;}
+td.dark{background-color:#439; color:white;}}
 
 </style>
 </head>
 <body>
 	<h1>스크린리더 테스트를 위한 요소,기타 잡다한 것을 일시적으로 마크업 한 페이지입니다.</h1>
 <section id="a11ydate">
-	<table>
+	<table class="dark">
 		<caption class="blind">저시력,확대기능 사용자가 겪는 불편함</caption>
 		<thead>
 			<th class="blankcell"></th>
@@ -164,7 +166,7 @@ td.dark{background-color:#439;}}
 			<tr>
 				<th>설정방법</th>
 				<td></td>
-				<td>
+				<td class="dark">
 <!-- 					<dl>
 						<dt>Android &#40;10부터 지원&#41;</dt>
 						<dd></dd>
