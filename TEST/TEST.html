@@ -20,26 +20,36 @@ input {
 	background-color:black;
 	padding:5px;}
 .blind {overflow: hidden;
+	padding:0px; margin:0px;
     display: block;
-    width: 0;
-    height: 0;
+    position:relative;
+    z-index:-1;
+    width: 1px;
+    height: 1px;
     opacity: 0;}
-a {text-decoration:none; color:white; font-weight:800;}
+a {text-decoration:none; 
+	color:white; 
+	font-weight:800;}
+ul {padding:0px; margin:0px;}
 li {list-style-type:none;}
 
+#displayoption {width:70%; margin:1% auto;}
 table {
 	border:solid 2px #112;
 	border-collapse:collapse;}
 tr {padding:0px;}
 thead,th {background-color:#dcf;}
 td,th {
+	width: calc(100% / 4);
+	font-size:120%;
 	font-weight:800;
 	border:solid 2px #112;
-	color:black; 
+	color:black;
+	padding:0.5%;}
+.white td,th {
 	font-size:200%;
-	width:3em;
-	height:3em;
 	padding:0.3em;
+	width:5rem; height:5rem;
 	margin:0px auto;}
 .white {
 	background-color:white; 
@@ -48,11 +58,11 @@ td,th {
 	font-size:220%; 
 	font-weight:900; 
 	color:#e00;}
-td:last-child,th:last-child {
+.white td:last-child,.white th:last-child {
 	background-color:#def; 
 	color:#03d;}
-td:first-child,th:first-child,.offd {color:#b30;}
-td:first-child,th:first-child {background-color:#fed;}
+.white td:first-child,.wthie th:first-child,.offd {color:#b30;}
+.white td:first-child,.white th:first-child {background-color:#fed;}
 .event,.TT {
 	/*border:none;*/
 	background-color:#dfe !important; 
@@ -75,9 +85,9 @@ td {background-color:white;}
 </head>
 <body>
 	<h1>스크린리더 테스트를 위한 요소,기타 잡다한 것을 일시적으로 마크업 한 페이지입니다.</h1>
-<section>
+<section id="displayoption">
 	<table>
-		<caption>저시력,확대기능 사용자가 겪는 불편함</caption>
+		<caption class="blind">저시력,확대기능 사용자가 겪는 불편함</caption>
 		<thead>
 			<th></th>
 		</thead>
@@ -88,27 +98,37 @@ td {background-color:white;}
 		</tbody>
 	</table>
 	<table>
-		<caption>디스플레이 옵션의 각 명칭과 특징</caption>
+		<caption class="blind">디스플레이 옵션의 각 명칭과 특징</caption>
 		<thead>
+			<th></th>
 			<th>고대비모드</th>
-			<th>색반전</th>
 			<th>다크모드</th>
+			<th>&#40;스마트&#41;색반전</th>
+			<th>색반전</th>
 		</thead>
 		<tbody>
 			<tr>
 				<th>정의</th>
-				<td>사용자가 각 요소(배경과 텍스트, 아이콘과 배경, 요소 테두리와 배경)를 시각적으로 구별하기 쉽도록 색 체계를 재구성하여 표시하는 설정</td>
-				<td></td>
-				<td></td>
+				<td>사용자가 각 요소&#40;배경과 텍스트, 아이콘과 배경, 요소 테두리와 배경&#41;간을 명도대비가 높은 색상&#40;검정색:흰색, 검정색:노란색 등&#41;으로 색 체계를 재구성하여 표시하는 설정</td>
+				<td>사용자가 어두운 환경에서 기기를 사용할 경우, 빛으로 인해 눈이 부시지 않도록 어두운 색 체계로 재구성하여 표시하는 설정</td>
+				<td>사용자가 보는 화면을 멀티미디어&#40;이미지,동영상&#41;를 제외하고, 색을 반대되는 색상으로 표시하는 설정</td>
+				<td>사용자가 보는 화면을 반대되는 색상으로 표시하는 설정</td>
 			</tr>
 			<tr>
 				<th>특징</th>
+				<td>
+					<ul>
+						<li>각 요소간의 경계가 색상과 상관없이 명도대비로 구별되어 색을 인지하지 못하여도 경계를 뚜렷히 구분할 수 있음.</li>
+						<li>각 요소의 경계가 뚜렷하므로 요소의 위치나 영역을 정확히 인지하고 선택,조작할 수 있음.</li>
+					</ul>
+				</td>
 				<td></td>
 				<td></td>
 				<td></td>
 			</tr>
 			<tr>
 				<th></th>
+				<td></td>
 				<td></td>
 				<td></td>
 				<td></td>
