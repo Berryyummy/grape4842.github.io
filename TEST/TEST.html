@@ -50,7 +50,7 @@ table {margin:3% auto;
 	border:solid 2px #112;
 	border-collapse:collapse;}
 .blankcell {font-size:120%; width:10%;}
-.imgcell {padding:0px; margin:0px; border:none;}
+.imgcell {padding:0px; margin:0px;}
 .imgcell img {height:100%; align-items:center; display:flex;}
 tr {padding:0px;}
 thead,th {background-color:#a9f;}
@@ -118,10 +118,10 @@ td.dark{background-color:#439; color:white;}}
 		<tbody>
 			<tr>
 				<th rowspan="6">이미지 텍스트</th>
-				<td class="imgcell"><img src="img/ZoomimgText.jpg" alt="확대 시 이미지가 뭉개져 글자를 읽기 어려움"></td>
+				<td class="imgcell"><img src="img/ZoomimgText.jpg" alt="해상도가 낮은 이미지의 경우, 확대시 이미지가 열화되어 텍스트를 읽지 못할 수 있다."></td>
 			</tr>
 			<tr>
-				<td class="imgcell"><img src="img/NoTheme.png" alt="다크모드, 고대비 등에서 제외되어 읽기 어려움"></td>
+				<td class="imgcell"><img src="img/NoTheme.png" alt="다크모드, 고대비모드에서 변환대상에 포함되지 않기 때문에 사용자가 색상을 조정할 수 없어 읽기 불편할 수 있으며, 통일된 디자인을 해칠 수 있다."></td>
 			</tr>
 			<tr>
 				<td>한 번에 많은 내용이 제공된 경우, 대체텍스트&#40;alt&#41;는 스크린리더로 끊어 읽을 수 없다.</td>
@@ -145,7 +145,7 @@ td.dark{background-color:#439; color:white;}}
 		<tbody>
 			<tr>
 				<th rowspan="4">확대/크기조정</th>
-				<td>글자,화면을 크게 설정하고 사용하는 경우, 앱이 대응&#40;크기와 무관하게 고정된 크기로 설정했거나 유동적인 크기 변경에 대응&#41;하지 않았을 경우 화면의 레이아웃이 꺠져 앱을 정상적으로 이용하기 어려울 수 있음</td>
+				<td>글자,화면을 크게 설정하고 사용하는 경우, 앱이 대응&#40;크기와 무관하게 고정된 크기로 설정했거나 유동적인 크기 변경에 대응&#41;하지 않은 경우, 화면의 레이아웃이 꺠져 앱을 정상적으로 이용하기 어렵다.</td>
 			</tr>
 			<tr>
 				<td>PC에서 돋보기로 화면을 확대하여 사용하는 경우 마우스 오버 이벤트로 열리고 마우스가 영역 내에 있는 동안만 열려있는 메뉴의 경우, 주변 탐색을 위해 마우스가 해당 영역을 벗어나면 메뉴가 닫혀 자세한 내용을 확인할 수 없음.</td>
@@ -154,7 +154,7 @@ td.dark{background-color:#439; color:white;}}
 				<td>위와 동일한 이유로 마우스 호버로만 확인할 수 있는 툴팁 또한 내용을 확인하기 어려움.</td>
 			</tr>
 			<tr>
-				<td></td>
+				<td>다크모드, 고대비모드에서 변환대상에 포함되지 않기 때문에 사용자가 색상을 조정할 수 없어 읽기 불편할 수 있으며, 통일된 디자인을 해칠 수 있다.</td>
 			</tr>
 			<tr>
 				<th rowspan="2">그 외</th>
