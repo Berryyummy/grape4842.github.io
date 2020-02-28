@@ -400,12 +400,12 @@ border:pink 0.1rem solid;}
 #CSA a:before {background-image:url(img/pinkapple.png);}
 
 #HHC a {
-color:black; 
+text-shadow: #000 0 0 0.5rem, #000 2px 2px 2px;
 /*background-color:white;*/
-background-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 70%), 
+background-image:/* radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 70%), */
 url(https://images.assetsdelivery.com/compings_v2/intara1/intara11904/intara1190400012.jpg);
-background-size:contain;
-background-position:top;}
+background-size:10%;
+background-attachment:fixed;}
 
 #HHC a:before {
 background-image:url(img/ManyColorApple.png); }
@@ -508,7 +508,10 @@ background-image:url(img/ManyColorApple.png); }
 		background-size:contain;
 		left:0px;}
 	#OMU a{background-size:50%;}
-	#CSJ a{background-size:20%;}}
+	#CSJ a{background-size:20%;}
+	#HHC a {
+		background-size:50%;
+		background-position:center;}}
 
 /* iPhone X */
 	@media screen and (min-width:370px) and (max-width:380px) {
