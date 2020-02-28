@@ -2,7 +2,7 @@
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#bfd; color:#420;}
-.noplay {display:none !important;}
+.noplay {display:none;}
 img,video {width:100%;}
 body * {
 	-webkit-font-smoothing: antialiased;
@@ -146,8 +146,8 @@ width:200%;
 	opacity:1;}}
 
 @media (prefers-reduced-motion:reduce) {
-	.playing {display:none !important;}
-	.noplay {display:unset !important;}
+	.playing {display:none;}
+	.noplay {display:unset;}
   #FOLD {
     animation: none;
     width:90%;
@@ -209,7 +209,7 @@ footer {
 	padding:5%;
 	background-color:black;}
 
-.light {display:none;}
+.light,.Gram {display:none;}
 
 
 
@@ -312,7 +312,7 @@ footer {
 
 
 @media (prefers-color-scheme:light) {
-	.light {display:unset;}
+	.light,.Gram {display:unset;}
 	.dark {display:none;}
 	body {background-color:#aaaaff99;}
 	#HELLO {
