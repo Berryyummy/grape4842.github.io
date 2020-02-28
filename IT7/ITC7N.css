@@ -333,14 +333,14 @@ footer {
 	#HELLO {
 		color:black; 
 		background:white;
-		box-shadow:0px 0px 2em 3em white;
-	}
+		box-shadow:0px 0px 2rem 3rem white;}
+
 	h3 {background-color:transparent;}
 	.hi {color: rgba(165, 0, 52, 0.9);;}
 	#ITtitle {background: radial-gradient(#fcd , #fde ,#fff, #fff);}
 	.menu {background: -webkit-linear-gradient(top, rgba(255,150,200,1) 0%, rgba(220,70,120,0.9) 50%, rgba(165,0,52,0.9) 51%, rgba(200,0,88,0.9) 100%);
 	border:rgba(165,0,52,0.9) solid 1px;
-	color:white;}
+	color:white !important;}
 	
 	section>ul>li {background-image:
 		url(mintback.jpg);
