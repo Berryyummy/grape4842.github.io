@@ -143,13 +143,17 @@ width:200%;
 	transform:translateX(0%);		
 	opacity:1;}}
 
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion:reduce) {
   #FOLD {
     animation: none;
-    width:100%;
+    width:90%;
     opacity:1;
-   	transform:translateX(0%);		
-  }
+   	transform:translateX(0%);}
+
+#ITtitle *, .menu, #robin, #aorus, #psps, #kejang, #purple, .STF {
+	animation:none;
+	left:0;
+	opacity:1;}
 }
 
 /*calc(40%/3)*/
@@ -167,6 +171,7 @@ width:200%;
 	font-weight:900;
 	margin:1%;
 	margin-top:2rem;}
+#pluskakao svg {}
 h3 {background-color:black;
 	position:relative;
 	z-index:3;
@@ -218,10 +223,10 @@ footer {
 	margin:3rem auto;
 	position:relative;
 	top:-100rem;
-	animation-name:masterD;
+	animation-name:robin;
 	animation-duration:0.2s;
 	animation-fill-mode:forwards;}
-@keyframes masterD {
+@keyframes robin {
 	0% {top:-100rem;}
 	100% {top:0em;}
 }
@@ -255,7 +260,7 @@ footer {
 	40% {left:-2em}
 	60% {left:0.5em;}
 	75% {left:-1em;}
-	100% { left:0em;}
+	100% {left:0em;}
 }
 .STF dt {
 	font-size:1.2em;
@@ -275,12 +280,12 @@ footer {
 #kejang dd {border:solid 2px #333;}
 
 #psps {animation-delay:0.4s}
-#psps dt,#psps a {background-color:#0a1;}
-#psps dd {border:#0a1 solid 2px;}
+#psps dt,#psps a {background-color:#080;}
+#psps dd {border:#080 solid 2px;}
 
 #purple {animation-delay:0.5s}
-#purple dt {background-color:#306;}
-#purple dd {border:#306 solid 2px;}
+#purple dt {background-color:#439;}
+#purple dd {border:#439 solid 2px;}
 
 
 
@@ -307,7 +312,7 @@ footer {
 	body {background-color:#eef;}
 	#HELLO {
 		color:black; 
-		background-color:white;
+		background:white;
 		box-shadow:0px 0px 2em 3em white;
 	}
 	h3 {background-color:transparent;}
@@ -347,6 +352,6 @@ footer {
 	#psps dd {border:#fce solid 2px;}
 
 	#robin dt,#robin a {background-color:#ced; color:#630;}
-	#robin dd {border:solid #ced 2px;}
+	#robin dd {border:solid #bec 3px;}
 
 }
