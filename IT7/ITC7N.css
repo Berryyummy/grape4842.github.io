@@ -2,7 +2,7 @@
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#bfd; color:#420;}
-.noplay {display:none;}
+.noplay,#nonegram {display:none;}
 img,video {width:100%;}
 body * {
 	-webkit-font-smoothing: antialiased;
@@ -146,13 +146,16 @@ width:200%;
 	opacity:1;}}
 
 @media (prefers-reduced-motion:reduce) {
-	.playing {display:none;}
+	.playing,#gram {display:none;}
 	.noplay {display:unset;}
   #FOLD {
     animation: none;
     width:90%;
     opacity:1;
    	transform:translateX(0%);}
+@media (prefers-reduced-motion:reduce) and (prefers-color-scheme:light) {
+	#nonegram{display:unset;}
+}
 
 #ITtitle *, .menu, #robin, #aorus, #psps, #kejang, #purple, .STF {
 	animation:none;
