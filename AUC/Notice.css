@@ -331,8 +331,10 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 #OMU a {
 /*background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(204,238,221,1) 50%,rgba(187,238,204,1) 100%);*/
 background-image:
-url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);
-background-size:contain;
+/*url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);*/
+url(img/mintback.jpg);
+background-attachment:fixed;
+background-size:10%;
 color:#022;
 border:solid white 0.1rem;}
 
@@ -378,8 +380,9 @@ background-image:url(img/OSXApple.png);
 
 #CSJ a{
 background-image: url(https://media.istockphoto.com/vectors/orange-seamless-pattern-orange-citrus-fruit-vector-illustration-vector-id531480528);
-background-size:contain;
+background-size:5%;
 color:#310;
+background-attachment:fixed;
 border:orange 0.1rem solid;}
 #CSJ a:before {
 background-size:120%;
@@ -503,7 +506,9 @@ background-image:url(img/ManyColorApple.png); }
 	#Mlist a {padding:2rem 0.5rem;}
 	#Mlist a:before {
 		background-size:contain;
-		left:0px;}}
+		left:0px;}
+	#OMU a{background-size:50%;}
+	#CSJ a{background-size:20%;}}
 
 /* iPhone X */
 	@media screen and (min-width:370px) and (max-width:380px) {
