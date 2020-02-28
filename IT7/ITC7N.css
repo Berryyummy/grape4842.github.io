@@ -2,6 +2,7 @@
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#bfd; color:#420;}
+.noplay {display:none !important;}
 img,video {width:100%;}
 body * {
 	-webkit-font-smoothing: antialiased;
@@ -145,6 +146,8 @@ width:200%;
 	opacity:1;}}
 
 @media (prefers-reduced-motion:reduce) {
+	.playing {display:none !important;}
+	.noplay {display:unset !important;}
   #FOLD {
     animation: none;
     width:90%;
