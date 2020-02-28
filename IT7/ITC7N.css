@@ -161,6 +161,7 @@ opacity:0.9;
 	left:0;
 	top:0px;
 	opacity:1;}}
+
 @media (prefers-reduced-motion:reduce) and (prefers-color-scheme:light) {
 	#nonegram{display:unset;}
 }
@@ -191,7 +192,6 @@ h3 {background-color:black;
 	padding:3%;
 	margin:0px;}
 li {
-	border:solid 1px black;
 	margin:1rem 0px;
 	padding:1.5rem;
 	border-radius:2rem;
@@ -341,8 +341,7 @@ footer {
 	li {background-image:
 		url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);
 		background-size:contain; 
-		color:#730;
-		border:solid 1px white;}
+		color:#730;}
 	h2,h3,h4 {color:#50a;}
 	footer{background-color:#acf; color:#113;}
 
