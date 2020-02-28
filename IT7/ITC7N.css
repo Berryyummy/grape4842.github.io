@@ -7,7 +7,8 @@ body * {
 	-webkit-font-smoothing: antialiased;
 	box-sizing:border-box;
 		font-family:"SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY 돋움","맑은 고딕","HY 고딕","Lexi Gulim","Helvetica Neue","Helvetica","Arial","sans-serif";}
-h1,h2,h3 {font-weight:900;}
+h1,h2,h3,h4 {font-weight:900;}
+h4 {font-size:120%;}
 a {
 	font-size:100%;
 	text-decoration:none;
@@ -201,6 +202,7 @@ li,strong {
 	font-weight:800;}
 
 footer {
+	font-weight:600;
 	padding:5%;
 	background-color:black;}
 
@@ -309,7 +311,7 @@ footer {
 @media (prefers-color-scheme:light) {
 	.light {display:unset;}
 	.dark {display:none;}
-	body {background-color:#eef;}
+	body {background-color:#aaaaff99;}
 	#HELLO {
 		color:black; 
 		background:white;
@@ -322,7 +324,7 @@ footer {
 	border:rgba(165,0,52,0.9) solid 1px;}
 	
 	li,li a {background-color:#ced; color:#730;}
-	h2,h3 {color:#50a;}
+	h2,h3,h4 {color:#50a;}
 	footer{background-color:#acf; color:#113;}
 
 
