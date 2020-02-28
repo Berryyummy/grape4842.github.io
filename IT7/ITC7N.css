@@ -153,16 +153,16 @@ opacity:0.9;
     width:90%;
     opacity:1;
    	transform:translateX(0%);}
+   	#ITtitle *, .menu, #robin, #aorus, #psps, #kejang, #purple, .STF {
+	animation:none;
+	left:0;
+	top:0px;
+	opacity:1;}}
 @media (prefers-reduced-motion:reduce) and (prefers-color-scheme:light) {
 	#nonegram{display:unset;}
 }
 
-#ITtitle *, .menu, #robin, #aorus, #psps, #kejang, #purple, .STF {
-	animation:none;
-	left:0;
-	top:0px;
-	opacity:1;}
-}
+
 
 /*calc(40%/3)*/
 #SCMB {
