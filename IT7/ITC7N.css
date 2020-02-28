@@ -121,25 +121,36 @@ position:relative;}
 
 
 #FOLD {
-	position:relative;
-	animation-name:fold;
-	animation-delay:0.5s;
-	animation-duration:2s;
-	animation-fill-mode:forwards;
-	overflow-x:hidden;
-	transform:translateX(-25%);	
-	margin-top:5rem;
-	width:200%;
-	opacity:0.1;
+position:relative;
+animation-name:fold;
+animation-delay:0.5s;
+animation-duration:2s;
+animation-fill-mode:forwards;
+overflow-x:hidden;
+transform:translateX(-25%);	
+margin-top:5rem;
+width:200%;
+/*opacity:0.03;*/
 }
 
 @keyframes fold {
-	60% {width:70%; 
-		opacity:0.7;
-		transform:translateX(0%);}
-	100% {width:100%; 
-		transform:translateX(0%);		
-		opacity:1;}}
+/*5% {transform:translateX(-20%);}
+30% {transform:translateX(-10%);}
+*/60% {width:70%; 
+	opacity:0.7;
+	transform:translateX(-1%);}
+100% {width:100%; 
+	transform:translateX(0%);		
+	opacity:1;}}
+
+@media (prefers-reduced-motion: reduce) {
+  #FOLD {
+    animation: none;
+    width:100%;
+    opacity:1;
+   	transform:translateX(0%);		
+  }
+}
 
 /*calc(40%/3)*/
 #SCMB {
