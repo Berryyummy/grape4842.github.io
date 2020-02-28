@@ -160,6 +160,7 @@ opacity:0.9;
 #ITtitle *, .menu, #robin, #aorus, #psps, #kejang, #purple, .STF {
 	animation:none;
 	left:0;
+	top:0px;
 	opacity:1;}
 }
 
@@ -232,7 +233,7 @@ footer {
 	position:relative;
 	top:-100rem;
 	animation-name:robin;
-	animation-duration:0.2s;
+	animation-duration:0.3s;
 	animation-fill-mode:forwards;}
 @keyframes robin {
 	0% {top:-100rem;}
