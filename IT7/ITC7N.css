@@ -191,14 +191,16 @@ h3 {background-color:black;
 	font-size:2rem;
 	padding:3%;
 	margin:0px;}
-li {
-	margin:1rem 0px;
-	padding:1.5rem;
-	border-radius:2rem;
+section>ul>li {
 	background-image:linear-gradient(to left,rgba(70, 30, 255, 0.1), rgba(120, 50, 255, 0.1), rgba(70, 30, 255, 0.1)),
 	url(https://c.wallhere.com/photos/bd/d8/1920x1200_px_abstract_background_black_multicolor_Purple_Sparkles_stars-1527847.jpg!d);
 	background-size:contain;
-	background-attachment:fixed;}
+	background-attachment:fixed;
+}
+li {
+	margin:1rem 0px;
+	padding:1.5rem;
+	border-radius:2rem;}
 li li,li li strong,li dl strong {
 	padding:0px; 
 	font-weight:500;
