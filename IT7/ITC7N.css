@@ -11,7 +11,6 @@ body * {
 h1,h2,h3,h4 {font-weight:900;}
 h4 {font-size:120%;}
 a {
-	font-size:100%;
 	text-decoration:none;
 	align-items:center;
 	display:inline-flex;
@@ -208,9 +207,9 @@ li li,li li strong,li dl strong {
 	font-size:1rem;
 	background-color:transparent;}
 li li,li dl {
-	margin:0.3em 0px;}
+	margin:0.3rem 0px;}
 li dt {font-weight:600;}
-li,strong {
+li,strong,li a {
 	font-weight:800; 
 	font-size:1.2rem;}
 .master {
@@ -330,6 +329,7 @@ footer {
 	.light,.Gram {display:unset;}
 	.dark {display:none;}
 	body {background-color:#aaaaff99;}
+	a {color:black;}
 	#HELLO {
 		color:black; 
 		background:white;
