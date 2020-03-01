@@ -166,7 +166,9 @@ dl svg {margin:-1rem auto;}
 
 
 
-
+	#helpboxM {margin-bottom:2rem;}
+	#helpM {padding:2rem;}
+	
 #help strong,#helpM strong {
 	color:white; 
 	font-weight:900; 
@@ -507,7 +509,7 @@ background-attachment:fixed;}
 	.made {display:block;}
 	#a11ymark {font-size:2rem;}
 	h2,h3 {
-		line-height:1.5rem; 
+		line-height:1.5em; 
 		letter-spacing: 0em;
 		font-size:48px;}}
 
@@ -533,8 +535,7 @@ background-attachment:fixed;}
 	h4,h4>span {
 		font-size:32px; 
 		font-weight:700;}
-	#helpboxM {margin-bottom:2em;}
-	#helpM {padding:2em;}
+
 	#full {font-size:21px;}
 	.walert {
 		border-radius:0.8em; 
