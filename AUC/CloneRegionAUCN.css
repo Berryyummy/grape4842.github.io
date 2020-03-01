@@ -1,7 +1,7 @@
 @charset "UTF-8";
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
-::selection {background:#75f; color:white;}
+::selection {background:#76f; color:white;}
 
 #langzone {background-color:white;}
 .cicon {width:1em; height:1em;}
