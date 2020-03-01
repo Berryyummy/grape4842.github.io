@@ -317,7 +317,15 @@ ul,.lalist {
     /*-webkit-mask-image: url(https://www.apple.com/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png);*/}
 
 #Mlist {padding:5%;}
-#iMacPNG {display:none;}
+#iMacPNG {display:none; position:relative;}
+#iMacPNG:before {
+	content:'';
+	display:block;
+	background-position:top;
+	background-size:100% 70%;
+	/*background-image:url(https://www.apple.com/105/media/us/pro-display-xdr/2019/1e439996-d014-462a-94d6-f67407717b60/overview/hero/large.mp4);*/
+background-image:url(https://www.apple.com/v/pro-display-xdr/c/images/overview/hero/hero_screen_fallback__fubungmc3aai_large.jpg);
+}
 
 #Mlist th {
 text-align:left;
