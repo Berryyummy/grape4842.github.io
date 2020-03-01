@@ -168,12 +168,11 @@ dl svg {margin:-1rem auto;}
 
 
 #help strong,#helpM strong {
-	color:#EBEBE3; 
+	color:white; 
 	font-weight:900; 
 	display:block;}
 #help a,#helpM a {width:12em;}
 #help span,#helpM span{
-color:#EBEBE3; 
 font-size:14px; 
 text-align:left; 
 font-weight:400;
@@ -192,9 +191,11 @@ display:inline-block;}
 #bighelp {
 	width:80%; 
 	display:flex;}
+.goask:focus {text-decoration:underline;}
 .goask { 
 	font-size:14px; 
 	color:#2997ff;}
+.helpq {color:white;}
 
 
 .master {
@@ -208,14 +209,27 @@ display:inline-block;}
 #AUC {font-size:21px; 
 	text-align:center; 
 	color:#63636e; 
-	margin-bottom:0.15em; 
-	line-height: 1.19048; 
+	margin-bottom:0.15rem; 
+	line-height: 1.19048rem; 
 	font-weight: 600; 
-	letter-spacing: .011em;}
+	letter-spacing:0.011rem;}
 
 .kr {color:#fab;}
 
-#notch {width:100%;}
+#notch {
+	width:100%;
+	position:relative;
+}
+#notch:before {
+	content:'';
+	background-position:center;
+	display:block;
+	top:0px; left:0px;
+	position:absolute;
+	background-size:100% 100%;
+	z-index:30;
+	background-image:url(https://www.apple.com/v/iphone-11/c/images/overview/hero/hero_pf_phone__cvre2iya2qeu_medium.png); 
+}
 .walert {
 	padding:0.7em;
 	border-radius:1em;
