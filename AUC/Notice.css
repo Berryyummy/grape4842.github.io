@@ -493,13 +493,13 @@ background-attachment:fixed;}
 	.w980{box-sizing:border-box;}
 	#AUC,#ApplePro {font-weight:600;}
 	#AUC {
-		line-height: 1.16667;
+		line-height: 1.16667rem;
 		font-size:24px;
 		letter-spacing: .009em;}
 	.made {display:block;}
-	#a11ymark {font-size:2em;}
+	#a11ymark {font-size:2rem;}
 	h2,h3 {
-		line-height:1.5em; 
+		line-height:1.5rem; 
 		letter-spacing: 0em;
 		font-size:48px;}}
 
@@ -554,7 +554,8 @@ background-attachment:fixed;}
 	#CSJ a{background-size:20%;}
 	#HHC a {
 		background-size:50%;
-		background-position:center;}}
+		background-position:center;}
+		#a11ymark{font-size:1rem;}}
 
 /* iPhone X */
 	@media screen and (min-width:370px) and (max-width:380px) {
