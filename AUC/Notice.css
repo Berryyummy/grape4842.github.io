@@ -8,9 +8,25 @@ opacity:0;
 height:100%;
 position:relative;}
 
+#i11stop {margin-bottom:100%;}
+.stopA {display:none;}
+
+
 @keyframes load {
 	from {opacity:0; transform:translateY(15%);}
-	to {opacity:1; transform:translateY(0%);}}
+	to {opacity:1; transform:translateY(0%);}
+}
+
+/*애니메이션 저감 설정 감지 시*/
+@media (prefers-reduced-motion:reduce) {
+	#ApplePro,#hello {
+		animation:none;
+		opacity:1; 
+		transform:translateY(0%);}
+	video {display:none;}
+	.stopA{display:unset;}
+}
+
 
 /*애니메이션이 끝난 비디오맥북을 숨기는 애니메이션*/
 #MacBookPro {
@@ -21,7 +37,8 @@ animation-fill-mode:forwards;}
 
 @keyframes bmac {
 	from {opacity:1;}
-	to {opacity:0;}}
+	to {opacity:0;}
+}
 
 /*#MacBookPro {
 animation-delay:5s;
@@ -36,7 +53,7 @@ animation-fill-mode:forwards;}
 
 .w980{width:90%;}
 
-/*text gradient*/
+/*text gradient 텍스트를 그라데이션처럼 표기하기 위한 CSS*/
 .clip {
 	background-clip:text; 
 	-webkit-background-clip:text;
@@ -65,8 +82,7 @@ p {word-break:keep-all;
 
 	#notice {border:none;}
 	#AT {border-bottom:rgba(66,66,69,0.95) solid 1px;}
-	#CP {
-	font-size:0.5em;
+	#CP {font-size:0.5em;
 	border-top:#424245 1px solid;}
 
 
@@ -126,25 +142,35 @@ ul,li,ol {
 	font-size:21px; 
 	font-weight:600; 
 	list-style:none;}
-.fullist {margin:1em auto;}
-.fullist ul {margin:0.1em auto; padding:0px;}
+.fullist {margin:1rem auto;}
+.fullist ul {
+	margin:0.1rem auto; 
+	padding:0px;}
 .fullist li,.fullist dl,.kr{
-	margin:0.3em auto; 
+	margin:0.3rem auto; 
 	padding:0px; 
 	list-style-position:outside; 
 	word-break: keep-all; 
 	font-size:19px;
 	text-align:left;}
-dl * {text-align:left; vertical-align:middle;}
-dl svg {margin:-1em auto;}
+dl * {
+	text-align:left; 
+	vertical-align:middle;}
+dl svg {margin:-1rem auto;}
 
-#hello {color:#6D7A71; text-align:center; 
-	font-weight:600; font-size:21px;}
+#hello {
+	color:#6D7A71; 
+	text-align:center; 
+	font-weight:600; 
+	font-size:21px;}
 
 
 
 
-#help strong,#helpM strong {color:#EBEBE3; font-weight:900; display:block;}
+#help strong,#helpM strong {
+	color:#EBEBE3; 
+	font-weight:900; 
+	display:block;}
 #help a,#helpM a {width:12em;}
 #help span,#helpM span{
 color:#EBEBE3; 
@@ -186,7 +212,6 @@ display:inline-block;}
 	line-height: 1.19048; 
 	font-weight: 600; 
 	letter-spacing: .011em;}
-/*https://www.apple.com/v/iphone-xs/d/images/overview/copy_texture_3_large.jpg*/
 
 .kr {color:#fab;}
 
@@ -202,8 +227,7 @@ display:inline-block;}
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);}
 #inP0, #inPC2 {position:relative;}
-#inPC2 {
-	width:100%; }
+#inPC2 {width:100%; }
 #inP {
 	width:83%;
 	top:27%;
@@ -232,13 +256,19 @@ display:inline-block;}
 	#FPC {text-align:center;}
 
 	#inPC {position:relative;}
-	#inPC p {line-height: 1.52947; font-size:1.1em;}
+	#inPC p {
+		line-height: 1.52947; 
+		font-size:1.1em;}
 	.fullT {color:white; margin:auto;}
 	#fullhi {margin:0.5em auto;}
 
-#apple12 {width:100%; margin:3em 0em;}
+#apple12 {
+	width:100%; 
+	margin:3em 0em;}
 
-ul,.lalist {margin-bottom:0px; padding-bottom:1em;}
+ul,.lalist {
+	margin-bottom:0px; 
+	padding-bottom:1em;}
 
 
 
@@ -331,8 +361,10 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 #OMU a {
 /*background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(204,238,221,1) 50%,rgba(187,238,204,1) 100%);*/
 background-image:
-url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);
-background-size:contain;
+/*url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);*/
+url(img/mintback.jpg);
+background-attachment:fixed;
+background-size:10%;
 color:#022;
 border:solid white 0.1rem;}
 
@@ -378,8 +410,9 @@ background-image:url(img/OSXApple.png);
 
 #CSJ a{
 background-image: url(https://media.istockphoto.com/vectors/orange-seamless-pattern-orange-citrus-fruit-vector-illustration-vector-id531480528);
-background-size:contain;
+background-size:5%;
 color:#310;
+background-attachment:fixed;
 border:orange 0.1rem solid;}
 #CSJ a:before {
 background-size:120%;
@@ -397,15 +430,12 @@ border:pink 0.1rem solid;}
 #CSA a:before {background-image:url(img/pinkapple.png);}
 
 #HHC a {
-color:black; 
-/*background-color:white;*/
-background-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 70%), 
-url(https://images.assetsdelivery.com/compings_v2/intara1/intara11904/intara1190400012.jpg);
-background-size:contain;
-background-position:top;}
+text-shadow: #000 0 0 0.5rem, #000 2px 2px 2px;
+background-image:url(https://images.assetsdelivery.com/compings_v2/intara1/intara11904/intara1190400012.jpg);
+background-size:10%;
+background-attachment:fixed;}
 
-#HHC a:before {
-background-image:url(img/ManyColorApple.png); }
+#HHC a:before {background-image:url(img/ManyColorApple.png); }
 
 
 /*16:10 MacBook Display*/
@@ -413,12 +443,12 @@ background-image:url(img/ManyColorApple.png); }
 	#MacBookPro {
 		width:60%;
 		margin-bottom:-21.6%;}
-		#MacS {
-			width:84%;
-			left:0px;}
+	#MacS {
+		width:84%;
+		left:0px;}
 	#MBP {margin-bottom:-5%;}
 	.w980 {width:52%;}
-		#appleseries {margin-top:-23%;}}
+	#appleseries {margin-top:-23%;}}
 
 @media screen and (min-width:1000px) and (min-aspect-ratio:16/10) {
 	#Mlist table {margin-bottom:-55%;}
@@ -440,12 +470,12 @@ background-image:url(img/ManyColorApple.png); }
 		#appleseries {margin-top:-25%;}}
 
 @media screen and (min-width:1000px) and (min-aspect-ratio:16/9) {
-#Mlist table {margin-bottom:-54%;}
-#iMacPNG {display:block;}}
+	#Mlist table {margin-bottom:-45%;}
+	#iMacPNG {display:block;}}
 
 
 /*iPad*/
-	@media screen and (max-width:1000px) {
+@media screen and (max-width:1000px) {
 	.w980{box-sizing:border-box;}
 	#AUC,#ApplePro {font-weight:600;}
 	#AUC {
@@ -461,7 +491,7 @@ background-image:url(img/ManyColorApple.png); }
 
 
 /*SmartPhone*/
-	@media screen and (max-width:760px) {
+@media screen and (max-width:760px) {
 	.w980 {
 		box-sizing:border-box; 
 		width:85%; 
@@ -478,7 +508,9 @@ background-image:url(img/ManyColorApple.png); }
 	h2,h3 {
 		font-size:40px;
 		line-height:110%;}
-	h4,h4>span {font-size:32px; font-weight:700;}
+	h4,h4>span {
+		font-size:32px; 
+		font-weight:700;}
 	#helpboxM {margin-bottom:2em;}
 	#helpM {padding:2em;}
 	#full {font-size:21px;}
@@ -503,7 +535,12 @@ background-image:url(img/ManyColorApple.png); }
 	#Mlist a {padding:2rem 0.5rem;}
 	#Mlist a:before {
 		background-size:contain;
-		left:0px;}}
+		left:0px;}
+	#OMU a{background-size:50%;}
+	#CSJ a{background-size:20%;}
+	#HHC a {
+		background-size:50%;
+		background-position:center;}}
 
 /* iPhone X */
 	@media screen and (min-width:370px) and (max-width:380px) {
@@ -519,10 +556,7 @@ background-image:url(img/ManyColorApple.png); }
 	line-height:1.2rem; 
 	font-size:0.9em;}
 
-	/*@media (prefers-color-scheme:light) {*/
-	#SE11 {padding:0px;
-	margin-top:3rem;}
-
+	@media (prefers-color-scheme:light) {}
 	h1 {
 		position:relative; 
 		left:0px; 
