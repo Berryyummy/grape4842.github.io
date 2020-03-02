@@ -168,7 +168,7 @@ dl svg {margin:-1rem auto;}
 
 	#helpboxM {margin-bottom:2rem;}
 	#helpM {padding:2rem;}
-	
+
 #help strong,#helpM strong {
 	color:white; 
 	font-weight:900; 
@@ -193,7 +193,7 @@ display:inline-block;}
 #bighelp {
 	width:80%; 
 	display:flex;}
-.goask:focus {text-decoration:underline;}
+#helpM a:focus .goask,#helpM a:hover .goask {text-decoration:underline;}
 .goask { 
 	font-size:14px; 
 	color:#2997ff;}
