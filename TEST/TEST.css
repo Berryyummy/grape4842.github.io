@@ -29,6 +29,7 @@ input {
 a {text-decoration:none; 
 	color:white; 
 	font-weight:800;}
+a:hover,a:focus {text-decoration:underline; }
 p,ul,dl,dd,dt {padding:0px; margin:0px;}
 dd {margin-bottom:3%;}
 dd {font-size:90%; font-weight:900;}
@@ -84,7 +85,8 @@ td {background-color:white;}
 
 .event {border-width:4px 1px;}
 .entx {font-size:70%;}
-.better {}
+table a {color:black;}
+
 
 
 
