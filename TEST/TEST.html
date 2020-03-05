@@ -14,7 +14,7 @@ TEST Page
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#380; color:white;}
 
-
+body * {-webkit-font-smoothing:antialiased !important;}
 body {background-color:#53d; color:white; margin:0px;}
 section,header {width:90%; margin:0px auto;}
 footer {
@@ -181,10 +181,14 @@ td.dark{background-color:#439; color:white;}}
 			</tr>
 			<tr>
 				<td>퉵 페이지가 새 텝으로 열렸다 하더라도 브라우저의 텝 영역이 화면 밖에 있어 이를 인지할 수 없는 경우가 있다.</td>
-				<td></td>
+				<td>
+					<ul>
+						<li>title속성을 제공하여 사용자가 링크 접속을 위해, 키보드 초점 혹은 마우스 포인터를 올렸을 때, 새 창열림을 알 수 있도록 제공한다.</li>
+					</ul>
+				</td>
 			</tr>
 			<tr>
-				<td>화면 확대 기능을 사용중일 경우, 디스플레이에 표시되는 영역 외붕서 변화가 있거나 이벤트가 발생한 경우, 이를 알수 없다.</td>
+				<td>화면 확대 기능을 사용중일 경우, 디스플레이에 표시되는 영역 밖에서 변화가 있거나 이벤트가 발생한 경우, 이를 알수 없다.</td>
 			</tr>
 			<tr>
 				<td>확대 기능이 차단되어 있는 경우, 정보를 확인하는 것이 어렵다.</td>
@@ -202,6 +206,7 @@ td.dark{background-color:#439; color:white;}}
 			</tr>
 			<tr>
 				<td>입력서식이 label과 연결되지 않은 경우, 입력서식을 직접 터치해야 하기 때문에 입력서식의 위치를 정확히 찾아 누르는 것이 어려울 수 있다.</td>
+				<td>입력서식과 label을 id와 for로 올바르게 연결하여, label에 제공된 내용을 처치/클릭하여 입력서식을 조작할 수 있도록 하여, 조작가능한 범위를 넓힌다.</td>
 			</tr>
 			<tr>
 				<td>요소의 크기가 작아 요소자체 혹은 요소의 내용을 인지하기 어렵다.</td>
