@@ -92,6 +92,7 @@ table a {color:black;}
 
 @media (prefers-color-scheme:dark) {
 body {background-color:#215;}
+td.dark,th.dark,.dark th,.dark td {border:1px solid #aaf;}
 .dark th{background-color:#103; color:white;}
 .dark td{background-color:#439; color:white;}
 th.dark{background-color:#103; color:white;}
