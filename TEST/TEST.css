@@ -85,7 +85,7 @@ td {background-color:white;}
 
 .event {border-width:4px 1px;}
 .entx {font-size:70%;}
-table a {color:black;}
+table a,.note a {color:black;}
 
 
 .note dl{
@@ -96,7 +96,6 @@ table a {color:black;}
 	margin:1% auto;
 	border-left:10px solid #5b0;}
 .note dd {margin-bottom:0.3%;}
-
 @media (prefers-color-scheme:dark) {
 body {background-color:#215;}
 td.dark,th.dark,.dark th,.dark td {border:1px solid #aaf;}
