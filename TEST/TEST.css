@@ -75,7 +75,6 @@ td,th {
 .white td:first-child,.wthie th:first-child,.offd {color:#b30;}
 .white td:first-child,.white th:first-child {background-color:#fed;}
 .event,.TT {
-	/*border:none;*/
 	background-color:#dfe !important; 
 	color:#073 !important;
 	font-weight:900;}
@@ -97,13 +96,20 @@ table a,.note a {color:black;}
 	border:solid 1px #380;
 	border-left:10px solid #5b0;}
 .note dd {margin-bottom:0.3%;}
+
 @media (prefers-color-scheme:dark) {
 body {background-color:#215;}
 td.dark,th.dark,.dark th,.dark td {border:1px solid #aaf;}
 .dark th{background-color:#103; color:white;}
 .dark td{background-color:#439; color:white;}
 th.dark{background-color:#103; color:white;}
-td.dark{background-color:#439; color:white;}}
+td.dark{background-color:#439; color:white;}
+.note dl {
+	border:solid 1px #030;
+	color:white;
+	border-left:10px solid #103;
+background:
+linear-gradient(to right, rgba(10,30,0,1) 0%,rgba(30,70,0,1) 1%,rgba(50,100,0,1) 70%,rgba(70,120,0,1));}}
 
 .code {color:#04f;}
 .code span {color:#d20;}
