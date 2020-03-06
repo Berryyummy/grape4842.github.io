@@ -109,7 +109,7 @@ td.dark{background-color:#439; color:white;}
 	color:white;
 	border-left:10px solid #103;
 background:
-linear-gradient(to right, rgba(10,30,0,1) 0%,rgba(30,70,0,1) 1%,rgba(50,100,0,1) 70%,rgba(70,120,0,1));}}
+linear-gradient(to right, rgba(10,20,0,1) 0%,rgba(20,50,0,1) 2%,rgba(30,70,0,1) 70%,rgba(70,120,0,1));}}
 
 .code {color:#04f;}
 .code span {color:#d20;}
