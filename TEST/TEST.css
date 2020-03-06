@@ -1,7 +1,7 @@
 @charset "UTF-8";
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
-::selection {background:#380; color:white;}
+::selection {background:#370; color:white;}
 
 body * {-webkit-font-smoothing:antialiased !important;}
 body {background-color:#53d; color:white; margin:0px;}
