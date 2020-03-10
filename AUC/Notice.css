@@ -335,6 +335,7 @@ font-size:1rem;
 padding:3% 0px;}
 
 #Mlist a {
+	z-index:100;
 	position:relative;
 	border-radius:1rem;
 	width:100%;
@@ -342,7 +343,7 @@ padding:3% 0px;}
 	color:white; 
 	font-weight:900;
 	font-size:1.4rem;
-	padding:3rem 0.5rem;
+	padding:2rem 0.5rem;
 	text-align:center;
 	align-items:center;
 	box-sizing:border-box;}
@@ -474,10 +475,10 @@ background-attachment:fixed;}
 	.w980 {width:52%;}
 	#appleseries {margin-top:-23%;}}
 
-@media screen and (min-width:1000px) and (min-aspect-ratio:16/10) {
+/*@media screen and (min-width:1000px) and (min-aspect-ratio:16/10) {
 	#Mlist table {margin-bottom:-55%;}
 	#Mlist a {padding:2rem 0.3rem;}
-	#iMacPNG {display:block;}}
+	#iMacPNG {display:block;}}*/
 
 
 
@@ -493,9 +494,9 @@ background-attachment:fixed;}
 		.w980 {width:52%;}
 		#appleseries {margin-top:-25%;}}
 
-@media screen and (min-width:1000px) and (min-aspect-ratio:16/9) {
-	#Mlist table {margin-bottom:-45%;}
-	#iMacPNG {display:block;}}
+/*@media screen and (min-width:1000px) and (min-aspect-ratio:16/9) {
+	#Mlist table {margin-bottom:-35%;}
+	#iMacPNG {display:block; z-index:0;}}*/
 
 
 /*iPad*/
