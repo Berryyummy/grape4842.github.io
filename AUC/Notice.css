@@ -381,10 +381,10 @@ url(https://i.pinimg.com/originals/8f/21/96/8f219642c11fa57f38f2355988fb24d0.jpg
 background-size:100% 100%;
 border:solid gold 0.1rem;}
 #SMM a:before {
-filter:contrast(150%);
+filter:contrast(200%) hue-rotate(-20deg) saturate(120%);
 background-image:
 url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-png.png);}
-#SMM span {color:#220;}
+#SMM span {color:#321;}
 
 #OMU a {
 /*background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(204,238,221,1) 50%,rgba(187,238,204,1) 100%);*/

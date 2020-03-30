@@ -3,6 +3,9 @@
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#76f; color:white;}
 
+@supports not(background-clip:text) or (-webkit-background-clip:text){
+	.clip{background-color:black; color:white;}}
+
 #langzone {background-color:white;}
 .cicon {width:1em; height:1em;}
 div.lanregion {padding:1em;}
@@ -67,13 +70,14 @@ a {vertical-align:middle;
 	position:relative;
 	-webkit-tap-highlight-color:transparent;}
 
-#LOGO path,.numapplelogo path{
+#GOSHOP {right:0px; position:absolute;}
+
+#LOGO path,.numapplelogo path,#GOSHOP path{
 	opacity:0.8; 
 	transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 -webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);}
-#LOGO:focus path,#LOGO:hover path,.numapplelogo:hover path,svg:hover path {opacity:1;}
+#LOGO:focus path,#LOGO:hover path,.numapplelogo:hover path,svg:hover path,#GOSHOP:focus path,#GOSHP:hover path {opacity:1;}
 
- 
 
 
 #jump {
@@ -121,7 +125,9 @@ a {vertical-align:middle;
 	font-weight:900; 
 	vertical-align:middle; 
 	padding:0px; 
-	margin:0px auto;}
+	margin:0px auto;
+	display:flex;
+	justify-content:center;}
 
 #start {
 	text-align:center; 
@@ -179,9 +185,10 @@ footer {
 .no320 {display:block;}
 
 
-@media screen and (min-width:1000px) and (min-aspect-ratio:16/10), (min-width:1000px) and (aspect-ratio:16/9) {
+@media screen and (min-width:1000px) {
 /*#LOGO {left:0px; position:absolute;}	*/
-#apple {margin:0px;}
+#apple {margin:0px auto;}
+#LOGO {left:0px; position:absolute;}
 }
 
 /*SmartPhone*/
