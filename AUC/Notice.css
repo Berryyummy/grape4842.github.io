@@ -55,6 +55,7 @@ animation-fill-mode:forwards;}
 
 /*text gradient 텍스트를 그라데이션처럼 표기하기 위한 CSS*/
 .clip {
+	filter: saturate(150%);
 	/*filter:contrast(200%);*/
 	background-clip:text; 
 	-webkit-background-clip:text;
@@ -414,10 +415,12 @@ border-radius:1rem;}
 background-image:linear-gradient(to left,rgba(100, 0, 255, 0.1), rgba(150, 50, 255, 0.3), rgba(100, 0, 255, 0.1)),
 url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
 border:solid 0.1rem gold;
+filter: saturate(150%);
 /*background:rgba(100, 0, 255, 0.1), 
 url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
 */background-size:95% 95%;}
 #Myuna a:before{
+filter:contrast(200%);
 background-size:170%;
 background-image:url(img/PurpleMetalApple.png);
 }
@@ -435,9 +438,10 @@ background-image:url(img/OSXApple.png);
 }
 
 #CSJ a{
+filter: saturate(150%);
 background-image: url(https://media.istockphoto.com/vectors/orange-seamless-pattern-orange-citrus-fruit-vector-illustration-vector-id531480528);
 background-size:5%;
-color:#310;
+color:#320;
 background-attachment:fixed;
 border:orange 0.1rem solid;}
 #CSJ a:before {
