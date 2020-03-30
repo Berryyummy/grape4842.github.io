@@ -55,6 +55,7 @@ animation-fill-mode:forwards;}
 
 /*text gradient 텍스트를 그라데이션처럼 표기하기 위한 CSS*/
 .clip {
+	/*filter:contrast(200%);*/
 	background-clip:text; 
 	-webkit-background-clip:text;
 	color: transparent; 
