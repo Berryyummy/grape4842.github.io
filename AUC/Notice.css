@@ -245,6 +245,7 @@ display:inline-block;}
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);}
 #inP0, #inPC2 {position:relative;}
+#inP0 {padding:10% 0px;}
 #inPC2 {width:100%; }
 #inP {
 	width:83%;
@@ -587,7 +588,7 @@ background-attachment:fixed;}
 	padding:0.3rem 0.5rem;
 	line-height:1.2rem; 
 	font-size:0.9em;}
-
+	#MinP {background-color:black;}
 	@media (prefers-color-scheme:light) {}
 	h1 {
 		position:relative; 
@@ -662,6 +663,7 @@ background-attachment:fixed;}
 		line-height:1.2em;
 		text-align:left;}
 	#full {font-size:1.2em;}
+	#MinP {background-color:black;}
 	#inP {top:30%;}
 	.walert {
 	padding:0.5em 0.7em;
