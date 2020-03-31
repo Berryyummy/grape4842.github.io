@@ -567,8 +567,9 @@ background-attachment:fixed;}
 	#Mlist a {padding:2rem 0.5rem;}
 	#Mlist a:before {
 		background-size:contain;
-		left:0px;}
+		left:2%;}
 	#OMU a{background-size:50%;}
+	#Myuna a:before {background-size:150%;}
 	#CSJ a{background-size:20%;}
 	#HHC a {
 		background-size:50%;
