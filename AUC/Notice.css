@@ -395,7 +395,7 @@ background-attachment:fixed;
 background-size:10%;
 color:#022;
 filter:saturate(120%);
-border:solid white 0.1rem;}
+border:solid lightgreen 0.1rem;}
 
 #OMU a:before {
 z-index:5;
@@ -469,7 +469,8 @@ filter:hue-rotate(-15deg);
 text-shadow: #000 0 0 0.5rem, #000 2px 2px 2px;
 background-image:url(https://images.assetsdelivery.com/compings_v2/intara1/intara11904/intara1190400012.jpg);
 background-size:10%;
-background-attachment:fixed;}
+background-attachment:fixed;
+border:solid 0.1rem black;}
 
 #HHC a:before {background-image:url(img/ManyColorApple.png); }
 
