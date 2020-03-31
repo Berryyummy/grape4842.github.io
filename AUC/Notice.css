@@ -399,7 +399,7 @@ border:solid white 0.1rem;}
 
 #OMU a:before {
 z-index:5;
-background-size:130%;
+background-size:120%;
 background-image:url(img/FruitApple.png);}
 #OMU a:after {
 content:'';
@@ -422,8 +422,8 @@ filter: saturate(150%);
 url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
 */background-size:95% 95%;}
 #Myuna a:before{
-filter:contrast(200%);
-background-size:170%;
+filter:saturate(3) hue-rotate(-3deg);
+background-size:150%;
 background-image:url(img/PurpleMetalApple.png);
 }
 #Myuna span {color:white;}
