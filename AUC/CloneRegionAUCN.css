@@ -2,7 +2,7 @@
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#76f; color:white;}
-
+.znone {position:relative; z-index:-1; display:block; width:0px; height:0px}
 @supports not(background-clip:text) or (-webkit-background-clip:text){
 	.clip{background-color:black; color:white;}}
 

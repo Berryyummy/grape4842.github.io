@@ -415,15 +415,18 @@ border-radius:1rem;}
 
 #Myuna a{
 	/*background: -webkit-linear-gradient(top, rgba(210,204,255,1) 0%, rgba(110,71,238,1) 49%, rgba(100,68,238,1) 50%, rgba(60,0,170,1) 51%, rgba(70,17,221,1) 100%);*/
-background-image:linear-gradient(to left,rgba(100, 0, 255, 0.1), rgba(150, 50, 255, 0.2), rgba(100, 0, 255, 0.1)),
+/*background-image:linear-gradient(to left,rgba(100, 0, 255, 0.1), rgba(150, 50, 255, 0.2), rgba(100, 0, 255, 0.1)),
 url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
-border:solid 0.1rem orange;
-filter: saturate(150%);
+*/
+background-image:url(https://www.apple.com/v/imac-pro/e/images/overview/screen_endframe_large.jpg);
+border:solid 0.1rem #001;
+filter: saturate(150%) hue-rotate(40deg);
 /*background:rgba(100, 0, 255, 0.1), 
 url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
-*/background-size:95% 95%;}
+*/background-size:95% 95%;
+color:black;}
 #Myuna a:before{
-filter:saturate(3) hue-rotate(-3deg);
+filter:saturate(3) hue-rotate(-42deg);
 background-size:150%;
 background-image:url(img/PurpleMetalApple.png);}
 #Myuna span {color:white;}
