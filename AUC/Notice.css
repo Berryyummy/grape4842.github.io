@@ -431,7 +431,7 @@ background-image:url(img/PurpleMetalApple.png);}
 #Mcchi a {
 filter:saturate(2);
 background-image:url(img/Msky.png);
-background-size:100% 100%;
+background-size:cover;
 background-position:bottom;
 color:#250;
 border:solid #57f 0.1rem;}
@@ -462,13 +462,13 @@ background-image:url(img/GoldenApple.png);
 }
 
 #CSA a {
-/*background: radial-gradient(ellipse at center, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 50%,rgba(252,126,210,1) 100%);*/
 /*background-image:url(https://i.pinimg.com/originals/0d/ee/48/0dee4818267c2183793f7505d06a3b47.jpg);*/
-background-image: url(https://data.ac-illust.com/data/thumbnails/ab/ab9a45d052331b7c813cedc7f3245bf5_t.jpeg);
-background-size:contain;
+/*background-image: url(https://data.ac-illust.com/data/thumbnails/ab/ab9a45d052331b7c813cedc7f3245bf5_t.jpeg);*/
+background-image:url(img/sakura1.png);
+background-size:100% 100%;
 /*filter:hue-rotate(180deg) invert(100%);*/
 background-position:top;
-color:#301;
+color:#502;
 border:pink 0.1rem solid;}
 #CSA a:before {background-image:url(img/pinkapple.png);}
 
