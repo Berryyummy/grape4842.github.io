@@ -424,12 +424,10 @@ url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-po
 #Myuna a:before{
 filter:saturate(3) hue-rotate(-3deg);
 background-size:150%;
-background-image:url(img/PurpleMetalApple.png);
-}
+background-image:url(img/PurpleMetalApple.png);}
 #Myuna span {color:white;}
 
 #Mcchi a {
-/*background: radial-gradient(ellipse at center, rgba(153,204,255,1) 0%,rgba(221,238,255,1) 54%,rgba(153,204,255,1) 100%);*/
 background-image:url(https://lh5.googleusercontent.com/proxy/I0lhyqBxuUsUg0Sxzvm6KmT7GFT9pBCYNKjkwVMo2u8ic0LRQBDvkHP8-sUmtngltZp59hlrlmkxSuE3AeC2NCjLPwqBB9vYvo4YqGxd9-w6hbGZH9JsND4VuTLCqrMKu3Q0lZGk7YI);
 background-size:100% 120%;
 background-position:bottom;
@@ -437,11 +435,10 @@ color:#250;
 border:solid #57f 0.1rem;}
 #Mcchi span {color:#520;}
 #Mcchi a:before{
-background-image:url(img/OSXApple.png);
-}
+background-image:url(img/OSXApple.png);}
 
 #CSJ a{
-filter: saturate(150%);
+filter: saturate(120%);
 background-image: url(https://media.istockphoto.com/vectors/orange-seamless-pattern-orange-citrus-fruit-vector-illustration-vector-id531480528);
 background-size:5%;
 color:#130;
