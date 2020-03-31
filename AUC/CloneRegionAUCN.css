@@ -72,11 +72,11 @@ a {vertical-align:middle;
 
 #GOSHOP {right:0px; position:absolute;}
 
-#LOGO path,.numapplelogo path,#GOSHOP path{
+a path{
 	opacity:0.8; 
 	transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 -webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);}
-#LOGO:focus path,#LOGO:hover path,.numapplelogo:hover path,svg:hover path,#GOSHOP:focus path,#GOSHP:hover path {opacity:1;}
+a:hover path,a:focus path {opacity:1;}
 
 
 
