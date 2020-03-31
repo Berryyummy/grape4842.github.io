@@ -368,7 +368,7 @@ display:flex;}
 #RM4 a{
 background:
 linear-gradient(170deg, rgba(170,170,200,0.9) 0%,rgba(85,85,100,0.9) 40%,rgba(0,0,20,0.9) 41%,rgba(50,50,80,0.9) 100%);
-border:solid skyblue 0.1rem;
+border:solid #acf 0.1rem;
 }
 #RM4 a:before{background-image:url(img/appleX.png);}
 
@@ -416,7 +416,7 @@ border-radius:1rem;}
 	/*background: -webkit-linear-gradient(top, rgba(210,204,255,1) 0%, rgba(110,71,238,1) 49%, rgba(100,68,238,1) 50%, rgba(60,0,170,1) 51%, rgba(70,17,221,1) 100%);*/
 background-image:linear-gradient(to left,rgba(100, 0, 255, 0.1), rgba(150, 50, 255, 0.2), rgba(100, 0, 255, 0.1)),
 url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
-border:solid 0.1rem gold;
+border:solid 0.1rem orange;
 filter: saturate(150%);
 /*background:rgba(100, 0, 255, 0.1), 
 url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
@@ -433,8 +433,9 @@ background-image:url(img/PurpleMetalApple.png);
 background-image:url(https://lh5.googleusercontent.com/proxy/I0lhyqBxuUsUg0Sxzvm6KmT7GFT9pBCYNKjkwVMo2u8ic0LRQBDvkHP8-sUmtngltZp59hlrlmkxSuE3AeC2NCjLPwqBB9vYvo4YqGxd9-w6hbGZH9JsND4VuTLCqrMKu3Q0lZGk7YI);
 background-size:100% 120%;
 background-position:bottom;
-color:#520;
-border:solid white 0.1rem;}
+color:#250;
+border:solid #57f 0.1rem;}
+#Mcchi span {color:#520;}
 #Mcchi a:before{
 background-image:url(img/OSXApple.png);
 }
@@ -443,9 +444,10 @@ background-image:url(img/OSXApple.png);
 filter: saturate(150%);
 background-image: url(https://media.istockphoto.com/vectors/orange-seamless-pattern-orange-citrus-fruit-vector-illustration-vector-id531480528);
 background-size:5%;
-color:#320;
+color:#130;
 background-attachment:fixed;
 border:orange 0.1rem solid;}
+#CSJ span {color:#420;}
 #CSJ a:before {
 background-size:120%;
 background-image:url(img/GoldenApple.png);
