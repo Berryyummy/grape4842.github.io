@@ -249,7 +249,7 @@ display:inline-block;}
 #inPC2 {width:100%; }
 #inP {
 	width:83%;
-	top:27%;
+	top:29%;
 	left:50%; 
 	transform:translateX(-50%);
 	color:black; 
@@ -258,14 +258,6 @@ display:inline-block;}
 #full {text-align:left;}
 
 
-
-
-
-
-#appleseries {
-	width:100%; 
-	position:relative;
-	margin-top:-10%;}
 #memoticon {
 	width:80%;
 	box-shadow: 0em 0em 3em 3em rgb(33,33,33); 
@@ -274,7 +266,13 @@ display:inline-block;}
 #MPC {padding:0px; margin:0px;}
 	#FPC {text-align:center;}
 
-	#inPC {position:relative;}
+	#inPC {
+	position:relative;
+	padding-bottom:20%;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	background-image:url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/barclay-financing-201701?wid=1667&hei=622&fmt=png-alpha&.v=1537912047343);}
 	#inPC p {
 		line-height: 1.52947; 
 		font-size:1.1em;}
@@ -369,8 +367,9 @@ display:flex;}
 
 #RM4 a{
 background:
-linear-gradient(165deg, rgba(170,170,187,1) 0%,rgba(85,85,102,1) 40%,rgba(0,0,17,1) 41%,rgba(51,51,68,1) 100%);
-border:solid skyblue 0.1rem;}
+linear-gradient(170deg, rgba(170,170,200,0.9) 0%,rgba(85,85,100,0.9) 40%,rgba(0,0,20,0.9) 41%,rgba(50,50,80,0.9) 100%);
+border:solid skyblue 0.1rem;
+}
 #RM4 a:before{background-image:url(img/appleX.png);}
 
 
@@ -457,12 +456,14 @@ background-image:url(img/GoldenApple.png);
 /*background-image:url(https://i.pinimg.com/originals/0d/ee/48/0dee4818267c2183793f7505d06a3b47.jpg);*/
 background-image: url(https://data.ac-illust.com/data/thumbnails/ab/ab9a45d052331b7c813cedc7f3245bf5_t.jpeg);
 background-size:contain;
+/*filter:hue-rotate(180deg) invert(100%);*/
 background-position:top;
 color:#301;
 border:pink 0.1rem solid;}
 #CSA a:before {background-image:url(img/pinkapple.png);}
 
 #HHC a {
+filter:hue-rotate(-15deg);
 text-shadow: #000 0 0 0.5rem, #000 2px 2px 2px;
 background-image:url(https://images.assetsdelivery.com/compings_v2/intara1/intara11904/intara1190400012.jpg);
 background-size:10%;
