@@ -130,23 +130,21 @@ animation-name:fold;
 animation-delay:0.5s;
 animation-duration:2s;
 animation-fill-mode:forwards;
-overflow-x:hidden;
-transform:translateX(-25%);	
-margin-top:5rem;
-width:200%;
-opacity:0.9;
+transform:scale(3);	
+opacity:0;
 }
 
 @keyframes fold {
-/*5% {transform:translateX(-20%);}
-30% {transform:translateX(-10%);}
-*/60% {width:70%; 
+/*60% {width:70%; 
 	opacity:0.6;
 	transform:translateX(-2%);}
 100% {width:100%; 
 	transform:translateX(0%);		
 	opacity:1;}}
-
+*/
+0% {transform:scale(3); opacity:0;}
+70% {transform:scale(0.7);}
+100% {transform:scale(1); opacity:1;}}
 @media (prefers-reduced-motion:reduce) {
 	.playing,#gram {display:none;}
 	.noplay {display:unset;}
