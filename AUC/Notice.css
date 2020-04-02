@@ -63,7 +63,7 @@ animation-fill-mode:forwards;}
 	background-size:cover;}
 
 /*큰 영역별 공통 CSS*/
-body {
+body, #wrap {
 	background-color:#121217; 
 	color:white;}
 
