@@ -8,7 +8,11 @@ Miyazawa0324 JavaScript Event Practice Page
 </title>
 <style type="text/css">
 body {background-color:#aaf;}
-button {background-color:#215; border:none; padding:5%;}
+button {
+	background-color:#215; 
+	color:white;
+	border:none; 
+	padding:1%;}
 .hidden {
     display:none;   
 }
@@ -16,15 +20,19 @@ button {background-color:#215; border:none; padding:5%;}
 <link rel="stylesheet" type="text/css" href="">
 </head>
 <body>
-<button id="controller">TEST</button>	
+<button id="controller" aria-expanded="false">TEST</button>	
 <div id="contentbox" class="hidden"></div>
 <script type="text/javascript">
 var controller=document.querySelector('#controller');
- controller.addEventListener('click',function(){
- 	if (contentbox.classList.contains('hidden')){contentbox.classList.remove('hidden');}
- 	else {contentbox.classList.add('hidden')}
- });
 var contentbox=document.querySelector('#contentbox');
+
+ controller.addEventListener('click',function(){
+ 	if (contentbox.classList.contains('hidden')){
+ 		contentbox.classList.remove('hidden')
+ 		controller.setAttribute('aria-expanded', true)}
+ 	else {contentbox.classList.add('hidden')
+		controller.setAttribute('aria-expanded', false)}});
+
 </script>
 </body>
 </html>
