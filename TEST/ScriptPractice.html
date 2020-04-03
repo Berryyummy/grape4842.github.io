@@ -27,59 +27,13 @@ button {
 <button id="controller" aria-expanded="false">Expanded Button</button>	
 <div id="contentbox" class="hidden">
 							<ul class="sellist">
-							<li>
-								<dl>
-									<dt>상품사진</dt>
-									<dd>상품의 사진은 밝은 곳에서 정후면,측면 등 다양하게 찍어 상품의 상태를 최대한 알 수 있도록 하며,사진은 타 회원을 위해 묶어 보내도록합니다. 구성품이 본품만이 아닐경우, 모든 구성품 사진을 첨부하셔야 합니다</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>판매품명</dt>
-									<dd>판매품명은 누구나 알 수 있도록 제공합니다.&#40;상품명,모델명을 함께 제공하도록 권장합니다.&#41;</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>상품금액</dt>
-									<dd>정확한 금액을 기재하여 택배비 포함 여부를 반드시 명시하여야 합니다. 신품의 가격을 함께 적는 것을 권장합니다.</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>사용기간</dt>
-									<dd>상품을 구입한 날짜와 사용기간을 되도록 정확히 기재하여야 합니다.</dd>
-									<dd>&#40;예시:YYYY-MM-DD ~ YYYY-MM-DD 등&#41;</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>상품상태</dt>
-									<dd>까짐, 찍힘, 찌그러짐, 구겨짐, 기스 등의 하자가 있는 경우 상세하게 안내합니다.</dd>
-									<dd>수리이력,침수여부과 같은 이력이 있는 경우, 작성하여야 합니다.</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>구성품목</dt>
-									<dd>본품과 함꼐 박스등의 구성품이 있는 경우, 사진과 텍스트를 함께 제공하여야 하며, 구성품에 하자가 있을 경우 해당 사항도 함께 안내하여야 합니다.</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>상세사항</dt>
-									<dd>색상,용량,재질,보험여부,사용기간 등과 같은 기타 세부정보를 제공하여야 합니다.</dd>
-								</dl>
-							</li>
-							<li>
-								<dl>
-									<dt>전화번호</dt>
-									<dd>판매자 본인의 전화번호를 기재하여야 합니다.</dd>
-								</dl>
-							</li>
+							<li>메뉴1</li>
 						</ul>
 
 </div>
+<div class="hi">hi</div>
+<div class="hi">hi</div>
+<div class="hi">hi</div>
 <script type="text/javascript">
 var controller=document.querySelector('#controller');
 var contentbox=document.querySelector('#contentbox');
@@ -90,6 +44,11 @@ var contentbox=document.querySelector('#contentbox');
  		controller.setAttribute('aria-expanded', true)}
  	else {contentbox.classList.add('hidden')
 		controller.setAttribute('aria-expanded', false)}});
+
+var hi=document.querySelectorAll('.hi');
+for(var i=0; i<hi.length; i++){
+    hi[i].innerHTML+=(i+1);
+}
 
 </script>
 </body>
