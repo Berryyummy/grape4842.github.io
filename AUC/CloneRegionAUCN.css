@@ -1,11 +1,11 @@
 @charset "UTF-8";
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
-::selection {background:#76f; color:white;}
+::selection {background:#76f; color:Fwhite;}
 .znone {position:absolute; z-index:-100; left:0px; top:0px;}
 @supports not(background-clip:text) or (-webkit-background-clip:text){
 	.clip{background-color:black; color:white;}}
-
+#wrap {z-index:1; position:relative;}
 #langzone {background-color:white;}
 .cicon {width:1em; height:1em;}
 div.lanregion {padding:1em;}
@@ -35,8 +35,12 @@ img,video
 	box-sizing:content-box;
 	clip: rect(1px, 1px, 1px, 1px); 
 	clip-path: inset(0px 0px 99.9% 99.9%);}
-body {margin:0px; height:100%;}
-body * {margin:auto auto; 
+body, #wrap {
+	background-color:#121217; 
+	color:white; 
+	margin:0px; 
+	height:100%;}
+* {margin:auto auto; 
 	text-align:center;
 	-webkit-font-smoothing:antialiased;
 	font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;}
@@ -165,13 +169,16 @@ width:30%;}
 	box-sizing:border-box;}
 
 footer {
-	padding:2em !important; 
+	padding:1.6rem 0px !important; 
 	background-color:#222; 
-	position:relative; 
-	bottom:0px;}
+	width:100%;
+	position:relative;
+	bottom:0px;
+	left:0px;
+	z-index:0; }
 
 .made,#a11ymark {
-	font-size:2em;}
+	font-size:1.6rem;}
 .made {color:#6e6e73;}
 
 /*큰 기기PC등에서만 보이는 부분*/
