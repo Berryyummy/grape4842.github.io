@@ -1,0 +1,39 @@
+@charset "UTF-8";
+:lang(ko) {word-break: keep-all; line-break:normal;}
+:lang(ja) {word-wrap:break-word; word-break:break-all;}
+::selection {background:#76f; color:white;}
+
+body {background-image:url(img/grassB.png);
+	background-repeat:repeat;
+	background-size:20%;
+	background-position: center center;
+	margin:0px auto;}
+header {z-index:9999;
+	position:sticky;
+	display:flex;
+	justify-content:center;}
+section {background-color:rgba(255,255,255,0.5);}
+nav {width:90%;}
+a {text-decoration:none;
+	color:black;}
+table {border-collapse:collapse;}
+ul {margin:0px;
+	padding:0px;
+	list-style:none;}
+li {margin:0.1rem 0px;}
+.w980 {width:60%; 
+	margin:0px auto;
+	padding:5%;
+	box-sizing:border-box;}
+
+
+
+@media screen and (max-width:1200px) {
+	body {background-size:60%;}
+	.w980 {width:90%;}
+}
+
+@media (prefers-color-scheme:dark) {
+section {background-color:rgba(0,0,0,0.5);}
+body,a {color:white;}
+}
