@@ -13,7 +13,7 @@ header {z-index:9999;
 	display:flex;
 	justify-content:center;}
 nav {width:90%;}
-.NH {width:10%;}
+.NH {width:3rem;}
 section {background-color:rgba(255,255,255,0.5);}
 a {text-decoration:none;
 	color:black;}
