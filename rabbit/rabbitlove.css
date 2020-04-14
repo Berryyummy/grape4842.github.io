@@ -68,7 +68,9 @@ nav h1 {display:flex;
 .line7 {background-color:#627535;}
 .line8 {background-color:#E84E72;}
 .line9 {background-color:#BE941C;}
-
+footer {width:100%;
+	margin-top:2%;
+	background-color:black;}
 
 
 
