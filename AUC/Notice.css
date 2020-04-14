@@ -424,12 +424,9 @@ url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-po
 color:white;
 text-shadow:1px 1px black;}
 #Myuna a:before{
-background-image:url(img/GGlassApple.png);
-background-size:110% !important;
-filter:saturate(1) hue-rotate(115deg);
-/*background-image:url(img/PurpleMetalApple.png);*/
-/*background-size:150%;*/
-/*filter:saturate(3) hue-rotate(-42deg);*/
+background-image:url(img/PurpleMetalApple.png);
+background-size:150%;
+filter:saturate(1) hue-rotate(-50deg);
 }
 #Myuna span {color:white;}
 
@@ -467,7 +464,7 @@ background-image:url(img/GoldenApple.png);
 }
 
 #CSA a {
-/*background-image:url(https://i.pinimg.com/originals/0d/ee/48/0dee4818267c2183793f7505d06a3b47.jpg);*/
+/*background-image:url(https://i.pinimg.com/originals/0d/ee/48/0dee4818267c2183793f7505d06a3b47.jpg);
 /*background-image: url(https://data.ac-illust.com/data/thumbnails/ab/ab9a45d052331b7c813cedc7f3245bf5_t.jpeg);*/
 background-image:url(img/sakura1.png);
 background-size:100% 100%;
