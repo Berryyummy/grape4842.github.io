@@ -33,10 +33,10 @@ th {background-color:#fe7;}
 ul,ol,dl {margin:0px;
 	padding:0px;
 	list-style:none;}
-li,dt,dd {padding:0.1rem 0px;
+li,dt,dd {padding:0.3rem 0px;
 	margin:0px;}
 li dl {padding-top:0.5rem;}
-li li,li dt,li dd {padding:0.1rem 0.5rem;}
+li li,li dt,li dd {padding:0.15rem 0.5rem;}
 .w980 {width:60%; 
 	margin:0px auto;
 	padding:5%;
@@ -50,8 +50,9 @@ nav h1 {display:flex;
 	padding:0px;}
 
 .metro {
+	margin-right:5px;
 	border-radius:100%; 
-	width:1.5rem; height:1.5rem;
+	width:1.3rem; height:1.3rem;
 	display:inline-flex;
 	justify-content:center;
 	align-items:center;
