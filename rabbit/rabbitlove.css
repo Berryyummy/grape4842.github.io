@@ -11,17 +11,32 @@ body {background-image:url(img/grassB.png);
 header {z-index:9999;
 	position:sticky;
 	display:flex;
-	justify-content:center;}
-nav {width:90%;}
+	justify-content:center;
+/*	position:sticky;
+	top:0px;
+	left:0px;
+*/	z-index:9999;}
+nav {width:90%;
+	padding:0% 5%;
+}
 .NH {width:3rem;}
 section {background-color:rgba(255,255,255,0.5);}
 a {text-decoration:none;
 	color:black;}
-table {border-collapse:collapse;}
-ul {margin:0px;
+table {border-collapse:collapse;
+	margin:5% auto;}
+th,td {padding:5%;
+	box-sizing:border-box;
+	border:1px solid black;}
+td {background-color:white;}
+th {background-color:#fe7;}
+ul,ol,dl {margin:0px;
 	padding:0px;
 	list-style:none;}
-li {margin:0.1rem 0px;}
+li,dt,dd {padding:0.1rem 0px;
+	margin:0px;}
+li dl {padding-top:0.5rem;}
+li li,li dt,li dd {padding:0.1rem 0.5rem;}
 .w980 {width:60%; 
 	margin:0px auto;
 	padding:5%;
@@ -30,14 +45,19 @@ li {margin:0.1rem 0px;}
 nav h1 {display:flex;
 	align-items:center;
 	justify-content:center;}
+#Hospital dt,#Hospital dd {
+	display:inline-flex;
+	padding:0px;}
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1000px) {
 	body {background-size:60%;}
 	.w980 {width:90%;}
 }
 
 @media (prefers-color-scheme:dark) {
-section {background-color:rgba(0,0,0,0.6);}
+section {background-color:rgba(0,0,0,0.5);}
 body,a {color:white;}
+td {background-color:#420;}
+th {background-color:#240;}
 }
