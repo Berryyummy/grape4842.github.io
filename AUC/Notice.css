@@ -259,6 +259,7 @@ display:inline-block;}
 	#FPC {text-align:center;}
 
 	#inPC {
+	font-weight:600;
 	position:relative;
 	padding-bottom:20%;
 	padding-top:5%;
@@ -269,7 +270,7 @@ display:inline-block;}
 	#inPC p {
 		line-height: 1.52947; 
 		font-size:1.1em;}
-	.fullT {color:white; margin:auto;}
+	.fullT {color:white; margin:auto; font-weight:600;}
 	#fullhi {margin:0.5em auto;}
 
 #apple12 {
