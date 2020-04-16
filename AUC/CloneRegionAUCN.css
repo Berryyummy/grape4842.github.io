@@ -139,7 +139,9 @@ a:hover path,a:focus path {opacity:1;}
 
 
 
-#AT {color:white; text-align:left;}
+#AT {font-size:1em;
+	color:white; 
+	text-align:left;}
 #gochat {min-width:23px; 
 		line-height:1.33337;
 	 	background-color:#0071e3; 
@@ -156,11 +158,6 @@ a:hover path,a:focus path {opacity:1;}
 		box-sizing:border-box; 
 		right:0;}
 
-#a11ymark {
-	margin:0px;
-	color:white; 
-	font-size:17px;
-	text-align:left;}
 
 .wrap {
 	margin:0 auto; 
@@ -176,22 +173,36 @@ footer {
 	z-index:0;}
 
 #AppleA11Y {
+	position:relative;
 	font-weight:600;
 	margin:2rem auto;
 	color:white;
 }
 #AppleA11Y>div {
+	transform:translate(5%);
 	width:90%;
-	margin-top:-11rem;
+	position:absolute;
+	bottom:2rem;
 }
 
 #AppleA11Y h2 {
+	line-height:1.34211;
 	font-size:21px; 
 	font-weight:900;
 	text-align:left;}
 #AppleA11Y p {
+	letter-spacing:0.007em;
+	font-size:32px;
 	margin:0px; 
+	font-weight:600;
 	padding:0px;
+	text-align:left;}
+#a11ymark {
+	display:inline;
+	margin:0px;
+	padding:0px;
+	color:white; 
+	font-size:17px;
 	text-align:left;}
 
 .made {font-size:12px; color:#6e6e73;}
@@ -215,7 +226,10 @@ footer {
 
 /*SmartPhone*/
 	@media screen and (max-width:750px) {
-	}
+	#AppleA11Y img {}
+	#AppleA11Y h2 {font-size:19px;}
+	#AppleA11Y p {font-size:24px;}
+}
 
 /*iPhone SE*/
 	@media screen and (max-width:320px) {

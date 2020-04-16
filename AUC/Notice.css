@@ -181,7 +181,7 @@ display:inline-block;}
 #bighelp {
 	width:80%; 
 	display:flex;}
-#helpM a:focus .goask,#helpM a:hover .goask {text-decoration:underline;}
+#helpM a:focus .goask,#helpM a:hover .goask,#a11ymark:focus,#a11ymark:hover {text-decoration:underline;}
 .goask { 
 	font-size:14px; 
 	color:#2997ff;}
@@ -310,7 +310,7 @@ ul,.lalist {
 /*		-webkit-mask-image: url(/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png);
     mask-image: url(/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png);
 */}
-#Mlist {padding:5%;}
+
 #iMacPNG {display:none; position:relative;}
 #iMacPNG:before {
 	content:'';
@@ -547,10 +547,11 @@ border:solid 0.1rem black;}
 		left:-12.5%;}
 	h2,h3 {
 		font-size:40px;
-		line-height:110%;}
+		line-height:1;}
 	h4,h4>span {
-		font-size:32px; 
-		font-weight:700;}
+		font-size:40px; 
+		font-weight:700;
+		line-height:1.1;}
 
 	#full {font-size:21px;}
 	.walert {
