@@ -14,7 +14,7 @@ button {border:none;}
 table {border-collapse:collapse;}
 img,video 
 {width:100%;}
-
+.expanded {display:none;}
 .w980 {
 	width:90%;
 	vertical-align:middle; 
@@ -39,10 +39,13 @@ body, #wrap {
 	margin:0px; 
 	height:100%;}
 
-* {margin:auto auto; 
+*,.w980 {margin:auto auto; 
 	text-align:center;
 	-webkit-font-smoothing:antialiased;
-	font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;}
+	font-family:"SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+}
 /* background-color: #121217; */
 
 header {
