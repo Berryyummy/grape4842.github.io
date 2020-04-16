@@ -36,8 +36,8 @@ animation-name:bmac;
 animation-fill-mode:forwards;}
 
 @keyframes bmac {
-	from {opacity:1;}
-	to {opacity:0;}
+	from {visibility:visible;}
+	to {visibility:hidden;}
 }
 
 /*#MacBookPro {
@@ -56,7 +56,6 @@ animation-fill-mode:forwards;}
 /*text gradient 텍스트를 그라데이션처럼 표기하기 위한 CSS*/
 .clip {
 	filter: saturate(150%);
-	/*filter:contrast(200%);*/
 	background-clip:text; 
 	-webkit-background-clip:text;
 	color: transparent; 
@@ -64,24 +63,20 @@ animation-fill-mode:forwards;}
 
 /*큰 영역별 공통 CSS*/
 
+main {background-color:#17171d;}
 
-
-
-p {word-break:keep-all; 
-	margin:29px 0px; 
-	font-size:131.25%; 
-	font-weight:600; 
-	letter-spacing:0.011em;
-	display: block;
-   margin-block-start:1em;
-   margin-block-end:1em;
-   margin-inline-start:0px;
-   margin-inline-end:0px;}
+#controller {display:inline;
+background-image:url(https://www.apple.com/v/iphone-xs/d/images/overview/copy_texture_2_large.jpg); }
+p,button {
+	font-size: 21px;
+    line-height: 1.38105;
+    font-weight: 400;
+    letter-spacing: .011em;}
 
 
 	#notice {border:none;}
 	#AT {border-bottom:rgba(66,66,69,0.95) solid 1px;}
-	#CP {font-size:0.5em;
+	#CP {font-size:12px;
 	border-top:#424245 1px solid;}
 
 
@@ -103,24 +98,17 @@ h1 {display:flex;
     -webkit-box-direction: reverse;}
 
 
-h2 {
-	font-size:200%;
+h2,h3 {
+	font-size:48px;
 	color:white; 
 	text-align:center;  
-	line-height:110%; 
+	line-height:1.1em; 
 	font-weight: 600;
-	margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;    
+	letter-spacing: .011em;
     text-align:center;
-	line-height: 1.14286;}
+	vertical-align:middle;}
 
-h3 {color:#aee1cd;
-	font-weight:600; 
-	letter-spacing: 0.012em; 
-	vertical-align:middle; 
-    line-height: 1.31579;}
+h3 {color:#aee1cd;}
 
 h2,h3 {font-size:64px;}
 
@@ -134,7 +122,7 @@ h4,h4>span {
 
 
 
-ul,li,ol {
+ul,li,ol,#controller {
 	padding:0px; 
 	word-break:keep-all; 
 	text-align:left; 
@@ -161,7 +149,8 @@ dl svg {margin:-1rem auto;}
 	color:#6D7A71; 
 	text-align:center; 
 	font-weight:600; 
-	font-size:21px;}
+	font-size:21px;
+	padding-bottom:2rem;}
 
 
 
@@ -172,12 +161,12 @@ dl svg {margin:-1rem auto;}
 	color:white; 
 	font-weight:900; 
 	display:block;}
-#help a,#helpM a {width:12em;}
+#help a,#helpM a {width:12rem;}
 #help span,#helpM span{
 font-size:14px; 
 text-align:left; 
 font-weight:400;
-margin-top:0.4em;
+margin-top:0.4rem;
 display:inline-block;}
 
 #helpbox,#helpboxM {
@@ -298,24 +287,29 @@ ul,.lalist {
 
 #MBP {
 	height:100%;
+	margin-top:29px;
 	margin-bottom:-15%;
 	position:relative;
 	overflow-x:hidden;}
 #MacS {
+
 	width:125%;
 	position:relative; 
 	left:-12.5%;}
 
 #MacBookPro {
+
+	display:block;
 	margin-bottom:-32.7%;
 	width:90%;
 	position:relative;
 	z-index:100;
-	-webkit-mask-size:contain;
+	-webkit-mask-size:cover;
 	-webkit-mask-position:center;
     -webkit-mask-repeat:no-repeat;
-    /*-webkit-mask-image: url(https://www.apple.com/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png);*/}
-
+/*		-webkit-mask-image: url(/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png);
+    mask-image: url(/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png);
+*/}
 #Mlist {padding:5%;}
 #iMacPNG {display:none; position:relative;}
 #iMacPNG:before {
@@ -530,7 +524,6 @@ border:solid 0.1rem black;}
 		font-size:24px;
 		letter-spacing: .009em;}
 	.made {display:block;}
-	#a11ymark {font-size:2rem;}
 	h2,h3 {
 		line-height:1.5em; 
 		letter-spacing: 0em;
@@ -588,7 +581,6 @@ border:solid 0.1rem black;}
 	#HHC a {
 		background-size:50%;
 		background-position:center;}
-		#a11ymark{font-size:1rem;}}
 
 /* iPhone X */
 	@media screen and (min-width:370px) and (max-width:380px) {
@@ -604,14 +596,12 @@ border:solid 0.1rem black;}
 	line-height:1.2rem; 
 	font-size:0.9em;}
 	#MinP {background-color:black;}
-	@media (prefers-color-scheme:light) {}
 	h1 {
 		position:relative; 
 		left:0px; 
 		color:#1d1d1f;
 		opacity:1;}
 	#SE11 video {margin-bottom:100%;}
-	body {background-color:white;}
 	li,.fullist li {font-size:17px;}
 	#i11 {
 		margin-left:7%;

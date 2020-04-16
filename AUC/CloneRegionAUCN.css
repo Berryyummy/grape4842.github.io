@@ -3,16 +3,14 @@
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#76f; color:white;}
 .znone {position:absolute; z-index:-100; left:0px; top:0px;}
-@supports not(background-clip:text) or (-webkit-background-clip:text){
-	.clip{background-color:black; color:white;}}
 #wrap {z-index:1; position:relative;}
 #langzone {background-color:white;}
-.cicon {width:1em; height:1em;}
-div.lanregion {padding:1em;}
+.cicon {width:1rem; height:1rem;}
+div.lanregion {padding:1rem;}
 /*.langregion {clear:both;}
 .langregion li {float:left;}
 */.langregion a{color:white;}
-
+button {border:none;}
 table {border-collapse:collapse;}
 img,video 
 {width:100%;}
@@ -40,6 +38,7 @@ body, #wrap {
 	color:white; 
 	margin:0px; 
 	height:100%;}
+
 * {margin:auto auto; 
 	text-align:center;
 	-webkit-font-smoothing:antialiased;
@@ -157,12 +156,11 @@ a:hover path,a:focus path {opacity:1;}
 		box-sizing:border-box; 
 		right:0;}
 
-#a11ymark {color:white; font-weight:900;}
-#a11ymark img {
-background-color:white; 
-border-radius:100%;
-width:30%;}
-#a11ymark span {color:#77aaff;}
+#a11ymark {
+	margin:0px;
+	color:white; 
+	font-size:17px;
+	text-align:left;}
 
 .wrap {
 	margin:0 auto; 
@@ -175,11 +173,28 @@ footer {
 	position:relative;
 	bottom:0px;
 	left:0px;
-	z-index:0; }
+	z-index:0;}
 
-.made,#a11ymark {
-	font-size:1.6rem;}
-.made {color:#6e6e73;}
+#AppleA11Y {
+	font-weight:600;
+	margin:2rem auto;
+	color:white;
+}
+#AppleA11Y>div {
+	width:90%;
+	margin-top:-11rem;
+}
+
+#AppleA11Y h2 {
+	font-size:21px; 
+	font-weight:900;
+	text-align:left;}
+#AppleA11Y p {
+	margin:0px; 
+	padding:0px;
+	text-align:left;}
+
+.made {font-size:12px; color:#6e6e73;}
 
 /*큰 기기PC등에서만 보이는 부분*/
 .wbig {display:block;}
@@ -200,7 +215,6 @@ footer {
 
 /*SmartPhone*/
 	@media screen and (max-width:750px) {
-		#a11ymark {font-size:1.5em;}
 	}
 
 /*iPhone SE*/
@@ -208,7 +222,7 @@ footer {
 	/*@media (prefers-color-scheme:light) {*/
 	.no320 {display:none;}
 	.m320 {display:inline-block;}
-	body {background-color:white;}
+	body,main,.clip,#wrap {background-color:white !important;}
 	h1 span,h2, h4,h4 span {
 	color:#1d1d1f !important;}
 	section,li,footer,div,p,h3 {
@@ -222,8 +236,6 @@ footer {
 		font-size:17px;}
 
 	#notice {background:rgba(255,255,255,0.7);}
-	#a11ymark {font-size:1.2em; color:#dd006d;}
-	#a11ymark span {color:#073ca5;}
 	#CP {font-size:0.8em; border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}
 	footer {background-color:#f2f2f2;}
@@ -250,8 +262,6 @@ footer {
 		font-size:17px;}
 
 	#notice {background:rgba(255,255,255,0.7);}
-	#a11ymark {font-size:1.2em; color:#dd006d;}
-	#a11ymark span {color:#073ca5;}
 	#CP {font-size:0.8em; border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}
 	footer {background-color:#f2f2f2;}
