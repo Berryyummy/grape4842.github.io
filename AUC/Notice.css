@@ -146,6 +146,7 @@ dl * {
 dl svg {margin:-1rem auto;}
 
 #hello {
+	margin-top:16px;
 	color:#6D7A71; 
 	text-align:center; 
 	font-weight:600; 
@@ -588,21 +589,28 @@ border:solid 0.1rem black;}
 	#HHC a {
 		background-size:50%;
 		background-position:center;}
-
+	#i11 {width:55% !important;
+			margin-left:7% !important;
+			text-align:left;}
+	#hello {text-align:left;}
+}
 /* iPhone X,S10 */
 	@media screen and (min-width:360px) and (max-width:380px) {
-	#inP {top:32%;}
+	#inP {top:32%;a}
+	#i11 {width:70% !important;}
 	}
 
 
 
 /*iPhone SE*/
-	@media screen and (max-width:320px) {
+/*light theme*/
+	/*@media screen and (max-width:320px) {*/
+	/*@media screen and (max-width:420px) and (aspect-ratio:9/16){*/
+	@media (prefers-color-scheme:light) {
 	#full {font-size:1.2rem;}
 	.walert {
 	padding:0.3rem 0.5rem;
-	line-height:1.2rem; 
-	font-size:0.9em;}
+	line-height:1.2rem; }
 	#MinP {background-color:black;}
 	h1 {
 		position:relative; 
@@ -617,15 +625,14 @@ border:solid 0.1rem black;}
 		z-index:0;}
 	li,.fullist li {font-size:17px;}
 	#i11 {
+		margin:0px auto;
 		line-height:1.2;
-		margin-left:7%;
-		width:70%;
 		font-size:40px;
-		font-weight:700;
-		text-align:left;}
+		font-weight:700;}
 	h1 span,h2 span,#i11 {
 	font-weight:900; 
 	font-size: 40px;}
+
 	#helpM span{color:#1d1d1f;}
 	#helpM,footer {
 	background-clip:unset; 
@@ -635,7 +642,6 @@ border:solid 0.1rem black;}
 	background-color:#f2f2f2; 
 	padding:70px 0px;}
 	
-	#hello {text-align:left;}
 	#SEST {font-size:21px; 
 		color:#6D7A71; 
 		position:relative;
@@ -647,22 +653,23 @@ border:solid 0.1rem black;}
 	color:#1d1d1f; 
 	font-weight:900;}
 	.goask {color:#06c;}
+	.clip {filter:saturate(1);}
 
+	#raina1 {fill:#e00;}
+	#raina2 {fill:#f70;}
+	#raina3 {fill:#fc0;}
+	#raina4 {fill:#0c5;}
+	#raina5 {fill:#69f;}
+	#raina7 {fill:#87f;}
 
-#raina1 {fill:#e00;}
-#raina2 {fill:#f70;}
-#raina3 {fill:#fc0;}
-#raina4 {fill:#0c5;}
-#raina5 {fill:#69f;}
-#raina7 {fill:#87f;}
-
-#Mlist h4 {
-height:20vh;
-background-size:cover;
-background-position:center 50%;
-background-image:url(https://www.apple.com/v/home/d/images/promos/covid-19/tile__cauwwcyyn9hy_large.jpg);}
+	#Mlist h4 {
+	height:20vh;
+	background-size:cover;
+	background-position:center 50%;
+	background-image:url(https://www.apple.com/v/home/d/images/promos/covid-19/tile__cauwwcyyn9hy_large.jpg);}
 #controller {font-size:17px;}
-.wbig {display:none;}}
+.wbig {display:none;}
+}
 
 
 
@@ -671,7 +678,7 @@ background-image:url(https://www.apple.com/v/home/d/images/promos/covid-19/tile_
 	li,.fullist li {font-size:17px;}
 	
 	#SE11 {padding:0px;
-	margin-top:3em;}
+	margin-top:3rem;}
 
 	h1 {
 		position:relative; 

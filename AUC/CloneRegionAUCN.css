@@ -232,8 +232,9 @@ footer {
 }
 
 /*iPhone SE*/
-	@media screen and (max-width:320px) {
-	/*@media (prefers-color-scheme:light) {*/
+	/*@media screen and (max-width:320px) {*/
+	/*@media screen and (max-width:420px) and (aspect-ratio:9/16) {*/
+	@media (prefers-color-scheme:light) {
 	.no320 {display:none;}
 	.m320 {display:inline-block;}
 	body,main,.clip,#wrap {background-color:white !important;}
