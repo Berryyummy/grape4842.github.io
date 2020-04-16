@@ -221,8 +221,8 @@ display:inline-block;}
 	background-image:url(https://www.apple.com/v/iphone-11/c/images/overview/hero/hero_pf_phone__cvre2iya2qeu_medium.png); 
 }
 .walert {
-	padding:0.7em;
-	border-radius:1em;
+	padding:0.7rem;
+	border-radius:1rem;
 	color:black; 
 	background-color:#ffffffaa; 
 	box-sizing:border-box; 
@@ -232,15 +232,15 @@ display:inline-block;}
 	-webkit-backdrop-filter: blur(20px);}
 #inP0, #inPC2 {position:relative;}
 #inP0 {
-	height:45rem;
 	padding:10% 0px;
-	background-image:url(https://help.apple.com/assets/5D5C55FA680CE21275077A2C/5D5C5601680CE21275077A4F/ko_KR/3c07ea382bf438abda6e6dbeb7e12fe3.png);
+/*	background-image:url(https://help.apple.com/assets/5D5C55FA680CE21275077A2C/5D5C5601680CE21275077A4F/ko_KR/3c07ea382bf438abda6e6dbeb7e12fe3.png);
 	background-size:100%;
-	background-repeat:no-repeat;}
+	background-repeat:no-repeat;
+*/}
 #inPC2 {width:100%; }
 #inP {
-	width:83%;
-	top:29%;
+	width:82%;
+	top:30%;
 	left:50%; 
 	transform:translateX(-50%);
 	color:black; 
@@ -558,12 +558,12 @@ border:solid 0.1rem black;}
 		font-weight:700;
 		line-height:1.1;}
 
-	#full {font-size:21px;}
+	#full {font-size:19px;}
 	.walert {
 		margin:0.5rem auto;
 		border-radius:0.8em; 
 		padding:0.4em 0.5em; 
-		line-height:130%; 
+		line-height:1.3rem; 
 		font-size:90%;}
 	.made {display:block;}
 	#LOGO {
@@ -591,8 +591,7 @@ border:solid 0.1rem black;}
 
 /* iPhone X,S10 */
 	@media screen and (min-width:360px) and (max-width:380px) {
-	.walert {font-size:90%;}
-	#inP {top:24%;}
+	#inP {top:32%;}
 	}
 
 
@@ -683,7 +682,7 @@ background-image:url(https://www.apple.com/v/home/d/images/promos/covid-19/tile_
 		text-align:left;}
 	#full {font-size:1.2em;}
 	#MinP {background-color:black;}
-	#inP {top:30%;}
+	#inP {top:31%;}
 	.walert {
 	padding:0.5em 0.7em;
 	line-height:1.2em; 
