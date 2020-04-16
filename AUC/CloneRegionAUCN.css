@@ -239,7 +239,7 @@ footer {
 	body,main,.clip,#wrap {background-color:white !important;}
 	h1 span,h2, h4,h4 span {
 	color:#1d1d1f !important;}
-	section,li,footer,div,p,h3 {
+	section,li,footer,div,p,h3,#controller {
 	box-sizing:border-box; 
 	background-clip:border-clip; 
 	font-size:17px;

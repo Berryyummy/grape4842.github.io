@@ -67,7 +67,7 @@ main {background-color:#17171d;}
 
 #controller {display:inline;
 background-image:url(https://www.apple.com/v/iphone-xs/d/images/overview/copy_texture_2_large.jpg); }
-p,button {
+p {
 	font-size: 21px;
     line-height: 1.38105;
     font-weight: 400;
@@ -610,8 +610,14 @@ border:solid 0.1rem black;}
 		color:#1d1d1f;
 		opacity:1;}
 	#SE11 video {margin-bottom:100%;}
+	#SE11 video {
+		position:sticky; 
+		top:0px; left:0px;
+		display:flex;
+		z-index:0;}
 	li,.fullist li {font-size:17px;}
 	#i11 {
+		line-height:1.2;
 		margin-left:7%;
 		width:70%;
 		font-size:40px;
@@ -655,6 +661,7 @@ height:20vh;
 background-size:cover;
 background-position:center 50%;
 background-image:url(https://www.apple.com/v/home/d/images/promos/covid-19/tile__cauwwcyyn9hy_large.jpg);}
+#controller {font-size:17px;}
 .wbig {display:none;}}
 
 
