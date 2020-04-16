@@ -261,6 +261,7 @@ display:inline-block;}
 	#inPC {
 	position:relative;
 	padding-bottom:20%;
+	padding-top:5%;
 	background-size:contain;
 	background-repeat:no-repeat;
 	background-position:center bottom;
@@ -671,8 +672,8 @@ border:solid 0.1rem black;}
 	background-position:center 50%;
 	background-image:url(https://www.apple.com/v/home/d/images/promos/covid-19/tile__cauwwcyyn9hy_large.jpg);}
 #controller {font-size:17px;}
-.wbig {display:none;}
-}
+#inPC {background-color:#f2f2f2;}
+.fullT {color:#8c8c8c;}}
 
 
 
