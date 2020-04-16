@@ -228,7 +228,7 @@ footer {
 	@media screen and (max-width:750px) {
 	#AppleA11Y img {}
 	#AppleA11Y h2 {font-size:19px;}
-	#AppleA11Y p {font-size:24px;}
+	#AppleA11Y p {font-size:28px;}
 }
 
 /*iPhone SE*/
@@ -250,9 +250,10 @@ footer {
 		font-size:17px;}
 
 	#notice {background:rgba(255,255,255,0.7);}
-	#CP {font-size:0.8em; border-top:#d2d2d7 1px solid;}
+	#CP {border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}
 	footer {background-color:#f2f2f2;}
+	#AppleA11Y p,#AppleA11Y h2 {color:white !important;}
 	.langregion a{color:black;}}
 
 
@@ -262,10 +263,9 @@ footer {
 	@media screen and (min-width:560px) and (max-width:580px) {
 	.no320 {display:none;}
 	.m320 {display:inline-block;}
-	body {background-color:white;}
-	h1 span,h2, h4,h4 span {
-	color:#1d1d1f !important;}
-	section,li,footer,div,p,h3 {
+	body,main,.clip,#wrap {background-color:white !important;}
+	h1 span,h2, h4,h4 span {color:#1d1d1f !important;}
+	section,li,footer,div,p,h3,#controller {
 	box-sizing:border-box; 
 	background-clip:border-clip; 
 	font-size:17px;
@@ -276,7 +276,7 @@ footer {
 		font-size:17px;}
 
 	#notice {background:rgba(255,255,255,0.7);}
-	#CP {font-size:0.8em; border-top:#d2d2d7 1px solid;}
+	#CP {border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}
 	footer {background-color:#f2f2f2;}
 	.langregion a{color:black;}}
