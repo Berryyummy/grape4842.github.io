@@ -198,7 +198,7 @@ footer {
 	padding:0px;
 	text-align:left;}
 #a11ymark {
-	display:inline;
+	display:flex;
 	margin:0px;
 	padding:0px;
 	color:white; 
