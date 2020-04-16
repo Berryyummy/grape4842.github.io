@@ -320,7 +320,7 @@ ul,.lalist {
 	/*background-image:url(https://www.apple.com/105/media/us/pro-display-xdr/2019/1e439996-d014-462a-94d6-f67407717b60/overview/hero/large.mp4);*/
 background-image:url(https://www.apple.com/v/pro-display-xdr/c/images/overview/hero/hero_screen_fallback__fubungmc3aai_large.jpg);
 }
-
+#Mlist {margin:5% auto;}
 #Mlist th {
 text-align:left;
 font-size:1rem;
