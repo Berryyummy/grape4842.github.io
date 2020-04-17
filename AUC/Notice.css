@@ -498,7 +498,6 @@ border:solid 0.1rem black;}
 		margin-bottom:100%;
 		position:sticky; 
 		top:0px; left:0px;
-		display:flex;
 		z-index:0;}
 	#i11 {
 		position:relative;
