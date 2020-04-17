@@ -33,7 +33,7 @@ img,video
 	box-sizing:content-box;
 	clip: rect(1px, 1px, 1px, 1px); 
 	clip-path: inset(0px 0px 99.9% 99.9%);}
-body, #wrap {
+body {
 	background-color:#121217; 
 	color:white; 
 	margin:0px; 

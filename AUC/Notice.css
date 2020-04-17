@@ -1,12 +1,12 @@
 /*올라오는 애니메이션*/
-#ApplePro,#hello
-{animation-duration:2s;
-animation-name:load; 
-animation-delay:1.5s;
-animation-fill-mode:forwards;
-opacity:0; 
-height:100%;
-position:relative;}
+#ApplePro,#hello{
+	animation-duration:2s;
+	animation-name:load; 
+	animation-delay:1.5s;
+	animation-fill-mode:forwards;
+	opacity:0; 
+	height:100%;
+	position:relative;}
 
 .stopA {display:none;}
 
@@ -29,26 +29,16 @@ position:relative;}
 
 /*애니메이션이 끝난 비디오맥북을 숨기는 애니메이션*/
 #MacBookPro {
-animation-delay:4s;
-animation-duration:2s;
-animation-name:bmac;
-animation-fill-mode:forwards;}
+	animation-delay:4s;
+	animation-duration:2s;
+	animation-name:bmac;
+	animation-fill-mode:forwards;
+}
 
 @keyframes bmac {
 	from {visibility:visible;}
 	to {visibility:hidden;}
 }
-
-/*#MacBookPro {
-animation-delay:5s;
-animation-duration:2s;
-animation-name:macbook;
-animation-fill-mode:forwards;}
-
-@keyframes macbook {
-	from {opacity:1;}
-	to {opacity:0;}}
-*/
 
 .w980{width:90%;}
 
@@ -58,20 +48,27 @@ animation-fill-mode:forwards;}
 	background-clip:text; 
 	-webkit-background-clip:text;
 	color: transparent; 
-	background-size:cover;}
+	background-size:cover;
+}
 
 /*큰 영역별 공통 CSS*/
 
-main {background-color:#17171d;
-padding:5% 0px;}
+main {
+	background-color:#17171d;
+	padding:5% 0px;
+}
 
-#controller {background:transparent;
-		display:inline; text-align:center;}
+#controller {
+	background:transparent;
+	display:inline; 
+	text-align:center;
+}
 p {
 	font-size: 21px;
     line-height: 1.38105;
     font-weight: 400;
-    letter-spacing: .011em;}
+    letter-spacing: .011em;
+}
 
 
 	#CP {font-size:12px;
@@ -85,7 +82,8 @@ p {
 	line-height:33px; 
 	color:#6D7A71; 
 	text-align:center; 
-	font-weight:600;}
+	font-weight:600;
+}
 
 /*Heading*/
 h1 {display:flex;
@@ -93,7 +91,8 @@ h1 {display:flex;
 	text-align:left;
 	opacity:0.92;
 	-webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;}
+    -webkit-box-direction: reverse;
+}
 
 
 h2,h3 {
@@ -104,7 +103,8 @@ h2,h3 {
 	font-weight: 600;
 	letter-spacing: .011em;
     text-align:center;
-	vertical-align:middle;}
+	vertical-align:middle;
+}
 
 h3 {color:#aee1cd;}
 
@@ -116,7 +116,8 @@ h4,h4>span {
 	vertical-align:middle;
 	line-height:1.5em; 
 	letter-spacing: 0em;
-	font-size:48px;}
+	font-size:48px;
+}
 
 
 
@@ -126,18 +127,23 @@ ul,li,ol,#controller {
 	text-align:left; 
 	font-weight:600; 
 	font-size:21px;
-	list-style:none;}
+	list-style:none;
+}
+
 .fullist {margin:1rem auto;}
 .fullist ul {
 	margin:0.1rem auto; 
-	padding:0px;}
+	padding:0px;
+}
 .fullist li,.fullist dl,.kr{
 	margin:0.3rem auto; 
 	padding:0px; 
 	list-style-position:outside; 
 	word-break: keep-all; 
 	font-size:19px;
-	text-align:left;}
+	text-align:left;
+}
+
 dl * {
 	text-align:left; 
 	vertical-align:middle;}
@@ -149,36 +155,40 @@ dl svg {margin:-1rem auto;}
 	text-align:center; 
 	font-weight:600; 
 	font-size:21px;
-	padding-bottom:2rem;}
+	padding-bottom:2rem;
+}
 
 
 	.helpM {padding:2rem;}
 	.helpM svg {
-		width:100%; height:56px;
+		width:100%; 
+		height:56px;
 		background-size:100% 56px;
-		background-repeat:no-repeat;}
+		background-repeat:no-repeat;
+	}
 
 #help strong,.helpM strong {
 	color:white; 
 	font-weight:900; 
-	display:block;}
-#help a,.helpM a {width:12rem;}
-#help span,.helpM span{
-font-size:14px; 
-text-align:left; 
-font-weight:400;
-margin-top:0.4rem;
-display:inline-block;}
+	display:block;
+}
 
-.helm {background-color:#222 !important;
-		width:100%; 
-		clear:both;
-		position:relative;}
+#help span,.helpM span{
+	font-size:14px; 
+	text-align:left; 
+	font-weight:400;
+	margin-top:0.4rem;
+	display:inline-block;
+}
+
+#helm {
+	background-color:#222; 
+	position:relative;}
 #helpbox,.helpboxM {
 	padding:0px; 
 	background-color:#222; 
-	background-clip:unset; 
-	width:100%; height:100%;}
+	width:100%; height:100%;
+}
 
 #help {
 	margin:2em auto; 
@@ -189,17 +199,16 @@ display:inline-block;}
 .helpM button:focus .goask,.helpM button:hover .goask,.helpM a:focus .goask,.helpM a:hover .goask,#a11ymark:focus,#a11ymark:hover {
 	text-decoration:underline;}
 .goask { 
-font-style:unset;
-font-size:14px; 
-justify-content:center;
-font-weight:400;
-margin-top:0.4rem;
-display:flex;
-color:#2997ff;}
-.helpq {color:white;
-	width:80%;
-	display:flex;
+	font-style:unset;
+	font-size:14px; 
 	justify-content:center;
+	font-weight:400;
+	margin-top:0.4rem;
+	display:flex;
+	color:#2997ff;
+}
+
+.helpq {color:white;
 	font-size:1em;
 	margin-top: 0.4em;
 	box-sizing: content-box;}
@@ -209,7 +218,8 @@ color:#2997ff;}
 	background-color:white; 
 	color:black; 
 	font-weight:900; 
-	display:inline-flex;}
+	display:inline-flex;
+}
 
 
 
@@ -219,7 +229,8 @@ color:#2997ff;}
 	margin-bottom:0.15rem; 
 	line-height: 1.19048rem; 
 	font-weight: 600; 
-	letter-spacing:0.011rem;}
+	letter-spacing:0.011rem;
+}
 
 .kr {color:#fab;}
 
@@ -246,14 +257,12 @@ color:#2997ff;}
 	position:relative; 
 	width:100%;
 	backdrop-filter: blur(20px);
-	-webkit-backdrop-filter: blur(20px);}
+	-webkit-backdrop-filter: blur(20px);
+}
+
+
 #inP0, #inPC2 {position:relative;}
-#inP0 {
-	padding:10% 0px;
-/*	background-image:url(https://help.apple.com/assets/5D5C55FA680CE21275077A2C/5D5C5601680CE21275077A4F/ko_KR/3c07ea382bf438abda6e6dbeb7e12fe3.png);
-	background-size:100%;
-	background-repeat:no-repeat;
-*/}
+#inP0 {padding:10% 0px;}
 #inPC2 {width:100%; }
 #inP {
 	width:82%;
@@ -262,19 +271,22 @@ color:#2997ff;}
 	transform:translateX(-50%);
 	color:black; 
 	position:absolute; 
-	height:0em;}
+	height:0em;
+}
+
 #full {text-align:left;}
 
 
 #memoticon {
 	width:80%;
 	box-shadow: 0em 0em 3em 3em rgb(33,33,33); 
-	margin:7em auto;}
+	margin:7em auto;
+}
 
 #MPC {padding:0px; margin:0px;}
 	#FPC {text-align:center;}
 
-	#inPC {
+#inPC {
 	font-weight:600;
 	position:relative;
 	padding-bottom:20%;
@@ -282,7 +294,8 @@ color:#2997ff;}
 	background-size:contain;
 	background-repeat:no-repeat;
 	background-position:center bottom;
-	background-image:url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/barclay-financing-201701?wid=1667&hei=622&fmt=png-alpha&.v=1537912047343);}
+	background-image:url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/barclay-financing-201701?wid=1667&hei=622&fmt=png-alpha&.v=1537912047343);
+}
 	#inPC p {
 		line-height: 1.52947; 
 		font-size:1.1em;}
@@ -314,15 +327,15 @@ ul,.lalist {
 	margin-top:29px;
 	margin-bottom:-15%;
 	position:relative;
-	overflow-x:hidden;}
+	overflow-x:hidden;
+}
 #MacS {
-
 	width:125%;
 	position:relative; 
-	left:-12.5%;}
+	left:-12.5%;
+}
 
 #MacBookPro {
-
 	display:block;
 	margin-bottom:-32.7%;
 	width:90%;
@@ -331,20 +344,11 @@ ul,.lalist {
 	-webkit-mask-size:cover;
 	-webkit-mask-position:center;
     -webkit-mask-repeat:no-repeat;
-/*		-webkit-mask-image: url(/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png);
-    mask-image: url(/v/macbook-pro-13/b/images/overview/hero/hardware_mask__dcw1sijc23wy_large.png);
-*/}
-
-#iMacPNG {display:none; position:relative;}
-#iMacPNG:before {
-	content:'';
-	display:block;
-	background-position:top;
-	background-size:100% 70%;
-	/*background-image:url(https://www.apple.com/105/media/us/pro-display-xdr/2019/1e439996-d014-462a-94d6-f67407717b60/overview/hero/large.mp4);*/
-background-image:url(https://www.apple.com/v/pro-display-xdr/c/images/overview/hero/hero_screen_fallback__fubungmc3aai_large.jpg);
 }
+
+
 #Mlist {margin:5% auto;}
+#Mlist h4 {background-image:none;}
 #Mlist th {
 text-align:left;
 font-size:1rem;
@@ -363,17 +367,19 @@ padding:3% 0px;}
 	padding:2rem 0.5rem;
 	text-align:center;
 	align-items:center;
-	box-sizing:border-box;}
+	box-sizing:border-box;
+}
 
 #Mlist a:before{
 	content: ''; 
-position:absolute;
-top:3%; left:2%;
-background-repeat:no-repeat;
-background-size:contain;
-background-position:center;
-width:10%; height:30%;
-display:flex;}
+	position:absolute;
+	top:3%; left:2%;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	width:10%; height:30%;
+	display:flex;
+}
 
 #Mlist span {vertical-align:top;}
 #Mlist td { 
@@ -382,9 +388,9 @@ display:flex;}
 #Mlist p {display:none;}
 
 #RM4 a{
-background:
-linear-gradient(170deg, rgba(170,170,200,0.9) 0%,rgba(85,85,100,0.9) 40%,rgba(0,0,20,0.9) 41%,rgba(50,50,80,0.9) 100%);
-border:solid #acf 0.1rem;
+	background:
+	linear-gradient(170deg, rgba(170,170,200,0.9) 0%,rgba(85,85,100,0.9) 40%,rgba(0,0,20,0.9) 41%,rgba(50,50,80,0.9) 100%);
+	border:solid #acf 0.1rem;
 }
 #RM4 a:before{background-image:url(img/appleX.png);}
 
@@ -509,46 +515,55 @@ border:solid 0.1rem black;}
 		margin-bottom:100%;
 		position:sticky; 
 		top:0px; left:0px;
-		z-index:0;}
+		z-index:0;
+	}
+
 	#i11 {
 		position:relative;
 		z-index:2; 
 		margin:0px auto;
 		line-height:1.2;
 		font-size:40px;
-		font-weight:700;}
+		font-weight:700;
+	}
 
 
 /*iPhone SE*/
 /*light theme*/
 	/*@media screen and (max-width:320px) {*/
 	/*@media screen and (max-width:420px) and (aspect-ratio:9/16){*/
-	@media (prefers-color-scheme:light) {
+@media (prefers-color-scheme:light) {
 	:focus {
-    outline: 4px solid #007dfa99;
-    outline-color: #007dfa99;
-    outline-style: solid;
-    outline-width: 4px;
-    outline-offset: 1px;}
+	    outline: 4px solid #007dfa99;
+	    outline-color: #007dfa99;
+	    outline-style: solid;
+	    outline-width: 4px;
+	    outline-offset: 1px;
+	}
 	h1 {
 		position:relative; 
 		left:0px; 
 		color:#1d1d1f;
-		opacity:1;}
+		opacity:1;
+	}
+
 	#hello div,#fugp,#SEST {color:#8c8c8c;}
 	.helpM span{color:#1d1d1f;}
-	.helpboxM,footer {
-	background-color:#f2f2f2;}
+	#helm,.helpboxM,footer,#inPC,.helmb {background-color:#f2f2f2;}
 	
-	#SEST {font-size:21px; 
+	#SEST {
+		font-size:21px; 
 		position:relative;
 		display:inline-block; 
 		font-weight:600; 
-		top:-2px;}
+		top:-2px;
+	}
+
 	.kr {color:#029d50;}
 	.helpM strong {
 	color:#1d1d1f; 
-	font-weight:900;}
+	font-weight:900;
+	}
 	.goask {color:#06c !important;}
 	.clip {filter:saturate(1);}
 
@@ -560,15 +575,13 @@ border:solid 0.1rem black;}
 	#raina7 {fill:#87f;}
 
 	#Mlist h4 {
-	height:20vh;
-	background-size:cover;
-	background-position:center 50%;
-	background-image:url(https://www.apple.com/v/home/d/images/promos/covid-19/tile__cauwwcyyn9hy_large.jpg);
-	box-shadow: 0px 0px 1rem 5px white inset;
-	filter:}
-#inPC {background-color:#f2f2f2;}
-.fullT {color:#8c8c8c;}}
-
+		height:20vh;
+		background-size:cover;
+		background-position:center 50%;
+		background-image:url(https://www.apple.com/v/home/d/images/promos/covid-19/tile__cauwwcyyn9hy_large.jpg);
+		box-shadow: 0px 0px 1rem 5px white inset;
+	}
+}
 
 
 
@@ -579,18 +592,24 @@ border:solid 0.1rem black;}
 	#i11 {
 		font-weight:700;
 		font-size:80px ;
-	    line-height: 1.15;}
+	    line-height: 1.15;
+	}
+
 	#SE11 video,#i11stop {
 		margin-top:3px; 
 		width:70%;
-		margin-bottom:20%;}
+		margin-bottom:20%;
+	}
+
 	#hello {width:35%;}
 	.helpboxM {
-		flex-grow:1;
+		justify-content:center;
 		display:flex;
 		flex-direction:row;
 		padding-top:56px;
-		width:calc(50% / 2);}
+		width:calc(50% / 2);
+	}
+	.helmb {display:flex;}
 }
 
 
@@ -604,7 +623,8 @@ border:solid 0.1rem black;}
 		left:0px;}
 	#MBP {margin-bottom:-5%;}
 	#appleseries {margin-top:-20%;}
-	#i11 {font-size:80px;}}
+	#i11 {font-size:80px;}
+}
 
 /*PC 16:9 landscape display*/
 @media screen and (min-width:1000px) and (aspect-ratio:16/9), (aspect-ratio:9/16) {
@@ -616,11 +636,8 @@ border:solid 0.1rem black;}
 			left:0px;}
 		#MBP {margin-bottom:0%;}
 		#appleseries {margin-top:-25%;}
-		#i11 {font-size:80px;}}
-
-/*@media screen and (min-width:1000px) and (min-aspect-ratio:16/9) {
-	#Mlist table {margin-bottom:-35%;}
-	#iMacPNG {display:block; z-index:0;}}*/
+		#i11 {font-size:80px;}
+	}
 
 
 /*iPad*/
@@ -696,10 +713,10 @@ border:solid 0.1rem black;}
 	#hello {text-align:left;}
 }
 /* iPhone X,S10 */
-	@media screen and (min-width:360px) and (max-width:380px) {
+@media screen and (min-width:360px) and (max-width:380px) {
 	#inP {top:32%;}
 	#i11 {width:70% !important;}
-	}
+}
 
 
 
@@ -728,10 +745,12 @@ border:solid 0.1rem black;}
 	#full {font-size:1.2em;}
 	#MinP {background-color:black;}
 	#inP {top:31%;}
+
 	.walert {
 	padding:0.5em 0.7em;
 	line-height:1.2em; 
 	font-size:1.5em;}
+
 	h1 span,h2 span,#i11 {
 	font-weight:900; 
 	line-height:1.2; 
@@ -767,6 +786,9 @@ border:solid 0.1rem black;}
 #raina5 {fill:#69f;}
 #raina7 {fill:#87f;}
 
-.wbig {display:none;}}
+.wbig {display:none;}
+}
+.fullT {color:#8c8c8c;}
+
 
 
