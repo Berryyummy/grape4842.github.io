@@ -157,6 +157,10 @@ dl svg {margin:-1rem auto;}
 
 	#helpboxM {margin-bottom:2rem;}
 	#helpM {padding:2rem;}
+	#helpM svg {
+		width:100%; height:56px;
+		background-size:100% 56px;
+		background-repeat:no-repeat;}
 
 #help strong,#helpM strong {
 	color:white; 
@@ -182,11 +186,15 @@ display:inline-block;}
 #bighelp {
 	width:80%; 
 	display:flex;}
-#helpM a:focus .goask,#helpM a:hover .goask,#a11ymark:focus,#a11ymark:hover {text-decoration:underline;}
+#helpM a:focus .goask,#helpM a:hover .goask,#a11ymark:focus,#a11ymark:hover {
+	text-decoration:underline;}
 .goask { 
 	font-size:14px; 
 	color:#2997ff;}
-.helpq {color:white;}
+.helpq {color:white;
+	font-size:1em;
+	margin-top: 0.4em;
+	box-sizing: content-box;}
 
 
 .master {
@@ -487,6 +495,13 @@ border:solid 0.1rem black;}
 #HHC a:before {background-image:url(img/ManyColorApple.png); }
 
 
+/*DeskTop View*/
+@media screen and (min-width:1200px) {
+	.w980 {width:52%;}
+	#i11 {font-size:80px;}
+}
+
+
 /*16:10 MacBook Display*/
 @media screen and (min-width:1000px) and (min-aspect-ratio:16/10), (aspect-ratio:10/16) {
 	#MacBookPro {
@@ -497,14 +512,8 @@ border:solid 0.1rem black;}
 		left:0px;}
 	#MBP {margin-bottom:-5%;}
 	.w980 {width:52%;}
-	#appleseries {margin-top:-20%;}}
-
-/*@media screen and (min-width:1000px) and (min-aspect-ratio:16/10) {
-	#Mlist table {margin-bottom:-55%;}
-	#Mlist a {padding:2rem 0.3rem;}
-	#iMacPNG {display:block;}}*/
-
-
+	#appleseries {margin-top:-20%;}
+	#i11 {font-size:80px;}}
 
 /*PC 16:9 landscape display*/
 @media screen and (min-width:1000px) and (aspect-ratio:16/9), (aspect-ratio:9/16) {
@@ -516,7 +525,8 @@ border:solid 0.1rem black;}
 			left:0px;}
 		#MBP {margin-bottom:0%;}
 		.w980 {width:52%;}
-		#appleseries {margin-top:-25%;}}
+		#appleseries {margin-top:-25%;}
+		#i11 {font-size:80px;}}
 
 /*@media screen and (min-width:1000px) and (min-aspect-ratio:16/9) {
 	#Mlist table {margin-bottom:-35%;}
@@ -608,11 +618,12 @@ border:solid 0.1rem black;}
 	/*@media screen and (max-width:320px) {*/
 	/*@media screen and (max-width:420px) and (aspect-ratio:9/16){*/
 	@media (prefers-color-scheme:light) {
-	#full {font-size:1.2rem;}
-	.walert {
-	padding:0.3rem 0.5rem;
-	line-height:1.2rem; }
-	#MinP {background-color:black;}
+	:focus {
+    outline: 4px solid #007dfa99;
+    outline-color: #007dfa99;
+    outline-style: solid;
+    outline-width: 4px;
+    outline-offset: 1px;}
 	h1 {
 		position:relative; 
 		left:0px; 
@@ -620,13 +631,11 @@ border:solid 0.1rem black;}
 		opacity:1;}
 	#SE11 video {
 		margin-top:43%;
-		margin-bottom:100%;}
-	#SE11 video {
+		margin-bottom:100%;
 		position:sticky; 
 		top:0px; left:0px;
 		display:flex;
 		z-index:0;}
-	li,.fullist li {font-size:17px;}
 	#i11 {
 		position:relative;
 		z-index:2; 
@@ -634,15 +643,8 @@ border:solid 0.1rem black;}
 		line-height:1.2;
 		font-size:40px;
 		font-weight:700;}
-	h1 span,h2 span,#i11 {
-	font-weight:900; 
-	font-size: 40px;}
 
 	#helpM span{color:#1d1d1f;}
-	#helpM,footer {
-	background-clip:unset; 
-	font-size:17px;}
-	#helpboxM {margin-bottom:2em;}
 	#helpboxM,footer {
 	background-color:#f2f2f2; 
 	padding:70px 0px;}
@@ -657,7 +659,7 @@ border:solid 0.1rem black;}
 	#helpM strong {
 	color:#1d1d1f; 
 	font-weight:900;}
-	.goask {color:#06c;}
+	.goask {color:#06c !important;}
 	.clip {filter:saturate(1);}
 
 	#raina1 {fill:#e00;}
@@ -707,7 +709,7 @@ border:solid 0.1rem black;}
 	font-size:1.5em;}
 	h1 span,h2 span,#i11 {
 	font-weight:900; 
-	line-height:1.2em; 
+	line-height:1.2; 
 	font-size: 40px;}
 	#helpM span{color:#1d1d1f;}
 	#helpM,footer {
@@ -719,7 +721,10 @@ border:solid 0.1rem black;}
 	padding:70px 0px;}
 	#helpM strong {
 	color:#1d1d1f; 
-	font-weight:900;}
+	line-height: 1.31579;
+	font-size:19px;
+	margin-top: .525em;
+	font-weight:600;}
 	.goask {color:#06c;}
 	
 	#hello {text-align:left;}
