@@ -57,7 +57,8 @@ header {
 	left:0em;
 	position:relative; 
 	padding:0em; 
-	height:48px;}
+	height:48px;
+	max-height:44px;}
 
 a {vertical-align:middle; 
 	background-position:center; 
@@ -66,9 +67,8 @@ a {vertical-align:middle;
 
 
 #LOGO {
-	outline-offset:-7px; 
-	padding:0 10px; 
-	height:44px; 
+	line-height: 3.14286;
+	height:44px; width:16px;
 	display:inline-block; 
 	direction: ltr; 
 	background-position:center center; 
@@ -112,20 +112,30 @@ a:hover path,a:focus path {opacity:1;}
 
 #notice {
 	box-sizing:border-box; 
-	line-height:48px;
 	color:white; 
 	z-index:9999; 
 	top:0px; 
 	position:sticky;
-	border-bottom:solid 1px #ffffff33; 
 	text-align:left; 
 	display:flex; 
 	margin:0px; 
-	font-size:19px; 
+	font-size:21px; 
 	font-weight:600; 
 	letter-spacing: 0.012em; 
 	backdrop-filter: saturate(180%) blur(20px);
-	background-color:#121217b3;}
+	background-color:#121217b3;
+	height:60px;}
+#notice:after {
+	background-color: #ffffff3d;
+	margin-left: -490px;
+    left: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 980px;
+    height: 1px;
+    z-index: 1;}
 
 #notice,#apple{
 	font-weight:900; 
@@ -253,9 +263,19 @@ footer {
 	.w980{width:85%;
 		font-size:17px;}
 
-	#notice {background:rgba(255,255,255,0.7);}
+	#notice {background:rgba(255,255,255,0.7);
+		height:52px;}
 	#CP {border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}
+	#notice::after {
+		content:"";
+		display:block;
+		background-color: #00000029;
+		position:absolute;
+		z-index:1;
+		top:100%; left:0px;
+		margin-left:0px;
+		height:1px; width:100%;}
 	footer {background-color:#f2f2f2;}
 	#AppleA11Y p,#AppleA11Y h2 {color:white !important;}
 	.langregion a{color:black;}}

@@ -8,7 +8,6 @@ opacity:0;
 height:100%;
 position:relative;}
 
-#i11stop {margin-bottom:100%;}
 .stopA {display:none;}
 
 
@@ -74,8 +73,6 @@ p {
     letter-spacing: .011em;}
 
 
-	#notice {border:none;}
-	#AT {border-bottom:rgba(66,66,69,0.95) solid 1px;}
 	#CP {font-size:12px;
 	border-top:#424245 1px solid;}
 
@@ -145,7 +142,7 @@ dl * {
 	vertical-align:middle;}
 dl svg {margin:-1rem auto;}
 
-#hello {
+#hello,#hello div {
 	margin-top:16px;
 	color:#6D7A71; 
 	text-align:center; 
@@ -495,10 +492,86 @@ border:solid 0.1rem black;}
 #HHC a:before {background-image:url(img/ManyColorApple.png); }
 
 
+
+	#SE11 video,#i11stop {
+		margin-top:43%;
+		margin-bottom:100%;
+		position:sticky; 
+		top:0px; left:0px;
+		display:flex;
+		z-index:0;}
+	#i11 {
+		position:relative;
+		z-index:2; 
+		margin:0px auto;
+		line-height:1.2;
+		font-size:40px;
+		font-weight:700;}
+
+
+/*iPhone SE*/
+/*light theme*/
+	/*@media screen and (max-width:320px) {*/
+	/*@media screen and (max-width:420px) and (aspect-ratio:9/16){*/
+	@media (prefers-color-scheme:light) {
+	:focus {
+    outline: 4px solid #007dfa99;
+    outline-color: #007dfa99;
+    outline-style: solid;
+    outline-width: 4px;
+    outline-offset: 1px;}
+	h1 {
+		position:relative; 
+		left:0px; 
+		color:#1d1d1f;
+		opacity:1;}
+	#hello div,#fugp,#SEST {color:#8c8c8c;}
+	#helpM span{color:#1d1d1f;}
+	#helpboxM,footer {
+	background-color:#f2f2f2; 
+	padding:70px 0px;}
+	
+	#SEST {font-size:21px; 
+		position:relative;
+		display:inline-block; 
+		font-weight:600; 
+		top:-2px;}
+	.kr {color:#029d50;}
+	#helpM strong {
+	color:#1d1d1f; 
+	font-weight:900;}
+	.goask {color:#06c !important;}
+	.clip {filter:saturate(1);}
+
+	#raina1 {fill:#e00;}
+	#raina2 {fill:#f70;}
+	#raina3 {fill:#fc0;}
+	#raina4 {fill:#0c5;}
+	#raina5 {fill:#69f;}
+	#raina7 {fill:#87f;}
+
+	#Mlist h4 {
+	height:20vh;
+	background-size:cover;
+	background-position:center 50%;
+	background-image:url(https://www.apple.com/v/home/d/images/promos/covid-19/tile__cauwwcyyn9hy_large.jpg);
+	box-shadow: 0px 0px 1rem 5px white inset;
+	filter:}
+#inPC {background-color:#f2f2f2;}
+.fullT {color:#8c8c8c;}}
+
+
+
+
 /*DeskTop View*/
 @media screen and (min-width:1200px) {
-	.w980 {width:52%;}
-	#i11 {font-size:80px;}
+	.w980 {width:51.5%;}
+	#i11 {
+		font-weight:700;
+		font-size:80px ;
+	    line-height: 1.15;}
+	#SE11 video,#i11stop {margin-top:3px; width:70%;}
+	#hello {width:35%;}
 }
 
 
@@ -511,7 +584,6 @@ border:solid 0.1rem black;}
 		width:84%;
 		left:0px;}
 	#MBP {margin-bottom:-5%;}
-	.w980 {width:52%;}
 	#appleseries {margin-top:-20%;}
 	#i11 {font-size:80px;}}
 
@@ -524,7 +596,6 @@ border:solid 0.1rem black;}
 			width:84%;
 			left:0px;}
 		#MBP {margin-bottom:0%;}
-		.w980 {width:52%;}
 		#appleseries {margin-top:-25%;}
 		#i11 {font-size:80px;}}
 
@@ -607,76 +678,11 @@ border:solid 0.1rem black;}
 }
 /* iPhone X,S10 */
 	@media screen and (min-width:360px) and (max-width:380px) {
-	#inP {top:32%;a}
+	#inP {top:32%;}
 	#i11 {width:70% !important;}
 	}
 
 
-
-/*iPhone SE*/
-/*light theme*/
-	/*@media screen and (max-width:320px) {*/
-	/*@media screen and (max-width:420px) and (aspect-ratio:9/16){*/
-	@media (prefers-color-scheme:light) {
-	:focus {
-    outline: 4px solid #007dfa99;
-    outline-color: #007dfa99;
-    outline-style: solid;
-    outline-width: 4px;
-    outline-offset: 1px;}
-	h1 {
-		position:relative; 
-		left:0px; 
-		color:#1d1d1f;
-		opacity:1;}
-	#SE11 video {
-		margin-top:43%;
-		margin-bottom:100%;
-		position:sticky; 
-		top:0px; left:0px;
-		display:flex;
-		z-index:0;}
-	#i11 {
-		position:relative;
-		z-index:2; 
-		margin:0px auto;
-		line-height:1.2;
-		font-size:40px;
-		font-weight:700;}
-
-	#helpM span{color:#1d1d1f;}
-	#helpboxM,footer {
-	background-color:#f2f2f2; 
-	padding:70px 0px;}
-	
-	#SEST {font-size:21px; 
-		color:#6D7A71; 
-		position:relative;
-		display:inline-block; 
-		font-weight:600; 
-		top:-3px;}
-	.kr {color:#029d50;}
-	#helpM strong {
-	color:#1d1d1f; 
-	font-weight:900;}
-	.goask {color:#06c !important;}
-	.clip {filter:saturate(1);}
-
-	#raina1 {fill:#e00;}
-	#raina2 {fill:#f70;}
-	#raina3 {fill:#fc0;}
-	#raina4 {fill:#0c5;}
-	#raina5 {fill:#69f;}
-	#raina7 {fill:#87f;}
-
-	#Mlist h4 {
-	height:20vh;
-	background-size:cover;
-	background-position:center 50%;
-	background-image:url(https://www.apple.com/v/home/d/images/promos/covid-19/tile__cauwwcyyn9hy_large.jpg);}
-#controller {font-size:17px;}
-#inPC {background-color:#f2f2f2;}
-.fullT {color:#8c8c8c;}}
 
 
 
@@ -692,7 +698,7 @@ border:solid 0.1rem black;}
 		left:0px; 
 		color:#1d1d1f;
 		opacity:1;}
-	#SE11 video {margin:50% auto;}
+	#SE11 video, #i11stop {margin:50% auto;}
 	body {background-color:white;}
 	#i11 {
 		width:70%;
