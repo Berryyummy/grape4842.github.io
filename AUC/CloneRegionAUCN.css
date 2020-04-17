@@ -153,23 +153,35 @@ a:hover path,a:focus path {opacity:1;}
 
 
 #AT {font-size:1em;
+	position:relative;
 	color:white; 
 	text-align:left;}
+#gochatbox {position:fixed;
+	width:100%;
+	display:flex;
+	justify-content:center;
+		top:0px;}
 #gochat {min-width:23px; 
+		letter-spacing:0em;
+		margin-top: -1px;
 		line-height:1.33337;
 	 	background-color:#0071e3; 
 		color:white; border-radius:12px; 
 		font-size:12px; 
 		font-weight:400; 
-		position:absolute; 
 		margin:12px auto; 
-		top:0%; 
 		white-space:nowrap; 
 		letter-spacing:-0.1em; 
 		display:inline-block;
+		align-items:center;
 		padding:4px 11px; 
-		box-sizing:border-box; 
-		right:0;}
+		/*position:relative;*/
+		right:0px; float:right;
+		box-sizing:content-box;}
+#gochat:hover{background-color:#147ce5;}
+#gochat:active {background-color:#0068d1;;}
+#gochat:focus {box-shadow: 0 0 0 4px rgba(0,125,250,0.6);
+    outline: none;}
 
 
 .wrap {
@@ -235,6 +247,7 @@ footer {
 /*#LOGO {left:0px; position:absolute;}	*/
 #apple {margin:0px auto;}
 #LOGO {left:0px; position:absolute;}
+#AppleA11Y {width:20%;}
 }
 
 /*SmartPhone*/
