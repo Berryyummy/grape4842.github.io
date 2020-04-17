@@ -430,6 +430,7 @@ position:absolute;
 width:100%; height:100%;
 top:0px; left:0px;
 display:block;
+overflow-x:hidden;
 background-image:url(img/Muleaf.png);
 border-radius:1rem;}
 
@@ -657,6 +658,7 @@ border:solid 0.1rem black;}
 
 /*SmartPhone*/
 @media screen and (max-width:760px) {
+	nav {overflow-x:hidden;}
 	.w980 {
 		box-sizing:border-box; 
 		font-size:19px;}

@@ -126,6 +126,7 @@ a:hover path,a:focus path {opacity:1;}
 	background-color:#121217b3;
 	height:60px;}
 #notice:after {
+	overflow-x:hidden;
 	background-color: #ffffff3d;
 	margin-left: -490px;
     left: 50%;
@@ -271,7 +272,7 @@ footer {
 /*iPhone SE*/
 	/*@media screen and (max-width:320px) {*/
 	/*@media screen and (max-width:420px) and (aspect-ratio:9/16) {*/
-	@media (prefers-color-scheme:light) {
+@media (prefers-color-scheme:light) {
 	.no320 {display:none;}
 	.m320 {display:inline-block;}
 	body,main,.clip,#wrap {background-color:white !important;}
