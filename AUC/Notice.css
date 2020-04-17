@@ -569,7 +569,10 @@ border:solid 0.1rem black;}
 		font-weight:700;
 		font-size:80px ;
 	    line-height: 1.15;}
-	#SE11 video,#i11stop {margin-top:3px; width:70%;}
+	#SE11 video,#i11stop {
+		margin-top:3px; 
+		width:70%;
+		margin-bottom:20%;}
 	#hello {width:35%;}
 }
 
