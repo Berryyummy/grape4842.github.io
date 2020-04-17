@@ -64,8 +64,7 @@ animation-fill-mode:forwards;}
 
 main {background-color:#17171d;}
 
-#controller {display:inline;
-background-image:url(https://www.apple.com/v/iphone-xs/d/images/overview/copy_texture_2_large.jpg); }
+#controller {background:transparent;}
 p {
 	font-size: 21px;
     line-height: 1.38105;
@@ -152,26 +151,26 @@ dl svg {margin:-1rem auto;}
 
 
 
-	#helpboxM {margin-bottom:2rem;}
-	#helpM {padding:2rem;}
-	#helpM svg {
+	.helpboxM {margin-bottom:2rem;}
+	.helpM {padding:2rem;}
+	.helpM svg {
 		width:100%; height:56px;
 		background-size:100% 56px;
 		background-repeat:no-repeat;}
 
-#help strong,#helpM strong {
+#help strong,.helpM strong {
 	color:white; 
 	font-weight:900; 
 	display:block;}
-#help a,#helpM a {width:12rem;}
-#help span,#helpM span{
+#help a,.helpM a {width:12rem;}
+#help span,.helpM span{
 font-size:14px; 
 text-align:left; 
 font-weight:400;
 margin-top:0.4rem;
 display:inline-block;}
 
-#helpbox,#helpboxM {
+#helpbox,.helpboxM {
 	padding:0px; 
 	background-color:#222; 
 	background-clip:unset; 
@@ -183,7 +182,7 @@ display:inline-block;}
 #bighelp {
 	width:80%; 
 	display:flex;}
-#helpM a:focus .goask,#helpM a:hover .goask,#a11ymark:focus,#a11ymark:hover {
+.helpM button:focus .goask,.helpM button:hover .goask,.helpM a:focus .goask,.helpM a:hover .goask,#a11ymark:focus,#a11ymark:hover {
 	text-decoration:underline;}
 .goask { 
 	font-size:14px; 
@@ -525,8 +524,8 @@ border:solid 0.1rem black;}
 		color:#1d1d1f;
 		opacity:1;}
 	#hello div,#fugp,#SEST {color:#8c8c8c;}
-	#helpM span{color:#1d1d1f;}
-	#helpboxM,footer {
+	.helpM span{color:#1d1d1f;}
+	.helpboxM,footer {
 	background-color:#f2f2f2; 
 	padding:70px 0px;}
 	
@@ -536,7 +535,7 @@ border:solid 0.1rem black;}
 		font-weight:600; 
 		top:-2px;}
 	.kr {color:#029d50;}
-	#helpM strong {
+	.helpM strong {
 	color:#1d1d1f; 
 	font-weight:900;}
 	.goask {color:#06c !important;}
@@ -719,15 +718,15 @@ border:solid 0.1rem black;}
 	font-weight:900; 
 	line-height:1.2; 
 	font-size: 40px;}
-	#helpM span{color:#1d1d1f;}
-	#helpM,footer {
+	.helpM span{color:#1d1d1f;}
+	.helpM,footer {
 	background-clip:unset; 
 	font-size:17px;}
-	#helpboxM {margin-bottom:2em;}
-	#helpboxM,footer {
+	.helpboxM {margin-bottom:2em;}
+	.helpboxM,footer {
 	background-color:#f2f2f2; 
 	padding:70px 0px;}
-	#helpM strong {
+	.helpM strong {
 	color:#1d1d1f; 
 	line-height: 1.31579;
 	font-size:19px;

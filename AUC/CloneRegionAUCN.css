@@ -150,15 +150,27 @@ a:hover path,a:focus path {opacity:1;}
 	position:relative; 
 	z-index:3;}
 
-
+#Atitle {
+	cursor: default;
+    display: block;
+    float: left;
+    margin: 14px 0 -14px;
+    padding: 0;
+	font-size: 21px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: .011em;
+	opacity:0.92;
+	position:relative;
+	z-index:3;
+	height:66px;}
 
 #AT {font-size:1em;
 	position:relative;
 	color:white; 
 	text-align:left;}
-#gochatbox {position:fixed;
+#gochatbox {position:absolute;
 	width:100%;
-	display:flex;
 	justify-content:center;
 		top:0px;}
 #gochat {min-width:23px; 
