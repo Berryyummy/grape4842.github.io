@@ -58,7 +58,6 @@ header {
 	position:relative; 
 	padding:0em; 
 	height:48px;
-	max-height:44px;
 }
 
 	/*nav {overflow-x:hidden;}*/
@@ -197,6 +196,7 @@ a:hover path,a:focus path {opacity:1;}
 #AT:after {clear:both;}
 #gochatbox {position:absolute;
 	width:100%;
+	padding-top:34px;
 	justify-content:center;
 		top:0px;}
 #gochat {min-width:23px; 
@@ -207,7 +207,6 @@ a:hover path,a:focus path {opacity:1;}
 		color:white; border-radius:12px; 
 		font-size:12px; 
 		font-weight:400; 
-		margin:12px auto; 
 		white-space:nowrap; 
 		letter-spacing:-0.1em; 
 		display:inline-block;
@@ -286,6 +285,8 @@ footer {
 	#LOGO {left:0px; position:absolute;}
 	#AppleA11Y {width:20%;}
 	.w980 {width:51.5%;}
+	header {height:44px;}
+
 }
 
 /*SmartPhone,iPad*/
@@ -294,13 +295,15 @@ footer {
 	#AppleA11Y h2 {font-size:19px;}
 	#AppleA11Y p {font-size:28px;}
 	.made {display:block;}
-	#Atitle {height:63px;
-	display: inline-block;
-    margin: 12px 0 -12px;
-    margin-top: 12px;
-    margin-right: 0px;
-    margin-bottom: -12px;
-    margin-left: 0px;}
+	#Atitle {
+		height:63px;
+		display: inline-block;
+	    margin: 12px 0 -12px;
+	    margin-top: 12px;
+	    margin-right: 0px;
+	    margin-bottom: -12px;
+	    margin-left: 0px;}
+	#gochatbox {padding-top:32px;}
 }
 
 
@@ -311,9 +314,14 @@ footer {
 @media (prefers-color-scheme:light) {
 	.no320 {display:none;}
 	.m320 {display:inline-block;}
+
 	body,main,.clip,#wrap {background-color:white !important;}
-	h1 span,h2, h4,h4 span {
-	color:#1d1d1f !important;}
+	h1 span,h2, h4,h4 span {color:#1d1d1f !important;}
+	#gochatbox {
+		padding:0px;
+		height:52px;
+		transform:translateY(25%);}
+	#Ptitle {display:none;}
 	section,li,footer,div,p,h3,#controller {
 	box-sizing:border-box; 
 	background-clip:border-clip; 
@@ -324,7 +332,8 @@ footer {
 	.w980{width:85%;
 		font-size:17px;}
 
-	#notice {background:rgba(255,255,255,0.7);
+	#notice {
+		background:rgba(255,255,255,0.7);
 		height:52px;}
 	#CP {border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}
