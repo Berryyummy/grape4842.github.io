@@ -1,0 +1,96 @@
+@charset "UTF-8";
+:lang(ko) {word-break: keep-all; line-break:normal;}
+:lang(ja) {word-wrap:break-word; word-break:break-all;}
+::selection {background:#76f; color:white;}
+img,video {width:100%;}
+body {background:#560 url(img/grassB.png);
+	background-repeat:repeat;
+	background-size:20%;
+	background-position: center center;
+	margin:0px auto;}
+header {z-index:9999;
+	position:sticky;
+	display:flex;
+	justify-content:center;
+/*	position:sticky;
+	top:0px;
+	left:0px;
+*/	z-index:9999;}
+nav {width:90%;
+	padding:0% 5%;
+}
+.NH {width:3rem;}
+section {background-color:rgba(255,255,255,0.5);}
+a {text-decoration:none;
+	color:black;}
+table {border-collapse:collapse;
+	table-layout:fixed;
+	margin:5% auto;
+	table-layout:fixed;}
+th,td {padding:3%;
+	box-sizing:border-box;
+	border:1px solid black;}
+td {background-color:white;}
+th {background-color:#fe7;}
+ul,ol,dl {margin:0px;
+	padding:0px;
+	list-style:none;}
+li,dt,dd {padding:0.3rem 0px;
+	margin:0px;}
+li dl {padding-top:0.5rem;}
+li li,li dt,li dd {padding:0.15rem 0.5rem;}
+.w980 {width:50%; 
+	margin:0px auto;
+	padding:5%;
+	box-sizing:border-box;}
+.XM {transform:scaleX(-1);}
+nav h1 {display:flex;
+	align-items:center;
+	justify-content:center;}
+#Hospital dt,#Hospital dd {
+	display:inline-flex;
+	padding:0px;}
+
+.metro {
+	margin-right:5px;
+	border-radius:100%; 
+	width:1.3rem; height:1.3rem;
+	display:inline-flex;
+	justify-content:center;
+	align-items:center;
+	text-shadow:1px 1px 1px black;
+	color:white;}
+.red {color:#d30;}
+.line1 {background-color:#08308F;}
+.line2 {background-color:#0EA349;}
+.line3 {background-color:#F08302;}
+.line4 {background-color:#00A5DF;}
+.line5 {background-color:#A14A9B;}
+.line6 {background-color:#D09012;}
+.line7 {background-color:#627535;}
+.line8 {background-color:#E84E72;}
+.line9 {background-color:#BE941C;}
+footer {width:100%;
+	margin-top:2%;
+	background-color:black;}
+
+
+
+
+@media screen and (min-width:800px) {
+	body {background-size:40%;}
+	.w980 {width:70%;}
+}
+
+@media screen and (max-width:800px) {
+	body {background-size:60%;}
+	.w980 {width:90%;}
+}
+
+@media (prefers-color-scheme:dark) {
+section {background-color:rgba(0,0,0,0.5);}
+body,a {color:white;}
+td {background-color:#431;}
+th {background-color:#351;}
+.red {color:#f71; display:inline-flex;}
+}

@@ -2,18 +2,19 @@
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#76f; color:white;}
-
+.znone {position:absolute; z-index:-100; left:0px; top:0px;}
+#wrap {z-index:1; position:relative;}
 #langzone {background-color:white;}
-.cicon {width:1em; height:1em;}
-div.lanregion {padding:1em;}
+.cicon {width:1rem; height:1rem;}
+div.lanregion {padding:1rem;}
 /*.langregion {clear:both;}
 .langregion li {float:left;}
 */.langregion a{color:white;}
-
+button {border:none;}
 table {border-collapse:collapse;}
 img,video 
 {width:100%;}
-
+.expanded {display:none;}
 .w980 {
 	width:90%;
 	vertical-align:middle; 
@@ -32,11 +33,19 @@ img,video
 	box-sizing:content-box;
 	clip: rect(1px, 1px, 1px, 1px); 
 	clip-path: inset(0px 0px 99.9% 99.9%);}
-body {margin:0px; height:100%;}
-body * {margin:auto auto; 
+body {
+	background-color:#121217; 
+	color:white; 
+	margin:0px; 
+	height:100%;}
+
+*,.w980 {margin:auto auto; 
 	text-align:center;
 	-webkit-font-smoothing:antialiased;
-	font-family:"SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY 돋움","맑은 고딕","HY 고딕","Lexi Gulim","Helvetica Neue","Helvetica","Arial","sans-serif";}
+	font-family:"SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+
 /* background-color: #121217; */
 
 header {
@@ -48,7 +57,8 @@ header {
 	left:0em;
 	position:relative; 
 	padding:0em; 
-	height:48px;}
+	height:48px;
+	max-height:44px;}
 
 a {vertical-align:middle; 
 	background-position:center; 
@@ -57,9 +67,8 @@ a {vertical-align:middle;
 
 
 #LOGO {
-	outline-offset:-7px; 
-	padding:0 10px; 
-	height:44px; 
+	line-height: 3.14286;
+	height:44px; width:16px;
 	display:inline-block; 
 	direction: ltr; 
 	background-position:center center; 
@@ -67,12 +76,14 @@ a {vertical-align:middle;
 	position:relative;
 	-webkit-tap-highlight-color:transparent;}
 
-#LOGO path,.numapplelogo path{opacity:0.8; 
-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
--webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);}
-#LOGO:focus path,#LOGO:hover path,.numapplelogo:hover path,svg:hover path {opacity:1;}
+#GOSHOP {right:0px; position:absolute;}
 
- 
+a path{
+	opacity:0.8; 
+	transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+-webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);}
+a:hover path,a:focus path {opacity:1;}
+
 
 
 #jump {
@@ -101,72 +112,137 @@ transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 
 #notice {
 	box-sizing:border-box; 
-	line-height:48px;
 	color:white; 
 	z-index:9999; 
 	top:0px; 
 	position:sticky;
-	border-bottom:solid 1px #ffffff33; 
 	text-align:left; 
 	display:flex; 
 	margin:0px; 
-	font-size:19px; 
+	font-size:21px; 
 	font-weight:600; 
 	letter-spacing: 0.012em; 
 	backdrop-filter: saturate(180%) blur(20px);
-	background-color:#121217b3;}
+	background-color:#121217b3;
+	height:60px;}
+#notice:after {
+	overflow-x:hidden;
+	background-color: #ffffff3d;
+	margin-left: -490px;
+    left: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 980px;
+    height: 1px;
+    z-index: 1;}
 
 #notice,#apple{
 	font-weight:900; 
-	width:100%; 
 	vertical-align:middle; 
 	padding:0px; 
-	margin:0px;}
+	margin:0px auto;
+	display:flex;
+	justify-content:center;}
 
 #start {
 	text-align:center; 
 	position:relative; 
 	z-index:3;}
 
+#Atitle {
+	cursor: default;
+    display: block;
+    float: left;
+    margin: 14px 0 -14px;
+    padding: 0;
+	font-size: 21px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: .011em;
+	opacity:0.92;
+	position:relative;
+	z-index:3;
+	height:66px;}
 
-
-#AT {color:white; text-align:left;}
+#AT {font-size:1em;
+	position:relative;
+	color:white; 
+	text-align:left;}
+#gochatbox {position:absolute;
+	width:100%;
+	justify-content:center;
+		top:0px;}
 #gochat {min-width:23px; 
+		letter-spacing:0em;
+		margin-top: -1px;
 		line-height:1.33337;
 	 	background-color:#0071e3; 
 		color:white; border-radius:12px; 
 		font-size:12px; 
 		font-weight:400; 
-		position:absolute; 
 		margin:12px auto; 
-		top:0%; 
 		white-space:nowrap; 
 		letter-spacing:-0.1em; 
 		display:inline-block;
+		align-items:center;
 		padding:4px 11px; 
-		box-sizing:border-box; 
-		right:0;}
+		/*position:relative;*/
+		right:0px; float:right;
+		box-sizing:content-box;}
+#gochat:hover{background-color:#147ce5;}
+#gochat:active {background-color:#0068d1;;}
+#gochat:focus {box-shadow: 0 0 0 4px rgba(0,125,250,0.6);
+    outline: none;}
 
-#a11ymark {color:white; font-weight:900;}
-#a11ymark img {
-background-color:white; 
-border-radius:100%;
-width:30%;}
-#a11ymark span {color:#77aaff;}
 
 .wrap {
-	margin:0 auto; 
 	box-sizing:border-box;}
 
 footer {
-	padding:2em !important; 
+	padding:1.6rem 0px !important; 
 	background-color:#222; 
-	position:relative; 
-	bottom:0px;}
+	width:100%;
+	position:relative;
+	bottom:0px;
+	left:0px;
+	z-index:0;}
 
-.made,#a11ymark {
-	font-size:2em;}
-.made {color:#6e6e73;}
+#AppleA11Y {
+	position:relative;
+	font-weight:600;
+	margin:2rem auto;
+	color:white;
+}
+#AppleA11Y>div {
+	transform:translate(5%);
+	width:90%;
+	position:absolute;
+	bottom:2rem;
+}
+
+#AppleA11Y h2 {
+	line-height:1.34211;
+	font-size:21px; 
+	font-weight:900;
+	text-align:left;}
+#AppleA11Y p {
+	letter-spacing:0.007em;
+	font-size:32px;
+	margin:0px; 
+	font-weight:600;
+	padding:0px;
+	text-align:left;}
+#a11ymark {
+	display:flex;
+	margin:0px;
+	padding:0px;
+	color:white; 
+	font-size:17px;
+	text-align:left;}
+
+.made {font-size:12px; color:#6e6e73;}
 
 /*큰 기기PC등에서만 보이는 부분*/
 .wbig {display:block;}
@@ -178,20 +254,31 @@ footer {
 .m320 {display:none;}
 .no320 {display:block;}
 
+
+@media screen and (min-width:1000px) {
+/*#LOGO {left:0px; position:absolute;}	*/
+#apple {margin:0px auto;}
+#LOGO {left:0px; position:absolute;}
+#AppleA11Y {width:20%;}
+}
+
 /*SmartPhone*/
 	@media screen and (max-width:750px) {
-		#a11ymark {font-size:1.5em;}
-	}
+	#AppleA11Y img {}
+	#AppleA11Y h2 {font-size:19px;}
+	#AppleA11Y p {font-size:28px;}
+}
 
 /*iPhone SE*/
-	@media screen and (max-width:320px) {
-	/*@media (prefers-color-scheme:light) {*/
+	/*@media screen and (max-width:320px) {*/
+	/*@media screen and (max-width:420px) and (aspect-ratio:9/16) {*/
+@media (prefers-color-scheme:light) {
 	.no320 {display:none;}
 	.m320 {display:inline-block;}
-	body {background-color:white;}
+	body,main,.clip,#wrap {background-color:white !important;}
 	h1 span,h2, h4,h4 span {
 	color:#1d1d1f !important;}
-	section,li,footer,div,p,h3 {
+	section,li,footer,div,p,h3,#controller {
 	box-sizing:border-box; 
 	background-clip:border-clip; 
 	font-size:17px;
@@ -201,12 +288,21 @@ footer {
 	.w980{width:85%;
 		font-size:17px;}
 
-	#notice {background:rgba(255,255,255,0.7);}
-	#a11ymark {font-size:1.2em; color:#dd006d;}
-	#a11ymark span {color:#073ca5;}
-	#CP {font-size:0.8em; border-top:#d2d2d7 1px solid;}
+	#notice {background:rgba(255,255,255,0.7);
+		height:52px;}
+	#CP {border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}
+	#notice::after {
+		content:"";
+		display:block;
+		background-color: #00000029;
+		position:absolute;
+		z-index:1;
+		top:100%; left:0px;
+		margin-left:0px;
+		height:1px; width:100%;}
 	footer {background-color:#f2f2f2;}
+	#AppleA11Y p,#AppleA11Y h2 {color:white !important;}
 	.langregion a{color:black;}}
 
 
@@ -216,10 +312,9 @@ footer {
 	@media screen and (min-width:560px) and (max-width:580px) {
 	.no320 {display:none;}
 	.m320 {display:inline-block;}
-	body {background-color:white;}
-	h1 span,h2, h4,h4 span {
-	color:#1d1d1f !important;}
-	section,li,footer,div,p,h3 {
+	body,main,.clip,#wrap {background-color:white !important;}
+	h1 span,h2, h4,h4 span {color:#1d1d1f !important;}
+	section,li,footer,div,p,h3,#controller {
 	box-sizing:border-box; 
 	background-clip:border-clip; 
 	font-size:17px;
@@ -230,9 +325,7 @@ footer {
 		font-size:17px;}
 
 	#notice {background:rgba(255,255,255,0.7);}
-	#a11ymark {font-size:1.2em; color:#dd006d;}
-	#a11ymark span {color:#073ca5;}
-	#CP {font-size:0.8em; border-top:#d2d2d7 1px solid;}
+	#CP {border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}
 	footer {background-color:#f2f2f2;}
 	.langregion a{color:black;}}
