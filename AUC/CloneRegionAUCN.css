@@ -2,6 +2,24 @@
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#76f; color:white;}
+
+html {
+    --r-globalnav-height: 44px;
+    --r-globalnav-segmentbar-height: 0;
+    --r-globalnav-viewport-large-min-width: 1024px;
+    --r-globalnav-viewport-large-max-width: 1441px;
+    --r-globalnav-viewport-large-query: (min-width: 1024px);
+    --r-globalnav-viewport-medium-min-width: 768px;
+    --r-globalnav-viewport-medium-max-width: 1023px;
+    --r-globalnav-viewport-medium-query: (max-width: 1023px);
+    --r-globalnav-viewport-small-min-width: 420px;
+    --r-globalnav-viewport-small-max-width: 767px;
+    --r-globalnav-viewport-small-query: (max-width: 767px);
+    --r-globalnav-viewport-xsmall-min-width: 320px;
+    --r-globalnav-viewport-xsmall-max-width: 419px;
+    --r-globalnav-viewport-xsmall-query: (max-width: 419px);
+}
+
 .znone {position:absolute; z-index:-100; left:0px; top:0px;}
 #wrap {z-index:1; position:relative;}
 #langzone {background-color:white;}
@@ -154,21 +172,18 @@ a:hover path,a:focus path {opacity:1;}
 	z-index:3;}
 
 #Atitle {
-	cursor: default;
-    float: left;
-    margin: 14px 0 -14px;
-    padding: 0;
-	font-size: 21px;
+    font-size: 21px;
     line-height: 1.14286;
     font-weight: 600;
     letter-spacing: .011em;
-	opacity:0.92;
-	position:relative;
-	z-index:3;
-	height:66px;
-	position:relative;
-	-webkit-transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
-    transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    cursor: default;
+    display: block;
+    float: left;
+    margin: 14px 0 -14px;
+    padding: 0;
+    height: 52px;
+    white-space: nowrap;
 }
 
 #Stitle {
@@ -181,7 +196,7 @@ a:hover path,a:focus path {opacity:1;}
 
 #Ptitle {
 	margin:0px; padding:0px;
-	line-height: 1.41667;
+	line-height: 1.41667rem;
     letter-spacing: 0em;
 	font-size:12px;
 	opacity:0.61;
@@ -223,9 +238,10 @@ a:hover path,a:focus path {opacity:1;}
 
 .wrap {
 	box-sizing:border-box;}
-
+.nofoot {background-color:#222;}
 footer {
-	padding:1.6rem 0px !important; 
+	padding-top: 34px;
+	padding-bottom: calc(max(21px, env(safe-area-inset-bottom)));
 	background-color:#222; 
 	width:100%;
 	position:relative;
@@ -284,14 +300,27 @@ footer {
 	#apple {margin:0px auto;}
 	#LOGO {left:0px; position:absolute;}
 	#AppleA11Y {width:20%;}
-	.w980 {width:51.5%;}
+	.w980 {width:980px;}
 	header {height:44px;}
+	footer {padding-top: 34px;}
 
 }
-
+/*iPadPro*/
+@media screen and (max-width:1100px) {
+	.w980 {width:692px;}
+	#Atitle {
+		height:63px;
+		display: inline-block;
+	    margin: 12px 0 -12px;
+	    margin-top: 12px;
+	    margin-right: 0px;
+	    margin-bottom: -12px;
+	    margin-left: 0px;}
+	#gochatbox {padding-top:32px;}
+}
 /*SmartPhone,iPad*/
-@media screen and (max-width:1024px) {
-	.w980{box-sizing:border-box;}
+@media screen and (max-width:800px) {
+	.w980{width:87.5%;}
 	#AppleA11Y h2 {font-size:19px;}
 	#AppleA11Y p {font-size:28px;}
 	.made {display:block;}
@@ -304,6 +333,10 @@ footer {
 	    margin-bottom: -12px;
 	    margin-left: 0px;}
 	#gochatbox {padding-top:32px;}
+	footer {
+		padding-bottom: calc(max(19px, env(safe-area-inset-bottom)));
+		padding-top: 17px;
+		}
 }
 
 
@@ -312,6 +345,7 @@ footer {
 	/*@media screen and (max-width:320px) {*/
 	/*@media screen and (max-width:420px) and (aspect-ratio:9/16) {*/
 @media (prefers-color-scheme:light) {
+
 	.no320 {display:none;}
 	.m320 {display:inline-block;}
 
@@ -329,13 +363,10 @@ footer {
 	letter-spacing: 0.011em; 
 	color: #8c8c8c;}
 
-	.w980{width:85%;
-		font-size:17px;}
 
 	#notice {
 		background:rgba(255,255,255,0.7);
 		height:52px;}
-	#CP {border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}
 	#notice:after {
 		content:"";
@@ -352,9 +383,10 @@ footer {
 		width:100%;
 	}
 
-	footer {background-color:#f2f2f2;}
+	footer,.nofoot {background-color:#f2f2f2;}
 	#AppleA11Y p,#AppleA11Y h2 {color:white !important;}
-	.langregion a{color:black;}}
+	.langregion a{color:black;}
+}
 
 
 
@@ -376,7 +408,6 @@ footer {
 		font-size:17px;}
 
 	#notice {background:rgba(255,255,255,0.7);}
-	#CP {border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}
 	footer {background-color:#f2f2f2;}
 	.langregion a{color:black;}
