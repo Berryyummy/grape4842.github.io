@@ -58,7 +58,10 @@ header {
 	position:relative; 
 	padding:0em; 
 	height:48px;
-	max-height:44px;}
+	max-height:44px;
+}
+
+	/*nav {overflow-x:hidden;}*/
 
 a {vertical-align:middle; 
 	background-position:center; 
@@ -124,17 +127,17 @@ a:hover path,a:focus path {opacity:1;}
 	letter-spacing: 0.012em; 
 	backdrop-filter: saturate(180%) blur(20px);
 	background-color:#121217b3;
-	height:60px;}
-#notice:after {
-	overflow-x:hidden;
+	height:63px;
+}
+
+#barline {width:100%;}
+#barline:after {
 	background-color: #ffffff3d;
-	margin-left: -490px;
-    left: 50%;
     content: "";
     display: block;
     position: absolute;
     top: 100%;
-    width: 980px;
+    width:100%;
     height: 1px;
     z-index: 1;}
 
@@ -153,7 +156,6 @@ a:hover path,a:focus path {opacity:1;}
 
 #Atitle {
 	cursor: default;
-    display: block;
     float: left;
     margin: 14px 0 -14px;
     padding: 0;
@@ -164,12 +166,35 @@ a:hover path,a:focus path {opacity:1;}
 	opacity:0.92;
 	position:relative;
 	z-index:3;
-	height:66px;}
+	height:66px;
+	position:relative;
+	-webkit-transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+    transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+}
+
+#Stitle {
+	align-items: flex-start;
+	margin:0px; padding:0px;
+	text-align:left;
+	flex-direction: column-reverse;
+	display:flex;
+	opacity:0.92;}
+
+#Ptitle {
+	margin:0px; padding:0px;
+	line-height: 1.41667;
+    letter-spacing: 0em;
+	font-size:12px;
+	opacity:0.61;
+	position:relative;
+	top:0px;}
 
 #AT {font-size:1em;
 	position:relative;
 	color:white; 
-	text-align:left;}
+	text-align:left;
+}
+#AT:after {clear:both;}
 #gochatbox {position:absolute;
 	width:100%;
 	justify-content:center;
@@ -188,7 +213,7 @@ a:hover path,a:focus path {opacity:1;}
 		display:inline-block;
 		align-items:center;
 		padding:4px 11px; 
-		/*position:relative;*/
+		position:relative;
 		right:0px; float:right;
 		box-sizing:content-box;}
 #gochat:hover{background-color:#147ce5;}
@@ -255,19 +280,30 @@ footer {
 .no320 {display:block;}
 
 
-@media screen and (min-width:1000px) {
-/*#LOGO {left:0px; position:absolute;}	*/
-#apple {margin:0px auto;}
-#LOGO {left:0px; position:absolute;}
-#AppleA11Y {width:20%;}
+@media screen and (min-width:1200px) {
+	/*#LOGO {left:0px; position:absolute;}	*/
+	#apple {margin:0px auto;}
+	#LOGO {left:0px; position:absolute;}
+	#AppleA11Y {width:20%;}
+	.w980 {width:51.5%;}
 }
 
-/*SmartPhone*/
-	@media screen and (max-width:750px) {
-	#AppleA11Y img {}
+/*SmartPhone,iPad*/
+@media screen and (max-width:1024px) {
+	.w980{box-sizing:border-box;}
 	#AppleA11Y h2 {font-size:19px;}
 	#AppleA11Y p {font-size:28px;}
+	.made {display:block;}
+	#Atitle {height:63px;
+	display: inline-block;
+    margin: 12px 0 -12px;
+    margin-top: 12px;
+    margin-right: 0px;
+    margin-bottom: -12px;
+    margin-left: 0px;}
 }
+
+
 
 /*iPhone SE*/
 	/*@media screen and (max-width:320px) {*/
@@ -292,15 +328,21 @@ footer {
 		height:52px;}
 	#CP {border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}
-	#notice::after {
+	#notice:after {
 		content:"";
+		box-sizing:content-box;
 		display:block;
 		background-color: #00000029;
 		position:absolute;
-		z-index:1;
-		top:100%; left:0px;
-		margin-left:0px;
-		height:1px; width:100%;}
+		z-index:10;
+		top:100%; 
+		left:0px;
+		margin:0px; 
+		padding:0px;
+		height:1px; 
+		width:100%;
+	}
+
 	footer {background-color:#f2f2f2;}
 	#AppleA11Y p,#AppleA11Y h2 {color:white !important;}
 	.langregion a{color:black;}}
@@ -309,7 +351,7 @@ footer {
 
 
 /*iPhone SE landscape*/
-	@media screen and (min-width:560px) and (max-width:580px) {
+@media screen and (min-width:560px) and (max-width:580px) {
 	.no320 {display:none;}
 	.m320 {display:inline-block;}
 	body,main,.clip,#wrap {background-color:white !important;}
@@ -328,4 +370,12 @@ footer {
 	#CP {border-top:#d2d2d7 1px solid;}
 	.kr {color:#029d50;}
 	footer {background-color:#f2f2f2;}
-	.langregion a{color:black;}}
+	.langregion a{color:black;}
+}
+
+@media screen and (max-width:300px) {
+	#Stitle,h2 span,h2,h3 span,h3,h4 span,h4,h5{font-size:21px;}
+	li,li li,dt,dd,p,#hello div {font-size:17px !important;}
+	#gochat {z-index:10;}
+	#MinP {display:none;}
+}

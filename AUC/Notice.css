@@ -1,5 +1,25 @@
+/*움직이는 요소에 class부여*/
+.stopA {display:none;}
+
 /*올라오는 애니메이션*/
-#ApplePro,#hello{
+#ApplePro{
+	animation-duration:1s;
+	animation-name:load; 
+	animation-delay:1s;
+	animation-fill-mode:forwards;
+	opacity:0; 
+	position:relative;}
+
+}
+
+@keyframes load {
+	from {opacity:0; 
+		transform:translateY(15%);}
+	to {opacity:1;
+		transform:translateY(0%);}
+}
+
+#hello{
 	animation-duration:2s;
 	animation-name:load; 
 	animation-delay:1.5s;
@@ -8,7 +28,6 @@
 	height:100%;
 	position:relative;}
 
-.stopA {display:none;}
 
 
 @keyframes load {
@@ -53,6 +72,31 @@
 	background-size:cover;
 }
 
+#MBP {
+	height:100%;
+	margin-top:29px;
+	margin-bottom:-15%;
+	position:relative;
+	overflow-x:hidden;
+}
+#MacS {
+	width:125%;
+	position:relative; 
+	left:-12.5%;
+}
+
+#MacBookPro {
+	display:block;
+	margin-bottom:-32.7%;
+	width:90%;
+	position:relative;
+	z-index:100;
+	-webkit-mask-size:cover;
+	-webkit-mask-position:center;
+    -webkit-mask-repeat:no-repeat;
+}
+
+
 /*큰 영역별 공통 CSS*/
 
 main {
@@ -62,9 +106,22 @@ main {
 
 #controller {
 	background:transparent;
-	display:inline; 
 	text-align:center;
 }
+#controller .goask:after{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-left:0.3rem;
+}
+#controller[aria-expanded="false"] .goask:after {
+	content:">";
+}
+
+#controller[aria-expanded="true"] .goask:after {
+	content:" ∧";
+}
+
 p {
 	font-size: 21px;
     line-height: 1.38105;
@@ -101,11 +158,10 @@ h2,h3 {
 	font-size:48px;
 	color:white; 
 	text-align:center;  
-	line-height:1.1em; 
+	line-height:1.1; 
 	font-weight: 600;
-	letter-spacing: .011em;
+	letter-spacing: .011;
     text-align:center;
-	vertical-align:middle;
 }
 
 h3 {color:#aee1cd;}
@@ -132,12 +188,12 @@ ul,li,ol,#controller {
 	list-style:none;
 }
 
-.fullist {margin:1rem auto;}
-.fullist ul {
+li {margin:1rem auto;}
+li ul {
 	margin:0.1rem auto; 
 	padding:0px;
 }
-.fullist li,.fullist dl,.kr{
+li li,li dl,.kr{
 	margin:0.3rem auto; 
 	padding:0px; 
 	list-style-position:outside; 
@@ -225,13 +281,13 @@ dl svg {margin:-1rem auto;}
 
 
 
-#AUC {font-size:21px; 
-	text-align:center; 
-	color:#63636e; 
-	margin-bottom:0.15rem; 
-	line-height: 1.19048rem; 
-	font-weight: 600; 
-	letter-spacing:0.011rem;
+#AUC {font-size: 21px;
+    line-height: 1.19048;
+    font-weight: 600;
+    margin-bottom: 0.15em;
+    letter-spacing: .011em;
+    color: #63636e;
+    display:block;
 }
 
 .kr {color:#fab;}
@@ -279,11 +335,6 @@ dl svg {margin:-1rem auto;}
 #full {text-align:left;}
 
 
-#memoticon {
-	width:80%;
-	box-shadow: 0em 0em 3em 3em rgb(33,33,33); 
-	margin:7em auto;
-}
 
 #MPC {padding:0px; margin:0px;}
 	#FPC {text-align:center;}
@@ -316,45 +367,26 @@ ul,.lalist {
 
 
 /*약관 전문-닉네임 dd Apple Logo*/
-#raina1 {fill:#fcc;}
-#raina2 {fill:#fda;}
-#raina3 {fill:#ffa;}
-#raina4 {fill:#dfa;}
-#raina5 {fill:#abf;}
-#raina7 {fill:#baf;}
+	#raina1 {fill:#fcc;}
+	#raina2 {fill:#fda;}
+	#raina3 {fill:#ffa;}
+	#raina4 {fill:#dfa;}
+	#raina5 {fill:#abf;}
+	#raina7 {fill:#baf;}
 
 
-#MBP {
-	height:100%;
-	margin-top:29px;
-	margin-bottom:-15%;
-	position:relative;
-	overflow-x:hidden;
-}
-#MacS {
-	width:125%;
+#all {
 	position:relative; 
-	left:-12.5%;
-}
-
-#MacBookPro {
-	display:block;
-	margin-bottom:-32.7%;
-	width:90%;
-	position:relative;
-	z-index:100;
-	-webkit-mask-size:cover;
-	-webkit-mask-position:center;
-    -webkit-mask-repeat:no-repeat;
-}
-
+	z-index:4;
+	}
 
 #Mlist {margin:5% auto;}
 #Mlist h4 {background-image:none;}
 #Mlist th {
-text-align:left;
-font-size:1rem;
-padding:3% 0px;}
+	text-align:left;
+	font-size:1rem;
+	padding:3% 0px;
+}
 
 #Mlist a {
 	overflow:hidden;
@@ -411,59 +443,64 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 #SMM span {color:#321;}
 
 #OMU a {
-/*background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(204,238,221,1) 50%,rgba(187,238,204,1) 100%);*/
-background-image:
-/*url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);*/
-url(img/mintback.jpg);
-background-attachment:fixed;
-background-size:10%;
-color:#022;
-filter:saturate(120%);
-border:solid lightgreen 0.1rem;}
+	/*background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(204,238,221,1) 50%,rgba(187,238,204,1) 100%);*/
+	background-image:
+	/*url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);*/
+	url(img/mintback.jpg);
+	background-attachment:fixed;
+	background-size:10%;
+	color:#022;
+	filter:saturate(120%);
+	border:solid lightgreen 0.1rem;
+}
 
 #OMU a:before {
-z-index:5;
-background-size:120%;
-background-image:url(img/FruitApple.png);}
+	z-index:5;
+	background-size:120%;
+	background-image:url(img/FruitApple.png);
+}
+
 #OMU a:after {
-content:'';
-background-size:100% 100%;
-position:absolute;
-width:100%; height:100%;
-top:0px; left:0px;
-display:block;
-overflow-x:hidden;
-background-image:url(img/Muleaf.png);
-border-radius:1rem;}
+	content:'';
+	background-size:100% 100%;
+	position:absolute;
+	width:100%; height:100%;
+	top:0px; left:0px;
+	display:block;
+	background-image:url(img/Muleaf.png);
+	border-radius:1rem;
+}
 
 
 #Myuna a{
-	/*background: -webkit-linear-gradient(top, rgba(210,204,255,1) 0%, rgba(110,71,238,1) 49%, rgba(100,68,238,1) 50%, rgba(60,0,170,1) 51%, rgba(70,17,221,1) 100%);*/
-/*background-image:linear-gradient(to left,rgba(100, 0, 255, 0.1), rgba(150, 50, 255, 0.2), rgba(100, 0, 255, 0.1)),
-url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
-*/
-background-image:url(https://www.apple.com/v/imac-pro/e/images/overview/screen_endframe_large.jpg);
-border:solid 0.1rem #001;
-filter: saturate(150%) hue-rotate(38deg);
-/*background:rgba(100, 0, 255, 0.1), 
-url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
-*/background-size:95% 95%;
-color:white;
-text-shadow:1px 1px black;}
-#Myuna a:before{
-background-image:url(img/PurpleMetalApple.png);
-background-size:140%;
-filter:saturate(1) hue-rotate(-50deg);
+		/*background: -webkit-linear-gradient(top, rgba(210,204,255,1) 0%, rgba(110,71,238,1) 49%, rgba(100,68,238,1) 50%, rgba(60,0,170,1) 51%, rgba(70,17,221,1) 100%);*/
+	/*background-image:linear-gradient(to left,rgba(100, 0, 255, 0.1), rgba(150, 50, 255, 0.2), rgba(100, 0, 255, 0.1)),
+	url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
+	*/
+	background-image:url(https://www.apple.com/v/imac-pro/e/images/overview/screen_endframe_large.jpg);
+	border:solid 0.1rem #001;
+	filter: saturate(150%) hue-rotate(38deg);
+	/*background:rgba(100, 0, 255, 0.1), 
+	url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
+	*/background-size:95% 95%;
+	color:white;
+	text-shadow:1px 1px black;}
+	#Myuna a:before{
+	background-image:url(img/PurpleMetalApple.png);
+	background-size:140%;
+	filter:saturate(1) hue-rotate(-50deg);
 }
 #Myuna span {color:white;}
 
 #Mcchi a {
-filter:saturate(2);
-background-image:url(img/Msky.png);
-background-size:cover;
-background-position:bottom;
-color:#250;
-border:solid #57f 0.1rem;}
+	filter:saturate(2);
+	background-image:url(img/Msky.png);
+	background-size:cover;
+	background-position:bottom;
+	color:#250;
+	border:solid #57f 0.1rem;
+}
+
 #Mcchi span {color:#520;}
 #Mcchi a:before {background-image:url(img/OSXApple.png);}
 #Mcchi a:after {
@@ -478,36 +515,41 @@ border:solid #57f 0.1rem;}
 	display:block;}
 
 #CSJ a{
-filter: saturate(120%);
-background-image: url(https://media.istockphoto.com/vectors/orange-seamless-pattern-orange-citrus-fruit-vector-illustration-vector-id531480528);
-background-size:5%;
-color:#130;
-background-attachment:fixed;
-border:orange 0.1rem solid;}
+	filter: saturate(120%);
+	background-image: url(https://media.istockphoto.com/vectors/orange-seamless-pattern-orange-citrus-fruit-vector-illustration-vector-id531480528);
+	background-size:5%;
+	color:#130;
+	background-attachment:fixed;
+	border:orange 0.1rem solid;
+}
+
 #CSJ span {color:#420;}
 #CSJ a:before {
-background-size:120%;
-background-image:url(img/GoldenApple.png);
+	background-size:120%;
+	background-image:url(img/GoldenApple.png);
 }
 
 #CSA a {
-/*background-image:url(https://i.pinimg.com/originals/0d/ee/48/0dee4818267c2183793f7505d06a3b47.jpg);
-/*background-image: url(https://data.ac-illust.com/data/thumbnails/ab/ab9a45d052331b7c813cedc7f3245bf5_t.jpeg);*/
-background-image:url(img/sakura1.png);
-background-size:100% 100%;
-/*filter:hue-rotate(180deg) invert(100%);*/
-background-position:top;
-color:#502;
-border:pink 0.1rem solid;}
+	/*background-image:url(https://i.pinimg.com/originals/0d/ee/48/0dee4818267c2183793f7505d06a3b47.jpg);
+	/*background-image: url(https://data.ac-illust.com/data/thumbnails/ab/ab9a45d052331b7c813cedc7f3245bf5_t.jpeg);*/
+	background-image:url(img/sakura1.png);
+	background-size:100% 100%;
+	/*filter:hue-rotate(180deg) invert(100%);*/
+	background-position:top;
+	color:#502;
+	border:pink 0.1rem solid;
+}
+
 #CSA a:before {background-image:url(img/pinkapple.png);}
 
 #HHC a {
-filter:hue-rotate(-15deg);
-text-shadow: #000 0 0 0.5rem, #000 2px 2px 2px;
-background-image:url(https://images.assetsdelivery.com/compings_v2/intara1/intara11904/intara1190400012.jpg);
-background-size:10%;
-background-attachment:fixed;
-border:solid 0.1rem black;}
+	filter:hue-rotate(-15deg);
+	text-shadow: #000 0 0 0.5rem, #000 2px 2px 2px;
+	background-image:url(https://images.assetsdelivery.com/compings_v2/intara1/intara11904/intara1190400012.jpg);
+	background-size:10%;
+	background-attachment:fixed;
+	border:solid 0.1rem black;
+}
 
 #HHC a:before {background-image:url(img/ManyColorApple.png); }
 
@@ -590,7 +632,12 @@ border:solid 0.1rem black;}
 
 /*DeskTop View*/
 @media screen and (min-width:1200px) {
-	.w980 {width:51.5%;}
+	#AUC {font-size: 28px;
+    	line-height: 1.14286;
+   	 	font-weight: 600;
+    	letter-spacing: .007em;
+    }
+
 	#MPC {padding-top:118px;}
 	#i11 {
 		font-weight:700;
@@ -645,13 +692,14 @@ border:solid 0.1rem black;}
 
 /*iPad*/
 @media screen and (max-width:1000px) {
-	.w980{box-sizing:border-box;}
 	#AUC,#ApplePro {font-weight:600;}
 	#AUC {
-		line-height: 1.16667rem;
-		font-size:24px;
-		letter-spacing: .009em;}
-	.made {display:block;}
+		font-size: 24px;
+   		line-height: 1.16667;
+    	font-weight: 600;
+    	letter-spacing: .009em;	
+    }
+
 	h2,h3 {
 		line-height:1.5em; 
 		letter-spacing: 0em;
@@ -660,11 +708,10 @@ border:solid 0.1rem black;}
 
 /*SmartPhone*/
 @media screen and (max-width:760px) {
-	nav {overflow-x:hidden;}
 	.w980 {
 		box-sizing:border-box; 
 		font-size:19px;}
-
+	#MPC {padding-top:56px;}
 	#MBP {
 		width:100%; 
 		margin-bottom:-7%;}
@@ -727,8 +774,8 @@ border:solid 0.1rem black;}
 
 
 /*iPhone SE landscape*/
-	@media screen and (min-width:560px) and (max-width:580px) {
-	li,.fullist li {font-size:17px;}
+@media screen and (min-width:560px) and (max-width:580px) {
+	li,li li {font-size:17px;}
 	
 	#SE11 {padding:0px;
 	margin-top:3rem;}
@@ -737,7 +784,8 @@ border:solid 0.1rem black;}
 		position:relative; 
 		left:0px; 
 		color:#1d1d1f;
-		opacity:1;}
+		opacity:1;
+	}
 	#SE11 video, #i11stop {margin:50% auto;}
 	body {background-color:white;}
 	#i11 {
@@ -745,7 +793,9 @@ border:solid 0.1rem black;}
 		font-size:40px;
 		font-weight:700;
 		line-height:1.2em;
-		text-align:left;}
+		text-align:left;
+	}
+
 	#full {font-size:1.2em;}
 	#MinP {background-color:black;}
 	#inP {top:31%;}
@@ -783,16 +833,17 @@ border:solid 0.1rem black;}
 		top:-3px;}
 		.kr {color:#029d50;}
 
-#raina1 {fill:#e00;}
-#raina2 {fill:#f70;}
-#raina3 {fill:#fc0;}
-#raina4 {fill:#0c5;}
-#raina5 {fill:#69f;}
-#raina7 {fill:#87f;}
+	#raina1 {fill:#e00;}
+	#raina2 {fill:#f70;}
+	#raina3 {fill:#fc0;}
+	#raina4 {fill:#0c5;}
+	#raina5 {fill:#69f;}
+	#raina7 {fill:#87f;}
+	.fullT {color:#8c8c8c;}
 
-.wbig {display:none;}
+	.wbig {display:none;}
 }
-.fullT {color:#8c8c8c;}
+
 
 
 
