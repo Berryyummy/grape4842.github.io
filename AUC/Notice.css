@@ -608,9 +608,9 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 		opacity:1;
 	}
 
-	#hello div,#fugp,#SEST {color:#8c8c8c;}
+	#hello div,#fugp,#SEST,.fullT {color:#8c8c8c;}
 	.helpM span,#callapple{color:#1d1d1f;}
-	#helm,.helpboxM,footer,#inPC,.helmb {background-color:#f2f2f2;}
+	#helm,.helpboxM,footer,#inPC,.helmb,.clipsb {background-color:#f2f2f2;}
 	
 	#SEST {
 		font-size:21px; 
@@ -626,6 +626,7 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	font-weight:900;
 	}
 	.goask {color:#06c !important;}
+	
 	.clip {filter:saturate(1);}
 
 	#raina1 {fill:#e00;}

@@ -147,7 +147,9 @@ a:hover path,a:focus path {opacity:1;}
 	height:63px;
 }
 
-#barline {width:100%;}
+#barline {
+	width:100%;
+	margin:0px;}
 #barline:after {
 	background-color: #ffffff3d;
     content: "";
