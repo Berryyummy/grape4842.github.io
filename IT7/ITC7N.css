@@ -125,26 +125,21 @@ position:relative;}
 
 
 #FOLD {
-position:relative;
-animation-name:fold;
-animation-delay:0.5s;
-animation-duration:2s;
-animation-fill-mode:forwards;
-transform:scale(3);	
-opacity:0;
+	position:relative;
+	animation-name:fold;
+	animation-delay:0.5s;
+	animation-duration:2s;
+	animation-fill-mode:forwards;
+	transform:scale(3);	
+	opacity:0;
 }
 
 @keyframes fold {
-/*60% {width:70%; 
-	opacity:0.6;
-	transform:translateX(-2%);}
-100% {width:100%; 
-	transform:translateX(0%);		
-	opacity:1;}}
-*/
-0% {transform:scale(3); opacity:0;}
-70% {transform:scale(0.7);}
-100% {transform:scale(1); opacity:1;}}
+	0% {transform:scale(3); opacity:0;}
+	70% {transform:scale(0.7);}
+	100% {transform:scale(1); opacity:1;}
+}
+
 @media (prefers-reduced-motion:reduce) {
 	.playing,#gram {display:none;}
 	.noplay {display:unset;}
@@ -312,17 +307,14 @@ footer {
 
 
 
-@media screen and (max-width: 1080px) {
-	.made {display:flex;}
-}
-@media screen and (min-width: 1020px) {
-	.w90 {width:70%;}
-}
-
 @media screen and (min-width: 1200px) {
 	.w90 {width:50%;}
+	#FOLD {width:30%;}
 }
 
+@media screen and (max-width: 1190px) {
+	.w90 {width:70%;}
+}
 
 
 
