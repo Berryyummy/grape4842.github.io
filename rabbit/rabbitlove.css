@@ -26,12 +26,14 @@ a {text-decoration:none;
 table {border-collapse:collapse;
 	table-layout:fixed;
 	margin:5% auto;
+	width:100%;
 	table-layout:fixed;}
 th,td {padding:3%;
 	box-sizing:border-box;
 	border:1px solid black;}
 td {background-color:white;}
 th {background-color:#fe7;}
+th:first-child {width:30%;}
 ul,ol,dl {margin:0px;
 	padding:0px;
 	list-style:none;}
@@ -41,7 +43,7 @@ li dl {padding-top:0.5rem;}
 li li,li dt,li dd {padding:0.15rem 0.5rem;}
 .w980 {width:50%; 
 	margin:0px auto;
-	padding:3%;
+	padding:1% 3%;
 	box-sizing:border-box;}
 .XM {transform:scaleX(-1);}
 nav h1 {display:flex;
@@ -54,7 +56,7 @@ nav h1 {display:flex;
 .metro {
 	margin-right:5px;
 	border-radius:100%; 
-	width:1.3rem; height:1.3rem;
+	width:1.5rem; height:1.5rem;
 	display:inline-flex;
 	justify-content:center;
 	align-items:center;
@@ -70,6 +72,7 @@ nav h1 {display:flex;
 .line7 {background-color:#627535;}
 .line8 {background-color:#E84E72;}
 .line9 {background-color:#BE941C;}
+.airline {background-color:#038FA0; width:2rem; font-size:0.8rem;}
 footer {width:100%;
 	margin-top:2%;
 	background-color:black;}
