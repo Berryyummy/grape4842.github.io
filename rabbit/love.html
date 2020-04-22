@@ -128,7 +128,12 @@
 		</ul>
 	</section>
 	<section class="w980">
-		<h2>토끼를 키우기 위해</h2>
+		<h2>토끼를 키우시기 전에 이 책을 읽어보세요!</h2>
+		<a href="https://www.coupang.com/vp/products/250227746?itemId=790648988&vendorItemId=5006070524&src=1032002&spec=10305201&addtag=400&ctag=250227746&lptag=P250227746&itime=20200414173220&pageType=PRODUCT&pageValue=250227746&wPcid=11626277474319842373189&wRef=m.shoppinghow.kakao.com&wTime=20200414173220&redirect=landing&isAddedCart=">
+			<img src="img/rabbitbook.jpg" alt="책공장 더불어:토끼"></a>
+		<button aria-expanded="false" id="controller">간단 정리 이미지</button>
+	</section>
+	<section class="expanded w980" id="contentbox">
 		<h3>토끼의 기본생활환경</h3>
 		<img src="img/rabbithouse.jpg" alt="">
 			<table>
@@ -190,9 +195,7 @@
 			<table>
 				<caption>토끼의 기본 먹을거리</caption>
 			</table>
-			<span>토끼를 키우시기 전에 이 책을 읽어보세요!</span>
-			<a href="https://www.coupang.com/vp/products/250227746?itemId=790648988&vendorItemId=5006070524&src=1032002&spec=10305201&addtag=400&ctag=250227746&lptag=P250227746&itime=20200414173220&pageType=PRODUCT&pageValue=250227746&wPcid=11626277474319842373189&wRef=m.shoppinghow.kakao.com&wTime=20200414173220&redirect=landing&isAddedCart=">
-				<img src="img/rabbitbook.jpg" alt="책공장 더불어:토끼"></a>
+
 	</section>
 	<section class="w980">
 		<h2>4. 기타</h2>
@@ -210,7 +213,7 @@
 	</section>
 	<section class="w980">
 		<h2>각종 토끼 관련 링크 목록</h2>
-		<h3>물품, 먹이</h3>
+		<h3>물품, 먹이 등</h3>
 		<ul>
 			<li>
 				<a href="https://m.smartstore.naver.com/earscrossedrabbit" target="_blank">이어크로스레빗</a>
@@ -247,6 +250,14 @@
 			</li>
 			<li>
 				<a href="https://smartstore.naver.com/queen-of-enema " target="_blank">라핀테이블</a>
+			</li>
+		</ul>
+	</section>
+	<section class="w980">
+		<h3>많이 쓰는 이동장</h3>	
+		<ul>
+			<li>
+				<a target="_blank" href="https://smartstore.naver.com/ilovehamster/products/2625108321?NaPm=ct%3Dk9aqpvjk%7Cci%3Dfd198fd7db4b75f999b6cd3d76934eaaaffc0480%7Ctr%3Dslsl%7Csn%3D235551%7Cic%3D%7Chk%3D4ad27a44984032e5f977e6336d8a038a44f265ba">마루칸 소동물 여행가방</a>
 			</li>
 		</ul>
 	</section>
@@ -433,5 +444,17 @@
 		위 사항을 준수하지 않으실 경우 토끼에게 매우 혼납니다&#40;?&#41;
 	</div>
 </footer>
+	<script type="text/javascript">
+		var controller=document.querySelector('#controller');
+		var contentbox=document.querySelector('#contentbox');
+
+		 controller.addEventListener('click',function(){
+		 	if (contentbox.classList.contains('expanded')){
+		 		contentbox.classList.remove('expanded')
+		 		controller.setAttribute('aria-expanded', true)}
+		 	else {contentbox.classList.add('expanded')
+				controller.setAttribute('aria-expanded', false)}});
+	</script>
+
 </body>
 </html>
