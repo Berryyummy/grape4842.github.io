@@ -125,6 +125,8 @@ position:relative;}
 
 
 #FOLD {
+	z-index:3;
+	padding:5% 0px;
 	position:relative;
 	animation-name:fold;
 	animation-delay:0.5s;
@@ -135,8 +137,8 @@ position:relative;}
 }
 
 @keyframes fold {
-	0% {transform:scale(3); opacity:0;}
-	70% {transform:scale(0.7);}
+	0% {transform:scale(2); opacity:0;}
+	70% {transform:scale(0.5);}
 	100% {transform:scale(1); opacity:1;}
 }
 
@@ -303,17 +305,14 @@ footer {
 
 
 
-
-
-
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width:1050px) {
 	.w90 {width:50%;}
-	#FOLD {width:30%;}
+	#FOLD {width:60%;}
 }
 
-@media screen and (max-width: 1190px) {
+@media screen and (min-width:700px) and (max-width:1040px){
 	.w90 {width:70%;}
+	#FOLD {width:80%;}
 }
 
 
