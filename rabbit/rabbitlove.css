@@ -77,6 +77,23 @@ footer {width:100%;
 	margin-top:2%;
 	background-color:black;}
 
+#controller {
+	padding:10px;
+	border:none;
+	font-weight:900;
+	background-color:#baf;
+	margin:10px auto;
+	display:flex;
+	justify-content:center;
+}
+
+#controller[aria-expanded="false"]:after {
+	content:" 보기"
+}
+#controller[aria-expanded="true"]:after {
+	content:" 닫기"
+}
+
 .expanded {visibility:hidden; height:0px;}
 
 
@@ -101,4 +118,5 @@ body,a {color:white;}
 td {background-color:#431;}
 th {background-color:#351;}
 .red {color:#f71; display:inline-flex;}
+#controller {background-color:#223; color:white;}
 }
