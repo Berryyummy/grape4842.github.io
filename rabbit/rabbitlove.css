@@ -33,7 +33,7 @@ th,td {padding:3%;
 	border:1px solid black;}
 td {background-color:white;}
 th {background-color:#fe7;}
-th:first-child {width:30%;}
+th:first-child {width:33%;}
 ul,ol,dl {margin:0px;
 	padding:0px;
 	list-style:none;}
@@ -99,11 +99,13 @@ footer {width:100%;
 
 @media screen and (min-width:1050px) {
 	.w980 {width:50%;}
+	th:first-child {width:15%;}
 }
 
 @media screen and (min-width:760px) and (max-width:1040px){
-	.w980 {width:70%;}
+	.w980 {width:80%;}
 	body {background-size:40%;}
+	th:first-child {width:20%;}
 
 }
 
@@ -112,6 +114,10 @@ footer {width:100%;
 	.w980 {width:90%;}
 }
 
+@media screen and (max-width:320px) {
+ th:first-child {width:40%;}
+ .w980 {width:95%;}
+}
 @media (prefers-color-scheme:dark) {
 section {background-color:rgba(0,0,0,0.5);}
 body,a {color:white;}
