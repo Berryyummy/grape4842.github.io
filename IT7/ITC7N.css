@@ -321,7 +321,10 @@ footer {
 @media (prefers-color-scheme:light) {
 	.light,.Gram {display:unset;}
 	.dark {display:none;}
-	body {background-color:#aaaaff99;}
+	body {background-image:url(mintback.jpg);
+		background-size:70%; 
+		background-attachment:fixed;
+	}
 	a {color:black;}
 	#HELLO {
 		color:black; 
@@ -335,11 +338,8 @@ footer {
 	border:rgba(165,0,52,0.9) solid 1px;
 	color:white !important;}
 	
-	section>ul>li {background-image:
-		url(mintback.jpg);
-		/*url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);*/
-		background-size:contain; 
-		color:#730;}
+	li,a {color:#dff;}
+	li {background:#421 !important;}
 	h2,h3,h4 {color:#50a;}
 	footer{background-color:#acf; color:#113;}
 
