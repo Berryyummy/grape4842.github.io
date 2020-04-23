@@ -25,6 +25,13 @@ a {text-decoration:none;
 	color:black;
 	font-weight:800;}
 a:focus,a:hover {text-decoration:underline;}
+.store {
+	padding:1%;
+	display:block;
+	width:calc(98%/2);}
+.store svg {width:100%;}
+
+
 table {border-collapse:collapse;
 	table-layout:fixed;
 	margin:5% auto;
@@ -46,7 +53,10 @@ li li,li dt,li dd {padding:0.15rem 0.5rem;}
 .w980 {width:50%; 
 	margin:0px auto;
 	padding:1% 3%;
-	box-sizing:border-box;}
+	box-sizing:border-box;
+}
+
+#storebox {display:flex;}
 .XM {transform:scaleX(-1);}
 nav h1 {display:flex;
 	align-items:center;
