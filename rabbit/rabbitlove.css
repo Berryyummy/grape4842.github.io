@@ -22,7 +22,9 @@ nav {width:90%;
 .NH {width:3rem;}
 section {background-color:rgba(255,255,255,0.5);}
 a {text-decoration:none;
-	color:black;}
+	color:black;
+	font-weight:800;}
+a:focus,a:hover {text-decoration:underline;}
 table {border-collapse:collapse;
 	table-layout:fixed;
 	margin:5% auto;
