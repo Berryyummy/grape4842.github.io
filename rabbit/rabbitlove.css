@@ -86,9 +86,17 @@ nav h1 {display:flex;
 .line9 {background-color:#BE941C;}
 .airline {background-color:#038FA0; width:2rem; font-size:0.8rem;}
 footer {width:100%;
-	margin-top:2%;
-	background-color:black;}
+	margin-top:5%;
+	background-color:black;
+}
 
+footer img {
+	width:50%; 
+	display:block;
+	margin:0px auto;}
+#rbl {display:flex;
+	justify-content:center;}
+#rabbitbook {width:80%;}
 #controller {
 	padding:10px;
 	border:none;
