@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :lang(ko) {word-break: keep-all; line-break:normal;}
-body {background-color:#fffaee;}
+body {background-color:#fffaee; color:black;}
 .red {background-color:#fbd;}
 .yellow {background-color:#ffa; color:;}
 .blue {background-color:#adf;}
@@ -15,4 +15,7 @@ h1,h2 {text-align:center;}
 
 @media screen and (min-width:700px) {
 	.w980 {width:70%;}
+}
+
+@media (prefers-color-scheme: dark) {
 }
