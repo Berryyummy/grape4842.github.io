@@ -135,7 +135,7 @@ footer img {
 	content:" 닫기"
 }
 
-.expanded {visibility:hidden; height:0px;}
+.expanded {display:none;}
 
 
 @media screen and (min-width:1050px) {
