@@ -24,16 +24,34 @@ button {
 <link rel="stylesheet" type="text/css" href="">
 </head>
 <body>
-<button id="controller" aria-expanded="false">Expanded Button</button>	
-<div id="contentbox" class="hidden">
-							<ul class="sellist">
-							<li>메뉴1</li>
-						</ul>
+	<button id="controller" aria-expanded="false">Expanded Button</button>	
+	<div id="contentbox" class="hidden">
+		<ul class="sellist">
+			<li>
+				<a href="">축복이란</a>
+			</li>
+			<li>
+				<a href="">성향검사</a>
+			</li>
+			<li>
+				<a href="">축복준비</a>
+			</li>
+			<li>
+				<a href="">축복Q&A</a>
+			</li>
+			<li>
+				<a href="">신앙과 축복</a>
+			</li>
+			<li>
+				<a href="">고민상담</a>
+			</li>
+			<li>
+				<a href="">About US</a>
+			</li>
+		</ul>
 
-</div>
-<div class="hi">hi</div>
-<div class="hi">hi</div>
-<div class="hi">hi</div>
+	</div>
+
 <script type="text/javascript">
 var controller=document.querySelector('#controller');
 var contentbox=document.querySelector('#contentbox');
@@ -44,12 +62,6 @@ var contentbox=document.querySelector('#contentbox');
  		controller.setAttribute('aria-expanded', true)}
  	else {contentbox.classList.add('hidden')
 		controller.setAttribute('aria-expanded', false)}});
-
-var hi=document.querySelectorAll('.hi');
-for(var i=0; i<hi.length; i++){
-    hi[i].innerHTML+=(i+1);
-}
-
 </script>
 </body>
 </html>
