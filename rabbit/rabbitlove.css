@@ -102,7 +102,8 @@ nav h1 {display:flex;
 .line8 {background-color:#E9206B;}
 .line9 {background-color:#BEA218;}
 .airline {background-color:#578EA8; width:2rem; font-size:0.8rem;}
-footer {width:100%;
+footer {
+	box-sizing:border-box;
 	margin-top:5rem;
 	color:white;
 	background-color:black;
@@ -139,9 +140,9 @@ footer img {
 
 @media screen and (min-width:1050px) {
 	.w980 {width:50%;}
+	body {background-size:60%;}
 	th:first-child {width:15%;}
-	footer img {
-	width:30%; }
+	footer img {width:30%; }
 }
 
 @media screen and (min-width:760px) and (max-width:1040px){
