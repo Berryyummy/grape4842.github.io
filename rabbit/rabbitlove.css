@@ -138,9 +138,10 @@ footer img {
 .expanded {display:none;}
 
 .magic {
+	display:inline-flex;
 	background-color:#340; 
 	color:white; 
-	padding:0.1rem 1rem;
+	padding:0.1rem 0.5rem;
 	font-weight:900;}
 
 @media screen and (min-width:1050px) {
@@ -174,4 +175,5 @@ td {background-color:#431;}
 th {background-color:#351;}
 .red {color:#f71; display:inline-flex;}
 #controller {background-color:#223; color:white;}
+.magic {color:#340; background-color:#cc7;}
 }
