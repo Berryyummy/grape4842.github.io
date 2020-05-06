@@ -21,7 +21,7 @@
 		transform:translateY(0%);}
 }
 
-#hello{
+#hello,#MacS{
 	animation-duration:2s;
 	animation-name:load; 
 	animation-delay:1.5s;
@@ -689,6 +689,12 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 		width:calc(50% / 2);
 	}
 	.helmb {display:flex;}
+	#MacS {
+		width: 1422px;
+    position: relative;
+    left: 50%;
+    display: block;
+    margin-top: 104px;}
 }
 
 
