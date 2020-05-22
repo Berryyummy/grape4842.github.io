@@ -2,13 +2,7 @@
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#76f; color:white;}
-@media (prefers-reduced-motion:reduce) {
-	*{transition:none;}}
-@media (prefers-color-scheme:dark) {
-	/** {transition:background-color 1s,color 1s;}*/
-	body {background-color:#103;}
-	label {color:white;}
-}
+
 
 ul,li,ol {margin:0px; padding:0px; list-style:none;}
 li {margin:1% auto;}
@@ -43,7 +37,23 @@ input[type="radio"]:checked::before {
 	transform:translateY(25%) translateX(25%) scale(1); 
 	transition:0.3s;
 	opacity:0.9;}
+
 input[type="radio"]:checked+label {
 	font-weight:900;
 	outline:#76f solid 2px;
+}
+
+
+
+
+@media (prefers-reduced-motion:reduce) {
+	*{transition:none;}}
+@media (prefers-color-scheme:dark) {
+	/** {transition:background-color 1s,color 1s;}*/
+	body {background-color:#103;}
+	label {color:white;}
+	input[type="radio"] {
+		background-color:#a9f;
+	}
+
 }
