@@ -450,8 +450,7 @@ ul,.lalist {
 #SMM a{color:black;
 /*background: linear-gradient(165deg, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%);}*/
 /*background-image:url(https://cdn.imgbin.com/24/15/24/imgbin-gold-background-LG9acL6xEbmd0uC6D9v9y3VxY.jpg);*/
-background-image:
-url(https://i.pinimg.com/originals/8f/21/96/8f219642c11fa57f38f2355988fb24d0.jpg);
+background:url(https://i.pinimg.com/originals/8f/21/96/8f219642c11fa57f38f2355988fb24d0.jpg),linear-gradient(135deg, rgba(255,216,119,1) 0%,rgba(255,247,223,1) 100%);
 background-size:100% 100%;
 border:solid gold 0.1rem;}
 #SMM a:before {
@@ -464,7 +463,7 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	/*background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(204,238,221,1) 50%,rgba(187,238,204,1) 100%);*/
 	background-image:
 	/*url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);*/
-	url(img/mintback.jpg);
+	url(img/mintback.jpg),linear-gradient(to bottom, rgba(187,238,221,1) 0%,rgba(221,255,238,1) 100%);
 	background-attachment:fixed;
 	background-size:10%;
 	color:#022;
@@ -495,9 +494,9 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	/*background-image:linear-gradient(to left,rgba(100, 0, 255, 0.1), rgba(150, 50, 255, 0.2), rgba(100, 0, 255, 0.1)),
 	url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
 	*/
-	background-image:url(https://www.apple.com/v/imac-pro/e/images/overview/screen_endframe_large.jpg);
+	background-image:url(https://www.apple.com/v/imac-pro/e/images/overview/screen_endframe_large.jpg),radial-gradient(ellipse at center, rgba(0,143,238,1) 12%,rgba(0,70,136,1) 52%,rgba(0,24,68,1) 77%);;
 	border:solid 0.1rem #001;
-	filter: saturate(150%) hue-rotate(38deg);
+	filter: saturate(120%) hue-rotate(37deg);
 	/*background:rgba(100, 0, 255, 0.1), 
 	url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
 	*/background-size:95% 95%;
@@ -511,8 +510,8 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 #Myuna span {color:white;}
 
 #Mcchi a {
-	filter:saturate(2);
-	background-image:url(img/Msky.png);
+	filter:saturate(1.5);
+	background-image:url(img/Msky.png),linear-gradient(to bottom, rgba(0,119,255,1) 1%,rgba(0,136,255,1) 20%,rgba(0,153,255,1) 40%,rgba(0,170,255,1) 61%,rgba(85,170,255,1) 80%,rgba(85,176,11,1) 85%,rgba(51,153,0,1) 100%);
 	background-size:cover;
 	background-position:bottom;
 	color:#250;
@@ -534,7 +533,7 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 
 #CSJ a{
 	filter: saturate(120%);
-	background-image: url(https://media.istockphoto.com/vectors/orange-seamless-pattern-orange-citrus-fruit-vector-illustration-vector-id531480528);
+	background-image:url(https://media.istockphoto.com/vectors/orange-seamless-pattern-orange-citrus-fruit-vector-illustration-vector-id531480528),linear-gradient(135deg, rgba(254,204,177,1) 0%,rgba(241,116,50,1) 40%,rgba(234,85,7,1) 60%,rgba(251,149,94,1) 100%);
 	background-size:5%;
 	color:#130;
 	background-attachment:fixed;
@@ -550,7 +549,7 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 #CSA a {
 	/*background-image:url(https://i.pinimg.com/originals/0d/ee/48/0dee4818267c2183793f7505d06a3b47.jpg);
 	/*background-image: url(https://data.ac-illust.com/data/thumbnails/ab/ab9a45d052331b7c813cedc7f3245bf5_t.jpeg);*/
-	background-image:url(img/sakura1.png);
+	background-image:url(img/sakura1.png),radial-gradient(ellipse at center, rgba(255,255,255,1) 43%,rgba(255,233,251,1) 60%,rgba(255,233,251,1) 60%,rgba(255,127,195,1) 100%);
 	background-size:100% 100%;
 	/*filter:hue-rotate(180deg) invert(100%);*/
 	background-position:top;
@@ -561,9 +560,9 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 #CSA a:before {background-image:url(img/pinkapple.png);}
 
 #HHC a {
-	filter:hue-rotate(-15deg);
+	filter:hue-rotate(0deg);
 	text-shadow: #000 0 0 0.5rem, #000 2px 2px 2px;
-	background-image:url(https://images.assetsdelivery.com/compings_v2/intara1/intara11904/intara1190400012.jpg);
+	background-image:url(https://images.assetsdelivery.com/compings_v2/intara1/intara11904/intara1190400012.jpg),linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(255,119,0,1) 20%,rgba(255,255,0,1) 40%,rgba(0,255,170,1) 60%,rgba(0,153,255,1) 80%,rgba(119,0,255,1) 100%);
 	background-size:10%;
 	background-attachment:fixed;
 	border:solid 0.1rem black;
