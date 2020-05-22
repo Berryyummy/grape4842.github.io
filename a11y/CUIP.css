@@ -2,13 +2,18 @@
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#76f; color:white;}
-input[type="radio"] {
+input {
 	vertical-align:middle;
 	position:relative;
+	-webkit-appearance:none;
+	-o-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+
+}
+input[type="radio"] {
 	width:2rem; height:2rem;
 	border-radius:20%;
-	-webkit-appearance:none;
-	appearance:none;
 	border:solid 2px #77f;
 	background-color:white;
 	color:black;
