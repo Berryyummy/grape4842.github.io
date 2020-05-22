@@ -9,6 +9,9 @@
 	body {background-color:#103;}
 	label {color:white;}
 }
+
+ul,li,ol {margin:0px; padding:0px; list-style:none;}
+li {margin:1% auto;}
 input {
 	vertical-align:middle;
 	position:relative;
