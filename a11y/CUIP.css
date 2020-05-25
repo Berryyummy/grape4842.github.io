@@ -13,7 +13,11 @@ input {
 	-o-appearance:none;
 	-moz-appearance:none;
 	appearance:none;
+}
 
+label {
+	font-weight:900;
+	border:none;
 }
 input[type="radio"] {
 	width:2rem; height:2rem;
@@ -38,11 +42,12 @@ input[type="radio"]:checked::before {
 	transition:0.3s;
 	opacity:0.9;}
 
-input[type="radio"]:checked+label {
-	font-weight:900;
+input:focus+label {
 	outline:#76f solid 2px;
 }
-
+input[type="checkbox"] {
+	width:10px; height:10px;
+}
 
 
 
