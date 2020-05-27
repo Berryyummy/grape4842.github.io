@@ -26,8 +26,23 @@ input[type="radio"] {
 	background-color:white;
 	color:black;
 }
+input[type="radio"]:disabled {
+	border:solid 3px #a77;
+	background-color:lightgray;
+}
+input[type="radio"]:disabled:before {
+	content:"";
+	opacity:1;
+	left:-25%;
+	bottom:50%;
+	display:block;
+	background-color:#a77;
+	width:150%; height:3px;
+	transform:rotate(0.125turn); 
+}
 
 input[type="radio"]::before {
+	position:absolute;
 	content:"";
 	opacity:0;
 	display:block;
@@ -59,6 +74,13 @@ input[type="checkbox"] {
 	label {color:white;}
 	input[type="radio"] {
 		background-color:#a9f;
+	}
+	input[type="radio"]:disabled {
+		border:solid 3px #a33;
+		background-color:lightgray;
+	}
+	input[type="radio"]:disabled:before {
+		background-color:#a33;
 	}
 
 }
