@@ -1,0 +1,106 @@
+@charset "UTF-16";
+:lang(ko) {word-break: keep-all; line-break:normal;}
+:lang(ja) {word-wrap:break-word; word-break:break-all;}
+::selection {background:#51a; color:white;}
+
+
+body {
+	height:100%; 
+	background-image:linear-gradient(to left,rgba(0, 0, 255, 0.1), rgba(30, 30, 255, 0.1), rgba(0, 0, 255, 0.1)),
+	url(purplestar.jpg); 
+	background-attachment:fixed;
+	background-size:30%;
+	padding-top:3%;}
+main {
+	margin:0px auto;
+	width:99%;}
+section {
+	margin:0px auto;
+	width:90%;}
+.ctnt:focus {
+	position: absolute; 
+	top:0px;}
+.ctnt {position:absolute; 
+	top:-100rem; 
+	font-size:150%; 
+	width:100%; 
+	font-weight:bolder;  
+	line-height:50px; 
+	background-color:#080; 
+	color:white; margin:0; 
+	text-align:center; 
+	vertical-align:middle; 
+	text-decoration:none; 
+	display:block; }
+
+table {
+	border-collapse:collapse; 
+	margin:5% auto; 
+	background-color:#00000088;}
+td,th {
+	font-family:"HY견고딕";
+	background-color: white; 
+	vertical-align:middle; 
+	border:1px solid #235; 
+	width:30%; 
+	line-height:1.5;
+	padding:2%; 
+	font-size:4vw;}
+th{background-color:#baf; 
+	font-weight:normal;
+	text-align:left;}
+td {font-weight:lighter;}
+caption {
+	width:1px; height:1px;
+	overflow:hidden;
+	position:relative;
+	z-index:-3;}
+ul {margin:0px; 
+	padding:0px;}
+li {list-style:none;}
+h1 {color:#ffa; 
+	font-weight:900;}
+
+
+.unsub th {background-clip: border-box;
+/*-webkit-background-clip: text;*/
+/*color: transparent;*/
+background-image:url(https://www.apple.com/v/iphone-xs/d/images/overview/copy_texture_4_large.jpg);}
+h2 {color:#ffffff;}
+
+br {display:none;}
+
+@media screen and (min-width:1200px) {
+ section {width:60%;}
+ td,th {font-size:1.2vw;}
+}
+@media screen and (max-width:320px) {
+	section {width:100%;}
+}
+
+
+
+
+
+
+
+@media (prefers-contrast:high) {
+	body {background-color:black;}
+	table {color:white;}
+	th,td {border:3px solid #76f;}
+	th {background-color:#eef; color:black;}
+	td {background-color:#103;}
+	.ctnt {background-color:#130;
+		border:solid 1px #0c0;}
+	::selection {background:#fff; color:black;}
+}
+@media (prefers-color-scheme:dark) {
+	body {background-color:black;}
+	table {color:white;}
+	th,td {border:1px solid #baf;}
+	th {background-color:#103;}
+	td {background-color:#326;}
+	.ctnt {background-color:#130;
+		border:solid 1px #0c0;}
+	::selection {background:#fff; color:black;}
+}
