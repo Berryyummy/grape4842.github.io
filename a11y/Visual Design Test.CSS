@@ -1,0 +1,80 @@
+@charset "UTF-16";
+:lang(ko) {
+	word-break: 
+	keep-all; 
+	line-break:normal; 
+	font-size:1.2vw;
+	font-family:HY견고딕;}
+
+:lang(ja) {word-wrap:break-word; word-break:break-all;}
+::selection {background:#51a; color:white;}
+
+br {display:none;}
+ul {
+	padding:0px;
+	list-style:none;
+	margin:0px;
+}
+#unamer {border:red solid;}
+input {
+	font-size:1vw;
+	border-width:2px;}
+input:active {background-color:#ffe;}
+
+button:focus {
+	outline-offset:2px; 
+	outline:solid 3px #87f;
+	z-index:2;}
+
+.okrb {border:1px solid darkblue; 
+	font-size:3vh; 
+	padding:1vw 2vw;}
+.okbb {
+	background-color:darkblue;
+	color:white;}
+.nobb {background-color:white;}
+
+.minib {font-size:0.5vw; 
+	padding:1vh 0.7vw;
+	border:none; 
+	color:white; 
+	background-color:#0a0;}
+
+.okb {font-size:30px; 
+	border:none; 
+	padding:1vh 1vw;
+	color:white; 
+	background-color:#070; 
+	font-weight:900;}
+
+.nprice {
+	font-weight:700; 
+	font-size:1vw; 
+	color:#777;}
+.DEAL {
+	font-weight:900; 
+	font-size:1.2vw; 
+	color:red;}
+.KWCAG5 {
+	text-align:center; 
+	border:solid gray 1px; 
+	padding:2vw 1vw;
+	width:20vw;}
+table,caption {
+	background-color:#eef;
+	padding:1vw;}
+table,div {margin:1vw 0px;}
+.red {color:red;}
+th,td {
+	text-align:left;
+	}
+
+#star {text-align:right;}
+
+#lili {margin:1vw 0px;}
+#lili li,#mlili li {
+	margin:0px; 
+	font-size:30px;}
+#mlili li {
+	margin-top:-0.5vw;
+}
