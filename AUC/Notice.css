@@ -707,8 +707,8 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	#MacS {
 		width: 1422px;
     position: relative;
-    left: 50%;
-    display: block;
+    left:0px;
+    display: flex;
     margin-top: 104px;}
 }
 
