@@ -1,0 +1,23 @@
+@charset "UTF-16";
+:lang(ko) {
+	word-break: 
+	keep-all; 
+	line-break:normal; 
+	font-size:1.2vw;
+	font-family:HY견고딕;}
+
+:lang(ja) {word-wrap:break-word; word-break:break-all;}
+::selection {background:#51a; color:white;}
+
+body {background-color:#FFA;}
+br {display:none;}
+ul {
+	padding:0px;
+	list-style:none;
+	margin:0px;}
+li {margin:1vw 0px;}
+button {
+	border:1px solid #111;
+	padding:1vh 1vw;}
+.aria-list button {background-color:#F90;}
+.aria-role button {background-color:#0C0;}

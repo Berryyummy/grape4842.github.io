@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-16"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta property="og:image" content="https://www.apple.com/v/macos/catalina/c/images/overview/hero/desktop_load__c7z7yfiz6i4i_medium.jpg"/>
+	<meta property="og:title" content="span태그에 aria를 일단 붙여본 페이지"/>
+	<meta property="og:description" content="센스리더가 얼마나 ARIA를 못하는지 알아보는 페이지"/>
+	<title>
+	WAI-ARIA 속성
+	</title>
+	<link rel="stylesheet" type="text/css" href="ErrorAria.css"/>
+</head>
+<body>
+	<p>해당 문서는 aria의 올바른 기능을 이해하기 이전에 센스리더에서 aria를 얼마나 감지할 수 있는지 테스트하기 위한 목록입니다.</p>
+	<ul class="aria-list">
+		<li>
+			<button aria-seleted="true">aria-selected</button>
+		</li>
+		<li>
+			<button aria-checked="true">aria-checked</button>
+		</li>
+		<li>
+			<button aria-expanded="true">aria-expanded</button>
+		</li>
+		<li>
+			<button aria-atomic="true">aria-atomic</button>
+		</li>
+		<li>
+			<button aria-busy="busy">aria-busy</button>
+		</li>
+		<li>
+			<button aria-disabled="true">aria-disabled</button>
+		</li>
+		<li>
+			<button aria-grabbed="true">aria-grabbed</button>
+		</li>
+		<li>
+			<button aria-haspopup="true">aria-haspopup</button>
+		</li>
+		<li>
+			<button aria-invalid="true">aria-invalid</button>
+		</li>
+		<li>
+			<button aria-label="aria로 제공된 label">aria-label</button>
+		</li>
+		<li>
+			<button aria-multiline="true">aria-multiline</button>
+		</li>
+	</ul>
+
+<h1>사용할 것이라 예상되는 role속성 선언</h1>
+	<ul class="aria-role">
+		<li>
+			<button role="alert">alert</button>
+		</li>
+		<li>
+			<button role="alertdialog">alertdialog</button>
+		</li>
+		<li>
+			<button role="application">application</button>
+		</li>
+		<li>
+			<button role="article">article</button>
+		</li>
+		<li>
+			<button role="banner">banner</button>
+		</li>
+		<li>
+			<button role="button">button</button>
+		</li>
+		<li>
+			<button role="checkbox">checkbox</button>
+		</li>
+		<li>
+			<button role="columheader">columheader</button>
+		</li>
+		<li>
+			<button role="combobox">combobox</button>
+		</li>
+		<li>
+			<button role="complementary">complementary</button>
+		</li>
+		<li>
+			<button role="contentinfo">contentinfo</button>
+		</li>
+		<li>
+			<button role="definition">definition</button>
+		</li>
+		<li>
+			<button role="dialog">dialog</button>
+		</li>
+		<li>
+			<button role="directory">directory</button>
+		</li>
+		<li>
+			<button role="document">document</button>
+		</li>
+		<li>
+			<button role="form">form</button>
+		</li>
+		<li>
+			<button role="grid">grid</button>
+		</li>
+		<li>
+			<button role="gridcell">gridcell</button>
+		</li>
+		<li>
+			<button role="group">group</button>
+		</li>
+		<li>
+			<button role="heading" aria-level="2">heading level 2</button>
+		</li>
+		<li>
+			<button role="img">img</button>
+		</li>
+		<li>
+			<button role="link">link</button>
+		</li>
+		<li>
+			<button role="list">list</button>
+		</li>
+		<li>
+			<button role="listbox">listbox</button>
+		</li>
+		<li>
+			<button role="listitem">listitem</button>
+		</li>
+		<li>
+			<button role="log">log</button>
+		</li>
+		<li>
+			<button role="main">main</button>
+		</li>
+		<li>
+			<button role="menu">menu</button>
+		</li>
+		<li>
+			<button role="menubar">menubar</button>
+		</li>
+		<li>
+			<button role="menuitem">menuitem</button>
+		</li>
+		<li>
+			<button role="menuitemcheckbox">menuitemcheckbox</button>
+		</li>
+		<li>
+			<button role="menuitemradio">menuitemradio</button>
+		</li>
+		<li>
+			<button role="navigation">navigation</button>
+		</li>
+		<li>
+			<button role="note">note</button>
+		</li>
+		<li>
+			<button role="presentation">presentation</button>
+		</li>
+		<li>
+			<button role="progressbar">progressbar</button>
+		</li>
+		<li>
+			<button role="region" aria-label="리전">region</button>
+		</li>
+		<li>
+			<button role="scrollbar">scrollbar</button>
+		</li>
+		<li>
+			<button role="search">search</button>
+		</li>
+		<li>
+			<button role="separator">separator</button>
+		</li>
+		<li>
+			<button role="slider">slider</button>
+		</li>
+		<li>
+			<button role="spinbutton">spinbutton</button>
+		</li>
+		<li>
+			<button role="status">status</button>
+		</li>
+		<li>
+			<button role="tab">tab</button>
+		</li>
+		<li>
+			<button role="tablist">tablist</button>
+		</li>
+		<li>
+			<button role="tabpanel">tabpanel</button>
+		</li>
+		<li>
+			<button role="textbox">textbox</button>
+		</li>
+		<li>
+			<button role="timer">timer</button>
+		</li>
+		<li>
+			<button role="toolbar">toolbar</button>
+		</li>
+		<li>
+			<button role="tooltip">tooltip</button>
+		</li>
+		<li>
+			<button role="tree">tree</button>
+		</li>
+		<li>
+			<button role="treegrid">treegrid</button>
+		</li>
+		<li>
+			<button role="treeitem">treeitem</button>
+		</li>
+	</ul>
+</body>
+</html>
