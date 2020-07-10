@@ -8,6 +8,11 @@
 
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#51a; color:white;}
+body {margin:0px;}
+main {
+	box-sizing:border-box;
+	width:60%; 
+	margin:0px auto;}
 
 br {display:none;}
 ul {
@@ -15,10 +20,12 @@ ul {
 	list-style:none;
 	margin:0px;
 }
+
 #unamer {border:red solid;}
 input {
 	font-size:1vw;
 	border-width:2px;}
+
 input:active {background-color:#ffe;}
 
 button:focus {
@@ -29,6 +36,7 @@ button:focus {
 .okrb {border:1px solid darkblue; 
 	font-size:3vh; 
 	padding:1vw 2vw;}
+
 .okbb {
 	background-color:darkblue;
 	color:white;}
@@ -58,8 +66,8 @@ button:focus {
 .KWCAG5 {
 	text-align:center; 
 	border:solid gray 1px; 
-	padding:2vw 1vw;
-	width:20vw;}
+	padding:2vw 1vw;}
+
 table,caption {
 	background-color:#eef;
 	padding:1vw;}
@@ -75,6 +83,7 @@ th,td {
 #lili li,#mlili li {
 	margin:0px; 
 	font-size:30px;}
+
 #mlili li {
 	margin-top:-0.5vw;
 }

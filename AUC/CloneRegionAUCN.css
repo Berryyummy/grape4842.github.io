@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "UTF-16";
 :lang(ko) {word-break: keep-all; line-break:normal;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#76f; color:white;}
@@ -32,7 +32,8 @@ button {border:none;}
 table {border-collapse:collapse;}
 img,video 
 {width:100%;}
-.expanded {display:none;}
+.expanded {
+	display:none;}
 .w980 {
 	width:90%;
 	vertical-align:middle; 
