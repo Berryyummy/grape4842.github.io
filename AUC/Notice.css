@@ -402,28 +402,18 @@ ul,.lalist {
 	}
 
 #Mlist {
-	padding: 17px 0 11px;`
-	border-bottom: 1px solid #d2d2d7;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-   	border-color: #424245;
-    border-top-color: #424245;
-    border-right-color: #424245;
-    border-bottom-color: #424245;
-    border-left-color: #424245;
-    color: #6e6e73;
-}
-
-}
+	/*grid-template-columns:minmax(50% minmax);*/
+	padding: 17px 0 11px;}
+#Mlist ul {
+	place-content:center;
+	display:flex;
+	margin:0px auto;
+	flex-wrap:wrap;
+	}
 #Mlist h4 {background-image:none;}
-#Mlist th {
-	text-align:left;
-	font-size:1rem;
-	padding:3% 0px;
-}
-
+#Mlist li {width:calc(90%/2);
+	margin:10px;}
 #Mlist a {
-	overflow:hidden;
 	z-index:100;
 	position:relative;
 	border-radius:1rem;
@@ -450,9 +440,6 @@ ul,.lalist {
 }
 
 #Mlist span {vertical-align:top;}
-#Mlist td { 
-	width: calc(100% / 2);
-	padding:1%;}
 #Mlist p {display:none;}
 
 #RM4 a{
@@ -653,14 +640,7 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	#raina5 {fill:#69f;}
 	#raina7 {fill:#87f;}
 
-	#Mlist {
-		border-bottom: 1px solid #d2d2d7;
-	    border-bottom-width: 1px;
-	    border-bottom-style: solid;
-	    border-bottom-color: #d2d2d7;
-	    color: #86868b;
-	    padding: 17px 0 11px;
-		}
+
 	#Mlist h4 {
 		height:20vh;
 		margin-top:2rem;
@@ -804,9 +784,7 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	#memoticon {width:80%;}
 	.wsmall {display:block;}
 	.wbig {display:none;}
-	#Mlist td {
-		display:grid; 
-		width:auto;}
+	#Mlist li {width:100%;}
 	#Mlist a {padding:2rem 0.5rem;}
 	#Mlist a:before {
 		background-size:contain;
