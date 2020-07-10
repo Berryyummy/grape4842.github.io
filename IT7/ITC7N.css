@@ -1,5 +1,5 @@
 @charset "UTF-16";
-:lang(ko) {word-break: keep-all; line-break:normal;}
+:lang(ko) {word-break: keep-all; line-break:normal; text-rendering: optimizeLegibility;}
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#bfd; color:#420;}
 
@@ -11,10 +11,9 @@ body {	background-image:linear-gradient(to left,rgba(10, 0, 255, 0.1) , rgba(10,
 		background-size:40%;
 		background-attachment:fixed;
 		background-position:center center;
-}
-body * {
-		-webkit-font-smoothing: antialiased;
 		box-sizing:border-box;
+}
+body * {-webkit-font-smoothing: antialiased;
 		font-family:"SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY 돋움","맑은 고딕","HY 견고딕","Lexi Gulim","Helvetica Neue","Helvetica","Arial","sans-serif";
 	}
 
@@ -57,6 +56,8 @@ nav a {
 	}
 .navi {margin:0px;}
 .navi a,h3 {
+	box-sizing:border-box;
+	text-overflow:clip;
 	font-size:100%;
 	padding:2vmin;
 	margin:0px;}
@@ -76,7 +77,7 @@ h3 {background-color:black;
 
 
 main {
-	margin:auto auto;
+	margin:auto;
 	margin-bottom:3vh;}
 
 	
@@ -310,14 +311,16 @@ footer {
 @media screen and (min-width:1050px) {
 	.w90 {width:50%;}
 	#FOLD {width:60%;}
-	.navi a,h3 {font-size:2rem; padding:1rem;}
+	.navi a,h3 {font-size:2rem; padding:1rem; box-sizing:border-box;}
 }
 
 @media screen and (min-width:700px) and (max-width:1040px){
 	.w90 {width:70%;}
 	#FOLD {width:80%;}
 }
-
+@media screen and (max-width:320px){
+	.navi a{font-size:60%;}
+}
 
 
 
