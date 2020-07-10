@@ -12,6 +12,7 @@ body {	background-image:linear-gradient(to left,rgba(10, 0, 255, 0.1) , rgba(10,
 		background-attachment:fixed;
 		background-position:center center;
 		box-sizing:border-box;
+		height:100%;
 }
 body * {-webkit-font-smoothing: antialiased;
 		font-family:"SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY 돋움","맑은 고딕","HY 견고딕","Lexi Gulim","Helvetica Neue","Helvetica","Arial","sans-serif";
@@ -87,7 +88,7 @@ main {
 	margin-bottom:80px;
 	position:relative;
 	bottom:0px;
-	padding:3vmax 0px;
+	padding-top:3vmax;
 	justify-content:center;
 	text-align:center;
 	overflow-x:hidden;
@@ -165,7 +166,7 @@ dd,dt {margin:0px; font-weight:400;}
 	z-index:3;
 	position:relative;
 	animation-name:fold;
-	animation-delay:0.5s;
+	animation-delay:0.3s;
 	animation-duration:2s;
 	animation-fill-mode:forwards;
 	transform:scale(3);	
@@ -322,9 +323,14 @@ footer {
 @media screen and (min-width:700px) and (max-width:1040px){
 	.w90 {width:70%;}
 	#FOLD {width:80%;}
+	#HELLO {height:99vh}
+}
+@media screen and (min-width:321px) and (max-width:768px){
+	#HELLO {height:99vh}
 }
 @media screen and (max-width:320px){
 	.navi a{font-size:60%;}
+	#HELLO {height:100%;}
 }
 
 
