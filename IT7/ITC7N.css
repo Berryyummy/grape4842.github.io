@@ -54,7 +54,8 @@ nav a {
 		width:99.9%;
 		align-items:center;
 	}
-.navi {margin:0px;}
+.navi {margin:0px;
+	box-sizing:border-box;}
 .navi a,h3 {
 	box-sizing:border-box;
 	text-overflow:clip;
