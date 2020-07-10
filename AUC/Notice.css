@@ -504,7 +504,9 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
 	*/background-size:95% 95%;
 	color:white;
-	text-shadow:1px 1px black;}
+	text-shadow: #000 0 0 0.5rem, #000 2px 2px 2px;
+}
+
 	#Myuna a:before{
 	background-image:url(img/PurpleMetalApple.png);
 	background-size:140%;
