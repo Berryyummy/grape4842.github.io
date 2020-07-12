@@ -42,7 +42,8 @@ header {
 	top:0px;
 	width:100%;
 	margin:0px;
-	padding-bottom:0px;}
+	padding-bottom:0px;
+	border-bottom:#222425 solid 1px;}
 
 nav {margin:0px;
 	padding:0px;
@@ -64,7 +65,9 @@ nav a {
 	padding:2vmin;
 	margin:0px;}
 
-h3 {background-color:black;
+h3 {backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	background-color:#000a;
 	width:100%;
 	color:#def;
 }
