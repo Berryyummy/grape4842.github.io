@@ -36,7 +36,7 @@
 			<button aria-grabbed="true">aria-grabbed</button>
 		</li>
 		<li>
-			<button aria-haspopup="true">aria-haspopup</button>
+			<button aria-haspopup="menu">aria-haspopup</button>
 		</li>
 		<li>
 			<button aria-invalid="true">aria-invalid</button>
@@ -51,10 +51,16 @@
 			<button aria-pressed="true">aria-pressed</button>
 		</li>
 		<li>
-			<button aria-readonly="true">aria-readonly</button>
+			<button aria-readonly="true" role="textbox">aria-readonly textbox</button>
 		</li>
 		<li>
-			<button aria-required="true">aria-required</button>
+			<button role="combobox" aria-required="true">aria-required combobox</button>
+		</li>
+		<li>
+			<button aria-modal="true">aria-modal</button>
+		</li>
+		<li>
+			<button aria-current="page">aria-current</button>
 		</li>
 	</ul>
 
@@ -169,7 +175,7 @@
 			<button role="progressbar">progressbar</button>
 		</li>
 		<li>
-			<button role="region" aria-label="리전">region</button>
+			<button role="region" aria-label="리전 테스트">region</button>
 		</li>
 		<li>
 			<button role="scrollbar">scrollbar</button>
@@ -189,14 +195,13 @@
 		<li>
 			<button role="status">status</button>
 		</li>
-		<li>
-			<button role="tab">tab</button>
-		</li>
-		<li>
-			<button role="tablist">tablist</button>
-		</li>
-		<li>
-			<button role="tabpanel">tabpanel</button>
+		<li role="tablist">
+			<button role="tab" id="tab1" aria-controls="tp1">tab1 aria-controls</button>
+			<button role="tab" id="tab2" aria-controls="tp2">tab2 aria-controls</button>
+			<button role="tab" id="tab3" aria-controls="tp3">tab3 aria-controls</button>
+			<div aria-labeledby="tab1" tabindex="0" role="tabpanel" id="tp1">tabpanel1 aria-labeledby</div>
+			<div aria-labeledby="tab2" tabindex="0" role="tabpanel" id="tp2">tabpanel2 aria-labeledby</div>
+			<div aria-labeledby="tab3" tabindex="0" role="tabpanel" id="tp3">tabpanel3 aria-labeledby</div>
 		</li>
 		<li>
 			<button role="textbox">textbox</button>
@@ -208,7 +213,8 @@
 			<button role="toolbar">toolbar</button>
 		</li>
 		<li>
-			<button role="tooltip">tooltip</button>
+			<button aria-describedby="ttt">툴팁 테스트 aria-describedby</button>
+			<p role="tooltip" id="ttt">툴팁을 시험해봅니다.</p>
 		</li>
 		<li>
 			<button role="tree">tree</button>
