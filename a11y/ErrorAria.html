@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="UTF-16"/>
+	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta property="og:image" content="https://www.apple.com/v/macos/catalina/c/images/overview/hero/desktop_load__c7z7yfiz6i4i_medium.jpg"/>
 	<meta property="og:title" content="button태그에 aria를 일단 붙여본 페이지"/>
@@ -15,7 +15,7 @@
 	<p>해당 문서는 aria의 올바른 기능을 이해하기 이전에 센스리더에서 aria를 얼마나 감지할 수 있는지 테스트하기 위한 목록입니다.</p>
 	<ul class="aria-list">
 		<li>
-			<button aria-selected="true">aria-selected</button>
+			<a href="" aria-selected="true">aria-selected</a>
 		</li>
 		<li>
 			<button aria-checked="true">aria-checked</button>
@@ -74,13 +74,13 @@
 			<button role="alertdialog">alertdialog</button>
 		</li>
 		<li>
-			<button role="application">application</button>
+			<section role="application">application</section>
 		</li>
 		<li>
 			<button role="article">article</button>
 		</li>
 		<li>
-			<button role="banner">banner</button>
+			<aside role="banner">banner</aside>
 		</li>
 		<li>
 			<button role="button">button</button>
@@ -104,7 +104,7 @@
 			<button role="definition">definition</button>
 		</li>
 		<li>
-			<button role="dialog">dialog</button>
+			<div role="dialog">dialog</div>
 		</li>
 		<li>
 			<button role="directory">directory</button>
@@ -113,7 +113,7 @@
 			<button role="document">document</button>
 		</li>
 		<li>
-			<button role="form">form</button>
+			<div role="form">form</div>
 		</li>
 		<li>
 			<button role="grid">grid</button>
@@ -148,14 +148,24 @@
 		<li>
 			<button role="main">main</button>
 		</li>
-		<li>
-			<button role="menu">menu</button>
+		<li role="menubar">
+			menubar
 		</li>
 		<li>
-			<button role="menubar">menubar</button>
-		</li>
-		<li>
-			<button role="menuitem">menuitem</button>
+			<ul>
+				<li>
+					<a href="" role="menuitem">role="menuitem1"</a>
+				</li>
+				<li>
+					<a href="" role="menuitem">role="menuitem2"</a>
+				</li>
+				<li>
+					<a href="" role="menuitem">role="menuitem3"</a>
+				</li>
+				<li>
+					<a href="" role="menuitem">role="menuitem4"</a>
+				</li>
+			</ul>
 		</li>
 		<li>
 			<button role="menuitemcheckbox">menuitemcheckbox</button>
@@ -176,7 +186,7 @@
 			<button role="progressbar">progressbar</button>
 		</li>
 		<li>
-			<button role="region" aria-label="리전 테스트">region</button>
+			<div role="region" aria-label="리전 테스트">region</div>
 		</li>
 		<li>
 			<button role="scrollbar">scrollbar</button>
