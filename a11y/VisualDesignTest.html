@@ -6,34 +6,34 @@
 <meta property="og:image" content=""/>
 <meta property="og:title" content="비주얼 디자인 8-1 자료를 위한 HTML"/>
 <meta property="og:description" content=""/>
-<link rel="stylesheet" type="text/css" href="Visual Design Test.CSS">
+<link rel="stylesheet" type="text/css" href="Visual Design Test.CSS"/>
 <title>Visual Design Test</title>
 </head>
 
 
 
 <body>
-<table class="redt">
-<caption>
-<strong><span class="red">빨간색</span>으로 표시된 항목은 필수 항목입니다.</strong>
-</caption>
-<tr>
-<th>
-<label for="unamer">성 명:</label>
-</th>
-<td>
-<input type="text" title="필수" id="unamer">
-</td>
-</tr>
-<tr>
-<th>
-<label for="ubirthr">생년월일:</label>
-</th>
-<td>
-<input type="text" title="숫자만 입력하세요" id="ubirthr" placehorder="19900101">
-</td>
-</tr></table>
-
+	<main>
+		<table class="redt">
+		<caption>
+		<strong><span class="red">빨간색</span>으로 표시된 항목은 필수 항목입니다.</strong>
+		</caption>
+		<tr>
+		<th>
+		<label for="unamer">성 명:</label>
+		</th>
+		<td>
+		<input type="text" title="필수" id="unamer">
+		</td>
+		</tr>
+		<tr>
+		<th>
+		<label for="ubirthr">생년월일:</label>
+		</th>
+		<td>
+		<input type="text" title="숫자만 입력하세요" id="ubirthr" placehorder="19900101">
+		</td>
+		</tr></table>
 <table class="redt">
 <caption>
 <strong><span class="red">빨간색</span>으로 표시된 항목은 필수 항목입니다.</strong>
@@ -180,39 +180,39 @@
 <div class="KWCAG5">
 	<p>결제를 진행하시겠습니까?</p>
 
-<button style="font-weight:900; font-size:30px; border:red 1px solid; width:80px; height:60px; color:white; background-color:#f50; border-radius:10%; margin:0px 5px">
+<button class="yesbd">
 결제
 </button>
-<button style="font-weight:900; font-size:30px; border:blue 1px solid; width:80px; height:60px; color:white; background-color:#05f; border-radius:10%; margin:0px 5px;">
+<button class="nobd">
 취소
 </button>
 </div><br><br>
 <div class="KWCAG5">
 	<p>정말로 탈퇴하시겠습니까?</p>
-<button style="font-weight:900; font-size:30px; border:red 1px solid; width:150px; height:60px; color:white; background-color:#f50; border-radius:15px; margin:0px 5px">
+<button class="nobd">
 탈퇴취소
 </button>
-<button style="font-weight:900; font-size:30px; border:blue 1px solid; width:150px; height:60px; color:white; background-color:#05f; border-radius:15px; margin:0px 5px;">
+<button class="yesbd">
 탈퇴하기
 </button>
 </div>
 
 <div class="KWCAG5">
 	<p>신청하시겠습니까?</p>
-<button style="font-weight:900; font-size:30px; border:red 1px solid; width:120px; height:60px; color:darkred; background-color:#fa5; border-radius:10%; margin:0px 5px">
+<button class="yesbd2">
 예
 </button>
-<button style="font-weight:900; font-size:30px; border:blue 1px solid; width:120px; height:60px; color:darkblue; background-color:#5af; border-radius:10%; margin:0px 5px;">
+<button class="nobd2">
 아니오
 </button>
 </div>
 <div class="KWCAG5">
 	<p>정말로 해지 하시겠습니까?</p>
 
-<button style="font-weight:900; font-size:30px; border:blue 1px solid; width:120px; height:60px; color:darkblue; background-color:#5af; border-radius:20px; margin:0px 5px;">
+<button class="nobd2">
 아니오
 </button>
-<button style="font-weight:900; font-size:30px; border:red 1px solid; width:120px; height:60px; color:darkred; background-color:#fa5; border-radius:20px; margin:0px 5px">
+<button class="yesbd2">
 예
 </button>
 </div>
@@ -222,6 +222,6 @@
 
 <input title="개인정보 수집 밎 이용동의" type="checkbox" id="Priok">
 <label for="Priok">동의합니다.</label>
-
+</main>
 </body>
 </html>
