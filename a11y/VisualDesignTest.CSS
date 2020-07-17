@@ -3,7 +3,8 @@
 :lang(ko) {word-break: 
 	keep-all; 
 	line-break:normal; 
-	font-size:1.2vw;}
+	font-size:1.2vmax;
+	font-family:HY견고딕;}
 
 ::selection {background:#51b; color:white;}
 
@@ -20,26 +21,34 @@ ul {padding:0px;
 }
 
 #unamer {border:red solid;}
+input {border:slateblue 1px solid;}
 input {
-	font-size:1vw;
+	font-size:1vmax;
 	border-width:2px;}
 
-input:active {background-color:#ffe;}
+input:focus {background-color:#ffd;}
 
-button {width:2vmax;}
+button {min-width:2vmax;
+		padding:1vmin 2vmin;}
 
 button:focus {outline-offset:2px; 
 	outline:solid 3px #87f;
 	z-index:2;}
 
 .okrb {border:1px solid darkblue; 
-	font-size:3vh; 
-	padding:1vw 2vw;}
+	font-size:3vmin; 
+	padding:1vmax 2vmax;}
 
 .okbb {background-color:darkblue;
 	color:white;}
-.nobb {background-color:white;}
-
+.nobb {background-color:white;
+	color:darkblue;}
+#maru {border-radius: 100%; 
+	min-width:3vmax;
+	min-height:3vmax;}
+#shikaku {border-radius: 0%; 
+	min-width:3vmax;
+	min-height:3vmax;}
 .yesbd,.nobd {border-radius:15px;
 	color:white; 
 }
@@ -53,48 +62,50 @@ button:focus {outline-offset:2px;
 }
 
 .yesbd2,.nobd2 {
-	color:darkred;
 	border-radius:10%;
 }
 .yesbd2 {
-	border:red 1px solid;
+	color:darkred;
+	border:darkred 1px solid;
 	background-color:#fa5;
 }
 .nobd2 {
 	color:darkblue; 
+	border:darkblue 1px solid;
 	background-color:#5af;
 }
-.minib {font-size:0.5vw; 
-	padding:1vh 0.7vw;
+.minib {font-size:0.5vmin; 
+	padding:1vmin 0.7vmax;
 	border:none; 
 	color:white; 
 	background-color:#0a0;}
 
-.okb {font-size:30px; 
+.okb {font-size:2vmax; 
 	border:none; 
-	padding:1vh 1vw;
+	padding:1vmin 1vmax;
 	color:white; 
 	background-color:#070; 
 	font-weight:900;}
 
 .nprice {
 	font-weight:700; 
-	font-size:1vw; 
+	font-size:1vmax; 
 	color:#777;}
 .DEAL {
 	font-weight:900; 
-	font-size:1.2vw; 
+	font-size:1.2vmax; 
 	color:red;}
 	
 .KWCAG5 {
+	width:20vmax;
 	text-align:center; 
 	border:solid gray 1px; 
-	padding:2vw 1vw;}
+	padding:2vmin 1vmin;}
 
 table,caption {
 	background-color:#eef;
-	padding:1vw;}
-table,div {margin:1vw 0px;}
+	padding:1vmax;}
+table,div {margin:1vmax 0px;}
 .red {color:red;}
 th,td {
 	text-align:left;
@@ -102,9 +113,13 @@ th,td {
 
 #star {text-align:right;}
 
-#lili {margin:1vw 0px;}
+#lili {margin:1vmax 0px;}
 #lili li,#mlili li {
 	margin:0px; 
-	font-size:30px;}
+	font-size:2vmin;}
 
-#mlili li {margin-top:-0.5vw;}
+#mlili li {margin-top:-0.5vmax;}
+
+@media screen and (max-width:760px) {
+	main {width:90%;}
+}
