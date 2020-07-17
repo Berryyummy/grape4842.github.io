@@ -39,7 +39,8 @@
 			<button aria-haspopup="menu">aria-haspopup</button>
 		</li>
 		<li>
-			<button aria-invalid="true">aria-invalid</button>
+			<input aria-errormessage="EM" type="text" title="aria-invalid test" aria-invalid="true"/>
+			<p id="EM">아리아로 오류를 알리는 속성 테스트</p>
 		</li>
 		<li>
 			<button aria-label="aria로 제공된 label">aria-label</button>
@@ -57,10 +58,10 @@
 			<button role="combobox" aria-required="true">aria-required combobox</button>
 		</li>
 		<li>
-			<button aria-modal="true">aria-modal</button>
+			<div aria-modal="true" role="dialog">aria-modal</div>
 		</li>
 		<li>
-			<button aria-current="page">aria-current</button>
+			<a href="123" aria-current="true">aria-current</a>
 		</li>
 	</ul>
 
