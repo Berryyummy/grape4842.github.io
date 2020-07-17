@@ -1,13 +1,10 @@
 @charset "UTF-8";
-:lang(ko) {
-	word-break: 
+:lang(ja) {word-wrap:break-word; word-break:break-all;}
+:lang(ko) {word-break: 
 	keep-all; 
 	line-break:normal; 
-	font-size:1.2vw;
-	font-family:HY견고딕;
-}
+	font-size:1.2vw;}
 
-:lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#51b; color:white;}
 
 body {margin:0px;}
