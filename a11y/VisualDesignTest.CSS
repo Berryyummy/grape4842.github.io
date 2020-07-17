@@ -27,8 +27,8 @@ input {
 input:active {background-color:#ffe;}
 
 button {width:2vmax;}
-button:focus {
-	outline-offset:2px; 
+
+button:focus {outline-offset:2px; 
 	outline:solid 3px #87f;
 	z-index:2;}
 
@@ -36,17 +36,14 @@ button:focus {
 	font-size:3vh; 
 	padding:1vw 2vw;}
 
-.okbb {
-	background-color:darkblue;
+.okbb {background-color:darkblue;
 	color:white;}
 .nobb {background-color:white;}
 
-.yesbd,.nobd {
-	border-radius:15px;
+.yesbd,.nobd {border-radius:15px;
 	color:white; 
 }
-.yesbd {
-	border:red 1px solid; 
+.yesbd {border:red 1px solid; 
 	background-color:#f50; 
 }
 
@@ -110,6 +107,4 @@ th,td {
 	margin:0px; 
 	font-size:30px;}
 
-#mlili li {
-	margin-top:-0.5vw;
-}
+#mlili li {margin-top:-0.5vw;}
