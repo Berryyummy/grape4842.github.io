@@ -3,7 +3,7 @@
 :lang(ko) {word-break: 
 	keep-all; 
 	line-break:normal; 
-	font-size:1.2vmax;
+	font-size:1.2rem;
 	font-family:HY견고딕;}
 
 ::selection {background:#51b; color:white;}
@@ -43,12 +43,6 @@ button:focus {outline-offset:2px;
 	color:white;}
 .nobb {background-color:white;
 	color:darkblue;}
-#maru {border-radius: 100%; 
-	min-width:3vmax;
-	min-height:3vmax;}
-#shikaku {border-radius: 0%; 
-	min-width:3vmax;
-	min-height:3vmax;}
 .yesbd,.nobd {border-radius:15px;
 	color:white; 
 }
@@ -87,6 +81,7 @@ button:focus {outline-offset:2px;
 	background-color:#070; 
 	font-weight:900;}
 
+#SALE {text-align:left;}
 .nprice {
 	font-weight:700; 
 	font-size:1vmax; 
@@ -94,7 +89,7 @@ button:focus {outline-offset:2px;
 .DEAL {
 	font-weight:900; 
 	font-size:1.2vmax; 
-	color:red;}
+	color:#d30;}
 	
 .KWCAG5 {
 	width:20vmax;
@@ -119,6 +114,14 @@ th,td {
 	font-size:2vmin;}
 
 #mlili li {margin-top:-0.5vmax;}
+
+.maru {border-radius: 100%; 
+	min-width:3vmax;
+	min-height:3vmax;}
+.shikaku {border-radius: 0%; 
+	min-width:3vmax;
+	min-height:3vmax;}
+
 
 @media screen and (max-width:760px) {
 	main {width:90%;}

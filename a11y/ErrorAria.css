@@ -3,7 +3,7 @@
 	word-break: 
 	keep-all; 
 	line-break:normal; 
-	font-size:1.2vw;
+	font-size:1.4rem;
 	font-family:HY견고딕;}
 
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
