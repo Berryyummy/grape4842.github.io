@@ -27,6 +27,7 @@ input {
 	border-width:2px;}
 
 input:focus {background-color:#ffd;}
+input:focus+label
 
 button {min-width:2vmax;
 		padding:1vmin 2vmin;}
@@ -122,6 +123,16 @@ th,td {
 	min-width:3vmax;
 	min-height:3vmax;}
 
+.iconT {
+	background-color:white;
+	border-collapse:collapse;}
+.iconT thead{background-color:#dfb;}
+.iconT td,.iconT th {
+	border:1px solid black;
+	padding:1vmax;}
+.sunD {color:#d30;}
+.satD {color:#54f;}
+.iconBOX dd,.iconBOX dt {margin:0px; display:inline-flex;}
 
 @media screen and (max-width:760px) {
 	main {width:90%;}
