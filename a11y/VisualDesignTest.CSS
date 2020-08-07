@@ -123,16 +123,25 @@ th,td {
 	min-width:3vmax;
 	min-height:3vmax;}
 
+.iconBOX {position:relative;
+	background-color:#eef;
+	padding:1vmax;}
 .iconT {
 	background-color:white;
 	border-collapse:collapse;}
-.iconT thead{background-color:#dfb;}
+.iconT thead{background-color:#cfb;}
 .iconT td,.iconT th {
 	border:1px solid black;
 	padding:1vmax;}
 .sunD {color:#d30;}
 .satD {color:#54f;}
+.iconlistBOX {position:absolute; top:10%; left:50%;}
 .iconBOX dd,.iconBOX dt {margin:0px; display:inline-flex;}
+.icon {
+	display:block;
+	text-align:center;
+	font-weight:900;
+}
 
 @media screen and (max-width:760px) {
 	main {width:90%;}
