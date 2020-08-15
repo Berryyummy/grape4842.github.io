@@ -3,25 +3,26 @@
 :lang(ja) {word-wrap:break-word; word-break:break-all;}
 ::selection {background:#bfd; color:#420;}
 
-.noplay,#nonegram {display:none;}
 img,video {width:100%;}
-body {	background-image:linear-gradient(to left,rgba(10, 0, 255, 0.1) , rgba(10, 0, 255, 0.1) , rgba(10, 0, 255, 0.1)),
+body {
+		background-image:linear-gradient(to left,rgba(10, 0, 255, 0.1) , rgba(10, 0, 255, 0.1) , rgba(10, 0, 255, 0.1)),
 		url(purplestar.jpg);
-		/*url(https://c.wallhere.com/photos/bd/d8/1920x1200_px_abstract_background_black_multicolor_Purple_Sparkles_stars-1527847.jpg!d);*/
-		background-size:40%;
-		background-attachment:fixed;
 		background-position:center center;
+		background-size:90%;
+/*		background:url(https://images.samsung.com/is/image/samsung/p5/sec/eventlist/galaxy_bts_edition/20200708/bg_pd_top_pc.jpg);
+		background-size:300%;
+		background-position:top right;
+*/		background-attachment:fixed;
 		box-sizing:border-box;
 		height:100%;
+		color:white;
+		margin:0px;
 }
 body * {-webkit-font-smoothing: antialiased;
 		font-family:"SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY 돋움","맑은 고딕","HY 견고딕","Lexi Gulim","Helvetica Neue","Helvetica","Arial","sans-serif";
 	}
+.light {display:none;}
 
-body {
-	background-color:#001; 
-	color:white;
-	margin:0px auto;}
 
 #mainjump {
 	background-color:#630; 
@@ -87,7 +88,6 @@ main {
 
 	
 #HELLO {
-	viewport-fit:cover;
 	margin-bottom:80px;
 	position:relative;
 	bottom:0px;
@@ -95,9 +95,13 @@ main {
 	justify-content:center;
 	text-align:center;
 	overflow-x:hidden;
-	box-shadow:0px 0px 30px 30px #222425;
-	background:linear-gradient(to bottom, #000000 90%, #222425);}
- /*url(https://images.samsung.com/is/image/samsung/p5/sec/eventlist/galaxy_bts_edition/20200708/bg_pd_top_pc.jpg), */
+/*	background:url(https://images.samsung.com/sec/smartphones/galaxy-z-flip/images/galaxy-z-flip_stand_device_purple.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	background:url(https://images.samsung.com/is/image/samsung/p5/sec/eventlist/galaxy_bts_edition/20200708/bg_pd_top_pc.jpg);*/
+	background-color:black;
+	box-shadow:0px 0px 30px 30px #000000;
+}
 #ITtitle {
 	width:100%;
 	}
@@ -165,7 +169,7 @@ dd,dt {margin:0px; font-weight:400;}
 	100% {opacity:1; top:0rem;}}
 
 
-
+.Gram {display:none;}
 #FOLD {
 	z-index:3;
 	position:relative;
@@ -182,9 +186,17 @@ dd,dt {margin:0px; font-weight:400;}
 	70% {transform:scale(0.5);}
 	100% {transform:scale(1); opacity:1;}
 }
+#nonegram,#LGGram {display:none;}
+@media (prefers-reduced-motion:no-preference) and (prefers-color-scheme:light){
+	#LGGram {display:block;}
+}
+
+@media (prefers-reduced-motion:reduce) and (prefers-color-scheme:light){
+	#nonegram {display:block;}
+}
 
 @media (prefers-reduced-motion:reduce) {
-	.playing,#gram {display:none;}
+	.playing {display:none;}
 	.noplay {display:unset;}
   #FOLD {
     animation: none;
@@ -196,11 +208,13 @@ dd,dt {margin:0px; font-weight:400;}
 	animation:none;
 	left:0;
 	top:0px;
-	opacity:1;}}
-
-@media (prefers-reduced-motion:reduce) and (prefers-color-scheme:light) {
-	#nonegram{display:unset;}
+	opacity:1;}
 }
+@media (prefers-reduced-motion:no-preference) {
+.noplay {display:none;}
+.playing {display:block;}
+}
+
 
 
 
@@ -232,8 +246,6 @@ footer {
 	padding:5%;
 	background-color:black;}
 #CP {margin:0px auto;}
-.light,.Gram {display:none;}
-
 
 
 
@@ -321,16 +333,17 @@ footer {
 @media screen and (min-width:1050px) {
 	.w90 {width:50%;}
 	#FOLD {width:60%;}
+	.note20 {width:40%; margin:0 auto;}
+	body {background-size:40%;}
 	.navi a,h3 {font-size:2rem; padding:1rem; box-sizing:border-box;}
 }
 
 @media screen and (min-width:700px) and (max-width:1040px){
 	.w90 {width:70%;}
 	#FOLD {width:80%;}
-	#HELLO {height:99vh}
 }
 @media screen and (min-width:321px) and (max-width:768px){
-	#HELLO {height:99vh}
+	
 }
 @media screen and (max-width:320px){
 	.navi a{font-size:60%;}
@@ -342,7 +355,7 @@ footer {
 @media (prefers-color-scheme:light) {
 	.light,.Gram {display:unset;}
 	.navi a {color:white;}
-	.dark {display:none;}
+	.dark, .note20 {display:none;}
 	body {background-image:url(mintback.jpg);
 		background-size:70%; 
 		background-attachment:fixed;
