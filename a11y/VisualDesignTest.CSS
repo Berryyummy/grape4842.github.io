@@ -126,22 +126,35 @@ th,td {
 .iconBOX {position:relative;
 	background-color:#eef;
 	padding:1vmax;}
-.iconT {
+.iconT, .iconT2 {
 	background-color:white;
 	border-collapse:collapse;}
-.iconT thead{background-color:#cfb;}
+.iconT thead, .iconT2 thead {
+	background-color:#cfb;}
 .iconT td,.iconT th {
 	border:1px solid black;
+	padding:1vmax 1.5vmax;}
+.iconT2 td,.iconT2 th {
+	border:1px solid black;}
+.iconT2 th{
 	padding:1vmax;}
+.iconT2 td{
+	text-align:center;
+	padding:2vmax 2.5vmax;}
+
+.iconT2 span{
+	font-size:1rem;}
+
 .sunD {color:#d30;}
 .satD {color:#54f;}
-.iconlistBOX {position:absolute; top:10%; left:50%;}
+.iconlistBOX {position:absolute; top:10%; right:25%;}
 .iconBOX dd,.iconBOX dt {margin:0px; display:inline-flex;}
 .icon {
 	display:block;
 	text-align:center;
 	font-weight:900;
 }
+i {display:block;}
 
 @media screen and (max-width:760px) {
 	main {width:90%;}
