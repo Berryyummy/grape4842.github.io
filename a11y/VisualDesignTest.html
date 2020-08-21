@@ -14,7 +14,8 @@
 
 <body>
 	<main>
-		<table class="redt">
+		<div class="redt">
+		<table>
 			<caption>
 				<strong>
 					<span class="red">빨간색</span>으로 표시된 항목은 필수 항목입니다.
@@ -37,8 +38,10 @@
 				</td>
 			</tr>
 		</table>
+		</div>
 
-		<table class="redt">
+		<div class="redt">
+		<table>
 			<caption>
 				<strong>
 					<span class="red">빨간색</span>으로 표시된 항목은 필수 항목입니다.
@@ -61,8 +64,10 @@
 				</td>
 				</tr>
 		</table>
+		</div>
 
-		<table class="redt">
+		<div class="redt">
+		<table>
 			<caption>
 				필수 항목 미기재시 다음단계로 진행하실 수 없습니다.
 			</caption>
@@ -83,28 +88,33 @@
 				</td>
 			</tr>
 		</table>
+		</div>
 
-		<table class="redt">
-		<caption id="star">
-		<strong><span class="red">*</span>은 필수 항목입니다.</strong>
-		</caption>
-		<tr>
-		<th>
-		<label for="unames">성 명<span class="red">*</span>:</label>
-		</th>
-		<td>
-		<input type="text" title="필수" id="unames">
-		</td>
-		</tr>
-		<tr>
-		<th>
-		<label for="ubirths">생년월일<span class="red">*</span>`:</label>
-		</th>
-		<td>
-		<input type="text" title="숫자만 입력하세요" id="ubirths" placehorder="19900101">
-		</td>
-		</tr>
-		</table>
+		<div class="redt">
+			<table class="redt">
+			<caption id="star">
+			<strong>
+				<span class="red">*</span>은 필수 항목입니다.
+			</strong>
+			</caption>
+			<tr>
+			<th>
+			<label for="unames">성 명<span class="red">*</span>:</label>
+			</th>
+			<td>
+			<input type="text" title="필수" id="unames">
+			</td>
+			</tr>
+			<tr>
+			<th>
+			<label for="ubirths">생년월일<span class="red">*</span>`:</label>
+			</th>
+			<td>
+			<input type="text" title="숫자만 입력하세요" id="ubirths" placehorder="19900101">
+			</td>
+			</tr>
+			</table>
+		</div>
 
 		<div class="KWCAG5">
 			<p>다음단계로 진행하시려면 왼쪽 버튼을 누르세요.</p>
@@ -148,11 +158,11 @@
 			</button>
 		</div>
 
-		<div class="KWCAG5" id="SALE">
+		<div class="KWCAG5 SALE">
 			<p class="DEAL">69,800원</p>		
 			<p class="nprice" style="text-decoration:line-through;">99,900원</p>
 		</div>
-		<div class="KWCAG5" id="SALE">
+		<div class="KWCAG5 SALE">
 			<p class="DEAL">판매가:69,800원</p>
 			<p class="nprice">기존 정가:99,900원</p>
 		</div>

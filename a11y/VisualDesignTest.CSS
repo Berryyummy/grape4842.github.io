@@ -2,12 +2,12 @@
 :lang(ko) {word-break: 
 	keep-all; 
 	line-break:normal; 
-	font-size:1.2rem;
+	font-size:1.1rem;
 	font-family:HY견고딕;}
 
 ::selection {background:#51b; color:white;}
 
-body {margin:0px;}
+body {margin:0px; padding:0px;}
 main {
 	box-sizing:border-box;
 	width:60%; 
@@ -19,14 +19,16 @@ ul {padding:0px;
 	margin:0px;
 }
 
+div>table {margin:0px;}
+
 #unamer {border:red solid;}
 input {border:slateblue 1px solid;}
 input {
-	font-size:1vmax;
+	font-size:1rem;
 	border-width:2px;}
 
 input:focus {background-color:#ffd;}
-input:focus+label
+input:focus+label {}
 
 button {min-width:2vmax;
 		padding:1vmin 2vmin;}
@@ -81,14 +83,15 @@ button:focus {outline-offset:2px;
 	background-color:#070; 
 	font-weight:900;}
 
-#SALE {text-align:left;}
 .nprice {
+	text-align:left;
 	font-weight:700; 
-	font-size:1vmax; 
+	font-size:1rem; 
 	color:#777;}
 .DEAL {
+	text-align:left;
 	font-weight:900; 
-	font-size:1.2vmax; 
+	font-size:1.2rem; 
 	color:#d30;}
 	
 .KWCAG5 {
@@ -96,7 +99,6 @@ button:focus {outline-offset:2px;
 	text-align:center; 
 	border:solid gray 1px; 
 	padding:2vmin 1vmin;}
-table {border:2px slateblue solid;}
 table,caption {
 	background-color:#eef;
 	padding:1vmax;}
@@ -147,7 +149,7 @@ th,td {
 
 .sunD {color:#d30;}
 .satD {color:#54f;}
-.iconlistBOX {position:absolute; top:10%; right:25%;}
+.iconlistBOX {position:absolute; top:10%; right:25%;}1
 .iconBOX dd,.iconBOX dt {margin:0px; display:inline-flex;}
 .icon {
 	display:block;
@@ -157,5 +159,6 @@ th,td {
 i {display:block;}
 
 @media screen and (max-width:760px) {
-	main {width:90%;}
+	main {width:95%; overflow-x:hidden; position:relative;}
+	main>* {width:100% !important;}
 }
