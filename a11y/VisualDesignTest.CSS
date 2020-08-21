@@ -1,5 +1,4 @@
 @charset "UTF-8";
-:lang(ja) {word-wrap:break-word; word-break:break-all;}
 :lang(ko) {word-break: 
 	keep-all; 
 	line-break:normal; 
@@ -97,11 +96,12 @@ button:focus {outline-offset:2px;
 	text-align:center; 
 	border:solid gray 1px; 
 	padding:2vmin 1vmin;}
-
+table {border:2px slateblue solid;}
 table,caption {
 	background-color:#eef;
 	padding:1vmax;}
-table,div {margin:1vmax 0px;}
+table,div {
+	margin:1vmax 0px;}
 .red {color:red;}
 th,td {
 	text-align:left;
