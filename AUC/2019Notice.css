@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-/*움직이는 요소를 대체할 요소에 class부여*/
+/*움직이는 요소에 class부여*/
 .stopA {display:none;}
 
 /*올라오는 애니메이션*/
-#MacPro{
+#ApplePro{
 	animation-duration:1s;
-	animation-name:MacPro; 
+	animation-name:load; 
 	animation-delay:1s;
 	animation-fill-mode:forwards;
 	opacity:0; 
@@ -14,16 +14,50 @@
 
 }
 
-@keyframes MacPro {
+@keyframes load {
 	from {opacity:0; 
 		transform:translateY(15%);}
 	to {opacity:1;
 		transform:translateY(0%);}
 }
 
+#hello,#MacS{
+	animation-duration:2s;
+	animation-name:load; 
+	animation-delay:1.5s;
+	animation-fill-mode:forwards;
+	opacity:0; 
+	height:100%;
+	position:relative;}
+
+/*#MacS {opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);}
+
+#MacS {opacity: 0;
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px);
+    will-change: transform;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    transition-property: opacity, transform, -webkit-transform;
+    -webkit-transition-duration: 1.2s, 1.4s;
+    transition-duration: 1.2s, 1.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1),cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1),cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}*/
+
+@keyframes load {
+	from {opacity:0; 
+		transform:translateY(15%);}
+	to {opacity:1; 
+		transform:translateY(0%);}
+}
+
 /*애니메이션 저감 설정 감지 시*/
 @media (prefers-reduced-motion:reduce) {
-	#MacPro{
+	#ApplePro,#hello {
 		animation:none;
 		opacity:1; 
 		transform:translateY(0%);}
@@ -32,48 +66,62 @@
 }
 
 
-/*큰 영역별 공통 CSS*/
-main {padding-top: 34px;}
-.covid19 {
-	text-align:center;
-	margin:auto 0px;
-	font-size:12px;
-	line-height:1.4;
-	padding:16px;
+/*애니메이션이 끝난 비디오맥북을 숨기는 애니메이션*/
+#MacBookPro {
+	animation-delay:4s;
+	animation-duration:2s;
+	animation-name:bmac;
+	animation-fill-mode:forwards;
 }
-#MacProarea>span {
-	background-attachment:fixed;
-	z-index:-1;
-	position:sticky;
-	top:0;
-	font-weight:600;
+
+@keyframes bmac {
+	from {visibility:visible;}
+	to {visibility:hidden;}
+}
+
+/*text gradient 텍스트를 그라데이션처럼 표기하기 위한 CSS*/
+.clip {
+	padding-top:86px;
+	padding-bottom:86px;
+	margin-bottom:62px;
+	/*filter: saturate(150%);*/
+	background-clip:text; 
+	-webkit-background-clip:text;
+	color: transparent; 
+	background-size:cover;
+}
+
+.clipsb {background-color:#17171d;}
+#MBP {
+	height:100%;
+	margin-top:29px;
+	margin-bottom:-15%;
+	position:relative;
+	overflow-x:hidden;
+}
+#MacS {
+	width:125%;
+	position:relative; 
+	left:-12.5%;
+}
+
+#MacBookPro {
 	display:block;
-	margin:auto;
-	text-align:center;
-	font-size: 64px;
-	color:#111;
-	letter-spacing:-5px;
-	line-height: 1.17188;}
-
-#MPB {
+	margin-bottom:-32.7%;
+	width:90%;
 	position:relative;
-	z-index:0;
-	background-color:#f2f2f2;}
+	z-index:100;
+	-webkit-mask-size:cover;
+	-webkit-mask-position:center;
+    -webkit-mask-repeat:no-repeat;
+}
 
-#MacProarea {
-	background: linear-gradient(#f2f2f2aa;, #f2f2f200;);
-	position:relative;
-	z-index:5;
-	top: calc(44px + 66px + 8vh);
-	min-height: 450px;
-    max-height: 550px;
-    width: 284px;
-	max-width:1148px;
-	z-index:0;
-	}
-#MacProarea img {position:relative; z-index:0;}
+
+/*큰 영역별 공통 CSS*/
+
 
 #controller {
+	background:transparent;
 	text-align:center;
 }
 #controller .goask:after{
@@ -106,9 +154,9 @@ p {
 .fullgo {
 	vertical-align:top;
 	line-height:33px; 
+	color:#6D7A71; 
 	text-align:center; 
 	font-weight:600;
-	letter-spacing:0px;
 }
 
 /*Heading*/
@@ -123,6 +171,7 @@ h1 {display:flex;
 
 h2,h3 {
 	font-size:48px;
+	color:white; 
 	text-align:center;  
 	line-height:1.1; 
 	font-weight: 600;
@@ -130,10 +179,12 @@ h2,h3 {
     text-align:center;
 }
 
+h3 {color:#aee1cd;}
 
 h2,h3 {font-size:64px;}
 
 h4,h4>span {
+	color:#ffe681;
 	text-align:center; 
 	vertical-align:middle;
 	line-height:1.5em; 
@@ -143,14 +194,16 @@ h4,h4>span {
 
 
 
+ul,li,ol,#controller {
+	padding:0px; 
+	word-break:keep-all; 
+	text-align:left; 
+	font-weight:600; 
+	font-size:21px;
+	list-style:none;
+}
 
-
-li {margin-top:1rem; 
-	margin-bottom:1rem;
-	text-align:left;
-	font-weight: 600;
-	font-size:24px;
-	list-style:none;}
+li {margin:1rem auto;}
 li ul {
 	margin:0.1rem auto; 
 	padding:0px;
@@ -160,7 +213,7 @@ li li,li dl,.kr{
 	padding:0px; 
 	list-style-position:outside; 
 	word-break: keep-all; 
-	font-size:24px;
+	font-size:19px;
 	text-align:left;
 }
 
@@ -174,7 +227,7 @@ dl svg {margin:-1rem auto;}
 	color:#6D7A71; 
 	text-align:center; 
 	font-weight:600; 
-	font-size:24px;
+	font-size:21px;
 	padding-bottom:2rem;
 }
 
@@ -194,8 +247,9 @@ dl svg {margin:-1rem auto;}
 		background-size:100% 56px;
 		background-repeat:no-repeat;
 	}
-.nofoot {background-color:#f2f2f2;}
+
 .helpM strong {
+	color:white; 
 	font-weight:900; 
 	display:block;
 }
@@ -209,10 +263,11 @@ dl svg {margin:-1rem auto;}
 }
 
 #helm {
-	background-color:#f2f2f2;
+	background-color:#222; 
 	position:relative;}
 .helpboxM {
 	padding:0px; 
+	background-color:#222; 
 	width:100%; height:100%;
 }
 
@@ -226,24 +281,22 @@ dl svg {margin:-1rem auto;}
 	font-weight:400;
 	margin-top:0.4rem;
 	display:flex;
-	color:#06c;
+	color:#2997ff;
 }
 
-.helpq {
+.helpq {color:white;
 	font-size:1em;
 	margin-top: 0.4em;
 	box-sizing: content-box;}
 
 #callapple {
+	color:white;
 	vertical-align:bottom;
 }
 
 .master {
-	border-color:#17171d;
-	border-style:solid;
-	border-width:0px 10px;
-	background-color:#17171d; 
-	color:white; 
+	background-color:white; 
+	color:black; 
 	font-weight:900; 
 	display:inline-flex;
 }
@@ -259,7 +312,7 @@ dl svg {margin:-1rem auto;}
     display:block;
 }
 
-.kr {color:#d40;}
+.kr {color:#fab;}
 
 #notch {
 	width:100%;
@@ -301,8 +354,7 @@ dl svg {margin:-1rem auto;}
 	height:0em;
 }
 
-#full {text-align:left;
-	letter-spacing:0px;}
+#full {text-align:left;}
 
 
 #MPC {padding-top:118px;}
@@ -321,7 +373,7 @@ dl svg {margin:-1rem auto;}
 	#inPC p {
 		line-height: 1.52947; 
 		font-size:1.1em;}
-	.fullT {margin:auto; font-weight:600;}
+	.fullT {color:white; margin:auto; font-weight:600;}
 	#fullhi {margin:0.5em auto;}
 
 #apple12 {
@@ -350,6 +402,7 @@ ul,.lalist {
 	}
 
 #Mlist {
+	/*grid-template-columns:minmax(50% minmax);*/
 	padding: 17px 0 11px;}
 #Mlist ul {
 	place-content:center;
@@ -358,7 +411,7 @@ ul,.lalist {
 	flex-wrap:wrap;
 	}
 #Mlist h4 {background-image:none;}
-#Mlist li {width:100%;
+#Mlist li {width:calc(90%/2);
 	margin:10px;}
 #Mlist a {
 	z-index:100;
@@ -366,6 +419,7 @@ ul,.lalist {
 	border-radius:1rem;
 	width:100%;
 	height:100%;
+	color:white; 
 	font-weight:900;
 	font-size:1.4rem;
 	padding:2rem 0.5rem;
@@ -377,40 +431,38 @@ ul,.lalist {
 #Mlist a:before{
 	content: ''; 
 	position:absolute;
-	top:3px; left:2px;
+	top:3%; left:2%;
 	background-repeat:no-repeat;
 	background-size:contain;
-	background-position:top center;
-	width:3rem; height:3rem;
+	background-position:center;
+	width:10%; height:30%;
 	display:flex;
 }
 
 #Mlist span {vertical-align:top;}
 #Mlist p {display:none;}
 
-#RM4{
-	color:white;
+#RM4 a{
 	background:
 	linear-gradient(170deg, rgba(170,170,200,0.9) 0%,rgba(85,85,100,0.9) 40%,rgba(0,0,20,0.9) 41%,rgba(50,50,80,0.9) 100%);
 	border:solid #acf 0.1rem;
 }
-#RM4:before{background-image:url(img/appleX.png);}
+#RM4 a:before{background-image:url(img/appleX.png);}
 
 
-#SMM{
-	color:#321;
+#SMM a{color:black;
 /*background: linear-gradient(165deg, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%);}*/
 /*background-image:url(https://cdn.imgbin.com/24/15/24/imgbin-gold-background-LG9acL6xEbmd0uC6D9v9y3VxY.jpg);*/
 background:url(https://i.pinimg.com/originals/8f/21/96/8f219642c11fa57f38f2355988fb24d0.jpg),linear-gradient(135deg, rgba(255,216,119,1) 0%,rgba(255,247,223,1) 100%);
 background-size:100% 100%;
 border:solid gold 0.1rem;}
-#SMM:before {
+#SMM a:before {
 filter:contrast(200%) hue-rotate(-20deg) saturate(120%);
 background-image:
 url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-png.png);}
+#SMM span {color:#321;}
 
-
-#OMU{
+#OMU a {
 	/*background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(204,238,221,1) 50%,rgba(187,238,204,1) 100%);*/
 	background-image:
 	/*url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);*/
@@ -422,13 +474,13 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	border:solid lightgreen 0.1rem;
 }
 
-#OMU:before {
+#OMU a:before {
 	z-index:5;
 	background-size:120%;
 	background-image:url(img/FruitApple.png);
 }
 
-#OMU:after {
+#OMU a:after {
 	content:'';
 	background-size:100% 100%;
 	position:absolute;
@@ -440,8 +492,7 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 }
 
 
-#Myuna{
-	color:#def;
+#Myuna a{
 		/*background: -webkit-linear-gradient(top, rgba(210,204,255,1) 0%, rgba(110,71,238,1) 49%, rgba(100,68,238,1) 50%, rgba(60,0,170,1) 51%, rgba(70,17,221,1) 100%);*/
 	/*background-image:linear-gradient(to left,rgba(100, 0, 255, 0.1), rgba(150, 50, 255, 0.2), rgba(100, 0, 255, 0.1)),
 	url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
@@ -452,27 +503,29 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	/*background:rgba(100, 0, 255, 0.1), 
 	url(http://www.pptback.com/uploads/borders-frames-blue-gold-frame-backgrounds-powerpoint.jpg);
 	*/background-size:95% 95%;
+	color:white;
 	text-shadow: #000 0 0 0.5rem, #000 2px 2px 2px;
 }
 
-	#Myuna:before{
-	background-image:url(img/Purple.png);
+	#Myuna a:before{
+	background-image:url(img/PurpleMetalApple.png);
 	background-size:140%;
-	filter:saturate(1) hue-rotate(-30deg);
+	filter:saturate(1) hue-rotate(-50deg);
 }
+#Myuna span {color:white;}
 
-#Mcchi {
+#Mcchi a {
 	filter:saturate(1.5);
 	background-image:url(img/Msky.png),linear-gradient(to bottom, rgba(0,119,255,1) 1%,rgba(0,136,255,1) 20%,rgba(0,153,255,1) 40%,rgba(0,170,255,1) 61%,rgba(85,170,255,1) 80%,rgba(85,176,11,1) 85%,rgba(51,153,0,1) 100%);
 	background-size:cover;
 	background-position:bottom;
-	color:#520;
+	color:#250;
 	border:solid #57f 0.1rem;
 }
 
-
-#Mcchi:before {background-image:url(img/OSXApple.png);}
-#Mcchi:after {
+#Mcchi span {color:#520;}
+#Mcchi a:before {background-image:url(img/OSXApple.png);}
+#Mcchi a:after {
 	background-size:100% 30%;
 	background-position:center bottom;
 	background-repeat:no-repeat;
@@ -483,35 +536,35 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	width:100%; height:100%;
 	display:block;}
 
-#CSJ{
+#CSJ a{
 	filter: saturate(120%);
 	background-image:url(https://media.istockphoto.com/vectors/orange-seamless-pattern-orange-citrus-fruit-vector-illustration-vector-id531480528),linear-gradient(135deg, rgba(254,204,177,1) 0%,rgba(241,116,50,1) 40%,rgba(234,85,7,1) 60%,rgba(251,149,94,1) 100%);
 	background-size:5%;
-	color:#630;
+	color:#130;
 	background-attachment:fixed;
 	border:orange 0.1rem solid;
 }
 
-#CSJ:before {
+#CSJ span {color:#420;}
+#CSJ a:before {
 	background-size:120%;
 	background-image:url(img/GoldenApple.png);
 }
 
-#CSA {
+#CSA a {
 	/*background-image:url(https://i.pinimg.com/originals/0d/ee/48/0dee4818267c2183793f7505d06a3b47.jpg);
 	/*background-image: url(https://data.ac-illust.com/data/thumbnails/ab/ab9a45d052331b7c813cedc7f3245bf5_t.jpeg);*/
 	background-image:url(img/sakura1.png),radial-gradient(ellipse at center, rgba(255,255,255,1) 43%,rgba(255,233,251,1) 60%,rgba(255,233,251,1) 60%,rgba(255,127,195,1) 100%);
 	background-size:100% 100%;
 	/*filter:hue-rotate(180deg) invert(100%);*/
 	background-position:top;
-	color:#512;
+	color:#502;
 	border:pink 0.1rem solid;
 }
 
-#CSA:before {background-image:url(img/pinkapple.png);}
+#CSA a:before {background-image:url(img/pinkapple.png);}
 
-#HHC {
-	color:white;
+#HHC a {
 	filter:hue-rotate(0deg);
 	text-shadow: #000 0 0 0.5rem, #000 2px 2px 2px;
 	background-image:url(https://images.assetsdelivery.com/compings_v2/intara1/intara11904/intara1190400012.jpg),linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(255,119,0,1) 20%,rgba(255,255,0,1) 40%,rgba(0,255,170,1) 60%,rgba(0,153,255,1) 80%,rgba(119,0,255,1) 100%);
@@ -520,35 +573,110 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	border:solid 0.1rem black;
 }
 
-#HHC:before {background-image:url(img/ManyColorApple.png); }
+#HHC a:before {background-image:url(img/ManyColorApple.png); }
+
+
+
+	#SE11 video,#i11stop {
+		margin-top:43%;
+		margin-bottom:100%;
+		position:sticky; 
+		top:0px; left:0px;
+		z-index:0;
+	}
+
+	#i11 {
+		position:relative;
+		z-index:2; 
+		margin:0px auto;
+		line-height:1.2;
+		font-size:40px;
+		font-weight:700;
+	}
+
+
+/*iPhone SE*/
+/*light theme*/
+	/*@media screen and (max-width:320px) {*/
+	/*@media screen and (max-width:420px) and (aspect-ratio:9/16){*/
+@media (prefers-color-scheme:light) {
+	:focus {
+	    outline: 4px solid #007dfa99;
+	    outline-color: #007dfa99;
+	    outline-style: solid;
+	    outline-width: 4px;
+	    outline-offset: 1px;
+	}
+	h1 {
+		position:relative; 
+		left:0px; 
+		color:#1d1d1f;
+		opacity:1;
+	}
+
+	#hello div,#fugp,#SEST,.fullT {color:#8c8c8c;}
+	.helpM span,#callapple{color:#1d1d1f;}
+	#helm,.helpboxM,footer,#inPC,.helmb,.clipsb {background-color:#f2f2f2;}
+	
+	#SEST {
+		font-size:21px; 
+		position:relative;
+		display:inline-block; 
+		font-weight:600; 
+		top:-2px;
+	}
+
+	.kr {color:#029d50;}
+	.helpM strong {
+	color:#1d1d1f; 
+	font-weight:900;
+	}
+	.goask {color:#06c !important;}
+	
+	.clip {filter:saturate(1);}
+
+	#raina1 {fill:#e00;}
+	#raina2 {fill:#f70;}
+	#raina3 {fill:#fc0;}
+	#raina4 {fill:#0c5;}
+	#raina5 {fill:#69f;}
+	#raina7 {fill:#87f;}
+
+
+	#Mlist h4 {
+		height:20vh;
+		margin-top:2rem;
+		padding:10%;
+		background-size:cover;
+		background-position:center 50%;
+		background-image:url(https://www.apple.com/v/home/d/images/promos/covid-19/tile__cauwwcyyn9hy_large.jpg);
+		box-shadow: 0px 0px 1rem 1rem #f2f2f2 inset;
+	}
+}
 
 
 
 /*DeskTop View*/
 @media screen and (min-width:1200px) {
-	main {padding-top:72px;}
-	#MPB {height:100vh;
-	min-height: 1000px;
-    max-height: 1440px;}
-	#MacProarea>span {
-		font-size:180px;
-		top: calc(44px + 80px + 8vh);}
-	#MacProarea{
-		width:1148px;}
-	li,li li,li dl,#hello div {font-size: 40px;}
-	#Mlist li {
-		display:inline-flex; 
-		width:40%;}
-	#Mlist a {width:50%; margin:0px;}
-	#Mlist li:nth-child(odd) a {transform:translateX(100%);}
-	#Mlist li:nth-child(even) a {transform:translateX(-0%);}
 	#AUC {font-size: 28px;
     	line-height: 1.14286;
    	 	font-weight: 600;
     	letter-spacing: .007em;
     }
 
+	#i11 {
+		font-weight:700;
+		font-size:80px ;
+	    line-height: 1.15;
+	}
 
+	#SE11 video,#i11stop {
+		margin-top:3px; 
+		width:70%;
+		margin-bottom:20%;
+	}
+
+	#hello {width:35%;}
 
 	.helpboxM {
 		justify-content:center;
@@ -569,17 +697,32 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 
 /*16:10 MacBook Display*/
 @media screen and (min-width:1000px) and (min-aspect-ratio:16/10), (aspect-ratio:10/16) {
-	}
+	#MacBookPro {
+		width:60%;
+		margin-bottom:-21.6%;}
+	#MacS {
+		left:0px;}
+	#MBP {margin-bottom:-5%;}
+	#appleseries {margin-top:-20%;}
+	#i11 {font-size:80px;}
+}
 
 /*PC 16:9 landscape display*/
 @media screen and (min-width:1000px) and (aspect-ratio:16/9), (aspect-ratio:9/16) {
-		}
+		#MacBookPro {
+			width:60%;
+			margin-bottom:-21.6%;}
+		#MacS {
+			width:84%;
+			left:0px;}
+		#MBP {margin-bottom:0%;}
+		#appleseries {margin-top:-25%;}
+		#i11 {font-size:80px;}
+	}
 
 
 /*iPad*/
-@media screen and (min-width:770px) and(max-width:1100px) {
-	main {padding-top: 54px;}
-	li,li li,li dl {font-size: 32px;}
+@media screen and (max-width:1100px) {
 	#AUC,#ApplePro {font-weight:600;}
 	#AUC {
 		font-size: 24px;
@@ -608,9 +751,15 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 
 /*SmartPhone*/
 @media screen and (max-width:760px) {
-	main {padding-top: 34px;}
-	li,li li,li dl {font-size: 24px;}
+	#MPC {padding-top:56px;}
+	#MBP {
+		width:100%; 
+		margin-bottom:-7%;}
 	#AUC {font-size:21px;}
+	#MacBookPro {margin-bottom:-32.7%;}
+	#MacS {
+		width:125%;
+		left:-12.5%;}
 	h2,h3 {
 		font-size:40px;
 		line-height:1;}
@@ -633,9 +782,23 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 		background-position:center center;
 		line-height:2.82353em; 
 		height:48px;}
-.wsmall {display:block;}
+	#memoticon {width:80%;}
+	.wsmall {display:block;}
 	.wbig {display:none;}
+	#Mlist li {width:100%;}
 	#Mlist a {padding:2rem 0.5rem;}
+	#Mlist a:before {
+		background-size:contain;
+		left:2%;}
+	#OMU a{background-size:50%;}
+	#Myuna a:before {background-size:150%;}
+	#CSJ a{background-size:20%;}
+	#HHC a {
+		background-size:50%;
+		background-position:center;}
+	#i11 {width:65% !important;
+			margin-left:0% !important;
+			text-align:left;}
 	#hello {text-align:left;}
 	.helpboxM {
 	    width:216px;
@@ -646,4 +809,84 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 /* iPhone X,S10 */
 @media screen and (min-width:360px) and (max-width:380px) {
 	#inP {top:32%;}
+	#i11 {width:70% !important;}
 }
+
+
+
+
+
+/*iPhone SE landscape*/
+@media screen and (min-width:560px) and (max-width:580px) {
+	li,li li {font-size:17px;}
+	
+	#SE11 {padding:0px;
+	margin-top:3rem;}
+
+	h1 {
+		position:relative; 
+		left:0px; 
+		color:#1d1d1f;
+		opacity:1;
+	}
+	#SE11 video, #i11stop {margin:50% auto;}
+	body {background-color:white;}
+	#i11 {
+		width:70%;
+		font-size:40px;
+		font-weight:700;
+		line-height:1.2em;
+		text-align:left;
+	}
+
+	#full {font-size:1.2em;}
+	#MinP {background-color:black;}
+	#inP {top:31%;}
+
+	.walert {
+	padding:0.5em 0.7em;
+	line-height:1.2em; 
+	font-size:1.5em;}
+
+	h1 span,h2 span,#i11 {
+	font-weight:900; 
+	line-height:1.2; 
+	font-size: 40px;}
+	.helpM span{color:#1d1d1f;}
+	.helpM,footer {
+	background-clip:unset; 
+	font-size:17px;}
+	.helpboxM,footer {
+	background-color:#f2f2f2; 
+	padding:70px 0px;}
+	.helpM strong {
+	color:#1d1d1f; 
+	line-height: 1.31579;
+	font-size:19px;
+	margin-top: .525em;
+	font-weight:600;}
+	.goask {color:#06c;}
+	
+	#hello {text-align:left;}
+	#SEST {font-size:17px; 
+		color:#6D7A71; 
+		position:relative;
+		display:inline-block; 
+		font-weight:600; 
+		top:-3px;}
+		.kr {color:#029d50;}
+
+	#raina1 {fill:#e00;}
+	#raina2 {fill:#f70;}
+	#raina3 {fill:#fc0;}
+	#raina4 {fill:#0c5;}
+	#raina5 {fill:#69f;}
+	#raina7 {fill:#87f;}
+	.fullT {color:#8c8c8c;}
+
+	.wbig {display:none;}
+}
+
+
+
+

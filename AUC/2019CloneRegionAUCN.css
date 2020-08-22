@@ -19,33 +19,21 @@ html {
     --r-globalnav-viewport-xsmall-max-width: 419px;
     --r-globalnav-viewport-xsmall-query: (max-width: 419px);
 }
-main {
-	position:relative; 
-	z-index:10;
-	background-color:white;}
-i {display:block;}
-ul,ol,dl {padding-left:0px;
-}
 
 .znone {position:absolute; z-index:-100; left:0px; top:0px;}
-#wrap {position:relative;}
+#wrap {z-index:1; position:relative;}
 #langzone {background-color:white;}
 .cicon {width:1rem; height:1rem;}
 div.lanregion {padding:1rem;}
 /*.langregion {clear:both;}
 .langregion li {float:left;}
-*/.langregion a{font-size:12px; color:#515154;}
+*/.langregion a{color:white;}
 button {border:none;}
 table {border-collapse:collapse;}
-img,video
+img,video 
 {width:100%;}
 .expanded {
 	display:none;}
-
-.wpc {width:980px;
-	vertical-align:middle; 
-	position:relative;
-	padding:0px 16px;}
 .w980 {
 	width:90%;
 	vertical-align:middle; 
@@ -65,10 +53,12 @@ img,video
 	clip: rect(1px, 1px, 1px, 1px); 
 	clip-path: inset(0px 0px 99.9% 99.9%);}
 body {
+	background-color:#121217; 
+	color:white; 
 	margin:0px; 
 	height:100%;}
 
-* {margin:auto auto; 
+*,.w980 {margin:auto auto; 
 	text-align:center;
 	-webkit-font-smoothing:antialiased;
 	font-family:"SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -78,7 +68,7 @@ body {
 /* background-color: #121217; */
 
 header {
-	background:#111; 
+	background:rgba(0,0,0,0.8); 
 	z-index:9999; 
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
@@ -108,9 +98,7 @@ a {vertical-align:middle;
 	position:relative;
 	-webkit-tap-highlight-color:transparent;}
 
-#GOSHOP {
-	right:17px; 
-	position:absolute;}
+#GOSHOP {right:0px; position:absolute;}
 
 a path{
 	opacity:0.8; 
@@ -145,45 +133,42 @@ a:hover path,a:focus path {opacity:1;}
 
 
 #notice {
-		height:48px;
-		box-sizing:border-box; 
-		z-index:9999; 
-		top:0px; 
-		position:sticky;
-		text-align:left; 
-		display:flex; 
-		margin:0px; 
-		font-size:21px; 
-		font-weight:600; 
-		letter-spacing: 0.012em; 
-		backdrop-filter: saturate(180%) blur(20px);
-	}
+	box-sizing:border-box; 
+	color:white; 
+	z-index:9999; 
+	top:0px; 
+	position:sticky;
+	text-align:left; 
+	display:flex; 
+	margin:0px; 
+	font-size:21px; 
+	font-weight:600; 
+	letter-spacing: 0.012em; 
+	backdrop-filter: saturate(180%) blur(20px);
+	background-color:#121217b3;
+	height:63px;
+}
 
-/*#notice:after {
-		content:"";
-		box-sizing:content-box;
-		display:block;
-		background-color: #00000029;
-		position:absolute;
-		z-index:10;
-		top:100%; 
-		left:0px;
-		margin:0px; 
-		padding:0px;
-		height:1px; 
-		width:100%;
-	}*/
+#barline {
+	width:100%;
+	margin:0px;}
+#barline:after {
+	background-color: #ffffff3d;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    width:100%;
+    height: 1px;
+    z-index: 1;}
+
 #notice,#apple{
-	position:relative;
-	right:0px;
-	box-sizing:border-box;
 	font-weight:900; 
 	vertical-align:middle; 
+	padding:0px; 
 	margin:0px auto;
-	display:flex;}
-#apple {
-	height:44px;
-	display:flex;}
+	display:flex;
+	justify-content:center;}
 
 #start {
 	text-align:center; 
@@ -213,39 +198,47 @@ a:hover path,a:focus path {opacity:1;}
 	display:flex;
 	opacity:0.92;}
 
+#Ptitle {
+	margin:0px; padding:0px;
+	line-height: 1.41667rem;
+    letter-spacing: 0em;
+	font-size:12px;
+	opacity:0.61;
+	position:relative;
+	top:0px;}
 
-
+#AT {font-size:1em;
+	position:relative;
+	color:white; 
+	text-align:left;
+}
+#AT:after {clear:both;}
 #gochatbox {position:absolute;
+	width:100%;
+	padding-top:34px;
 	justify-content:center;
-	top:0px;
-	right:0;
-	margin:0px;
-	padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 16px;}
-
-#gochatborder {
-	margin-left: 17px;
-    margin-top: -3px;}
+		top:0px;}
 
 #gochat {		
 		margin-top: -1px;
+
 		min-width:23px; 
 		letter-spacing:0em;
 		line-height:1.33337;
 	 	background-color:#0071e3; 
-		color:white; 
-		border-radius:12px; 
+		color:white; border-radius:12px; 
 		font-size:12px; 
 		font-weight:400; 
 		white-space:nowrap; 
 		display:inline-block;
 		align-items:center;
-		padding:4px 11px;		
+		padding-left: 11px;
+	    padding-right: 11px;
+	    padding-top: 4px;
+	    padding-bottom: 4px;		
     	position:relative;
 		right:0px; 
 		float:right;
-		background-origin:padding-box;
 		box-sizing:content-box;
 		}
 
@@ -257,10 +250,11 @@ a:hover path,a:focus path {opacity:1;}
 
 .wrap {
 	box-sizing:border-box;}
+.nofoot {background-color:#222;}
 footer {
-	background-color:#f2f2f2;
 	padding-top: 34px;
 	padding-bottom: calc(max(21px, env(safe-area-inset-bottom)));
+	background-color:#222; 
 	width:100%;
 	position:relative;
 	bottom:0px;
@@ -315,21 +309,11 @@ footer {
 
 @media screen and (min-width:1200px) {
 	/*#LOGO {left:0px; position:absolute;}	*/
-	#apple {
-		margin:0px auto;
-		width:980px;}
-	#LOGO {position:absolute;}
+	#apple {margin:0px auto;}
+	#LOGO {left:0px; position:absolute;}
 	#AppleA11Y {width:20%;}
-	main {
-		position:relative;
-		z-index:5;
-		text-align:left;
-		width:calc(100% - 160px);
-		max-width:1600px;}
-	main section {margin:0px;}
-	.w980 {
-		max-width:1600px;}
-	.wpc {padding:0px 23px;}
+	.w980 {width:980px;}
+	header {height:44px;}
 	footer {padding-top: 34px;}
 
 }
@@ -344,6 +328,7 @@ footer {
 	    margin-right: 0px;
 	    margin-bottom: -12px;
 	    margin-left: 0px;}
+	#gochatbox {padding-top:32px;}
 }
 /*SmartPhone,iPad*/
 @media screen and (max-width:800px) {
@@ -359,6 +344,7 @@ footer {
 	    margin-right: 0px;
 	    margin-bottom: -12px;
 	    margin-left: 0px;}
+	#gochatbox {padding-top:32px;}
 	footer {
 		padding-bottom: calc(max(19px, env(safe-area-inset-bottom)));
 		padding-top: 17px;
@@ -367,11 +353,78 @@ footer {
 
 
 
+/*iPhone SE*/
+	/*@media screen and (max-width:320px) {*/
+	/*@media screen and (max-width:420px) and (aspect-ratio:9/16) {*/
+@media (prefers-color-scheme:light) {
+
+	.no320 {display:none;}
+	.m320 {display:inline-block;}
+
+	body,main,.clip,#wrap {background-color:white !important;}
+	h1 span,h2, h4,h4 span {color:#1d1d1f !important;}
+	#gochatbox {
+		padding:0px;
+		height:52px;
+		transform:translateY(25%);}
+	#Ptitle {display:none;}
+	section,li,footer,div,p,h3,#controller {
+	box-sizing:border-box; 
+	background-clip:border-clip; 
+	font-size:17px;
+	letter-spacing: 0.011em; 
+	color: #8c8c8c;}
+
+
+	#notice {
+		background:rgba(255,255,255,0.7);
+		height:52px;}
+	.kr {color:#029d50;}
+	#notice:after {
+		content:"";
+		box-sizing:content-box;
+		display:block;
+		background-color: #00000029;
+		position:absolute;
+		z-index:10;
+		top:100%; 
+		left:0px;
+		margin:0px; 
+		padding:0px;
+		height:1px; 
+		width:100%;
+	}
+
+	footer,.nofoot {background-color:#f2f2f2;}
+	#AppleA11Y p,#AppleA11Y h2 {color:white !important;}
+	.langregion a{color:black;}
+}
 
 
 
 
-/*폴드,애플워치*/
+/*iPhone SE landscape*/
+@media screen and (min-width:560px) and (max-width:580px) {
+	.no320 {display:none;}
+	.m320 {display:inline-block;}
+	body,main,.clip,#wrap {background-color:white !important;}
+	h1 span,h2, h4,h4 span {color:#1d1d1f !important;}
+	section,li,footer,div,p,h3,#controller {
+	box-sizing:border-box; 
+	background-clip:border-clip; 
+	font-size:17px;
+	letter-spacing: 0.011em; 
+	color: #8c8c8c;}
+
+	.w980{width:85%;
+		font-size:17px;}
+
+	#notice {background:rgba(255,255,255,0.7);}
+	.kr {color:#029d50;}
+	footer {background-color:#f2f2f2;}
+	.langregion a{color:black;}
+}
+
 @media screen and (max-width:300px) {
 	#Stitle,h2 span,h2,h3 span,h3,h4 span,h4,h5{font-size:21px;}
 	li,li li,dt,dd,p,#hello div {font-size:17px !important;}
