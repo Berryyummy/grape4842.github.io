@@ -518,6 +518,13 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	background-image:url(img/GoldenApple.png);
 }
 
+#CSJ span {
+		position:relative;
+		z-index:-1;
+		border-radius:10px;
+		box-shadow: 0px -15px 5px 1vmax #F90;
+		background-color:#F90;}
+
 #CSA {
 	/*background-image:url(https://i.pinimg.com/originals/0d/ee/48/0dee4818267c2183793f7505d06a3b47.jpg);
 	/*background-image: url(https://data.ac-illust.com/data/thumbnails/ab/ab9a45d052331b7c813cedc7f3245bf5_t.jpeg);*/

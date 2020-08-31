@@ -21,8 +21,8 @@ ul {padding:0px;
 
 div>table {margin:0px;}
 
-#unamer {border:red solid;}
-input {border:slateblue 1px solid;}
+#unamer {border:red solid 2px;}
+input {border:slateblue 2px solid;}
 input {
 	font-size:1rem;
 	border-width:2px;}
@@ -37,7 +37,7 @@ button:focus {outline-offset:2px;
 	outline:solid 3px #87f;
 	z-index:2;}
 
-.okrb {border:1px solid darkblue; 
+.okrb {border:2px solid darkblue; 
 	font-size:3vmin; 
 	padding:1vmax 2vmax;}
 
@@ -48,12 +48,12 @@ button:focus {outline-offset:2px;
 .yesbd,.nobd {border-radius:15px;
 	color:white; 
 }
-.yesbd {border:red 1px solid; 
+.yesbd {border:red 2px solid; 
 	background-color:#f50; 
 }
 
 .nobd {
-	border:blue 1px solid; 
+	border:blue 2px solid; 
 	background-color:#05f; 
 }
 
@@ -62,12 +62,12 @@ button:focus {outline-offset:2px;
 }
 .yesbd2 {
 	color:darkred;
-	border:darkred 1px solid;
+	border:darkred 2px solid;
 	background-color:#fa5;
 }
 .nobd2 {
 	color:darkblue; 
-	border:darkblue 1px solid;
+	border:darkblue 2px solid;
 	background-color:#5af;
 }
 .minib {font-size:0.5vmin; 
@@ -97,7 +97,7 @@ button:focus {outline-offset:2px;
 .KWCAG5 {
 	width:20vmax;
 	text-align:center; 
-	border:solid gray 1px; 
+	border:solid gray 2px; 
 	padding:2vmin 1vmin;}
 table,caption {
 	background-color:#eef;
@@ -134,10 +134,10 @@ th,td {
 .iconT thead, .iconT2 thead {
 	background-color:#cfb;}
 .iconT td,.iconT th {
-	border:1px solid black;
+	border:2px solid black;
 	padding:1vmax 1.5vmax;}
 .iconT2 td,.iconT2 th {
-	border:1px solid black;}
+	border:2px solid black;}
 .iconT2 th{
 	padding:1vmax;}
 .iconT2 td{
