@@ -437,7 +437,7 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	/*url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Mint-Green-Photos-Download-620x388.jpg);*/
 	url(img/mintback.jpg),linear-gradient(to bottom, rgba(187,238,221,1) 0%,rgba(221,255,238,1) 100%);
 	background-attachment:fixed;
-	background-size:10%;
+	background-size:50%;
 	color:#022;
 	filter:saturate(120%);
 	border:solid lightgreen 0.1rem;
@@ -507,7 +507,7 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 #CSJ{
 	filter: saturate(120%);
 	background-image:url(https://media.istockphoto.com/vectors/orange-seamless-pattern-orange-citrus-fruit-vector-illustration-vector-id531480528),linear-gradient(135deg, rgba(254,204,177,1) 0%,rgba(241,116,50,1) 40%,rgba(234,85,7,1) 60%,rgba(251,149,94,1) 100%);
-	background-size:5%;
+	background-size:30%;
 	color:#630;
 	background-attachment:fixed;
 	border:orange 0.1rem solid;
@@ -522,7 +522,7 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 		position:relative;
 		z-index:-1;
 		border-radius:10px;
-		box-shadow: 0px -15px 5px 1vmax #F90;
+		box-shadow: 0px -15px 5px 1vmax #FF9900aa;
 		background-color:#F90;}
 
 #CSA {
@@ -550,7 +550,13 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 
 #HHC:before {background-image:url(img/ManyColorApple.png); }
 
-
+#Neko {
+	box-shadow:inset 0px 0px 2vmax 2px #5577FF;	
+	color:black;
+	background-size:30%;
+	filter: saturate(100%);
+	background:url(img/Msky.png);}
+#Neko:before {background-image:url(img/GGlassApple.png);}
 
 /*DeskTop View*/
 @media screen and (min-width:1200px) {
@@ -573,6 +579,8 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	#Mlist a {width:50%; margin:0px;}
 	#Mlist li:nth-child(odd) a {transform:translateX(100%);}
 	#Mlist li:nth-child(even) a {transform:translateX(-0%);}
+	#OMU {background-size:12%;}
+	#CSJ {background-size:7%;}
 	#AUC {font-size: 28px;
     	line-height: 1.14286;
    	 	font-weight: 600;
