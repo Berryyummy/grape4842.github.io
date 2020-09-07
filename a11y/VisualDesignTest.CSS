@@ -43,7 +43,7 @@ input:focus+label {}
 .ICBOX {
 	background-color:#dcf;
 	width:60%; 
-	height:250px;}
+	height:200px;}
 
 .ICBOX+p {
 	line-height:1.5;
@@ -53,6 +53,10 @@ input:focus+label {}
 	text-decoration-color:black;}
 
 #sumi {
+	text-align:center;
+	box-sizing:border-box;
+	padding:50px;
+	margin:0px;
 	width:200px; height:200px;
 	background-color:#77f;
 	position:absolute;
@@ -60,6 +64,16 @@ input:focus+label {}
 	top:30px;
 }
 
+#sumit {
+	text-decoration:underline;
+	text-decoration-color:black;
+	color:transparent;
+	position:absolute;
+	right:10px;
+	top:250px;
+	width:200px;
+
+}
 button {min-width:2vmax;
 		padding:1vmin 2vmin;}
 
@@ -113,13 +127,26 @@ button:focus {outline-offset:2px;
 	background-color:#070; 
 	font-weight:900;}
 
+.SALE {
+	padding-right:2vmax !important;
+	box-sizing:border-box;}
+.SALET {
+	margin-top:0px;
+	color:#d30;
+	font-size:2rem;
+	font-weight:900;
+}
+#normalprice {
+	text-decoration:line-through;
+	}
+
 .nprice {
-	text-align:left;
+	text-align:right;
 	font-weight:700; 
 	font-size:1rem; 
 	color:#777;}
 .DEAL {
-	text-align:left;
+	text-align:right;
 	font-weight:900; 
 	font-size:1.2rem; 
 	color:#d30;}
