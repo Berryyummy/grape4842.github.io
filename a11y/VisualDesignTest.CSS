@@ -21,14 +21,44 @@ ul {padding:0px;
 
 div>table {margin:0px;}
 
-#unamer {border:red solid 2px;}
-input {border:slateblue 2px solid;}
+#unamer {border:red solid 2px;
+		background-color:#fee;}
+#unameg {background-color:#fee;}
 input {
+	border:slateblue 2px solid;
 	font-size:1rem;
-	border-width:2px;}
+	padding:5px;}
 
 input:focus {background-color:#ffd;}
 input:focus+label {}
+
+.covid19 {background-color:#ffd;}
+
+#rightupbox {
+	width:60%;
+	position:relative;
+	border:solid black 1px;
+	padding:10px;}
+
+.ICBOX {
+	background-color:#dcf;
+	width:60%; 
+	height:250px;}
+
+.ICBOX+p {
+	line-height:1.5;
+	width:60%;
+	color:transparent;
+	text-decoration:underline;
+	text-decoration-color:black;}
+
+#sumi {
+	width:200px; height:200px;
+	background-color:#77f;
+	position:absolute;
+	right:10px;
+	top:30px;
+}
 
 button {min-width:2vmax;
 		padding:1vmin 2vmin;}
