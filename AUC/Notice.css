@@ -384,7 +384,7 @@ ul,.lalist {
 #Mlist a {
 	z-index:100;
 	position:relative;
-	border-radius:1rem;
+	border-radius:1.5rem;
 	width:100%;
 	height:100%;
 	font-weight:900;
@@ -412,7 +412,11 @@ ul,.lalist {
 #RM4{
 	color:white;
 	background:
-	linear-gradient(170deg, rgba(170,170,200,0.9) 0%,rgba(85,85,100,0.9) 40%,rgba(0,0,20,0.9) 41%,rgba(50,50,80,0.9) 100%);
+	linear-gradient(170deg, rgba(170,170,200,0.1) 0%,rgba(85,85,100,0.1) 40%,rgba(0,0,20,0.1) 41%,rgba(50,50,80,0.1) 100%),
+	url(https://www.apple.com/v/apple-events/home/h/images/overview/past-events/march-2019/hero_image__dcnw5e2nomye_large.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-position: bottom center;
 	border:solid #acf 0.1rem;
 }
 #RM4:before{background-image:url(img/appleX.png);}
@@ -440,7 +444,7 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	background-size:50%;
 	color:#022;
 	filter:saturate(120%);
-	border:solid lightgreen 0.1rem;
+	border:solid #7B9 0.1rem;
 }
 
 #OMU:before {
@@ -457,7 +461,7 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	top:0px; left:0px;
 	display:block;
 	background-image:url(img/Muleaf.png);
-	border-radius:1rem;
+	border-radius:1.5rem;
 }
 
 
@@ -549,6 +553,15 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 }
 
 #HHC:before {background-image:url(img/ManyColorApple.png); }
+
+#IWJ {
+	border:solid 1px black;
+	color:#acf;
+	background:
+	linear-gradient(170deg, rgba(170,170,200,0.8) 0%,rgba(85,85,100,0.8) 40%,rgba(0,0,20,0.8) 41%,rgba(50,50,80,0.8) 100%);}
+#IWJ:before {
+	background-image:url(img/OSXApple.png);
+	filter:saturate(2) hue-rotate(15deg);}
 
 #Neko {
 	box-shadow:inset 0px 0px 2vmax 2px #5577FF;	
