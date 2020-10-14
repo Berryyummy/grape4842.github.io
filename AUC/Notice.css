@@ -17,6 +17,11 @@
 
 /*큰 영역별 공통 CSS*/
 
+#i12P video {
+	position: relative;
+    left: 24px;
+    width: 1352px;}
+
 main, #MinP, #airfull, #Mlist a {
 	letter-spacing:3px;
 	line-height:1.5;}
@@ -24,6 +29,8 @@ main, #MinP, #airfull, #Mlist a {
 main {padding-top: 34px;}
 
 .covid19 {
+	background-color:white;
+	color:#000;
 	text-align:center;
 	margin:auto 0px;
 	font-size:12px;
@@ -31,78 +38,13 @@ main {padding-top: 34px;}
 	padding:16px;
 }
 
-#MPB {
-	position:relative;
-	z-index:0;
-	background-color:#f2f2f2;}
 
-#MacProarea {
-	background: linear-gradient(#f2f2f2aa, #f2f2f200;);
-	position:relative;
-	top: calc(66px + 8vh - 48px);
-	min-height: 450px;
-    max-height: 550px;
-	width: calc(100% - 60px);
-	animation:MacProscale 1s 2s forwards;
-	opacity:0;
-	transform:scale(1.08);}
-
-@keyframes MacProscale {
-	from {transform:scale(1.08);
-		 }
-	to {transform:scale(1);
-		}
+#contentbox {
+	background: linear-gradient(to bottom, #000 0%, #161617 30%);
 }
-
-#MacProarea {
-	animation:Macopacity 0.2s ease-in 1.2s forwards;
-	opacity:0;}
-
-#hello, .clipsb {
-	animation:Macopacity 0.5s 1s ease-in forwards;
-	opacity:0;}
-
-@keyframes Macopacity{
-	0% {opacity:0;}
-	70% {opacity:0.8;}
-	100% {opacity:1;}
-}
-#MacProarea>span {
-    will-change: opacity, transform;
-	-webkit-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-	background-attachment:fixed;
-	z-index:-100;
-	position:sticky;
-	font-weight:600;
-	display:block;
-	margin:auto;
-	text-align:center;
-	font-size: 64px;
-	color:#111;
-	letter-spacing:-5px;
-	line-height: 1.17188;
-	animation:MPT ease-in 3s, 3s cubic-bezier(0.165, 0.84, 0.44, 1) 1s forwards;
-	}
-
-@keyframes MPT {
-	from {opacity:0;
-
-		 }
-	to {opacity:0.99;
-
-		}
-}
-
-#MacProarea img {
-	position:relative; 
-	top:-3px;
-	z-index:0;
-}
-
-
-
 #controller {
+	color:white;
+	background-color:transparent;
 	text-align:center;
 }
 #controller .goask:after{
@@ -225,7 +167,6 @@ dl svg {margin:-1rem auto;}
 		background-size:100% 56px;
 		background-repeat:no-repeat;
 	}
-.nofoot {background-color:#f2f2f2;}
 .helpM strong {
 	font-weight:900; 
 	display:block;
@@ -240,9 +181,10 @@ dl svg {margin:-1rem auto;}
 }
 
 #helm {
-	background-color:#f2f2f2;
+	/*background: #161617;*/
 	position:relative;}
 .helpboxM {
+	margin-top:0px;
 	padding:0px; 
 	width:100%; height:100%;
 }
@@ -584,26 +526,13 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 
 /*DeskTop View*/
 @media screen and (min-width:1200px) {
-	main.wrap, #minP, #airfull {width:75%;}
+	.w980 {width:980px;}
 	main {padding-top:72px;}
-	#MPB {height:100vh;
-		width: calc(100% - 160px);
-		min-height: 1000px;
-    	max-height: 1440px;}
-
-	#MacProarea>span {
-		font-size:180px;
-		top: calc(44px + 80px + 8vh);}
-	#MacProarea{
-		width:1148px;
-		top: calc(66px + 8vh - 44px);}
 	li,li li,li dl,#hello div {font-size: 40px;}
 	#Mlist li {
 		display:inline-flex; 
 		width:40%;}
-	#Mlist a {width:50%; margin:0px;}
-	#Mlist li:nth-child(odd) a {transform:translateX(100%);}
-	#Mlist li:nth-child(even) a {transform:translateX(-0%);}
+	
 	#OMU {background-size:12%;}
 	#CSJ {background-size:7%;}
 	#AUC {font-size: 28px;
@@ -621,7 +550,10 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 		padding-top:56px;
 		width:calc(50% / 2);
 	}
-	.helmb {display:flex;}
+	.helmb {
+		display:flex;
+		border-top: 1px solid #424245;
+		}
 	#MacS {
 		width: 1422px;
     position: relative;
@@ -657,13 +589,16 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 		letter-spacing: 0em;
 		font-size:48px;
 	}
-	.helpM {flex-basis: 50%;}
-		.helpboxM {
-		justify-content:center;
-		display:flex;
-		flex-direction:row;
-		padding-top:56px;
-		width:calc(50% / 2);
+	.helpM {
+		/*flex-basis: 50%;*/
+		width:216px;
+	}
+	.helpboxM {
+	justify-content:center;
+	display:flex;
+	flex-direction:row;
+	padding-top:56px;
+	width:calc(50% / 2);
 	}
 	.helmb {display:flex;}
 
