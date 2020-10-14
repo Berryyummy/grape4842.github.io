@@ -532,7 +532,13 @@ url(https://www.nicepng.com/png/full/15-155485_apple-logo-icon-apple-logo-gold-p
 	#Mlist li {
 		display:inline-flex; 
 		width:40%;}
+<<<<<<< HEAD
 	
+=======
+	#Mlist a {width:50%; margin:0px;}
+	#Mlist li:nth-child(odd) a {transform:translateX(100%);}
+	#Mlist li:nth-child(even) a {transform:translateX(0%);}
+>>>>>>> 1738105eb7a24bc6702a02c56407952f3a828585
 	#OMU {background-size:12%;}
 	#CSJ {background-size:7%;}
 	#AUC {font-size: 28px;
